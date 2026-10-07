@@ -1,0 +1,38 @@
+{
+  "runtimeApi": "^1.0.0",
+  "contractVersion": "1.0.0",
+  "environmentId": "env_674e7be3-3f35-4d8c-8bf1-fc6db61ec461",
+  "name": "محیط تست آواتار",
+  "shortDescription": "محیطی ساده برای تست پلاگین آواتار",
+  "category": "custom",
+  "localizations": {},
+  "entry": {
+    "kind": "bundle",
+    "version": "0.1.0"
+  },
+  "portal": {
+    "title": "محیط تست آواتار",
+    "blurb": "محیطی ساده برای تست پلاگین آواتار",
+    "art": {
+      "imageUrl": "al-amr-presentation/environment-cover-fd8f2060860241b1.jpg",
+      "alt": "محیط تست آواتار"
+    },
+    "visibility": "private"
+  },
+  "capabilities": [
+    "identity",
+    "presence"
+  ],
+  "notifications": {
+    "eventTypes": [],
+    "audience": "none"
+  },
+  "plugins": [
+    {
+      "integrationKind": "frontend_adapter",
+      "pluginId": "plg_0bec7e8e-8852-4f44-9446-f5df278ab59e",
+      "releaseVersion": "1.0.0",
+      "adapterId": "r3f"
+    }
+  ]
+}

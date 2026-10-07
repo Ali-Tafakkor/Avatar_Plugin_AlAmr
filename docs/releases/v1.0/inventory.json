@@ -1,0 +1,1119 @@
+{
+  "schema": 1,
+  "product_generation": "1.0",
+  "technical_plugin_version": "0.1.0",
+  "captured_at": "2026-10-07",
+  "scope": "All non-ignored initial repository files before v2 planning; inventory excludes itself",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 155,
+      "sha256": "831e409f777ff25930ea35f63b88d6d3eb03d9e485718b03a9bdae5ad45d22d1"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 472,
+      "sha256": "6acf6340ea070def11ed67d7d5db9a460d81f68068ad308ceae58f6a0680bb39"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 1566,
+      "sha256": "f47b09a953553d0ba55a87ad85d5f6d7d66f58af235415da9a5fda01924290f6"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/README.md",
+      "bytes": 3990,
+      "sha256": "83445136322c6e3b0b22941199986783c2a27cb26b2179025d6961dc1a86da1f"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/al-amr.environment.json",
+      "bytes": 1096,
+      "sha256": "94d774218b52f3727530375b922e2d257de446978e482a4c2409d9dfab4ef878"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/dist/assets/avatar03-COr9lszz.glb",
+      "bytes": 8657480,
+      "sha256": "bf16883394c2f968faa294e8debe02dc38ff8ba4aaf98d32319e025d8185540d"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/dist/assets/avatar03-texture-DDeX7F8r.png",
+      "bytes": 6287128,
+      "sha256": "5344ec24daf8cbc7a9ef08eb2549f2b0084f96283c83dfa1daa9e0e8f7acc822"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/dist/assets/index-CR_CIOh6.css",
+      "bytes": 4408,
+      "sha256": "febbcec38413100352381cbb48b85c95c5ca605a9ec5e332f74e66677a437128"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/dist/assets/index-CSBORNHc.js",
+      "bytes": 1838948,
+      "sha256": "c8397da50bbaa4272332c301782eefbf654928b1ce1dafca618cb239ce68543a"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/dist/environment-cover.png",
+      "bytes": 30129,
+      "sha256": "0f30f1e5d1b746dfe5b327c84e3d629700e3d549b1616d24bf07c450c8a50d88"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/dist/index.html",
+      "bytes": 444,
+      "sha256": "96d84f1edc6f208e73a143f39bbd20d0b291a5b8dc1689838dd73261d83725a4"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/SKILL.md",
+      "bytes": 5920,
+      "sha256": "521cab2595ba3cc46d45efa7b95c03fed8818e893e9a9877b8b76fbc043d959b"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-backend.md",
+      "bytes": 14715,
+      "sha256": "01a34713366517221e6f6af6d9ee56503b9016c44011e2d7b3070199e9d42943"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-bundles.md",
+      "bytes": 8037,
+      "sha256": "57056cd866f5bb1db8a73a6222c9e17e67d68c867f84960fb4ae5a379c13dede"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-companions.md",
+      "bytes": 2124,
+      "sha256": "19a694ae74e9ef33e14ed077ab53ce157dab89df4c52b2da843de11b81ca236c"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-development.md",
+      "bytes": 4244,
+      "sha256": "aba0f60de4158e34e781cfe335676c3121511a419ec989c2c47efe044545ff49"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-groups.md",
+      "bytes": 24874,
+      "sha256": "8674f7a3355b911469f29e50f3cbf13b6b8d491cffe67f2dc256a9d7ee92ec68"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-hampa.md",
+      "bytes": 23250,
+      "sha256": "6c0a6265976e7e120539b702e7ebd635574562c4c9aa3b69562469f4820d649d"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-notifications.md",
+      "bytes": 7364,
+      "sha256": "49f3b1c1f3819e5a982875c206351c463dfacbf24ab81097468328ab3ff99a61"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-plugins.md",
+      "bytes": 13030,
+      "sha256": "87c2be99fd56901f91743ba23e8fb1d5368385676b2b116ea7123fcebfe1a22b"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-publishing.md",
+      "bytes": 5863,
+      "sha256": "dcdf78e9539eb9e8c1cfbf99c68f1527f0cc703a7751d9e556a0e69557132e4f"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-runtime.md",
+      "bytes": 7163,
+      "sha256": "1cbe72b980f4edd14cf6aa19f970def32aaad630db673f61af9918a7f9586036"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.al-amr/docs/plugins/index.md",
+      "bytes": 1273,
+      "sha256": "e61c0887ebe5bda9f2599e9f7084def26205823dc3d0167ca453d1be9c1b9c28"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.al-amr/docs/plugins/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig@1.0.0/README.md",
+      "bytes": 16790,
+      "sha256": "fd3980bec0c363cd6a6405228cdc6662f3e660c44ddd1f7a8d358b345b79978e"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.al-amr/docs/plugins/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig@1.0.0/declarations/dist/index.d.ts",
+      "bytes": 32269,
+      "sha256": "f77f74094c149bbc0d9b15bb2d6f2ddd794c940a2f99eb8f6158c69fe63603fc"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.al-amr/docs/plugins/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig@1.0.0/integration.md",
+      "bytes": 7630,
+      "sha256": "43be471793ee7eb667610bae13d9f7d9431bb472921b5d8e5574b6fd102c1d97"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.al-amr/docs/plugins/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig@1.0.0/manifest.json",
+      "bytes": 7074,
+      "sha256": "aae3ff7f3aef09a393b5648117e1c7c3350019f22d19ca7a7a79f367ec9dd813"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.al-amr/docs/plugins/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig@1.0.0/types.d.ts",
+      "bytes": 32269,
+      "sha256": "f77f74094c149bbc0d9b15bb2d6f2ddd794c940a2f99eb8f6158c69fe63603fc"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.al-amr/docs/plugins/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig@1.0.0/types.json",
+      "bytes": 33595,
+      "sha256": "74c1508dc1f51116d612b471ffc3e4a5b2ee1113f158cc6e05523e653c7e6e48"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.gitignore",
+      "bytes": 162,
+      "sha256": "5127dcfc15ed75c417f2b62521e9f948adf8417ec7c5ca1525ab3751a3ed763f"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/AGENTS.md",
+      "bytes": 4588,
+      "sha256": "20f5fe51509d378b8e27308c46b45026fd191ce320028fbacfb52bfd08d5e28c"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/CLAUDE.md",
+      "bytes": 35,
+      "sha256": "b2872e43c658a41ef03322fa6d81e5717e4f46549613f67abcf3f8c5e0ea5171"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/al-amr.environment.json",
+      "bytes": 992,
+      "sha256": "2421a83bb51c94acf4cf5cc1ee4f758c68539242fcc7dd0e90e6ea02d0233144"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/alamr.d.ts",
+      "bytes": 53613,
+      "sha256": "48b34fe1a8b40a04c3fb395d6600fe53ff7f65a83779bf3a2932d4b424aad57b"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/dist/assets/avatar03-COr9lszz.glb",
+      "bytes": 8657480,
+      "sha256": "bf16883394c2f968faa294e8debe02dc38ff8ba4aaf98d32319e025d8185540d"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/dist/assets/avatar03-texture-DDeX7F8r.png",
+      "bytes": 6287128,
+      "sha256": "5344ec24daf8cbc7a9ef08eb2549f2b0084f96283c83dfa1daa9e0e8f7acc822"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/dist/assets/index-CR_CIOh6.css",
+      "bytes": 4408,
+      "sha256": "febbcec38413100352381cbb48b85c95c5ca605a9ec5e332f74e66677a437128"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/dist/assets/index-CSBORNHc.js",
+      "bytes": 1838948,
+      "sha256": "c8397da50bbaa4272332c301782eefbf654928b1ce1dafca618cb239ce68543a"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/dist/environment-cover.png",
+      "bytes": 30129,
+      "sha256": "0f30f1e5d1b746dfe5b327c84e3d629700e3d549b1616d24bf07c450c8a50d88"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/dist/index.html",
+      "bytes": 444,
+      "sha256": "96d84f1edc6f208e73a143f39bbd20d0b291a5b8dc1689838dd73261d83725a4"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/package.json",
+      "bytes": 576,
+      "sha256": "bb81530f59f23f9e450694a9fe7d5381d89851e04fb61011104d2fc7fea6a2c8"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/README.md",
+      "bytes": 371,
+      "sha256": "1ed7c8924e7362d6a4371928691230631333c79bf0b161749f1d076d8e6e566a"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/SKILL.md",
+      "bytes": 5920,
+      "sha256": "521cab2595ba3cc46d45efa7b95c03fed8818e893e9a9877b8b76fbc043d959b"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-backend.md",
+      "bytes": 14715,
+      "sha256": "01a34713366517221e6f6af6d9ee56503b9016c44011e2d7b3070199e9d42943"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-bundles.md",
+      "bytes": 8037,
+      "sha256": "57056cd866f5bb1db8a73a6222c9e17e67d68c867f84960fb4ae5a379c13dede"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-companions.md",
+      "bytes": 2124,
+      "sha256": "19a694ae74e9ef33e14ed077ab53ce157dab89df4c52b2da843de11b81ca236c"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-development.md",
+      "bytes": 4244,
+      "sha256": "aba0f60de4158e34e781cfe335676c3121511a419ec989c2c47efe044545ff49"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-groups.md",
+      "bytes": 24874,
+      "sha256": "8674f7a3355b911469f29e50f3cbf13b6b8d491cffe67f2dc256a9d7ee92ec68"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-hampa.md",
+      "bytes": 23250,
+      "sha256": "6c0a6265976e7e120539b702e7ebd635574562c4c9aa3b69562469f4820d649d"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-notifications.md",
+      "bytes": 7364,
+      "sha256": "49f3b1c1f3819e5a982875c206351c463dfacbf24ab81097468328ab3ff99a61"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-plugins.md",
+      "bytes": 13030,
+      "sha256": "87c2be99fd56901f91743ba23e8fb1d5368385676b2b116ea7123fcebfe1a22b"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-publishing.md",
+      "bytes": 5863,
+      "sha256": "dcdf78e9539eb9e8c1cfbf99c68f1527f0cc703a7751d9e556a0e69557132e4f"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-runtime.md",
+      "bytes": 7163,
+      "sha256": "1cbe72b980f4edd14cf6aa19f970def32aaad630db673f61af9918a7f9586036"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.al-amr/docs/plugins/index.md",
+      "bytes": 1273,
+      "sha256": "e61c0887ebe5bda9f2599e9f7084def26205823dc3d0167ca453d1be9c1b9c28"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.al-amr/docs/plugins/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig@1.0.0/README.md",
+      "bytes": 16790,
+      "sha256": "fd3980bec0c363cd6a6405228cdc6662f3e660c44ddd1f7a8d358b345b79978e"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.al-amr/docs/plugins/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig@1.0.0/declarations/dist/index.d.ts",
+      "bytes": 32269,
+      "sha256": "f77f74094c149bbc0d9b15bb2d6f2ddd794c940a2f99eb8f6158c69fe63603fc"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.al-amr/docs/plugins/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig@1.0.0/integration.md",
+      "bytes": 7630,
+      "sha256": "43be471793ee7eb667610bae13d9f7d9431bb472921b5d8e5574b6fd102c1d97"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.al-amr/docs/plugins/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig@1.0.0/manifest.json",
+      "bytes": 7074,
+      "sha256": "aae3ff7f3aef09a393b5648117e1c7c3350019f22d19ca7a7a79f367ec9dd813"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.al-amr/docs/plugins/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig@1.0.0/types.d.ts",
+      "bytes": 32269,
+      "sha256": "f77f74094c149bbc0d9b15bb2d6f2ddd794c940a2f99eb8f6158c69fe63603fc"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.al-amr/docs/plugins/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig@1.0.0/types.json",
+      "bytes": 33595,
+      "sha256": "74c1508dc1f51116d612b471ffc3e4a5b2ee1113f158cc6e05523e653c7e6e48"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.gitignore",
+      "bytes": 162,
+      "sha256": "5127dcfc15ed75c417f2b62521e9f948adf8417ec7c5ca1525ab3751a3ed763f"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/AGENTS.md",
+      "bytes": 4588,
+      "sha256": "20f5fe51509d378b8e27308c46b45026fd191ce320028fbacfb52bfd08d5e28c"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/CLAUDE.md",
+      "bytes": 35,
+      "sha256": "b2872e43c658a41ef03322fa6d81e5717e4f46549613f67abcf3f8c5e0ea5171"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/README.md",
+      "bytes": 4802,
+      "sha256": "e0c2abf4ba74fd35ddb51eb472cb9df899d988548699bb14ebe2ac50b0f51b32"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/al-amr.environment.json",
+      "bytes": 1015,
+      "sha256": "b44aac5c2cb6bb65a5042d8ab7531222d1e81ce0b5c22ef4bab63edf029424b2"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/alamr.d.ts",
+      "bytes": 53613,
+      "sha256": "48b34fe1a8b40a04c3fb395d6600fe53ff7f65a83779bf3a2932d4b424aad57b"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/dist/al-amr-presentation/environment-cover-0f30f1e5d1b746df.png",
+      "bytes": 30129,
+      "sha256": "0f30f1e5d1b746dfe5b327c84e3d629700e3d549b1616d24bf07c450c8a50d88"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/dist/assets/avatar03-COr9lszz.glb",
+      "bytes": 8657480,
+      "sha256": "bf16883394c2f968faa294e8debe02dc38ff8ba4aaf98d32319e025d8185540d"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/dist/assets/avatar03-texture-DDeX7F8r.png",
+      "bytes": 6287128,
+      "sha256": "5344ec24daf8cbc7a9ef08eb2549f2b0084f96283c83dfa1daa9e0e8f7acc822"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/dist/assets/index-CR_CIOh6.css",
+      "bytes": 4408,
+      "sha256": "febbcec38413100352381cbb48b85c95c5ca605a9ec5e332f74e66677a437128"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/dist/assets/index-CSBORNHc.js",
+      "bytes": 1838948,
+      "sha256": "c8397da50bbaa4272332c301782eefbf654928b1ce1dafca618cb239ce68543a"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/dist/environment-cover.png",
+      "bytes": 30129,
+      "sha256": "0f30f1e5d1b746dfe5b327c84e3d629700e3d549b1616d24bf07c450c8a50d88"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/dist/index.html",
+      "bytes": 444,
+      "sha256": "96d84f1edc6f208e73a143f39bbd20d0b291a5b8dc1689838dd73261d83725a4"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/package-lock.json",
+      "bytes": 16599,
+      "sha256": "b1becc8c3410219f736dcfeb3c162d9375778910fba695fcd0bd1f6b998f1b9f"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/package.json",
+      "bytes": 779,
+      "sha256": "5aff0950eae499bc8a9ca4b2e43d8aa9b2db41541ff5195ba721a15462bc0204"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/public/al-amr-presentation/environment-cover-0f30f1e5d1b746df.png",
+      "bytes": 30129,
+      "sha256": "0f30f1e5d1b746dfe5b327c84e3d629700e3d549b1616d24bf07c450c8a50d88"
+    },
+    {
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/scripts/build.mjs",
+      "bytes": 1270,
+      "sha256": "06f1c267430eabe77e63fdd5b9c18f4758a260c079d5e0e81925e01955c25379"
+    },
+    {
+      "path": "NEXT_AGENT_START_HERE.md",
+      "bytes": 5927,
+      "sha256": "25f66679379b1d3177dc81cbf3900d98f5928cb70e8c2af957b3cdda6e5d8597"
+    },
+    {
+      "path": "Open-Avatar-Lab.cmd",
+      "bytes": 350,
+      "sha256": "6ba128de0ef50bedcf3f5f53ff1fca1d19769e6e0494a25d4da0efc9983ae95d"
+    },
+    {
+      "path": "PROJECT_HANDOFF.md",
+      "bytes": 15812,
+      "sha256": "202b2518cbcd9d0e23e5157614b119cc9dd4c56f91526759d028a1bd8e291f9a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2492,
+      "sha256": "2712bd8d221819162c3f059eb676d68c66e32aa99ad379bf1c7448e820af4867"
+    },
+    {
+      "path": "avatar-lab/.agents/skills/al-amr/SKILL.md",
+      "bytes": 5920,
+      "sha256": "521cab2595ba3cc46d45efa7b95c03fed8818e893e9a9877b8b76fbc043d959b"
+    },
+    {
+      "path": "avatar-lab/.agents/skills/al-amr/agent-backend.md",
+      "bytes": 14715,
+      "sha256": "01a34713366517221e6f6af6d9ee56503b9016c44011e2d7b3070199e9d42943"
+    },
+    {
+      "path": "avatar-lab/.agents/skills/al-amr/agent-bundles.md",
+      "bytes": 8037,
+      "sha256": "57056cd866f5bb1db8a73a6222c9e17e67d68c867f84960fb4ae5a379c13dede"
+    },
+    {
+      "path": "avatar-lab/.agents/skills/al-amr/agent-companions.md",
+      "bytes": 2124,
+      "sha256": "19a694ae74e9ef33e14ed077ab53ce157dab89df4c52b2da843de11b81ca236c"
+    },
+    {
+      "path": "avatar-lab/.agents/skills/al-amr/agent-development.md",
+      "bytes": 4244,
+      "sha256": "aba0f60de4158e34e781cfe335676c3121511a419ec989c2c47efe044545ff49"
+    },
+    {
+      "path": "avatar-lab/.agents/skills/al-amr/agent-groups.md",
+      "bytes": 24874,
+      "sha256": "8674f7a3355b911469f29e50f3cbf13b6b8d491cffe67f2dc256a9d7ee92ec68"
+    },
+    {
+      "path": "avatar-lab/.agents/skills/al-amr/agent-hampa.md",
+      "bytes": 23250,
+      "sha256": "6c0a6265976e7e120539b702e7ebd635574562c4c9aa3b69562469f4820d649d"
+    },
+    {
+      "path": "avatar-lab/.agents/skills/al-amr/agent-notifications.md",
+      "bytes": 7364,
+      "sha256": "49f3b1c1f3819e5a982875c206351c463dfacbf24ab81097468328ab3ff99a61"
+    },
+    {
+      "path": "avatar-lab/.agents/skills/al-amr/agent-plugins.md",
+      "bytes": 13030,
+      "sha256": "87c2be99fd56901f91743ba23e8fb1d5368385676b2b116ea7123fcebfe1a22b"
+    },
+    {
+      "path": "avatar-lab/.agents/skills/al-amr/agent-publishing.md",
+      "bytes": 5863,
+      "sha256": "dcdf78e9539eb9e8c1cfbf99c68f1527f0cc703a7751d9e556a0e69557132e4f"
+    },
+    {
+      "path": "avatar-lab/.agents/skills/al-amr/agent-runtime.md",
+      "bytes": 7163,
+      "sha256": "1cbe72b980f4edd14cf6aa19f970def32aaad630db673f61af9918a7f9586036"
+    },
+    {
+      "path": "avatar-lab/.al-amr/docs/plugins/index.md",
+      "bytes": 1273,
+      "sha256": "e61c0887ebe5bda9f2599e9f7084def26205823dc3d0167ca453d1be9c1b9c28"
+    },
+    {
+      "path": "avatar-lab/.al-amr/docs/plugins/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig@1.0.0/README.md",
+      "bytes": 16790,
+      "sha256": "fd3980bec0c363cd6a6405228cdc6662f3e660c44ddd1f7a8d358b345b79978e"
+    },
+    {
+      "path": "avatar-lab/.al-amr/docs/plugins/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig@1.0.0/declarations/dist/index.d.ts",
+      "bytes": 32269,
+      "sha256": "f77f74094c149bbc0d9b15bb2d6f2ddd794c940a2f99eb8f6158c69fe63603fc"
+    },
+    {
+      "path": "avatar-lab/.al-amr/docs/plugins/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig@1.0.0/integration.md",
+      "bytes": 7630,
+      "sha256": "43be471793ee7eb667610bae13d9f7d9431bb472921b5d8e5574b6fd102c1d97"
+    },
+    {
+      "path": "avatar-lab/.al-amr/docs/plugins/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig@1.0.0/manifest.json",
+      "bytes": 7074,
+      "sha256": "aae3ff7f3aef09a393b5648117e1c7c3350019f22d19ca7a7a79f367ec9dd813"
+    },
+    {
+      "path": "avatar-lab/.al-amr/docs/plugins/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig@1.0.0/types.d.ts",
+      "bytes": 32269,
+      "sha256": "f77f74094c149bbc0d9b15bb2d6f2ddd794c940a2f99eb8f6158c69fe63603fc"
+    },
+    {
+      "path": "avatar-lab/.al-amr/docs/plugins/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig@1.0.0/types.json",
+      "bytes": 33595,
+      "sha256": "74c1508dc1f51116d612b471ffc3e4a5b2ee1113f158cc6e05523e653c7e6e48"
+    },
+    {
+      "path": "avatar-lab/.gitignore",
+      "bytes": 162,
+      "sha256": "5127dcfc15ed75c417f2b62521e9f948adf8417ec7c5ca1525ab3751a3ed763f"
+    },
+    {
+      "path": "avatar-lab/AGENTS.md",
+      "bytes": 4588,
+      "sha256": "20f5fe51509d378b8e27308c46b45026fd191ce320028fbacfb52bfd08d5e28c"
+    },
+    {
+      "path": "avatar-lab/CLAUDE.md",
+      "bytes": 35,
+      "sha256": "b2872e43c658a41ef03322fa6d81e5717e4f46549613f67abcf3f8c5e0ea5171"
+    },
+    {
+      "path": "avatar-lab/README.md",
+      "bytes": 5597,
+      "sha256": "883e4d2f6d4d032b382bcebfca673d836545844f767a74624d32034ecbf23cad"
+    },
+    {
+      "path": "avatar-lab/al-amr.environment.json",
+      "bytes": 1096,
+      "sha256": "94d774218b52f3727530375b922e2d257de446978e482a4c2409d9dfab4ef878"
+    },
+    {
+      "path": "avatar-lab/alamr.d.ts",
+      "bytes": 53613,
+      "sha256": "48b34fe1a8b40a04c3fb395d6600fe53ff7f65a83779bf3a2932d4b424aad57b"
+    },
+    {
+      "path": "avatar-lab/dist/assets/avatar03-COr9lszz.glb",
+      "bytes": 8657480,
+      "sha256": "bf16883394c2f968faa294e8debe02dc38ff8ba4aaf98d32319e025d8185540d"
+    },
+    {
+      "path": "avatar-lab/dist/assets/avatar03-texture-DDeX7F8r.png",
+      "bytes": 6287128,
+      "sha256": "5344ec24daf8cbc7a9ef08eb2549f2b0084f96283c83dfa1daa9e0e8f7acc822"
+    },
+    {
+      "path": "avatar-lab/dist/assets/index-CR_CIOh6.css",
+      "bytes": 4408,
+      "sha256": "febbcec38413100352381cbb48b85c95c5ca605a9ec5e332f74e66677a437128"
+    },
+    {
+      "path": "avatar-lab/dist/assets/index-CSBORNHc.js",
+      "bytes": 1838948,
+      "sha256": "c8397da50bbaa4272332c301782eefbf654928b1ce1dafca618cb239ce68543a"
+    },
+    {
+      "path": "avatar-lab/dist/environment-cover.png",
+      "bytes": 30129,
+      "sha256": "0f30f1e5d1b746dfe5b327c84e3d629700e3d549b1616d24bf07c450c8a50d88"
+    },
+    {
+      "path": "avatar-lab/dist/index.html",
+      "bytes": 444,
+      "sha256": "96d84f1edc6f208e73a143f39bbd20d0b291a5b8dc1689838dd73261d83725a4"
+    },
+    {
+      "path": "avatar-lab/evidence/desktop-avatar03.jpg",
+      "bytes": 77264,
+      "sha256": "0d87f8a1a9f1f2d04db5a43a96bea5417d27abe7f8341b57e5824730a1793766"
+    },
+    {
+      "path": "avatar-lab/evidence/desktop-preview.json",
+      "bytes": 3288,
+      "sha256": "d45b11da10140cfd0502e4459698a150cbcafdc4eba55b1b6bf54652e65cc204"
+    },
+    {
+      "path": "avatar-lab/evidence/environment-2-preview.jpg",
+      "bytes": 79943,
+      "sha256": "b3aec4abfd975a4f06b6e46e451425fb2b6595f51bf571f7126194b11eed6263"
+    },
+    {
+      "path": "avatar-lab/evidence/environment-2-starter-2026-10-02/al-amr.environment.json",
+      "bytes": 752,
+      "sha256": "4abed6eb1ead6062f2d68f90c90eec850e762d2a9cd28e144bd90646134a8642"
+    },
+    {
+      "path": "avatar-lab/evidence/environment-2-starter-2026-10-02/dist/environment-cover.jpg",
+      "bytes": 106950,
+      "sha256": "fd8f2060860241b1ea033c7a06931d6d6bae6c11948a98068198d53e5d2b0516"
+    },
+    {
+      "path": "avatar-lab/evidence/environment-2-starter-2026-10-02/dist/index.html",
+      "bytes": 1096,
+      "sha256": "a77c6f6fd53b2c7f00f928d6fc32a2b12ea98a9ecf136f009ef5a94408c049e8"
+    },
+    {
+      "path": "avatar-lab/evidence/environment-2-starter-2026-10-02/dist/main.js",
+      "bytes": 513,
+      "sha256": "fb21b971efc940f7bd7ed1f05096d38b9e1a58aef7e634aa075b998a59125468"
+    },
+    {
+      "path": "avatar-lab/evidence/environment-2-starter-2026-10-02/package-lock-before-regeneration.json",
+      "bytes": 30877,
+      "sha256": "202675207a6c3d534e2b83dbd4f412498cd11d08b6904f891f75ee3ec587cef5"
+    },
+    {
+      "path": "avatar-lab/evidence/registered-environment-starter-2026-10-02/al-amr.environment.json",
+      "bytes": 999,
+      "sha256": "b20b86a78d6c6971ef52e9345197cbf9999cb681a0ad3c3220eb42617476c8c0"
+    },
+    {
+      "path": "avatar-lab/evidence/registered-environment-starter-2026-10-02/dist/al-amr-presentation/environment-cover-fd8f2060860241b1.jpg",
+      "bytes": 106950,
+      "sha256": "fd8f2060860241b1ea033c7a06931d6d6bae6c11948a98068198d53e5d2b0516"
+    },
+    {
+      "path": "avatar-lab/evidence/registered-environment-starter-2026-10-02/dist/environment-cover.jpg",
+      "bytes": 106950,
+      "sha256": "fd8f2060860241b1ea033c7a06931d6d6bae6c11948a98068198d53e5d2b0516"
+    },
+    {
+      "path": "avatar-lab/evidence/registered-environment-starter-2026-10-02/dist/index.html",
+      "bytes": 1092,
+      "sha256": "927edd2aac82ad9c08c73c58d54bcd10fbb6c2c2132685703899c38c024bdd16"
+    },
+    {
+      "path": "avatar-lab/evidence/registered-environment-starter-2026-10-02/dist/main.js",
+      "bytes": 513,
+      "sha256": "fb21b971efc940f7bd7ed1f05096d38b9e1a58aef7e634aa075b998a59125468"
+    },
+    {
+      "path": "avatar-lab/index.html",
+      "bytes": 343,
+      "sha256": "1009e3c87799e49b5d85063383939fbf6322c8f08fddce5121999dd63cf67657"
+    },
+    {
+      "path": "avatar-lab/package-lock.json",
+      "bytes": 67184,
+      "sha256": "97c51fdc6f1df1801b9fa20921888a78646a9a38e2d85ed1843f540f4a8a8d6d"
+    },
+    {
+      "path": "avatar-lab/package.json",
+      "bytes": 976,
+      "sha256": "c1506467e7830b97918874ba66f2a8703e8efb48f3ebd3448d200b2ea17ac673"
+    },
+    {
+      "path": "avatar-lab/public/environment-cover.png",
+      "bytes": 30129,
+      "sha256": "0f30f1e5d1b746dfe5b327c84e3d629700e3d549b1616d24bf07c450c8a50d88"
+    },
+    {
+      "path": "avatar-lab/scripts/create-branding.ps1",
+      "bytes": 2858,
+      "sha256": "f0520e765a40ef8a2858e6ca6155d0ef4f10266592b4629a36857a130a8d1edb"
+    },
+    {
+      "path": "avatar-lab/src/main.tsx",
+      "bytes": 14289,
+      "sha256": "089ac41ddc8d6523a39411ab779fb6f3b61719dfb4b556ff99d175cf756fbbb5"
+    },
+    {
+      "path": "avatar-lab/src/style.css",
+      "bytes": 4410,
+      "sha256": "4f33f6e4788255e691d150b4f4afe6d51dbd0036fdb3c6258bc0a3280b205121"
+    },
+    {
+      "path": "avatar-lab/tests/rig-contract.test.mjs",
+      "bytes": 1913,
+      "sha256": "91afe79d34935b7e657b3212ffce30a5aad266d644a95a3b21deea908c1f4154"
+    },
+    {
+      "path": "avatar-lab/tsconfig.json",
+      "bytes": 360,
+      "sha256": "9ab4778d4ccc74bf7d6c2964e41f3a85ca0b19b78835d3e4b08ffe2de5499528"
+    },
+    {
+      "path": "avatar-lab/vite.config.ts",
+      "bytes": 450,
+      "sha256": "a1ddc89c90128861be396941184b500d2b4cf5ad0774ab2c3b8cb7b5fca94963"
+    },
+    {
+      "path": "docs/archive/PROJECT_HANDOFF_2026-10-02.md",
+      "bytes": 13738,
+      "sha256": "86b6550859b7a3503b9113ba5a701da39b544088ecccae878b499c76723e236a"
+    },
+    {
+      "path": "docs/releases/v1.0/BASELINE_FA.md",
+      "bytes": 3246,
+      "sha256": "4ffb6c464911b99b903c72b28a28c8662ea63a605fa656b239cf5b1e66ecf457"
+    },
+    {
+      "path": "docs/releases/v1.0/VERIFICATION_FA.md",
+      "bytes": 2536,
+      "sha256": "f16af091994d6657a059b52bc7e94a83d1625ba68a9633f4eb5f702f35fad0d5"
+    },
+    {
+      "path": "docs/releases/v1.0/avatar03-rig-audit.json",
+      "bytes": 22514,
+      "sha256": "f59c398ba97b9e8182e307577fd7b7efd3e0d41e351b8f90ba321b1e947866e7"
+    },
+    {
+      "path": "source/Avatar_02/Avatar_02_Complete_Animations.glb",
+      "bytes": 4262648,
+      "sha256": "12ab6b84ec5442af8fb18f88417db1d67aecf1811646e6e219cceac0f586417a"
+    },
+    {
+      "path": "source/Avatar_02/Avatar_02_Complete_Animations_Updated.glb",
+      "bytes": 4600608,
+      "sha256": "31e02d74f8a88c2effe6e98067653b613817f29e6ede534cfe0bdb52e8b39fb2"
+    },
+    {
+      "path": "source/Avatar_02/Avatar_02_Fly.glb",
+      "bytes": 3645368,
+      "sha256": "7a02d60b22798476fd18b0107fdc7c4981e5ec2036278d6836a9c1de2714ac7d"
+    },
+    {
+      "path": "source/Avatar_02/Avatar_02_HandRaise.glb",
+      "bytes": 3670748,
+      "sha256": "028af2b70f8ef6d0a7bd8c6fd7fad5fccd909c27c2dccf4344777b50720a36ce"
+    },
+    {
+      "path": "source/Avatar_02/Avatar_02_Jump.glb",
+      "bytes": 3666660,
+      "sha256": "23c6b620155ae864c6ed4b1617b1dc726587896baacb09e1aa29d33b4861b15e"
+    },
+    {
+      "path": "source/Avatar_02/Avatar_02_Run.glb",
+      "bytes": 3633284,
+      "sha256": "356684fd754e4d1808304a4e42335b6f3c3c769ccb01d3de878f30c021823a32"
+    },
+    {
+      "path": "source/Avatar_02/Avatar_02_Sitting.glb",
+      "bytes": 3718948,
+      "sha256": "a2776835662e3f948c00eacceefa1ebb7a6883a912968b59cf85b2affccda1a4"
+    },
+    {
+      "path": "source/Avatar_02/Avatar_02_SittoStand.glb",
+      "bytes": 3669628,
+      "sha256": "2a27bed936ba7573460dbd8517b600e3cdb9f9b0217a3c79eaef17b84fed4d75"
+    },
+    {
+      "path": "source/Avatar_02/Avatar_02_Stand.glb",
+      "bytes": 3873928,
+      "sha256": "bc457db4aa2532cc06e91af3243bb4f0379978c7f1c9b5e231248102eac498b0"
+    },
+    {
+      "path": "source/Avatar_02/Avatar_02_StandtoSit.glb",
+      "bytes": 3669708,
+      "sha256": "2c2a70bb1722abba54f73eaba153388e5520639ec9cdc09f1b65e76ff8f10e31"
+    },
+    {
+      "path": "source/Avatar_02/Avatar_02_walk.glb",
+      "bytes": 3642516,
+      "sha256": "ef272f8fdeff4bf202e3b4e41cad0b248d84e494c560944d4436c39784211ae5"
+    },
+    {
+      "path": "source/Avatar_02/Meshy_AI_Yellow_Hoodie_Portrai_0809100414_texture.glb",
+      "bytes": 8125468,
+      "sha256": "07cb0b92a0489ec8e5399ba707a84ae542467c1ba3fdc9fb46fe7795c3ebaa42"
+    },
+    {
+      "path": "source/Avatar_02/Meshy_AI_Yellow_Hoodie_Portrai_0809120629_texture_obj.zip",
+      "bytes": 1101120,
+      "sha256": "65e3a73672cac7cddeaedc1dcc8382b4108e1fab0eef3ab9e9b6043e9d78e4a6"
+    },
+    {
+      "path": "source/Avatar_02/man-01-front.png",
+      "bytes": 1165426,
+      "sha256": "45aee2f82596785f4afc4e9e4c9d387b9a494f8049924e1034f37bd4d8bb8c24"
+    },
+    {
+      "path": "source/Avatar_03/Avatar_03_Complete_Animations.glb",
+      "bytes": 8455468,
+      "sha256": "1e47df2d73e1c155549d5f388dce6dd2dfd2403f6ac62a83c0d11d6ae1f610b1"
+    },
+    {
+      "path": "source/Avatar_03/Avatar_03_Complete_Animations_Updated.glb",
+      "bytes": 8657480,
+      "sha256": "bf16883394c2f968faa294e8debe02dc38ff8ba4aaf98d32319e025d8185540d"
+    },
+    {
+      "path": "source/Avatar_03/Avatar_03_Fly.glb",
+      "bytes": 8051768,
+      "sha256": "e691313e87a3ae02ab11d1b2fd89a7ce068000cd38163971a7833a4b0a6366f2"
+    },
+    {
+      "path": "source/Avatar_03/Avatar_03_HandRaise.glb",
+      "bytes": 8073164,
+      "sha256": "9489c9410c3057c2a5a9d2bdacf9209d178fb2e040fb5cba514223836bfe32c8"
+    },
+    {
+      "path": "source/Avatar_03/Avatar_03_Jump.glb",
+      "bytes": 8050828,
+      "sha256": "66767644ac13cd6f594941f8066cd8a58d073b9419bb38131b1ed22a75da7fcc"
+    },
+    {
+      "path": "source/Avatar_03/Avatar_03_Run.glb",
+      "bytes": 8033024,
+      "sha256": "0e48a20938729bf31c96dd7cb9f9ca3eee164b0271c6ffa7c21bcbb01c747520"
+    },
+    {
+      "path": "source/Avatar_03/Avatar_03_Sitting.glb",
+      "bytes": 8070956,
+      "sha256": "8984f23a225b759b2c9ea462ea043df9edbad7d26c61ea42c75bf2961647e421"
+    },
+    {
+      "path": "source/Avatar_03/Avatar_03_SittoStand.glb",
+      "bytes": 8054504,
+      "sha256": "5c3016df4c29de7de0f8e6d96982ee4d701488313167e5424ab43b34216bbe5d"
+    },
+    {
+      "path": "source/Avatar_03/Avatar_03_StandToSit.glb",
+      "bytes": 8060812,
+      "sha256": "25f77d86b1f62d84afc4f65170ab7734c5296d120a19f8bb1e80d2bbec644015"
+    },
+    {
+      "path": "source/Avatar_03/Avatar_03_Stans.glb",
+      "bytes": 8185352,
+      "sha256": "e79fc9de0db8074288db0a18175494dd456a84c1d39c3408ed3c6f4485fdc3b1"
+    },
+    {
+      "path": "source/Avatar_03/Avatar_03_walk.glb",
+      "bytes": 8036616,
+      "sha256": "69591f7f2eecec0f436b3bb2b214c05a73998e465fe65a2ae321be1760c9b9d7"
+    },
+    {
+      "path": "source/Avatar_03/Meshy_AI_Lilac_Sweatshirt_Port_0809081014_texture_obj (1).zip",
+      "bytes": 1717087,
+      "sha256": "21b607f3eb8adb08ec8ea04610ade38f6076241db9e07905a1b0ce7a80f3dbff"
+    },
+    {
+      "path": "source/Avatar_03/man-04-back.png",
+      "bytes": 1246669,
+      "sha256": "7d0f90d69c822c1abe521e1c8e35cedbcf3f80eb6145adedf79d86a969ff9e3a"
+    },
+    {
+      "path": "source/Avatar_03/man-04-front.png",
+      "bytes": 1180601,
+      "sha256": "bf534a152893bb2040ba517cfee75040f243482d48a9b162f7f2c3ce16956fc6"
+    },
+    {
+      "path": "source/Avatar_04/Avatar_04_Complete_Animations.glb",
+      "bytes": 4769904,
+      "sha256": "e9802eebdd9a926fd7ed33b65f781065e34e5f48ae06f0b5ff2eb40eb1332e47"
+    },
+    {
+      "path": "source/Avatar_04/Avatar_04_Fly.glb",
+      "bytes": 4405588,
+      "sha256": "b4effebb9e65bc111b38bceafe2a5b4f01ce86da2ad2b9016ef8a0dcf10be20a"
+    },
+    {
+      "path": "source/Avatar_04/Avatar_04_HandRaise.glb",
+      "bytes": 4433976,
+      "sha256": "1b62c56bd16c4564084968905434787f59d89012d5d8465604f762d668d7a5bc"
+    },
+    {
+      "path": "source/Avatar_04/Avatar_04_Jump.glb",
+      "bytes": 4402828,
+      "sha256": "87c6f29796596947ca7b8bee5cf832536174ab23136360d64b6116d76fcef47b"
+    },
+    {
+      "path": "source/Avatar_04/Avatar_04_Run.glb",
+      "bytes": 4387868,
+      "sha256": "9039d7f3819d978c1193883314a5d7debf4c1c09cfe90e936ea4128aa6c7a469"
+    },
+    {
+      "path": "source/Avatar_04/Avatar_04_Sitting.glb",
+      "bytes": 4424064,
+      "sha256": "ca34e30ac6cd9b905b5dc30045f638fe73e4a1bae0fc63f5a55a3f9f82f03b99"
+    },
+    {
+      "path": "source/Avatar_04/Avatar_04_SittoStand.glb",
+      "bytes": 4407016,
+      "sha256": "d1ca4600641071864b89cbeb27834e603420ddb17ffebaccfcfff2bd6cdb6014"
+    },
+    {
+      "path": "source/Avatar_04/Avatar_04_Stand.glb",
+      "bytes": 4532276,
+      "sha256": "9b25ab59b5fde7ff989d61fc65d57830ed85ee4fe7ffe203de6debda9c1c02fe"
+    },
+    {
+      "path": "source/Avatar_04/Avatar_04_StandToSit.glb",
+      "bytes": 4404512,
+      "sha256": "7caaea9f7d58421687d3f71f81d75ad49568435b98c8b2f580b19cdb8ddd88cd"
+    },
+    {
+      "path": "source/Avatar_04/Avatar_04_Walk.glb",
+      "bytes": 4391728,
+      "sha256": "149fb5a17f77d76bc501556d1d9c07bac1c8a7b8f5662ab0894e3f0a5c4af68d"
+    },
+    {
+      "path": "source/Avatar_04/Meshy_AI_Burgundy_Sweater_Port_0809132949_texture_obj.zip",
+      "bytes": 3467027,
+      "sha256": "a15ffc21103c06132eb90e2ddb869f07226881373969743a07eeb66d4c50a3bc"
+    },
+    {
+      "path": "source/Avatar_04/senior-professor-04-age-48-back.png",
+      "bytes": 1537187,
+      "sha256": "44d0e16dc4e8868b7e6f1e742b044cc6b73d2d2a727e97f1056a85379dbbdbca"
+    },
+    {
+      "path": "source/Avatar_04/senior-professor-04-age-48-front.png",
+      "bytes": 1639053,
+      "sha256": "03f342e2e6ce29c467332297eb4819b9dd21954d6b1ef150538d245b357e9f04"
+    },
+    {
+      "path": "source/Avatar_05/man-03-back.png",
+      "bytes": 1223372,
+      "sha256": "9189db04b640df8e8c9566325dfee1bc5da0958dc818c6aefa2f81fe61123fe5"
+    },
+    {
+      "path": "source/Avatar_05/man-03-front.png",
+      "bytes": 1170477,
+      "sha256": "eb1520bb77ddc2c146ef65536cb0289a2c884a7f3e6374741be7d86d2bc50ff2"
+    },
+    {
+      "path": "source/Avatar_05/man-03-seRob.png",
+      "bytes": 1572027,
+      "sha256": "736afd88f0129f2fba51e41d476f7ed79c8abe754d9a9613d8815b87dd879ac1"
+    },
+    {
+      "path": "source/Avatar_05/man-03-side.png",
+      "bytes": 1502872,
+      "sha256": "21d666bfdae98cbced24e62119d37ef63e9d00d22eb2c866ed3393c954af574f"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/SKILL.md",
+      "bytes": 5920,
+      "sha256": "521cab2595ba3cc46d45efa7b95c03fed8818e893e9a9877b8b76fbc043d959b"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-backend.md",
+      "bytes": 14715,
+      "sha256": "01a34713366517221e6f6af6d9ee56503b9016c44011e2d7b3070199e9d42943"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-bundles.md",
+      "bytes": 8037,
+      "sha256": "57056cd866f5bb1db8a73a6222c9e17e67d68c867f84960fb4ae5a379c13dede"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-companions.md",
+      "bytes": 2124,
+      "sha256": "19a694ae74e9ef33e14ed077ab53ce157dab89df4c52b2da843de11b81ca236c"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-development.md",
+      "bytes": 4244,
+      "sha256": "aba0f60de4158e34e781cfe335676c3121511a419ec989c2c47efe044545ff49"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-groups.md",
+      "bytes": 24874,
+      "sha256": "8674f7a3355b911469f29e50f3cbf13b6b8d491cffe67f2dc256a9d7ee92ec68"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-hampa.md",
+      "bytes": 23250,
+      "sha256": "6c0a6265976e7e120539b702e7ebd635574562c4c9aa3b69562469f4820d649d"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-notifications.md",
+      "bytes": 7364,
+      "sha256": "49f3b1c1f3819e5a982875c206351c463dfacbf24ab81097468328ab3ff99a61"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-plugins.md",
+      "bytes": 13030,
+      "sha256": "87c2be99fd56901f91743ba23e8fb1d5368385676b2b116ea7123fcebfe1a22b"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-publishing.md",
+      "bytes": 5863,
+      "sha256": "dcdf78e9539eb9e8c1cfbf99c68f1527f0cc703a7751d9e556a0e69557132e4f"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-runtime.md",
+      "bytes": 7163,
+      "sha256": "1cbe72b980f4edd14cf6aa19f970def32aaad630db673f61af9918a7f9586036"
+    },
+    {
+      "path": "آواتار/.gitignore",
+      "bytes": 162,
+      "sha256": "5127dcfc15ed75c417f2b62521e9f948adf8417ec7c5ca1525ab3751a3ed763f"
+    },
+    {
+      "path": "آواتار/AGENTS.md",
+      "bytes": 2525,
+      "sha256": "ccadca930e0c127ce4c14215f3aaa86e8b311e5b878c63e5fdd574b96959d31b"
+    },
+    {
+      "path": "آواتار/CLAUDE.md",
+      "bytes": 35,
+      "sha256": "b2872e43c658a41ef03322fa6d81e5717e4f46549613f67abcf3f8c5e0ea5171"
+    },
+    {
+      "path": "آواتار/README.md",
+      "bytes": 5559,
+      "sha256": "2c4f600d5541ea7e1d9bcd34040a7b40fbe0812b1b7e56a1e712a3f86a90f002"
+    },
+    {
+      "path": "آواتار/al-amr.plugin.json",
+      "bytes": 1915,
+      "sha256": "c93791c9cd411a964e149dfa3c3b2472f55bb753d5e5fbe4f2b367a6256eee9e"
+    },
+    {
+      "path": "آواتار/alamr.d.ts",
+      "bytes": 56486,
+      "sha256": "f44fff1d1fd548ad027400a3c9afbab45388e28031ebefc927745db319b4a7e4"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar03-texture.png",
+      "bytes": 6287128,
+      "sha256": "5344ec24daf8cbc7a9ef08eb2549f2b0084f96283c83dfa1daa9e0e8f7acc822"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar03.glb",
+      "bytes": 8657480,
+      "sha256": "bf16883394c2f968faa294e8debe02dc38ff8ba4aaf98d32319e025d8185540d"
+    },
+    {
+      "path": "آواتار/dist/index.d.ts",
+      "bytes": 1449,
+      "sha256": "40a422ab1e9a65e5ac264d47ced5bf4275b5741711a1d38cc6f5a93f114f8076"
+    },
+    {
+      "path": "آواتار/dist/index.js",
+      "bytes": 3100,
+      "sha256": "103bd382aefbd3a6f199c71b3585377bce9f1698f5cf6679f0f372feb87784ce"
+    },
+    {
+      "path": "آواتار/dist/index.js.map",
+      "bytes": 3387,
+      "sha256": "b2911f284561c59ae859618a207c12dc3f8f7973db85cf6a8db706a2ae241dfd"
+    },
+    {
+      "path": "آواتار/dist/model.d.ts",
+      "bytes": 791,
+      "sha256": "c067ee0d306818ea400f85c56bf7731d0b0507c86a62d0c11ff50b6119fdfed3"
+    },
+    {
+      "path": "آواتار/dist/model.js",
+      "bytes": 2838,
+      "sha256": "e3165d7a5cd939105099ebfd9dfc89b66a24d4d11fc639baf541ef79df9d5648"
+    },
+    {
+      "path": "آواتار/dist/model.js.map",
+      "bytes": 2853,
+      "sha256": "1306e786e3deba18ca53533103676b5a2c403cc7833ae028b3cdbfcb363af378"
+    },
+    {
+      "path": "آواتار/dist/motion.d.ts",
+      "bytes": 1437,
+      "sha256": "1771a75c2361dd81fcc564d5d27faa4e53f202d186cf740fc9023b759fe96744"
+    },
+    {
+      "path": "آواتار/dist/motion.js",
+      "bytes": 3869,
+      "sha256": "0fd63f7f8b955de31b92367af1188e428a9390e034120a7801979ddc93eb2cee"
+    },
+    {
+      "path": "آواتار/dist/motion.js.map",
+      "bytes": 4479,
+      "sha256": "961a92cb1b64cca3acdb1d14d370d24fdff57118989ce74f490344a01c8e4275"
+    },
+    {
+      "path": "آواتار/integration.md",
+      "bytes": 2981,
+      "sha256": "753d108dfaae2922641a01ea95aace89e64b1e72a7ff065192d694c93287dd3c"
+    },
+    {
+      "path": "آواتار/package-lock.json",
+      "bytes": 12351,
+      "sha256": "97d9454e5657bc0d04602214d5efb00f392e051ed745f72241ab6c81ac967480"
+    },
+    {
+      "path": "آواتار/package.json",
+      "bytes": 959,
+      "sha256": "74a77d8c7c34ba5396d1d963209c4c86a67fead7be141687bbcb6333cc39d14e"
+    },
+    {
+      "path": "آواتار/plugin-icon.png",
+      "bytes": 14173,
+      "sha256": "7b8f3157b099079d21fb30e3dff6cd1081662e1430cf951f1ef698a6f8db495c"
+    },
+    {
+      "path": "آواتار/scripts/copy-assets.mjs",
+      "bytes": 1489,
+      "sha256": "2a48828755dd7ca2b42e5c668b22b0defd63675793309bfa6dabeaedc7d978e7"
+    },
+    {
+      "path": "آواتار/src/index.tsx",
+      "bytes": 3910,
+      "sha256": "f6bad6b760eee2da9b6f53633a10ef9b8e11e50a49c6fb5e7a40351ca34b6a74"
+    },
+    {
+      "path": "آواتار/src/model.ts",
+      "bytes": 2763,
+      "sha256": "31c119bbbcf394a6c4b03a7b7cd4d16a51af40e8dfc5993b4b41d9a2f755ad72"
+    },
+    {
+      "path": "آواتار/src/motion.ts",
+      "bytes": 4423,
+      "sha256": "27a143edc5bcfdbf99ae133f12d23093658750a78c4d4ac1439f8f5246cb87d0"
+    },
+    {
+      "path": "آواتار/tests/model.test.mjs",
+      "bytes": 2559,
+      "sha256": "0e703ab65cf842f313c0abe4ab8d0d0b7c0d3a3dbefbb23b7883195a28aff89b"
+    },
+    {
+      "path": "آواتار/tests/motion.test.mjs",
+      "bytes": 2235,
+      "sha256": "51c2650ad09e86393f55b6239991f6b0ae03922d0833a71d6742d5348dcbf941"
+    },
+    {
+      "path": "آواتار/tsconfig.json",
+      "bytes": 272,
+      "sha256": "3912d3340d55bcf77fe2da983a8087799b07513635a9b744fdf64e7f9a90846d"
+    }
+  ]
+}

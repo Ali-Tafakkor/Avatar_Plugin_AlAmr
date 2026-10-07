@@ -1,0 +1,119 @@
+[
+  null,
+  {
+    "schemaVersion": "1",
+    "command": "preview",
+    "ok": true,
+    "code": "ALAMR_PREVIEW_OBSERVED",
+    "exitCode": 0,
+    "message": "Preview pv_f8c87f5ee93b465f8f99801b558b5a88: ready, connection connected.",
+    "diagnostics": [],
+    "nextActions": [],
+    "artifacts": [
+      {
+        "kind": "image",
+        "label": "Actual preview capture",
+        "path": "C:\\Users\\alita\\AppData\\Roaming\\al-amr\\preview-captures\\pv_f8c87f5ee93b465f8f99801b558b5a88.jpg"
+      }
+    ],
+    "data": {
+      "previewId": "pv_f8c87f5ee93b465f8f99801b558b5a88",
+      "product": {
+        "kind": "environment",
+        "id": "env_local_4687eee72579",
+        "revisionId": null
+      },
+      "buildDigest": "sha256:c9d1b2d94124fc3294029783466263bca414b6d018049b33848214fc22a74b5a",
+      "state": "ready",
+      "scenario": {
+        "name": "reconnect",
+        "sequence": 2,
+        "evidence": "simulated"
+      },
+      "diagnostics": [
+        {
+          "requestId": "r1",
+          "method": "runtime.painting",
+          "code": "ok"
+        },
+        {
+          "requestId": "r2",
+          "method": "runtime.ready",
+          "code": "ok"
+        }
+      ],
+      "permissions": {
+        "capabilities": [
+          {
+            "id": "platform.environment.identity.read@1",
+            "available": true,
+            "granted": false
+          },
+          {
+            "id": "host.spatial.context.read@1",
+            "available": true,
+            "granted": false
+          },
+          {
+            "id": "host.spatial.locations.read@1",
+            "available": true,
+            "granted": false
+          },
+          {
+            "id": "host.spatial.location.capture@1",
+            "available": true,
+            "granted": false
+          }
+        ]
+      },
+      "runtime": {
+        "info": {
+          "runtimeApi": "1.0.0",
+          "product": {
+            "kind": "environment",
+            "id": "env_local_4687eee72579",
+            "revisionId": null
+          },
+          "documentId": "env:env_preview_f8c87f5ee93b465f8f99801b558b5a88:5",
+          "mode": "preview",
+          "evidence": "client",
+          "operations": [
+            "runtime.progress",
+            "runtime.painting",
+            "location.list",
+            "location.capture",
+            "runtime.info",
+            "runtime.status",
+            "runtime.ready",
+            "runtime.fail",
+            "identity.get",
+            "permissions.list",
+            "permissions.request",
+            "location.context"
+          ],
+          "callbacks": [
+            "environment.beforeExit"
+          ]
+        },
+        "status": {
+          "connection": "connected",
+          "content": "ready",
+          "context": {
+            "generation": 0,
+            "environmentId": null,
+            "revisionId": null
+          }
+        }
+      },
+      "capture": {
+        "path": "C:\\Users\\alita\\AppData\\Roaming\\al-amr\\preview-captures\\pv_f8c87f5ee93b465f8f99801b558b5a88.jpg",
+        "width": 1902,
+        "height": 1058
+      }
+    },
+    "meta": {
+      "cliVersion": "1.0.0",
+      "elapsedMs": 56
+    }
+  }
+]

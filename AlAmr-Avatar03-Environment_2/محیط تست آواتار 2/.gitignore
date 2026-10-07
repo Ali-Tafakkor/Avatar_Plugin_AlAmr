@@ -1,0 +1,10 @@
+node_modules
+.env
+node_modules
+.al-amr/*.tmp
+.al-amr/workflows/
+.al-amr/plans/
+.al-amr/processes/
+.al-amr/secrets/
+.al-amr/agent/
+.al-amr/plugin-transaction.json

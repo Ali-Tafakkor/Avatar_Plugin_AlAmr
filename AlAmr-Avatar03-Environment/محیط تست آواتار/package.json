@@ -1,0 +1,15 @@
+{
+  "name": "alamr-avatar03-test-environment",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "npm@11.9.0",
+  "dependencies": {
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "three": "0.185.1",
+    "@react-three/fiber": "9.6.1",
+    "@react-three/drei": "10.7.7",
+    "@al-amr-community/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig": "https://new-registry.al-amr.com/v1/packages/sha512/d025483d83637d22f55114229a5a843d409ca247288aa9e5f1b4a886d5b10c8a73eecddcf5e71f886c2dea4df2d2c751e773071c5b6cc204a047833f0b231679.tgz"
+  }
+}

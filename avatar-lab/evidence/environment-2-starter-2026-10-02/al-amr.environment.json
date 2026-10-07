@@ -1,0 +1,31 @@
+{
+  "contractVersion": "1.0.0",
+  "runtimeApi": "^1.0.0",
+  "environmentId": "env_local_e3b86b742249",
+  "name": "محیط تست آواتار 2",
+  "shortDescription": "محیط تست پلاگین آواتار نسخه 2",
+  "category": "custom",
+  "localizations": {},
+  "entry": {
+    "kind": "bundle",
+    "version": "0.1.0"
+  },
+  "portal": {
+    "title": "محیط تست آواتار 2",
+    "blurb": "محیط تست پلاگین آواتار نسخه 2",
+    "art": {
+      "imageUrl": "environment-cover.jpg",
+      "alt": "محیط تست آواتار 2"
+    },
+    "visibility": "private"
+  },
+  "capabilities": [
+    "identity",
+    "presence"
+  ],
+  "notifications": {
+    "eventTypes": [],
+    "audience": "none"
+  },
+  "plugins": []
+}

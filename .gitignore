@@ -1,0 +1,25 @@
+# Dependencies and local tooling
+**/node_modules/
+/.uv-cache/
+/.uv-tools/
+**/.claude/
+**/__pycache__/
+*.pyc
+*.tsbuildinfo
+*.log
+*.tmp
+Thumbs.db
+.DS_Store
+
+# Local sessions and credentials; preserve exact installed Plugin documentation
+**/.al-amr/*
+!**/.al-amr/docs/
+**/.env
+**/.env.*
+!**/.env.example
+**/.npmrc
+*.pem
+*.key
+
+# Built bundles are deliberately retained in the v1 baseline.
+# Environment 2 contains a delivered scene that its cover-only build cannot recreate.

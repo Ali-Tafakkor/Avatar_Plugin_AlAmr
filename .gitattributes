@@ -1,0 +1,7 @@
+# Preserve the exact bytes of the baseline, including delivered JS/HTML bundles.
+* -text
+*.glb binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.zip binary
