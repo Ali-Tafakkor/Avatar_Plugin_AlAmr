@@ -1,6 +1,6 @@
 # نقطهٔ شروع ایجنت بعدی — Web V2
 
-به‌روزرسانی: ۲۰۲۶/۱۰/۱۹، تهران. نتیجهٔ تصویری در ۱۷ اکتبر پذیرفته شد. مالک در ۱۹ اکتبر ثبت و ارسال همین نسخه به GitHub و تکمیل مستندات را خواست؛ وضعیت واقعی ارسال در ابتدای PROJECT_HANDOFF.md و رسید Git ثبت می‌شود.
+به‌روزرسانی: ۲۰۲۶/۱۰/۱۹، تهران. نسخهٔ پذیرفته‌شده و مستندات روی شاخهٔ `avatar-v2` به GitHub ارسال شدند. commit کد `c5579341709a58d30f6519a158663f6c9bcfea4a` با read-back سرور تأیید شد. commit بعدی، رسید و تحویل نهایی را نگه می‌دارد؛ HEAD را از خود Git بخوانید.
 
 ## ابتدا چه بخوانید
 
@@ -15,7 +15,7 @@
 | --- | --- |
 | `آواتار/` | Plugin اصلیِ قابل ساخت و انتخاب در الامر؛ نسخهٔ فنی `0.1.1` |
 | `avatar-lab/` | میزبان فعلی مقایسهٔ V1 و V2؛ خروجی پذیرفته‌شده در `dist` |
-| `releases/avatar-web-v2-0.1.1/` | کپی قابل انتقال Plugin و میزبان؛ در تحویل ۱۹ اکتبر با مقایسه هماهنگ می‌شود |
+| `releases/avatar-web-v2-0.1.1/` | کپی قابل انتقال Plugin و میزبان؛ در تحویل ۱۹ اکتبر با مقایسه هماهنگ شد |
 | `Avatar_V2_WebBase/AvatarRuntime/` | مرجع استخراج خصوصی/محلی؛ میزبان فعلی از Plugin اصلی استفاده می‌کند |
 | `Avatar_V2_WebBase/AvatarMotionLab/` | ورودی اصلی مالک؛ کد آن حفظ شده و cache مدل/vendor آن وارد Git نمی‌شود |
 | `source/` و `AlAmr-Avatar03-Environment_2/` | منابع اصلی چهار آواتار و محیط تحویل‌شده؛ تغییر ندهید |
@@ -50,7 +50,7 @@ npm --prefix './avatar-lab' run build
 
 ## Git و نسخه‌ها
 
-شاخهٔ این نسخه `avatar-v2` و مقصد `https://github.com/Ali-Tafakkor/Avatar_Plugin_AlAmr.git` است. `main` و tag `v1.0.0` مبنای V1 هستند. دستور ۱۹ اکتبر، مجوز commit/push همین مرحله است و منع محلی قبلی را برای Git رفع می‌کند. در این تحویل main، tagهای قبلی و Registry الامر تغییر نمی‌کنند. رسید و SHA کد پس از read-back سرور در `docs/releases/v2.0/git-handoff/git-publication-2026-10-19.json` ثبت می‌شوند؛ HEAD فعلی را با `git log -1` بررسی کنید.
+شاخهٔ این نسخه `avatar-v2` و مقصد `https://github.com/Ali-Tafakkor/Avatar_Plugin_AlAmr.git` است. commit کد `c557934` روی سرور تأیید شده و upstream شاخه `origin/avatar-v2` است. `main` و tag `v1.0.0` روی refهای V1 باقی ماندند. دستور ۱۹ اکتبر، مجوز commit/push همین مرحله بود و منع محلی قبلی را برای Git رفع کرد. Registry الامر در این تحویل تغییر نکرد. [رسید read-back](docs/releases/v2.0/git-handoff/git-publication-2026-10-19.json) مرجع ارسال کد است؛ HEAD فعلی را با `git log -1` بررسی کنید.
 
 نسخهٔ فنی Plugin `0.1.1`، نسخهٔ میزبان تست `0.1.0` و `contractVersion` برابر `1.0.0` است. «نسخهٔ محصول دوم» به معنی `2.0.0` در manifest نیست. شماره را برای clone، build یا Git push بالا نبرید. قبل از upload آینده، تاریخچهٔ مصرف نسخه و وضعیت حساب بررسی شود؛ GitHub و Registry دو مسیر مستقل‌اند.
 

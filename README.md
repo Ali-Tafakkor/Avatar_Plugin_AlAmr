@@ -31,7 +31,7 @@ V بین دو آواتار جابه‌جا می‌شود؛ R هر دو را با
 
 ۲۳ آزمون Plugin و ۸ آزمون میزبان و اجرای واقعی آخرین ساخت در ۱۷ اکتبر موفق‌اند. مالک تست بیشتر را لازم ندانست. این شواهد مربوط به همان تاریخ‌اند؛ برای ارسال Git، تست نمایشی تازه اجرا نمی‌شود.
 
-مقصد Git، شاخهٔ `avatar-v2` در [Avatar_Plugin_AlAmr](https://github.com/Ali-Tafakkor/Avatar_Plugin_AlAmr) است. وضعیت commit/push و رسید سرور در [گزارش تحویل](PROJECT_HANDOFF.md) ثبت می‌شود. `main` و tag `v1.0.0` مرجع نسخهٔ اول هستند. Git push، انتشار Registry الامر نیست.
+نسخهٔ فعلی به شاخهٔ [avatar-v2 در GitHub](https://github.com/Ali-Tafakkor/Avatar_Plugin_AlAmr/tree/avatar-v2) ارسال شد. commit کد `c557934` با read-back سرور تأیید شده؛ [گزارش تحویل](PROJECT_HANDOFF.md) و [رسید Git](docs/releases/v2.0/git-handoff/git-publication-2026-10-19.json) مرجع‌اند. `main` و tag `v1.0.0` مرجع نسخهٔ اول باقی ماندند. Git push، انتشار Registry الامر نیست.
 
 پوشهٔ انتخاب Plugin در الامر **`آواتار`** است؛ Environment نمونه جایگزین آن نیست. [گزارش آماده‌سازی](AVATAR_V2_RELEASE_PREPARATION_FA.md) و [راهنمای تحویل مستقل](releases/avatar-web-v2-0.1.1/README_FA.md) جزئیات را دارند. نسخهٔ محصول دوم، نسخهٔ فنی `0.1.1` و قرارداد `1.0.0` مفاهیم جدا هستند.
 

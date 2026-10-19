@@ -15,8 +15,8 @@
     },
     {
       "path": "AVATAR_COMPARISON_TEST_FA.md",
-      "bytes": 6353,
-      "sha256": "cb35f3c60e25c723e3f0f2820755a60844d48a505c0495b2bd8a407f5eae884a"
+      "bytes": 6297,
+      "sha256": "85b6e8cc9d82ca0bc59a832cbfb23753eebd66b32c92bcb5371b719eac7f6395"
     },
     {
       "path": "Open-Avatar-Lab.cmd",
@@ -25,8 +25,8 @@
     },
     {
       "path": "README_FA.md",
-      "bytes": 5084,
-      "sha256": "e2ef15007699bc085a2c449366f5d16fe9968d1a5c3962996c3fe866eff8aa97"
+      "bytes": 5205,
+      "sha256": "ad4214ad06ae69f75ac36acb84fba8c5735bf2684934cd849579cf651d7e311b"
     },
     {
       "path": "avatar-lab/.agents/skills/al-amr/SKILL.md",
@@ -277,6 +277,11 @@
       "path": "verification/comparison-acceptance.json",
       "bytes": 544,
       "sha256": "23d57a387dbb75ce3ac3aab01be65adf5c61dc38f0158959942cf67e67ca68aa"
+    },
+    {
+      "path": "verification/git-publication-2026-10-19.json",
+      "bytes": 1227,
+      "sha256": "2bd66d7c8a2efcad318654585a900fd9047c97efedbe91ba0cfeb4534d0264a5"
     },
     {
       "path": "verification/host-tests.json",

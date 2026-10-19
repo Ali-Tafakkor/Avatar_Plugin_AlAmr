@@ -1,0 +1,24 @@
+{
+  "format": 1,
+  "clientDate": "2026-10-19",
+  "repository": "https://github.com/Ali-Tafakkor/Avatar_Plugin_AlAmr.git",
+  "branch": "avatar-v2",
+  "codeCommit": "c5579341709a58d30f6519a158663f6c9bcfea4a",
+  "remoteCodeCommitVerified": true,
+  "serverRefsAtCodeReadback": {
+    "refs/heads/avatar-v2": "c5579341709a58d30f6519a158663f6c9bcfea4a",
+    "refs/heads/main": "d57b8d56616e372521f0a348f09d384b7a84b5e4",
+    "refs/tags/v1.0.0": "7c5e1cc9d07f50d9085b0d6593e94683b0340476",
+    "refs/tags/v1.0.0^{}": "d57b8d56616e372521f0a348f09d384b7a84b5e4"
+  },
+  "mainAndV1TagPreserved": true,
+  "acceptedRuntimeEvidenceDate": "2026-10-17",
+  "acceptedRuntimePreviewId": "pv_c8063d95e1664f7180d0cb11bc5111f7",
+  "acceptedRuntimeBuildDigest": "sha256:1c6f987f0ae967bb4a975d4d64513f4511a764af5588ecec2d2f880ff863ce02",
+  "runtimeTestsRerunForThisGitHandoff": false,
+  "registryOperationsRunForThisGitHandoff": false,
+  "documentationCommit": "The subsequent commit containing this receipt and final handoff records; inspect Git HEAD for its hash.",
+  "evidencePathsAreRepositoryRelative": true,
+  "staticAudit": "docs/releases/v2.0/git-handoff/git-audit.json",
+  "deliverySync": "docs/releases/v2.0/git-handoff/delivery-sync.json"
+}

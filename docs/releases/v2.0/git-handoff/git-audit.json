@@ -1,9 +1,9 @@
 {
   "clientDate": "2026-10-19",
   "scope": "Static packaging/documentation/Git-content checks; no runtime test executed",
-  "candidateFiles": 697,
-  "removedTrackedFiles": 2,
-  "totalBytes": 449134957,
+  "candidateFiles": 699,
+  "removedTrackedFiles": 0,
+  "totalBytes": 449138267,
   "largestFiles": [
     {
       "path": "Avatar_V2_WebBase/AvatarRuntime/assets/avatar.glb",

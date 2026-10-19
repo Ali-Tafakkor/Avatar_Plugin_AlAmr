@@ -38,6 +38,6 @@ npm --prefix './avatar-lab' run build
 
 فایل `verification/portable-copy.json` فقط بازتولید مستقلِ میزبان تک‌آواتارِ پیش از مقایسه و ۲۵ آزمون آن مرحله را اثبات می‌کند؛ نتیجهٔ تازهٔ نصب مستقل میزبان مقایسه نیست. کپی فعلی با منبع پذیرفته‌شده و inventory تطبیق داده می‌شود.
 
-node_modules، حساب، token و وضعیت محلی `.al-amr` در تحویل نیستند؛ فقط مستندات عمومی نسخهٔ دقیق Player Rig حفظ شده‌اند. رسید ارسال Git پس از read-back سرور در `verification/git-publication-2026-10-19.json` قرار می‌گیرد. inventory وضعیت فایل‌ها را ثبت می‌کند و جای رسید Git یا Registry نیست.
+node_modules، حساب، token و وضعیت محلی `.al-amr` در تحویل نیستند؛ فقط مستندات عمومی نسخهٔ دقیق Player Rig حفظ شده‌اند. commit کد `c557934` به avatar-v2 در GitHub ارسال و از سرور تطبیق داده شد. رسید در `verification/git-publication-2026-10-19.json` است؛ commit بعدی رسید و اسناد نهایی را نگه می‌دارد. inventory وضعیت فایل‌ها را ثبت می‌کند و جای رسید Git یا Registry نیست.
 
 MIT برای کد برنامه/adapter است. دارایی‌های مدل، بافت و motion حقوق جداگانه دارند؛ [LICENSE](آواتار/LICENSE) و [THIRD_PARTY_NOTICES](آواتار/THIRD_PARTY_NOTICES.md) را رعایت کنید. این تحویل مجوز تازه‌ای برای دارایی‌ها ایجاد نمی‌کند.
