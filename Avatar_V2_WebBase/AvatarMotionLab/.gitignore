@@ -1,0 +1,7 @@
+assets/avatar.glb
+assets/motions.json
+assets/provenance.json
+vendor/*
+!vendor/.gitkeep
+.cache/
+*.part

@@ -1,0 +1,171 @@
+[
+  {
+    "result": {
+      "result": "موفق: کفش و زانو، راه‌رفتن، دویدن، پرش، ۶ حالت صورت و پلک",
+      "phase": "آمادهٔ بررسی شما",
+      "checks": {
+        "feet": {
+          "left": {
+            "ankle": [
+              -0.19410039583025637,
+              0.07422910670037008,
+              0.02491684311742885
+            ],
+            "soleMinY": -3.912812774817694E-09,
+            "soleMaxY": 0.01115376100146695,
+            "heelY": 0.0008007147845167473,
+            "toeY": -3.912812774817694E-09,
+            "normal": [
+              4.981847582846659E-07,
+              0.9999999999998741,
+              -5.97952256893578E-08
+            ],
+            "rollDeg": 2.87456336695005E-05,
+            "pitchDeg": 4.2359766624224815E-07,
+            "rootRollDeg": -2.854388406745766E-05,
+            "sampleCount": 199
+          },
+          "right": {
+            "ankle": [
+              0.2002301820337299,
+              0.07422913423474303,
+              0.018808776048631536
+            ],
+            "soleMinY": -1.1801874270558055E-10,
+            "soleMaxY": 0.011153768930445085,
+            "heelY": 0.0008007432864346883,
+            "toeY": -1.1801874270558055E-10,
+            "normal": [
+              -9.624421488999379E-07,
+              0.9999999999995336,
+              -8.002541926950295E-08
+            ],
+            "rollDeg": -5.5321064670275646E-05,
+            "pitchDeg": -1.204103302283964E-06,
+            "rootRollDeg": 5.514387315747667E-05,
+            "sampleCount": 199
+          }
+        },
+        "walk": {
+          "distance": 5.189512499973186,
+          "speed": 2.25
+        },
+        "run": {
+          "distance": 14.229895833333332,
+          "speed": 6.200000000000001
+        },
+        "knees": {
+          "walk": {
+            "frames": 337,
+            "minimumFlex": 13.26719683227778,
+            "maximumFlex": 75.07643464883668,
+            "backwardFrames": 0,
+            "maximumPlaneDeviation": 10.588030629055478
+          },
+          "run": {
+            "frames": 284,
+            "minimumFlex": 23.989176878927157,
+            "maximumFlex": 125.00002500102269,
+            "backwardFrames": 0,
+            "maximumPlaneDeviation": 9.691155813670276
+          }
+        },
+        "jump": true,
+        "facePresets": 6,
+        "blink": {
+          "leftClosure": 1,
+          "rightClosure": 0.98,
+          "leftMeshClosure": 1,
+          "rightMeshClosure": 0.98
+        }
+      },
+      "errors": [],
+      "renderer": "bre",
+      "frames": 1325,
+      "runtime": "ready"
+    },
+    "script": "index-i32M4wza.js",
+    "previewId": "pv_3631cb87ae2548869ce340afd34a6e17"
+  },
+  {
+    "result": {
+      "result": "ناموفق: face_distinct",
+      "phase": "آزمون متوقف شد",
+      "checks": {
+        "feet": {
+          "left": {
+            "ankle": [
+              -0.19412072576421147,
+              0.07422910669455046,
+              0.02472258702674315
+            ],
+            "soleMinY": -3.898721104735883E-09,
+            "soleMaxY": 0.011153760997695923,
+            "heelY": 0.0008007147764076576,
+            "toeY": -3.898721104735883E-09,
+            "normal": [
+              4.989101144502521E-07,
+              0.9999999999998738,
+              -5.98229259083377E-08
+            ],
+            "rollDeg": 2.8787131744955915E-05,
+            "pitchDeg": 4.2083189061720254E-07,
+            "rootRollDeg": -2.8585443914389546E-05,
+            "sampleCount": 199
+          },
+          "right": {
+            "ankle": [
+              0.20021340965640166,
+              0.07422913420324911,
+              0.018610462581963402
+            ],
+            "soleMinY": -1.1947310834326746E-10,
+            "soleMaxY": 0.011153768892395895,
+            "heelY": 0.0008007432658516259,
+            "toeY": -1.1947310834326746E-10,
+            "normal": [
+              -9.624568266906304E-07,
+              0.9999999999995336,
+              -8.004957550894965E-08
+            ],
+            "rollDeg": -5.5322045711462423E-05,
+            "pitchDeg": -1.202814739560996E-06,
+            "rootRollDeg": 5.514471413293593E-05,
+            "sampleCount": 199
+          }
+        },
+        "walk": {
+          "distance": 5.17263749997318,
+          "speed": 2.25
+        },
+        "run": {
+          "distance": 14.326615833481151,
+          "speed": 6.200000000000001
+        },
+        "knees": {
+          "walk": {
+            "frames": 332,
+            "minimumFlex": 13.259964525801125,
+            "maximumFlex": 76.90324803126728,
+            "backwardFrames": 0,
+            "maximumPlaneDeviation": 10.414340680188475
+          },
+          "run": {
+            "frames": 286,
+            "minimumFlex": 23.990113975252218,
+            "maximumFlex": 125.00002446635891,
+            "backwardFrames": 0,
+            "maximumPlaneDeviation": 9.702516901243278
+          }
+        },
+        "jump": true
+      },
+      "errors": [],
+      "renderer": "WebGPU",
+      "frames": 1116,
+      "runtime": "ready"
+    },
+    "script": "index-CsqMLoVf.js",
+    "previewId": "pv_a12297b3c19e46aaaa764980e6b6e5f9"
+  }
+]

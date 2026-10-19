@@ -8,8 +8,8 @@
   },
   "slug": "avatar03",
   "name": "آواتار ۳",
-  "version": "0.1.0",
-  "shortDescription": "مدل متحرک آواتار ۳ برای اتصال به کنترل حرکت محیط‌های الامر",
+  "version": "0.1.1",
+  "shortDescription": "آواتار وب با حرکت ورزشی، اصلاح پا و زانو و ۶۶ کانال چهره؛ همراه رابط سازگار نسخهٔ قبلی",
   "category": "utility",
   "localizations": {},
   "presentation": {
@@ -36,7 +36,15 @@
         "AVATAR03_MODEL_URL",
         "AVATAR03_HEIGHT",
         "MOTION_CLIPS",
-        "Avatar03Animator"
+        "Avatar03Animator",
+        "AvatarWebV2",
+        "AVATAR_V2_MODEL_URL",
+        "AVATAR_V2_MOTIONS_URL",
+        "AVATAR_V2_HEIGHT",
+        "EMOTIONS",
+        "FACE_GROUPS",
+        "LOCOMOTION_PROFILE",
+        "createWebAvatarRuntime"
       ],
       "capabilities": [
         "render:3d",
@@ -45,6 +53,11 @@
       "composition": {
         "contributes": [],
         "provides": [
+          {
+            "exportName": "AvatarWebV2",
+            "description": "Complete web avatar with corrected athletic locomotion, anatomical knees/soles and facial morphs, mounted in the host-owned PlayerRig avatar prop.",
+            "surface": "avatar.character"
+          },
           {
             "exportName": "Avatar03",
             "surface": "avatar.character",

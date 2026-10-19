@@ -5,7 +5,7 @@
   "type": "module",
   "packageManager": "npm@11.9.0",
   "scripts": {
-    "build": "tsc --noEmit && vite build",
+    "build": "npm --prefix ../آواتار run build && node scripts/prepare-avatar-v2.mjs && tsc --noEmit && vite build",
     "dev": "vite --host 127.0.0.1",
     "test": "node --test tests/*.test.mjs"
   },
@@ -16,7 +16,7 @@
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "three": "0.185.1",
-    "@al-amr-community/replace-me--avatar03": "file:../آواتار"
+    "@al-amr-community/usr-20dfea67-47be-4f4a-b48c-02c5f210a079--avatar03": "file:../آواتار"
   },
   "devDependencies": {
     "@types/react": "^19.2.0",

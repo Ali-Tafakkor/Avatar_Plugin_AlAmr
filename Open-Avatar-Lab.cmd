@@ -6,7 +6,12 @@ if not exist "dist\index.html" (
   pause
   exit /b 1
 )
-call "C:\Users\alita\AppData\Roaming\al-amr\bin\alamr.cmd" dev --json
+if not exist "%APPDATA%\al-amr\bin\alamr.cmd" (
+  echo Al-Amr Desktop CLI is not installed for this Windows account.
+  pause
+  exit /b 1
+)
+call "%APPDATA%\al-amr\bin\alamr.cmd" dev --json
 if errorlevel 1 (
   echo Could not open the preview. Keep this diagnostic output for review.
   pause

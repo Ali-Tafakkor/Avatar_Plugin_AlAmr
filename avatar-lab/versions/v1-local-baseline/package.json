@@ -1,0 +1,28 @@
+{
+  "name": "alamr-avatar-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "npm@11.9.0",
+  "scripts": {
+    "build": "tsc --noEmit && vite build",
+    "dev": "vite --host 127.0.0.1",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "@al-amr-community/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig": "https://new-registry.al-amr.com/v1/packages/sha512/d025483d83637d22f55114229a5a843d409ca247288aa9e5f1b4a886d5b10c8a73eecddcf5e71f886c2dea4df2d2c751e773071c5b6cc204a047833f0b231679.tgz",
+    "@react-three/drei": "10.7.7",
+    "@react-three/fiber": "9.6.1",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "three": "0.185.1",
+    "@al-amr-community/replace-me--avatar03": "file:../آواتار"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@types/three": "^0.185.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.0"
+  }
+}

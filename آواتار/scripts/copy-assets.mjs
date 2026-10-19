@@ -1,7 +1,7 @@
 import { copyFile, mkdir, readFile, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
-// scripts/ is one level below the Plugin; original assets are outside the Plugin.
-const original = new URL('../../source/Avatar_03/Avatar_03_Complete_Animations_Updated.glb', import.meta.url);
+// Self-contained source copy; the protected root source remains unchanged.
+const original = new URL('../assets-source/v1/avatar03.glb', import.meta.url);
 const bytes = await readFile(original);
 const hash = createHash('sha256').update(bytes).digest('hex');
 if (hash !== 'bf16883394c2f968faa294e8debe02dc38ff8ba4aaf98d32319e025d8185540d') {

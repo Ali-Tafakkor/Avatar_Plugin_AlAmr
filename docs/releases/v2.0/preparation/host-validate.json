@@ -1,0 +1,2 @@
+
+{"schemaVersion":"1","command":"validate","ok":true,"code":"ALAMR_OK","exitCode":0,"message":"environment manifest is valid.","diagnostics":[],"nextActions":[],"artifacts":[],"data":{"kind":"environment","path":"C:\\Files\\Programming\\Avatar_Al_Amr\\avatar-lab\\al-amr.environment.json"},"meta":{"cliVersion":"1.0.0","elapsedMs":21}}

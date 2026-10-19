@@ -1,0 +1,71 @@
+{
+  "contractVersion": "1.0.0",
+  "runtimeApi": "^1.0.0",
+  "pluginId": "plg_47f4b254-a610-4f8d-bc5a-560cba8f70b1",
+  "publisher": {
+    "id": "pub_455f1f0e-375a-4ed8-91da-2cac8a114bd6",
+    "handle": "usr-20dfea67-47be-4f4a-b48c-02c5f210a079"
+  },
+  "slug": "avatar03",
+  "name": "آواتار ۳",
+  "version": "0.1.0",
+  "shortDescription": "مدل متحرک آواتار ۳ برای اتصال به کنترل حرکت محیط‌های الامر",
+  "category": "utility",
+  "localizations": {},
+  "presentation": {
+    "icon": {
+      "path": "plugin-icon.png",
+      "digest": "sha256:7b8f3157b099079d21fb30e3dff6cd1081662e1430cf951f1ef698a6f8db495c",
+      "contentType": "image/png",
+      "alt": "نشان آواتار ۳ با پیراهن بنفش"
+    }
+  },
+  "kind": "frontend_only",
+  "runtimeClass": "trusted_library",
+  "frontendAdapters": [
+    {
+      "id": "r3f",
+      "runtime": "react-three-fiber",
+      "exportPath": ".",
+      "hostKinds": [
+        "environment"
+      ],
+      "exports": [
+        "Avatar03",
+        "AVATAR03_CLIPS",
+        "AVATAR03_MODEL_URL",
+        "AVATAR03_HEIGHT",
+        "MOTION_CLIPS",
+        "Avatar03Animator"
+      ],
+      "capabilities": [
+        "render:3d",
+        "avatar:glb-animation"
+      ],
+      "composition": {
+        "contributes": [],
+        "provides": [
+          {
+            "exportName": "Avatar03",
+            "surface": "avatar.character",
+            "description": "Animated Avatar 03 character supplied to the host-owned PlayerRig avatar prop."
+          }
+        ]
+      },
+      "peerDependencies": {
+        "three": ">=0.185.1 <0.186.0",
+        "@react-three/fiber": ">=9.6.1 <10",
+        "react": ">=19 <19.3"
+      }
+    }
+  ],
+  "backendComponents": [],
+  "platformPermissions": [],
+  "browserRequirements": [],
+  "compat": {
+    "contracts": ">=1.0.0 <2"
+  },
+  "documentation": {
+    "license": "MIT"
+  }
+}

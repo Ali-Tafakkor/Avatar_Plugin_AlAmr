@@ -1,0 +1,17 @@
+Licenses and asset permissions for Avatar 03 Web V2
+
+Application and adapter code is distributed under the MIT license reproduced
+in CODE-LICENSE.txt, subject to the copyrights and notices of its authors.
+
+This code license does not license the bundled model, textures, animation
+data, or third-party runtime libraries. See THIRD_PARTY_NOTICES.md and the
+provenance file shipped beside the avatar assets for their sources and limits.
+
+In particular, the AvatarSDK example is identified by its upstream project
+as a non-commercial-use example. No independent commercial or public
+redistribution permission is asserted by this package. The extracted Xbot
+motion tracks are sourced from the Three.js/Mixamo example; retargeting them
+does not confer independent ownership or a stock-asset resale license.
+
+Verify the applicable asset permissions before a public Git upload, Registry
+submission, commercial deployment, or redistribution. Preserve these notices.

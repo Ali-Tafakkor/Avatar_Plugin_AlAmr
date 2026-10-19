@@ -5,6 +5,7 @@ import { TextureLoader, SRGBColorSpace } from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { createAvatar03Instance } from './model.js';
 import { Avatar03Animator } from './motion.js';
+export { AvatarWebV2, AVATAR_V2_MODEL_URL, AVATAR_V2_MOTIONS_URL, AVATAR_V2_HEIGHT, EMOTIONS, FACE_GROUPS, LOCOMOTION_PROFILE, createWebAvatarRuntime } from './v2.js';
 export { AVATAR03_CLIPS, MOTION_CLIPS, Avatar03Animator } from './motion.js';
 export const AVATAR03_MODEL_URL = new URL('./assets/avatar03.glb', import.meta.url).href;
 export const AVATAR03_HEIGHT = 1.78;

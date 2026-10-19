@@ -1,10 +1,11 @@
 {
   "name": "@al-amr-community/usr-20dfea67-47be-4f4a-b48c-02c5f210a079--avatar03",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "license": "MIT",
+  "assetLicenseNotice": "MIT applies to application/adapter code only. Bundled model, textures and motion have separate permissions; see LICENSE and THIRD_PARTY_NOTICES.md.",
   "scripts": {
-    "build": "tsc && node scripts/copy-assets.mjs",
+    "build": "tsc && node scripts/copy-assets.mjs && node scripts/prepare-v2.mjs",
     "test": "node --test tests/*.test.mjs"
   },
   "peerDependencies": {
@@ -29,13 +30,28 @@
       "types": "./dist/motion.d.ts",
       "import": "./dist/motion.js"
     },
-    "./model": "./dist/assets/avatar03.glb"
+    "./model": "./dist/assets/avatar03.glb",
+    "./web-v2": {
+      "types": "./dist/v2.d.ts",
+      "import": "./dist/v2.js"
+    },
+    "./runtime": {
+      "types": "./dist/web-v2/runtime.d.mts",
+      "import": "./dist/web-v2/runtime.mjs"
+    },
+    "./web-model": "./dist/assets/avatar-v2/avatar.gltf",
+    "./web-motions": "./dist/assets/avatar-v2/motions.json",
+    "./web-asset-manifest": "./dist/assets/avatar-v2/asset-manifest.json"
   },
   "files": [
     "dist",
     "al-amr.plugin.json",
     "plugin-icon.png",
     "integration.md",
-    "README.md"
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "CODE-LICENSE.txt",
+    "THIRD_PARTY_NOTICES.md"
   ]
 }

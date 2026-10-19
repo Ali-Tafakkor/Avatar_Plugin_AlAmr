@@ -1,0 +1,45 @@
+{
+  "reviewDate": "2026-10-16",
+  "source": "Avatar_V2_WebBase/AvatarMotionLab",
+  "scope": "Inspection only; no application, model, dependency or manifest changes.",
+  "nodeVersion": "24.14.0",
+  "platform": "win32",
+  "tests": {
+    "command": "node --test",
+    "existingTests": 36,
+    "passed": 36,
+    "failed": 0,
+    "exitCode": 0,
+    "execution": "Outside sandbox for local loopback HTTP. Initial sandbox run had 28 pass and 8 hook failures; fetch and http.get both returned EACCES to 127.0.0.1. Full unchanged suite passed after local network access was allowed."
+  },
+  "syntax": {
+    "command": "node --check",
+    "filesChecked": 16,
+    "failed": 0
+  },
+  "provenance": {
+    "filesChecked": 10,
+    "allHashesAndSizesMatch": true,
+    "runtimeBytes": 13545825
+  },
+  "v1Baseline": {
+    "path": "source/Avatar_03/Avatar_03_Complete_Animations_Updated.glb",
+    "sha256": "bf16883394c2f968faa294e8debe02dc38ff8ba4aaf98d32319e025d8185540d",
+    "matchesDocumentedBaseline": true
+  },
+  "browser": {
+    "evidence": "browser-smoke.json",
+    "screenshots": [
+      "portrait-laugh.jpg",
+      "full-body-idle.jpg"
+    ],
+    "notAccepted": [
+      "sustained locomotion visual quality",
+      "five-finger independent deformation",
+      "VR/Quest",
+      "multi-user replication",
+      "online deployment",
+      "performance budget"
+    ]
+  }
+}

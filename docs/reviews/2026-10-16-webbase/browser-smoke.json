@@ -1,0 +1,33 @@
+{
+  "reviewDate": "2026-10-16",
+  "scope": "Actual local GLB rendering, expression change, portrait/orbit/follow camera smoke checks. No sustained locomotion, VR or performance acceptance.",
+  "viewportScreenshotSize": [
+    1280,
+    720
+  ],
+  "observed": {
+    "bodyState": "IDLE",
+    "cameraHeading": "حرکت را حس کن.",
+    "loadingHidden": true,
+    "retargetedBones": 67,
+    "selectedEmotion": "laugh",
+    "shapes": 66,
+    "title": "Avatar / Motion Lab — آزمایشگاه آواتار",
+    "url": "http://127.0.0.1:4175/",
+    "vertices": "32,530"
+  },
+  "console": [
+    {
+      "level": "warn",
+      "message": "sigmaRadians, 0.055, is too large and will clip, as it requested 27 samples when the maximum is set to 20",
+      "timestamp": "2026-10-16T19:29:09.055Z",
+      "url": "http://127.0.0.1:4175/vendor/three.module.min.js"
+    },
+    {
+      "level": "warn",
+      "message": "sigmaRadians, 0.055, is too large and will clip, as it requested 27 samples when the maximum is set to 20",
+      "timestamp": "2026-10-16T19:29:09.155Z",
+      "url": "http://127.0.0.1:4175/vendor/three.module.min.js"
+    }
+  ]
+}

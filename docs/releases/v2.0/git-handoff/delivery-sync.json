@@ -1,0 +1,22 @@
+{
+  "clientDate": "2026-10-19",
+  "output": "releases/avatar-web-v2-0.1.1",
+  "backup": "versions/avatar-lab-single-avatar-delivery-2026-10-17",
+  "files": 155,
+  "allHashesReadBack": true,
+  "pluginAndHostSourceCopiesMatch": true,
+  "comparison": {
+    "recordedOn": "2026-10-19",
+    "evidenceDate": "2026-10-17",
+    "pluginTestsPreviouslyPassed": 23,
+    "hostTestsPreviouslyPassed": 8,
+    "ownerAccepted": true,
+    "newRuntimeTestsRunForGitHandoff": false,
+    "previewId": "pv_c8063d95e1664f7180d0cb11bc5111f7",
+    "buildDigest": "sha256:1c6f987f0ae967bb4a975d4d64513f4511a764af5588ecec2d2f880ff863ce02",
+    "runtimeStateAtCapture": "ready",
+    "hostMode": "V1 and V2 comparison; host-owned legacy material correction",
+    "evidence": "../docs/tests/2026-10-17-avatar-comparison/preview-verify.json"
+  },
+  "priorCleanBuildAppliesToPreviousSingleAvatarSnapshotOnly": true
+}

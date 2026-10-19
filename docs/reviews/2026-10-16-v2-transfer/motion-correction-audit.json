@@ -1,0 +1,134 @@
+{
+  "capturedAtUTC": "2026-10-16T20:31:02.060Z",
+  "sampleRateHz": 120,
+  "secondsPerState": 2,
+  "modelSha256": "193c07c351f1f94b12b499ece3f8813432dbe902afe0b5dd6957e788a9a36605",
+  "sourceHashes": {
+    "actor.mjs": "8c701114c32647fc98d3c5079554f7ebbb0d117fc964beedf89b84403b399ac6",
+    "animation.mjs": "8374598d1bbe05f6f5186a41c396d50bc6b02a8817bd79ad2407000650591e08",
+    "expressions.mjs": "a242921cbbf2e1eb0d7c759b934fab6d4b2f0a922e245d40826c22434ebecddb",
+    "math.mjs": "9f575ae2aa57d2bb7bddd4566ab8f6eebad8278c194824ae8fa30413a48f9162"
+  },
+  "profile": {
+    "walkSpeed": 2.25,
+    "runSpeed": 6.2,
+    "walkStrideScale": 1.18,
+    "runStrideScale": 1.36,
+    "walkHalfStance": 0.085,
+    "runHalfStance": 0.08,
+    "pelvisRollScale": 0.28,
+    "pelvisYawScale": 0.55,
+    "minimumFootPitchDeg": -65,
+    "maximumFootPitchDeg": 45,
+    "maximumFootRollDeg": 2.5,
+    "minimumKneeFlexDeg": 16,
+    "minimumWalkKneeFlexDeg": 16,
+    "minimumRunKneeFlexDeg": 24,
+    "maximumWalkKneeFlexDeg": 75,
+    "maximumRunKneeFlexDeg": 125,
+    "stopBlendSharpness": 6
+  },
+  "matchedBones": 67,
+  "morphs": 66,
+  "calibration": {
+    "left": {
+      "samples": 199,
+      "ankleOffset": 0.07422899892675416
+    },
+    "right": {
+      "samples": 199,
+      "ankleOffset": 0.07422903260161423
+    }
+  },
+  "clips": {
+    "idle": {
+      "duration": 2.5,
+      "groundSpeed": 1.5,
+      "groundOffset": 0.008517310856424315,
+      "stepsPerMinute": 0
+    },
+    "walk": {
+      "duration": 0.9666666388511658,
+      "groundSpeed": 1.6742000053179396,
+      "groundOffset": 0.0018271788212522316,
+      "stepsPerMinute": 166.83212995905052
+    },
+    "run": {
+      "duration": 0.699999988079071,
+      "groundSpeed": 4.301544988572624,
+      "groundOffset": 0.08560131786446008,
+      "stepsPerMinute": 247.08730555673648
+    }
+  },
+  "poses": {
+    "idle": {
+      "penetration": -3.2836262597868426e-9,
+      "worstSupportRoll": 0.000028811869508282875,
+      "maximumIdleSole": 0.00035010215800346245,
+      "crossed": 0,
+      "contactFrames": 464,
+      "maximumRoll": 0.000028811869508282875,
+      "minimumPitch": -0.000047207834467958244,
+      "maximumPitch": 0.00004274461654901728,
+      "lowestNormalY": 0.9999999999995971,
+      "maximumFrameRotationDeg": 0.10773658273014737,
+      "knees": {
+        "minimumKneeFlex": 8.897697582243367,
+        "maximumKneeFlex": 11.913996210675037,
+        "maximumKneePlaneDeviation": 9.951681430401033,
+        "maximumLateralKneeBend": 0.002727171612685736,
+        "backwardKnees": 0,
+        "maximumKneeFlexFrameChange": 0.12431061626397799,
+        "maximumKneePointStep": 0.000454767165394478,
+        "medianKneeSpan": 0.26527739186169086,
+        "medianAnkleSpan": 0.3945234325321829
+      }
+    },
+    "walk": {
+      "penetration": -4.3780526759462646e-8,
+      "worstSupportRoll": 0.11527199501449009,
+      "maximumIdleSole": 0,
+      "crossed": 0,
+      "contactFrames": 197,
+      "maximumRoll": 2.4952747440057967,
+      "minimumPitch": -12.852355446506449,
+      "maximumPitch": 43.93258780575844,
+      "lowestNormalY": 0.7194846712621694,
+      "maximumFrameRotationDeg": 5.3522771846101005,
+      "knees": {
+        "minimumKneeFlex": 15.996507120845505,
+        "maximumKneeFlex": 75.17914045979846,
+        "maximumKneePlaneDeviation": 9.640774852014552,
+        "maximumLateralKneeBend": 0.026359483892752625,
+        "backwardKnees": 0,
+        "maximumKneeFlexFrameChange": 8.035545293914645,
+        "maximumKneePointStep": 0.027879581003225618,
+        "medianKneeSpan": 0.19496559750366727,
+        "medianAnkleSpan": 0.18221538481652333
+      }
+    },
+    "run": {
+      "penetration": -3.6129558900199754e-8,
+      "worstSupportRoll": 0.1198215894931174,
+      "maximumIdleSole": 0,
+      "crossed": 0,
+      "contactFrames": 85,
+      "maximumRoll": 2.4999106672788343,
+      "minimumPitch": -18.61195690831614,
+      "maximumPitch": 44.94125462630531,
+      "lowestNormalY": 0.7075872290394044,
+      "maximumFrameRotationDeg": 8.16969050567944,
+      "knees": {
+        "minimumKneeFlex": 23.119555681715465,
+        "maximumKneeFlex": 126.1661307431103,
+        "maximumKneePlaneDeviation": 9.426538383503994,
+        "maximumLateralKneeBend": 0.03883004962005715,
+        "backwardKnees": 0,
+        "maximumKneeFlexFrameChange": 11.552468383943893,
+        "maximumKneePointStep": 0.062385018908704806,
+        "medianKneeSpan": 0.1971620549968267,
+        "medianAnkleSpan": 0.16958481684684168
+      }
+    }
+  }
+}

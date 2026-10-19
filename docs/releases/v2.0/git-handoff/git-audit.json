@@ -1,0 +1,50 @@
+{
+  "clientDate": "2026-10-19",
+  "scope": "Static packaging/documentation/Git-content checks; no runtime test executed",
+  "candidateFiles": 697,
+  "removedTrackedFiles": 2,
+  "totalBytes": 449134957,
+  "largestFiles": [
+    {
+      "path": "Avatar_V2_WebBase/AvatarRuntime/assets/avatar.glb",
+      "bytes": 12284040
+    },
+    {
+      "path": "releases/avatar-web-v2-0.1.1/آواتار/assets-source/web-v2/avatar.glb",
+      "bytes": 12284040
+    },
+    {
+      "path": "آواتار/assets-source/web-v2/avatar.glb",
+      "bytes": 12284040
+    },
+    {
+      "path": "Avatar_V2_WebBase/AvatarRuntime/assets/avatar.bin",
+      "bytes": 12169248
+    },
+    {
+      "path": "avatar-lab/dist/avatar-v2/avatar.bin",
+      "bytes": 12169248
+    },
+    {
+      "path": "avatar-lab/public/avatar-v2/avatar.bin",
+      "bytes": 12169248
+    },
+    {
+      "path": "releases/avatar-web-v2-0.1.1/آواتار/dist/assets/avatar-v2/avatar.bin",
+      "bytes": 12169248
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/avatar.bin",
+      "bytes": 12169248
+    }
+  ],
+  "forbiddenPaths": [],
+  "secretPatternFindings": [],
+  "oversized": [],
+  "symlinks": [],
+  "activeDocumentsChecked": 14,
+  "brokenLinks": [],
+  "protectedSourceAndDeliveredEnvironmentDiffExitCode": 0,
+  "baselineAvatarSha256": "bf16883394c2f968faa294e8debe02dc38ff8ba4aaf98d32319e025d8185540d",
+  "baselineAvatarHashMatches": true
+}

@@ -1,0 +1,49 @@
+{
+  "format": 1,
+  "clientDate": "2026-10-19",
+  "productGeneration": "2.0",
+  "technicalVersion": "0.1.1",
+  "pluginId": "plg_47f4b254-a610-4f8d-bc5a-560cba8f70b1",
+  "publisher": {
+    "id": "pub_455f1f0e-375a-4ed8-91da-2cac8a114bd6",
+    "handle": "usr-20dfea67-47be-4f4a-b48c-02c5f210a079"
+  },
+  "slug": "avatar03",
+  "pluginDirectory": "آواتار",
+  "sampleEnvironment": "avatar-lab",
+  "readiness": {
+    "localBuild": true,
+    "pluginTests": 23,
+    "hostTests": 8,
+    "manifestValid": true,
+    "artifactValid": true,
+    "artifactSizeWithin25MiB": true,
+    "registryVersionHistoryVerified": false,
+    "cliAuthenticated": false,
+    "registrySubmitted": false,
+    "registryPublished": false,
+    "offlineCleanInstallAndBuildVerified": false,
+    "lastRuntimeTestDate": "2026-10-17",
+    "ownerAccepted": true,
+    "newRuntimeTestsRunForGitHandoff": false,
+    "comparisonHostCopiedFromAcceptedSource": true,
+    "priorSingleAvatarCleanBuildEvidence": "verification/portable-copy.json"
+  },
+  "assetPermissions": {
+    "code": "MIT",
+    "avatarSourceScope": "non-commercial use",
+    "additionalCommercialOrPublicRedistributionPermissionVerified": false
+  },
+  "omitted": [
+    "node_modules",
+    "local account/session state",
+    "generated sample Environment output"
+  ],
+  "authority": "Local Git delivery refreshed from the accepted host; not an uploaded Registry candidate",
+  "git": {
+    "branch": "avatar-v2",
+    "receipt": "verification/git-publication-2026-10-19.json"
+  },
+  "sampleEnvironmentMode": "V1 and V2 comparison",
+  "previousSingleAvatarHost": "../../versions/avatar-lab-single-avatar-delivery-2026-10-17"
+}

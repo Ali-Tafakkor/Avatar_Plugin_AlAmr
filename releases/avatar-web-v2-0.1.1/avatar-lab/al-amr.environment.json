@@ -1,0 +1,38 @@
+{
+  "contractVersion": "1.0.0",
+  "runtimeApi": "^1.0.0",
+  "environmentId": "env_local_4687eee72579",
+  "name": "آزمایشگاه آواتار الامر",
+  "shortDescription": "آزمایش آواتار ۳ با کنترل حرکت و دوربین رسمی الامر",
+  "category": "custom",
+  "localizations": {},
+  "entry": {
+    "kind": "bundle",
+    "version": "0.1.0"
+  },
+  "portal": {
+    "title": "آزمایشگاه آواتار الامر",
+    "blurb": "آزمایش آواتار ۳ با کنترل حرکت و دوربین رسمی الامر",
+    "art": {
+      "imageUrl": "environment-cover.png",
+      "alt": "نشان اختصاصی آزمایشگاه آواتار ۳"
+    },
+    "visibility": "private"
+  },
+  "capabilities": [
+    "identity",
+    "presence"
+  ],
+  "notifications": {
+    "eventTypes": [],
+    "audience": "none"
+  },
+  "plugins": [
+    {
+      "integrationKind": "frontend_adapter",
+      "pluginId": "plg_0bec7e8e-8852-4f44-9446-f5df278ab59e",
+      "releaseVersion": "1.0.0",
+      "adapterId": "r3f"
+    }
+  ]
+}

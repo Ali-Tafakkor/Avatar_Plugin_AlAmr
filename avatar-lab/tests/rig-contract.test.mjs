@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createPlayerController, createFlatNavigationSurface, stepPlayerMovement, isPlayerGrounded,
   createAvatarAnimationDriver, shouldRenderLocalAvatar } from '@al-amr-community/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig';
-import { MOTION_CLIPS } from '@al-amr-community/replace-me--avatar03/motion';
+import { MOTION_CLIPS } from '@al-amr-community/usr-20dfea67-47be-4f4a-b48c-02c5f210a079--avatar03/motion';
 
 test('exact installed Player Rig emits the shared states consumed by Avatar 03', () => {
   const player = createPlayerController({position:[0,0,0],yaw:0});

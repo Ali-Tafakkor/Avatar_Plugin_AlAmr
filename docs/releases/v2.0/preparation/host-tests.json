@@ -1,0 +1,7 @@
+{
+  "exitCode": 0,
+  "total": "2",
+  "passed": "2",
+  "command": "npm test",
+  "failed": "0"
+}

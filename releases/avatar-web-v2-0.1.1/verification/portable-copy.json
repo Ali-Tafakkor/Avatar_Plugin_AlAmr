@@ -1,0 +1,20 @@
+{
+  "format": 1,
+  "offlineCleanInstall": true,
+  "pluginInstalledPackages": 24,
+  "hostInstalledPackages": 84,
+  "buildFromIsolatedCopy": true,
+  "rebuiltPluginDistMatchesDelivery": true,
+  "comparedBuiltFiles": 41,
+  "localConsumerUsesCopiedPlugin": true,
+  "pluginTests": {
+    "passed": 23,
+    "failed": 0
+  },
+  "hostTests": {
+    "passed": 2,
+    "failed": 0
+  },
+  "packageVersion": "0.1.1",
+  "originalWorkspaceSourcesNotRequired": true
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@alamr-local/avatar-web-v2",
+  "version": "2.0.0-local.1",
+  "private": true,
+  "type": "module",
+  "description": "Unpublished local extraction of the complete web avatar, face and motion runtime for the Al-Amr test Environment.",
+  "exports": {
+    ".": { "types": "./src/runtime.d.mts", "import": "./src/runtime.mjs" },
+    "./actor": "./src/actor.mjs",
+    "./animation": "./src/animation.mjs",
+    "./expressions": "./src/expressions.mjs",
+    "./assets/*": "./assets/*"
+  },
+  "peerDependencies": { "three": ">=0.185.1 <0.186.0" },
+  "scripts": { "test": "node --test tests/*.test.mjs" }
+}

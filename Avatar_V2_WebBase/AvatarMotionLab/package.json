@@ -1,0 +1,16 @@
+{
+  "name": "avatar-motion-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local Three.js character locomotion and facial-expression laboratory",
+  "scripts": {
+    "start": "node start.mjs",
+    "setup": "node tools/setup.mjs",
+    "test": "node --test",
+    "serve": "node start.mjs --offline"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

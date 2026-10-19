@@ -1,49 +1,86 @@
-# Avatar 03 local adapter contract — 0.1.0
+# Avatar 03 Web V2 adapter contract — 0.1.1
 
-Adapter `r3f`, runtime `react-three-fiber`, export path `.`, host kind `environment`.
-This is the local authored contract, not Registry-generated release metadata.
+Local authored contract, not Registry-generated release metadata. Plugin ID,
+publisher, slug, contractVersion and runtime compatibility are retained from
+0.1.0; only the product release version advances. Semantic adapter: `r3f`,
+runtime `react-three-fiber`, export path `.`, host kind `environment`.
 
-Semantic surface: `avatar.character`, exported by `Avatar03`. The Environment
-composes this React node into the official `PlayerRig.avatar` prop. There is no
-automatic replacement of an installed Environment or cross-Plugin mounting.
+The recommended `avatar.character` surface is `AvatarWebV2`. It mounts as a
+React node in the consuming Environment's `PlayerRig.avatar` prop. The host
+owns Canvas, rendering, camera, controller input, world pose, navigation and
+lifetime. This Plugin does not mount or import Player Rig internally. Its
+controller/navigation types are structural subsets of public host methods.
+No platform ports, identity claims, settings surface, backend or permissions
+are required. The host's Three/React/Fiber instances must be shared.
 
-Peers: React `>=19 <19.3`, Three `>=0.185.1 <0.186.0`, R3F `>=9.6.1 <10`.
-The consuming example uses the exact managed Player Rig 1.0.0 adapter and owns
-the WebGPURenderer Canvas, controller, navigation surface and lifetime.
+Peers: React >=19 <19.3; Three >=0.185.1 <0.186.0; R3F >=9.6.1 <10.
+The complete consuming Environment at ../avatar-lab uses the exact managed
+Player Rig 1.0.0 and WebGPURenderer. All resources load from the local bundle.
 
-Props: optional `modelUrl`, `textureUrl`, `height` (positive metres; default 1.78), `rotationY`
-(radians; default PI aligns with the rig's -Z forward), `castShadow`,
-`lighting` (`scene` by default or `unlit` for a texture-only comparison), `onReady`, and `children`. Mount inside Suspense and an
-error boundary. Supply a bundler-resolved URL from `./model`; the default model
-URL is relative to the packaged module. The build also copies the GLB's sole PNG
-unchanged to `dist/assets/avatar03-texture.png`. Keep that asset with the module
-or pass its bundled URL as `textureUrl`. A public GLTFLoader plugin binds this
-texture without fetching embedded blob URLs in Desktop's isolated protocol.
+## Web V2 props and methods
 
-Ref `Avatar03Handle`:
+Required props: `controller.getPoseSnapshot()` returns world position,
+velocity, yaw and mode; `navigation.sampleGround([x,y,z])` returns a ground
+position or no result. Optional props: modelUrl, motionsUrl, height=1.78,
+lighting='scene'|'unlit', rotationY=PI, portrait=false, onReady and onError.
+Positive finite height is required. Loader errors belong to the host's
+Suspense/error boundary; runtime initialization/frame errors reach onError.
 
-- `setLocomotion({state, horizontalSpeed?, stridePhase?})`: receive the host's
-  public Player Rig snapshot from `onAnimationFrame`.
-- `previewClip(name | null)`: inspect an embedded clip or resume host locomotion.
-- `getStatus()`: clip, time, duration, source state, mode and fallback flag;
-  null until ready. It does not grant control over the host's player state.
+Ref AvatarWebV2Handle:
+- setLocomotion({state,horizontalSpeed,verticalSpeed,grounded}) receives the
+  current public Player Rig onAnimationFrame snapshot.
+- setEmotion(neutral|smile|laugh|sad|angry|surprise), setIntensity(0..1).
+- setManual(jaw|smile|frown|brows|browDown|wide, 0..1).
+- setFaceOptions({blinkEnabled?,gazeEnabled?,microEnabled?,ikEnabled?}).
+- blink(), reset(), getStatus(); getRuntime() is for explicit test inspection.
 
-Other exports: `AVATAR03_CLIPS`, `AVATAR03_MODEL_URL`, `AVATAR03_HEIGHT`,
-`MOTION_CLIPS`, `Avatar03Animator`. Types: `dist/index.d.ts`.
+The host supplies current pose before the runtime's frame subscriber runs.
+The adapter registers that subscriber after async initialization, at R3F
+priority zero; it never takes over host rendering. +Z anatomical forward is
+aligned to the official Player Rig's -Z by the default PI rotation. Root
+world translation/yaw is not applied a second time.
 
-No platform ports, backend, identity, settings or permissions are requested.
-Only bundled model and texture assets are loaded. The host retains camera/input/collision.
-Embedded clips: Stand, Walk, Run, Fly, Jump, HandRaise, StandToSit, Sitting,
-SittoStand. Fall continues Jump; land uses Stand, explicitly reporting fallback.
-Non-shared gestures are preview-only until a host adds corresponding commands.
+The extracted actor retains 73 bones, ten meshes and 66 facial shapes. Every
+instance clones its mutable skeleton, geometry, materials, textures and
+facial influences. Unmount disposes only those resources, stopping and
+uncaching its mixer. Standalone runtime dispose is idempotent. reset clears
+motion/contact history while preserving facial settings.
 
-Unmount releases instance-owned animation, materials and skeleton resources.
-Geometry and textures remain in the shared single-model loader cache.
-Explicit errors: `avatar03_missing_clips`, `avatar03_invalid_height`,
-`avatar03_invalid_model_bounds`. Hosts handle loader errors and offer recovery.
+The recommended host movement profile is exported as LOCOMOTION_PROFILE:
+walkSpeed=2.25 and runSpeed=6.2 m/s. Set the host's walkSpeed/sprintSpeed to
+these values; an animation-only Plugin does not change host travel speed.
+Knee/sole correction, stride timing and transitions are built into the runtime.
 
-Complete runnable consumption example: `../avatar-lab/src/main.tsx`.
-For publication, link and publish through the authorized Registry workflow, then
-use `alamr add publisher/avatar03@exact-version --adapter r3f` in the host and
-follow the install command. Never hand-edit its managed `plugins` list.
-The local lab uses a file dependency while this Plugin has no published release.
+## Packaged assets and exports
+
+Copy the complete dist/assets/avatar-v2 directory to the host's public
+avatar-v2 directory, preserving avatar.gltf, avatar.bin, images and motions.json,
+and pass their host-local URLs. The executable example's preparation script
+does this. A bundler import of only the glTF does not copy sibling images.
+The module-relative default URLs work when the package asset layout is kept.
+
+Frontend exports: AvatarWebV2, AVATAR_V2_MODEL_URL, AVATAR_V2_MOTIONS_URL,
+AVATAR_V2_HEIGHT, EMOTIONS, FACE_GROUPS, LOCOMOTION_PROFILE,
+createWebAvatarRuntime; plus the preserved legacy exports below. Types are
+in dist/index.d.ts, dist/v2.d.ts and dist/web-v2/runtime.d.mts. Public package
+subpaths are ./web-v2, ./runtime, ./web-model, ./web-motions and ./web-asset-manifest.
+
+## Compatible legacy API
+
+Avatar03, AVATAR03_CLIPS, AVATAR03_MODEL_URL, AVATAR03_HEIGHT, MOTION_CLIPS and
+Avatar03Animator retain the old model/API and nine embedded clips. Its ref
+still exposes setLocomotion, previewClip and getStatus. Fall continues Jump;
+land uses Stand with fallback status. Existing Avatar03 consumers are not
+silently migrated to the new model. Use AvatarWebV2 for this release's new
+character. Consumers pinned to published 0.1.0 retain their original bytes.
+
+## Publication and scope
+
+The local Plugin folder is the submit-button source. Both versions are 0.1.1;
+no manual npm pack is required. README describes installation after an actual
+Registry release exists. The provided local example is not proof of a
+published-version installation. A submitted candidate is not a published one.
+The model/motion asset permissions in LICENSE and THIRD_PARTY_NOTICES.md are
+separate from the application code license. No new commercial permission is
+asserted. Real VR pose tracking, remote replication, audio lip-sync and a
+platform-wide avatar replacement are outside this release's tested scope.

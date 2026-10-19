@@ -1,0 +1,212 @@
+[
+  {
+    "path": ".gitignore",
+    "bytes": 102,
+    "sha256": "b66673c59e64520fb44bc39e3cdd3e99676fc5e51afd1cb5b60a011e1723de57"
+  },
+  {
+    "path": "boot.js",
+    "bytes": 2784,
+    "sha256": "6689313af972a51e9da0b0dff8876357a618f6d16d1532551e667b3693d7df2f"
+  },
+  {
+    "path": "favicon.svg",
+    "bytes": 309,
+    "sha256": "311d70994432730c05c63e590349be9ec0129f31ea14c46097b6737fa8ff0fac"
+  },
+  {
+    "path": "index.html",
+    "bytes": 7541,
+    "sha256": "791041b4eee0c1c477009217cb4cef997b2b7c8ab2f4f56a2456d202a630ad2f"
+  },
+  {
+    "path": "LICENSE",
+    "bytes": 1418,
+    "sha256": "4b8bdab9c47e4cc19309e3d1a4cf96b3cfd6a97e3e6fe017e3555137102dd3e2"
+  },
+  {
+    "path": "package.json",
+    "bytes": 378,
+    "sha256": "18c7d3c4d769cf61652b675d83a610ba19c456af66d308fd609f96650a5cd570"
+  },
+  {
+    "path": "README-FA.md",
+    "bytes": 15711,
+    "sha256": "a97252f846c37e764187e4e14e8ec5a4dd3c24807e55f67d50c7c7474c321acf"
+  },
+  {
+    "path": "README.md",
+    "bytes": 2574,
+    "sha256": "9d8a919c2a230159adfa32585ef57b73c0559cb437de9e354db915cb59d487dc"
+  },
+  {
+    "path": "START-WINDOWS.cmd",
+    "bytes": 264,
+    "sha256": "8417238db75d07c1d8b1c1058ccf62bfad397b43e88b6221eec600e331bd8ec8"
+  },
+  {
+    "path": "start.mjs",
+    "bytes": 4715,
+    "sha256": "65bb095f0a672cd3937a50d2471dfb6af1009c9fdd9e501cb6afb4f168fb30b0"
+  },
+  {
+    "path": "style.css",
+    "bytes": 12420,
+    "sha256": "8b94415674868bfed0c8b177c57cf42a4f5ad672a5fcb19ac38be184a9c2b5d9"
+  },
+  {
+    "path": "THIRD_PARTY_NOTICES.md",
+    "bytes": 4796,
+    "sha256": "c40b9a526ce9640e00e16aedfdb38ecf11ba4fde2557814f4cdccc6f1ecd5073"
+  },
+  {
+    "path": "assets/.gitkeep",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "assets/avatar.glb",
+    "bytes": 12284040,
+    "sha256": "193c07c351f1f94b12b499ece3f8813432dbe902afe0b5dd6957e788a9a36605"
+  },
+  {
+    "path": "assets/motions.json",
+    "bytes": 343866,
+    "sha256": "533829f6f7b4eca37586564c5d55f3807ae3537878e8007f2af55c853d732d24"
+  },
+  {
+    "path": "assets/provenance.json",
+    "bytes": 3175,
+    "sha256": "4578bd8ed16f03d3ae4796e3fca6247184599daeb8272a047c335ac9c2c605b6"
+  },
+  {
+    "path": "docs/TEST_REPORT.md",
+    "bytes": 7824,
+    "sha256": "43f353641b2cb982022f3380f1092d6c046148311556d01482d6a6f7381b35f9"
+  },
+  {
+    "path": "docs/test-results.tap",
+    "bytes": 6763,
+    "sha256": "41ba92affc86a7ec8a9731f8ba6d5bd7142aa2ed39cf2797e76adc9fac18c5c3"
+  },
+  {
+    "path": "docs/ui-shell-results.json",
+    "bytes": 555,
+    "sha256": "cb7e676b00cd0f148a2a1ffe184242580487d0b1638bdc8284266903c98b8018"
+  },
+  {
+    "path": "src/actor.mjs",
+    "bytes": 4878,
+    "sha256": "6167e75c6c331ef9312530e7f6f5c9e8b571e4dc3455b1bed80eee9c41dd1113"
+  },
+  {
+    "path": "src/animation.mjs",
+    "bytes": 15478,
+    "sha256": "e7c00ab7d0a8287ce11ebf805425ffaaa9444cd341c8dc2ee8631978b94889db"
+  },
+  {
+    "path": "src/camera.mjs",
+    "bytes": 3580,
+    "sha256": "1ae60e4e7c0d17480f518b5c5cc55455975bd314c2a29aa5b27343b3c62f2fff"
+  },
+  {
+    "path": "src/expressions.mjs",
+    "bytes": 6029,
+    "sha256": "a242921cbbf2e1eb0d7c759b934fab6d4b2f0a922e245d40826c22434ebecddb"
+  },
+  {
+    "path": "src/input.mjs",
+    "bytes": 2364,
+    "sha256": "0746c9fe492898b1dc6ef6cbc16173ecbeedc1d89f82fb24bd56bd9f4a8fafca"
+  },
+  {
+    "path": "src/main.mjs",
+    "bytes": 14281,
+    "sha256": "7c4aec27894084de7bc51cf3cecd84694a89242d7299ca57bda44ede71e6dd7e"
+  },
+  {
+    "path": "src/math.mjs",
+    "bytes": 1365,
+    "sha256": "9f575ae2aa57d2bb7bddd4566ab8f6eebad8278c194824ae8fa30413a48f9162"
+  },
+  {
+    "path": "src/physics.mjs",
+    "bytes": 4840,
+    "sha256": "8ab5fdc6f7a3f157b2cb7a59624af62e790dc7d5eec305f8c1f857657873903c"
+  },
+  {
+    "path": "src/world.mjs",
+    "bytes": 8167,
+    "sha256": "9b071ac0473eb0d7aafd0d4b21606b35c71ad238f65fde0fd1ab005b34fc6d08"
+  },
+  {
+    "path": "tests/core.test.mjs",
+    "bytes": 7576,
+    "sha256": "c0f7447fe9849784561ace162aced7289f8e6b22d97f268e90b9a630f3d1a416"
+  },
+  {
+    "path": "tests/glb.test.mjs",
+    "bytes": 2742,
+    "sha256": "6bf63050df259988770ac884a2dc358946992cc696abb18e1e66744954cfa085"
+  },
+  {
+    "path": "tests/server.test.mjs",
+    "bytes": 3328,
+    "sha256": "b659f1c6a3d3799846ff42639057eaa3e8894a3979e24f026fef5eda6b4fdf54"
+  },
+  {
+    "path": "tools/glb.mjs",
+    "bytes": 4570,
+    "sha256": "2498f8fdc099064d724c60cdb79a4bfb4c01c0f83b766cdb8705a864e4b765da"
+  },
+  {
+    "path": "tools/setup.mjs",
+    "bytes": 7876,
+    "sha256": "b4dc3e27addf51398d485385cc4d12d729fb1a7e01f941bfa1a0c7210668d5a0"
+  },
+  {
+    "path": "vendor/.gitkeep",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "vendor/THREE-LICENSE.txt",
+    "bytes": 1081,
+    "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+  },
+  {
+    "path": "vendor/three.core.min.js",
+    "bytes": 381124,
+    "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de"
+  },
+  {
+    "path": "vendor/three.module.min.js",
+    "bytes": 338908,
+    "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6"
+  },
+  {
+    "path": "vendor/addons/environments/RoomEnvironment.js",
+    "bytes": 4899,
+    "sha256": "c20f0b4677f6128a138d7152b85cbef9091f4f45cdfa05adca04d40c1697c7ae"
+  },
+  {
+    "path": "vendor/addons/libs/meshopt_decoder.module.js",
+    "bytes": 24848,
+    "sha256": "784315b6959c85459eab77f51776158cc381d7e7d77b919ff7c4935f088a7c5c"
+  },
+  {
+    "path": "vendor/addons/loaders/DRACOLoader.js",
+    "bytes": 16781,
+    "sha256": "7a4a51c694a6c9f983be452cc82b365e69ce08424654e3f245b4115e6efef258"
+  },
+  {
+    "path": "vendor/addons/loaders/GLTFLoader.js",
+    "bytes": 114739,
+    "sha256": "67ac5551fdafa6e349bd80c8f8e5e39c136d6b2fb1ad647db9abb21dc86f9e4a"
+  },
+  {
+    "path": "vendor/addons/utils/BufferGeometryUtils.js",
+    "bytes": 35539,
+    "sha256": "fda7e946b8e0b5ab39b779206589e7a1079a22eb24efb89d7223e03fdfb1f751"
+  }
+]

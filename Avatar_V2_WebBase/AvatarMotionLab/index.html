@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#162620">
+  <title>Avatar / Motion Lab — آزمایشگاه آواتار</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.min.js","three/addons/":"./vendor/addons/"}}</script>
+</head>
+<body>
+  <main id="viewport" aria-label="محیط سه‌بعدی آزمایش کاراکتر">
+    <canvas id="scene" tabindex="0" aria-label="صحنه سه‌بعدی؛ برای حرکت از W A S D استفاده کنید"></canvas>
+    <header class="topbar" dir="ltr">
+      <div class="brand"><span class="brand-mark">a<span>↗</span></span><div>AVATAR <span class="slash">/</span> MOTION LAB<small>REAL-TIME HUMAN PERFORMANCE</small></div></div>
+      <div class="live"><span></span> LOCAL STUDIO <b>01</b></div>
+    </header>
+    <div class="scene-title"><div class="eyebrow" dir="ltr">EXPRESSION STUDY</div><h1 id="view-title">از نزدیک ببین.</h1><p id="view-description">جزئیات صورت، نگاه و حرکت؛ در زمان واقعی.</p></div>
+    <div id="camera-controls" class="camera-controls" aria-label="انتخاب دوربین">
+      <button data-camera="portrait" class="active"><span>F</span> نمای چهره</button>
+      <button data-camera="follow"><span>V</span> سوم‌شخص</button>
+      <button data-camera="orbit"><span>C</span> بررسی بدن</button>
+    </div>
+    <div class="telemetry" dir="ltr"><div><span id="fps">—</span><small>FPS</small></div><i></i><div><span id="speed">0.00</span><small>m/s</small></div><i></i><div><span id="motion-state">IDLE</span><small>BODY STATE</small></div></div>
+    <div class="ground-badge" id="ground-badge"><span></span><b id="ground-state">روی زمین</b><small id="jump-height">۰٫۰۰ متر</small></div>
+    <footer class="control-strip"><div><kbd>W A S D</kbd><span>حرکت</span></div><div><kbd>SHIFT</kbd><span>دویدن</span></div><div><kbd>SPACE</kbd><span>پرش</span></div><div><kbd>DRAG</kbd><span>چرخش دوربین</span></div><div><kbd>SCROLL</kbd><span>بزرگ‌نمایی</span></div></footer>
+    <div id="toast" role="status"></div>
+  </main>
+  <aside id="panel" class="panel">
+    <div class="panel-top"><span class="eyebrow" dir="ltr">FACE CONTROL</span><span class="pill">زنده</span></div>
+    <h2>احساس را تغییر بده.</h2><p class="muted intro">با دکمه‌ها یا کلیدهای ۰ تا ۵، حالت صورت را امتحان کن.</p>
+    <div id="emotions" class="emotion-grid"></div>
+    <div class="range-row"><label for="intensity">شدت احساس</label><output id="intensity-value">۸۸٪</output></div>
+    <input id="intensity" type="range" min="0" max="1" step="0.01" value="0.88" aria-label="شدت احساس">
+    <div class="range-labels"><span>ملایم</span><span>پررنگ</span></div>
+    <div class="separator"></div>
+    <div class="section-title"><h3>جزئیات زنده</h3><button id="blink-once" class="text-button" title="کلید B">یک پلک <kbd>B</kbd></button></div>
+    <label class="toggle-row"><span>پلک‌زدن طبیعی<small>ریتم نامنظم و پلکِ دوتایی</small></span><input id="auto-blink" type="checkbox" checked><i class="switch"></i></label>
+    <label class="toggle-row"><span>تماس چشمی<small>نگاه محدود، بدون چرخش غیرطبیعی سر</small></span><input id="eye-contact" type="checkbox" checked><i class="switch"></i></label>
+    <label class="toggle-row"><span>حرکت‌های ظریف<small>تنفس و نوسان خفیف حالت چهره</small></span><input id="micro-motion" type="checkbox" checked><i class="switch"></i></label>
+    <div class="separator"></div>
+    <div class="section-title"><h3>آزمایش حرکت</h3><span class="mini-label" dir="ltr">LOCOMOTION</span></div>
+    <div class="range-row"><label for="time-scale">سرعت زمان</label><output id="time-value" dir="ltr">1.00×</output></div>
+    <input id="time-scale" type="range" min="0.25" max="1.25" step="0.05" value="1">
+    <div class="range-labels"><span>آهسته</span><button id="normal-speed" class="text-button">سرعت عادی</button></div>
+    <label class="toggle-row"><span>اصلاح تماس پا<small>حل دو‌استخوانی و کاهش لغزش پا</small></span><input id="foot-ik" type="checkbox" checked><i class="switch"></i></label>
+    <details id="advanced"><summary>تنظیمات بیشتر <span>＋</span></summary>
+      <div class="advanced-content">
+        <label class="select-row">نورپردازی<select id="lighting"><option value="day">روز روشن</option><option value="studio">استودیویی</option><option value="warm">عصر گرم</option></select></label>
+        <label class="select-row">کیفیت رندر<select id="quality"><option value="high">بالا</option><option value="balanced" selected>متعادل</option><option value="low">سبک</option></select></label>
+        <label class="toggle-row"><span>نمای اسکلت</span><input id="skeleton" type="checkbox"><i class="switch"></i></label>
+        <label class="toggle-row"><span>نمای شبکهٔ مدل</span><input id="wireframe" type="checkbox"><i class="switch"></i></label>
+        <h4>کنترل دستی صورت</h4><p class="muted tiny">هر کنترل، مقدار همان بخش را جایگزین می‌کند. انتخاب دوبارهٔ احساس، کنترل‌های دستی را پاک می‌کند.</p>
+        <div id="manual-face"></div>
+        <div class="diagnostics" dir="ltr"><div>FACE SHAPES <b id="shape-count">—</b></div><div>RETARGETED BONES <b id="bone-count">—</b></div><div>VERTICES <b id="vertex-count">—</b></div><div>THREE.JS <b>r180</b></div></div>
+      </div>
+    </details>
+    <div class="panel-bottom"><button id="reset" class="secondary-button">بازگشت به نقطهٔ شروع <kbd>R</kbd></button><button id="capture" class="icon-button" title="ذخیره تصویر همین نما" aria-label="ذخیره تصویر همین نما">↗</button></div>
+    <p class="asset-note">مدل نمونه برای آزمایش غیرتجاری · بدون ارسال تصویر، صدا یا دادهٔ شخصی</p>
+  </aside>
+  <div id="loading" class="loading">
+    <div class="loader-card" dir="rtl"><div class="loader-logo" dir="ltr">a<span>↗</span></div><div class="eyebrow" dir="ltr">AVATAR / MOTION LAB</div><h2 id="loading-title">آماده‌سازی استودیو</h2><p id="loading-text">در حال بررسی فایل‌های محلی…</p><div class="progress-track"><div id="progress"></div></div><div id="loading-detail" dir="ltr"></div><p class="loading-note">فقط اجرای اول به اینترنت نیاز دارد. پس از دریافت مدل و کتابخانه‌ها، همه‌چیز روی همین دستگاه اجرا می‌شود.</p><button id="retry" class="secondary-button" hidden>بررسی دوبارهٔ وضعیت</button></div>
+  </div>
+  <button id="show-hud" hidden aria-label="نمایش پنل کنترل">نمایش کنترل‌ها · H</button>
+  <noscript>برای اجرای این محیط سه‌بعدی، JavaScript باید فعال باشد.</noscript>
+  <script type="module" src="./boot.js"></script>
+</body></html>

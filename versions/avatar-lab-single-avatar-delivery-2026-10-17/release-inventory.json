@@ -1,0 +1,696 @@
+{
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 60,
+      "sha256": "58a7680077e82c6b0b42c6e18b86ec282246510f2457d18f9cb45bc1f3e3c770"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 167,
+      "sha256": "7bf647cbf75c784e6a86d9f8c94e401ca29ed9b7b42becd65342dd395a349c07"
+    },
+    {
+      "path": "avatar-lab/.agents/skills/al-amr/agent-backend.md",
+      "bytes": 14715,
+      "sha256": "01a34713366517221e6f6af6d9ee56503b9016c44011e2d7b3070199e9d42943"
+    },
+    {
+      "path": "avatar-lab/.agents/skills/al-amr/agent-bundles.md",
+      "bytes": 8037,
+      "sha256": "57056cd866f5bb1db8a73a6222c9e17e67d68c867f84960fb4ae5a379c13dede"
+    },
+    {
+      "path": "avatar-lab/.agents/skills/al-amr/agent-companions.md",
+      "bytes": 2124,
+      "sha256": "19a694ae74e9ef33e14ed077ab53ce157dab89df4c52b2da843de11b81ca236c"
+    },
+    {
+      "path": "avatar-lab/.agents/skills/al-amr/agent-development.md",
+      "bytes": 4244,
+      "sha256": "aba0f60de4158e34e781cfe335676c3121511a419ec989c2c47efe044545ff49"
+    },
+    {
+      "path": "avatar-lab/.agents/skills/al-amr/agent-groups.md",
+      "bytes": 24874,
+      "sha256": "8674f7a3355b911469f29e50f3cbf13b6b8d491cffe67f2dc256a9d7ee92ec68"
+    },
+    {
+      "path": "avatar-lab/.agents/skills/al-amr/agent-hampa.md",
+      "bytes": 23250,
+      "sha256": "6c0a6265976e7e120539b702e7ebd635574562c4c9aa3b69562469f4820d649d"
+    },
+    {
+      "path": "avatar-lab/.agents/skills/al-amr/agent-notifications.md",
+      "bytes": 7364,
+      "sha256": "49f3b1c1f3819e5a982875c206351c463dfacbf24ab81097468328ab3ff99a61"
+    },
+    {
+      "path": "avatar-lab/.agents/skills/al-amr/agent-plugins.md",
+      "bytes": 13030,
+      "sha256": "87c2be99fd56901f91743ba23e8fb1d5368385676b2b116ea7123fcebfe1a22b"
+    },
+    {
+      "path": "avatar-lab/.agents/skills/al-amr/agent-publishing.md",
+      "bytes": 5863,
+      "sha256": "dcdf78e9539eb9e8c1cfbf99c68f1527f0cc703a7751d9e556a0e69557132e4f"
+    },
+    {
+      "path": "avatar-lab/.agents/skills/al-amr/agent-runtime.md",
+      "bytes": 7163,
+      "sha256": "1cbe72b980f4edd14cf6aa19f970def32aaad630db673f61af9918a7f9586036"
+    },
+    {
+      "path": "avatar-lab/.agents/skills/al-amr/SKILL.md",
+      "bytes": 5920,
+      "sha256": "521cab2595ba3cc46d45efa7b95c03fed8818e893e9a9877b8b76fbc043d959b"
+    },
+    {
+      "path": "avatar-lab/.al-amr/docs/plugins/index.md",
+      "bytes": 1273,
+      "sha256": "e61c0887ebe5bda9f2599e9f7084def26205823dc3d0167ca453d1be9c1b9c28"
+    },
+    {
+      "path": "avatar-lab/.al-amr/docs/plugins/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig@1.0.0/declarations/dist/index.d.ts",
+      "bytes": 32269,
+      "sha256": "f77f74094c149bbc0d9b15bb2d6f2ddd794c940a2f99eb8f6158c69fe63603fc"
+    },
+    {
+      "path": "avatar-lab/.al-amr/docs/plugins/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig@1.0.0/integration.md",
+      "bytes": 7630,
+      "sha256": "43be471793ee7eb667610bae13d9f7d9431bb472921b5d8e5574b6fd102c1d97"
+    },
+    {
+      "path": "avatar-lab/.al-amr/docs/plugins/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig@1.0.0/manifest.json",
+      "bytes": 7074,
+      "sha256": "aae3ff7f3aef09a393b5648117e1c7c3350019f22d19ca7a7a79f367ec9dd813"
+    },
+    {
+      "path": "avatar-lab/.al-amr/docs/plugins/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig@1.0.0/README.md",
+      "bytes": 16790,
+      "sha256": "fd3980bec0c363cd6a6405228cdc6662f3e660c44ddd1f7a8d358b345b79978e"
+    },
+    {
+      "path": "avatar-lab/.al-amr/docs/plugins/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig@1.0.0/types.d.ts",
+      "bytes": 32269,
+      "sha256": "f77f74094c149bbc0d9b15bb2d6f2ddd794c940a2f99eb8f6158c69fe63603fc"
+    },
+    {
+      "path": "avatar-lab/.al-amr/docs/plugins/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig@1.0.0/types.json",
+      "bytes": 33595,
+      "sha256": "74c1508dc1f51116d612b471ffc3e4a5b2ee1113f158cc6e05523e653c7e6e48"
+    },
+    {
+      "path": "avatar-lab/AGENTS.md",
+      "bytes": 4588,
+      "sha256": "20f5fe51509d378b8e27308c46b45026fd191ce320028fbacfb52bfd08d5e28c"
+    },
+    {
+      "path": "avatar-lab/al-amr.environment.json",
+      "bytes": 1096,
+      "sha256": "94d774218b52f3727530375b922e2d257de446978e482a4c2409d9dfab4ef878"
+    },
+    {
+      "path": "avatar-lab/alamr.d.ts",
+      "bytes": 53613,
+      "sha256": "48b34fe1a8b40a04c3fb395d6600fe53ff7f65a83779bf3a2932d4b424aad57b"
+    },
+    {
+      "path": "avatar-lab/CLAUDE.md",
+      "bytes": 35,
+      "sha256": "b2872e43c658a41ef03322fa6d81e5717e4f46549613f67abcf3f8c5e0ea5171"
+    },
+    {
+      "path": "avatar-lab/index.html",
+      "bytes": 343,
+      "sha256": "1009e3c87799e49b5d85063383939fbf6322c8f08fddce5121999dd63cf67657"
+    },
+    {
+      "path": "avatar-lab/package-lock.json",
+      "bytes": 67530,
+      "sha256": "9289a62b70c313d67fbdbfcaee57a15eb15db1eb69f6a30eb75c5c4b23d25c76"
+    },
+    {
+      "path": "avatar-lab/package.json",
+      "bytes": 1086,
+      "sha256": "0342cb0fc5448d20c56627ee3a3d50a67fe8bd5f9b0e8f32102c6a6db8bbb936"
+    },
+    {
+      "path": "avatar-lab/public/environment-cover.png",
+      "bytes": 30129,
+      "sha256": "0f30f1e5d1b746dfe5b327c84e3d629700e3d549b1616d24bf07c450c8a50d88"
+    },
+    {
+      "path": "avatar-lab/scripts/create-branding.ps1",
+      "bytes": 2858,
+      "sha256": "f0520e765a40ef8a2858e6ca6155d0ef4f10266592b4629a36857a130a8d1edb"
+    },
+    {
+      "path": "avatar-lab/scripts/prepare-avatar-v2.mjs",
+      "bytes": 595,
+      "sha256": "9790eb928e3a834b81d9462f92e5730b911b105c9af28850fcfc49347099140b"
+    },
+    {
+      "path": "avatar-lab/src/AvatarWebV2.tsx",
+      "bytes": 315,
+      "sha256": "6a6396cbc7e471cf81aa2e51eea7902fe89d75a9f9942cb07fb48ab07e1b77d7"
+    },
+    {
+      "path": "avatar-lab/src/main.tsx",
+      "bytes": 20720,
+      "sha256": "604ba743b96e6f1cb72be698581215a4145966b40ec9213d967e9134d236d5c5"
+    },
+    {
+      "path": "avatar-lab/src/style.css",
+      "bytes": 5229,
+      "sha256": "58a546c9f95fdcbf1e6d233f23fdb274675098ca149cd07eec7b5cc4ce461786"
+    },
+    {
+      "path": "avatar-lab/tests/rig-contract.test.mjs",
+      "bytes": 1943,
+      "sha256": "f650022c0e36bdf20188d3022f1702b40d3972110eca7038e128db3c83cddabd"
+    },
+    {
+      "path": "avatar-lab/tsconfig.json",
+      "bytes": 360,
+      "sha256": "9ab4778d4ccc74bf7d6c2964e41f3a85ca0b19b78835d3e4b08ffe2de5499528"
+    },
+    {
+      "path": "avatar-lab/vite.config.ts",
+      "bytes": 536,
+      "sha256": "92e87ec3a01ea9e4cdbcb91f3dd4d629f550697cfd0fa02ae8f3ccd82ea518ff"
+    },
+    {
+      "path": "README_FA.md",
+      "bytes": 5522,
+      "sha256": "9cbd47ce74821e30be4ddf209bb3bdd1bd0a0727d875bbb23017cb430c7bf946"
+    },
+    {
+      "path": "release-metadata.json",
+      "bytes": 1189,
+      "sha256": "83df6a3f49ea35b21b2e93f39273e4fbb961993f9497c2369b95fb221c8fbbdd"
+    },
+    {
+      "path": "verification/host-tests.json",
+      "bytes": 100,
+      "sha256": "717768b481e4e6d33eeeaff407a440278f1a9b3b39a7bc917b9b0887746c372f"
+    },
+    {
+      "path": "verification/host-validate.json",
+      "bytes": 338,
+      "sha256": "f723f2b9295d83c0f086a6c0ebb33f144b66a082c9ad8361ffd3ecffd75ac487"
+    },
+    {
+      "path": "verification/plugin-project-doctor.json",
+      "bytes": 740,
+      "sha256": "d1eb9cea2eb1199d02a19f34ac80726f45b1579bb0e796774c355e97f48b471d"
+    },
+    {
+      "path": "verification/plugin-publish-doctor.json",
+      "bytes": 1359,
+      "sha256": "cfd7ab3a383957ce7e5655ccd4edc99809b0e8b5df3a50a73f7d2c2e77775f53"
+    },
+    {
+      "path": "verification/plugin-tests.json",
+      "bytes": 102,
+      "sha256": "3d893fae09838fe9fee43e8b751d0317ebf41fe8a19bbac7d03539d4473c34f0"
+    },
+    {
+      "path": "verification/plugin-validate.json",
+      "bytes": 325,
+      "sha256": "42477f196f14b76cedebae0db6e2722cf4bf0f3ae96cdeacd9206bcec1e28615"
+    },
+    {
+      "path": "verification/portable-copy.json",
+      "bytes": 448,
+      "sha256": "24a3c2bd416e1eb42bb91a8270669df16ac7902dfc1bee77e43f9dd3e414aa73"
+    },
+    {
+      "path": "verification/preservation.json",
+      "bytes": 376,
+      "sha256": "c037b1012e99e8bc981531fdf49ad931e2814b749d66a13a9ed533e5a49169ec"
+    },
+    {
+      "path": "verification/runtime-equivalence.json",
+      "bytes": 1215,
+      "sha256": "af9b656c597eb66cfebc3803c9be07903073f13d91c5220db80f6601ef5ac68d"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-backend.md",
+      "bytes": 14715,
+      "sha256": "01a34713366517221e6f6af6d9ee56503b9016c44011e2d7b3070199e9d42943"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-bundles.md",
+      "bytes": 8037,
+      "sha256": "57056cd866f5bb1db8a73a6222c9e17e67d68c867f84960fb4ae5a379c13dede"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-companions.md",
+      "bytes": 2124,
+      "sha256": "19a694ae74e9ef33e14ed077ab53ce157dab89df4c52b2da843de11b81ca236c"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-development.md",
+      "bytes": 4244,
+      "sha256": "aba0f60de4158e34e781cfe335676c3121511a419ec989c2c47efe044545ff49"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-groups.md",
+      "bytes": 24874,
+      "sha256": "8674f7a3355b911469f29e50f3cbf13b6b8d491cffe67f2dc256a9d7ee92ec68"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-hampa.md",
+      "bytes": 23250,
+      "sha256": "6c0a6265976e7e120539b702e7ebd635574562c4c9aa3b69562469f4820d649d"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-notifications.md",
+      "bytes": 7364,
+      "sha256": "49f3b1c1f3819e5a982875c206351c463dfacbf24ab81097468328ab3ff99a61"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-plugins.md",
+      "bytes": 13030,
+      "sha256": "87c2be99fd56901f91743ba23e8fb1d5368385676b2b116ea7123fcebfe1a22b"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-publishing.md",
+      "bytes": 5863,
+      "sha256": "dcdf78e9539eb9e8c1cfbf99c68f1527f0cc703a7751d9e556a0e69557132e4f"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-runtime.md",
+      "bytes": 7163,
+      "sha256": "1cbe72b980f4edd14cf6aa19f970def32aaad630db673f61af9918a7f9586036"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/SKILL.md",
+      "bytes": 5920,
+      "sha256": "521cab2595ba3cc46d45efa7b95c03fed8818e893e9a9877b8b76fbc043d959b"
+    },
+    {
+      "path": "آواتار/.gitignore",
+      "bytes": 162,
+      "sha256": "5127dcfc15ed75c417f2b62521e9f948adf8417ec7c5ca1525ab3751a3ed763f"
+    },
+    {
+      "path": "آواتار/AGENTS.md",
+      "bytes": 2525,
+      "sha256": "ccadca930e0c127ce4c14215f3aaa86e8b311e5b878c63e5fdd574b96959d31b"
+    },
+    {
+      "path": "آواتار/al-amr.plugin.json",
+      "bytes": 2554,
+      "sha256": "72d8c2148d24b911d763304ba34b9927c7f6aee4cbba614f258dbdcf236377e1"
+    },
+    {
+      "path": "آواتار/alamr.d.ts",
+      "bytes": 56486,
+      "sha256": "f44fff1d1fd548ad027400a3c9afbab45388e28031ebefc927745db319b4a7e4"
+    },
+    {
+      "path": "آواتار/assets-source/v1/avatar03.glb",
+      "bytes": 8657480,
+      "sha256": "bf16883394c2f968faa294e8debe02dc38ff8ba4aaf98d32319e025d8185540d"
+    },
+    {
+      "path": "آواتار/assets-source/web-v2/avatar.glb",
+      "bytes": 12284040,
+      "sha256": "193c07c351f1f94b12b499ece3f8813432dbe902afe0b5dd6957e788a9a36605"
+    },
+    {
+      "path": "آواتار/assets-source/web-v2/motions.json",
+      "bytes": 343866,
+      "sha256": "533829f6f7b4eca37586564c5d55f3807ae3537878e8007f2af55c853d732d24"
+    },
+    {
+      "path": "آواتار/assets-source/web-v2/provenance.json",
+      "bytes": 3175,
+      "sha256": "4578bd8ed16f03d3ae4796e3fca6247184599daeb8272a047c335ac9c2c605b6"
+    },
+    {
+      "path": "آواتار/CHANGELOG.md",
+      "bytes": 952,
+      "sha256": "4166400fa1123a1648427382ac06e7c8c8f8fae97b57fddb5395791dfc68b8c5"
+    },
+    {
+      "path": "آواتار/CLAUDE.md",
+      "bytes": 35,
+      "sha256": "b2872e43c658a41ef03322fa6d81e5717e4f46549613f67abcf3f8c5e0ea5171"
+    },
+    {
+      "path": "آواتار/CODE-LICENSE.txt",
+      "bytes": 1418,
+      "sha256": "4b8bdab9c47e4cc19309e3d1a4cf96b3cfd6a97e3e6fe017e3555137102dd3e2"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/asset-manifest.json",
+      "bytes": 4590,
+      "sha256": "387e89b968cf88967ea89cb33eafe22cdbb8342fd54390d14c0b2257012db4bc"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/avatar.bin",
+      "bytes": 12169248,
+      "sha256": "52d8a9ee95365468d490e12b4cf8b461cd8e29dcb357db9e726233bdfee1e331"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/avatar.gltf",
+      "bytes": 114903,
+      "sha256": "a7596659be5e3bf3e6400fabfe20042277ea03b5e5b6d0c1e37589020ec4ced9"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-00.jpg",
+      "bytes": 75332,
+      "sha256": "f054e220309a33a18360c0d8c03ca345bacd7e2e02d01f7299f519ab4420c0fc"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-01.jpg",
+      "bytes": 75781,
+      "sha256": "19d9c93e42fd0dfd1f284533536c360fd011aa5d2aeea8c20a6841add6d1afdd"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-02.jpg",
+      "bytes": 34214,
+      "sha256": "dd9d0b8fb660edc77ff28cefc9075fbaffaab62055e66b7916ed9c5285e7bd71"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-03.jpg",
+      "bytes": 144828,
+      "sha256": "501a685f004838d3df0f4552d16847e57dfc82e891d90ba677756737ef1bfcea"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-04.jpg",
+      "bytes": 28478,
+      "sha256": "0348d28e48fa362b8c036734d919d1c1f1b9fe691b50828e32191be410823c01"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-05.jpg",
+      "bytes": 30967,
+      "sha256": "77e89ad8950eba0411e64af13aac09bb0a32f207d45686d12942923225fb3394"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-06.jpg",
+      "bytes": 184265,
+      "sha256": "a6c4e6f076e32905c2726db145040c4a113b2f2fb24ac3492f644cc7aa430329"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-07.jpg",
+      "bytes": 71262,
+      "sha256": "e028edc446483c4821fe08fa057b84c8c13291eecfd6cd49323353a7ffb45698"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-08.jpg",
+      "bytes": 371528,
+      "sha256": "7b370d184a2b684083503f44b3bff83c6f6e0586c1940492a688dc141906a30c"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-09.jpg",
+      "bytes": 269829,
+      "sha256": "42be5fff5db968cc45d860da824c275c37fc72bf89d149402dcea9885953db2f"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-10.jpg",
+      "bytes": 262191,
+      "sha256": "17008532afc9d5edbf927d6f3ae64ab32c9f9c54e95eb957e30d838efdb3daa4"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-11.jpg",
+      "bytes": 125781,
+      "sha256": "48e76df0685ccf53f1945851b44de14cdbd45b50067ade68d9086a02a3bf1b09"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-12.jpg",
+      "bytes": 230173,
+      "sha256": "7cbfc7c79d0e79e92b2da9b0ecae00fe4b98f3e6709258624741d826dd622f36"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-13.jpg",
+      "bytes": 115336,
+      "sha256": "1b51d7710fe61c9a1a40118947bdd823716d996b04a390998bf38725db71507a"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/motions.json",
+      "bytes": 343866,
+      "sha256": "533829f6f7b4eca37586564c5d55f3807ae3537878e8007f2af55c853d732d24"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/provenance.json",
+      "bytes": 3175,
+      "sha256": "4578bd8ed16f03d3ae4796e3fca6247184599daeb8272a047c335ac9c2c605b6"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/THIRD_PARTY_NOTICES.md",
+      "bytes": 5348,
+      "sha256": "b60312212dac8147dc02c4679e4219ad0ddf97d07e1472beff7ab2c4fdf4baab"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar03-texture.png",
+      "bytes": 6287128,
+      "sha256": "5344ec24daf8cbc7a9ef08eb2549f2b0084f96283c83dfa1daa9e0e8f7acc822"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar03.glb",
+      "bytes": 8657480,
+      "sha256": "bf16883394c2f968faa294e8debe02dc38ff8ba4aaf98d32319e025d8185540d"
+    },
+    {
+      "path": "آواتار/dist/index.d.ts",
+      "bytes": 1803,
+      "sha256": "390ada4df5765540a669d5e8a4e69eb98ef519a6d065de9805f11ab706622213"
+    },
+    {
+      "path": "آواتار/dist/index.js",
+      "bytes": 3268,
+      "sha256": "2aa96f49450d6e43f9eca70096e7fe6198e5910289d8c9456ed9ba13c7eed588"
+    },
+    {
+      "path": "آواتار/dist/index.js.map",
+      "bytes": 3509,
+      "sha256": "559a200a7324894c9c690ed790d73a8f2b3e8e8e7f0d8981caab291f780c082d"
+    },
+    {
+      "path": "آواتار/dist/model.d.ts",
+      "bytes": 791,
+      "sha256": "c067ee0d306818ea400f85c56bf7731d0b0507c86a62d0c11ff50b6119fdfed3"
+    },
+    {
+      "path": "آواتار/dist/model.js",
+      "bytes": 2838,
+      "sha256": "e3165d7a5cd939105099ebfd9dfc89b66a24d4d11fc639baf541ef79df9d5648"
+    },
+    {
+      "path": "آواتار/dist/model.js.map",
+      "bytes": 2853,
+      "sha256": "1306e786e3deba18ca53533103676b5a2c403cc7833ae028b3cdbfcb363af378"
+    },
+    {
+      "path": "آواتار/dist/motion.d.ts",
+      "bytes": 1437,
+      "sha256": "1771a75c2361dd81fcc564d5d27faa4e53f202d186cf740fc9023b759fe96744"
+    },
+    {
+      "path": "آواتار/dist/motion.js",
+      "bytes": 3869,
+      "sha256": "0fd63f7f8b955de31b92367af1188e428a9390e034120a7801979ddc93eb2cee"
+    },
+    {
+      "path": "آواتار/dist/motion.js.map",
+      "bytes": 4479,
+      "sha256": "961a92cb1b64cca3acdb1d14d370d24fdff57118989ce74f490344a01c8e4275"
+    },
+    {
+      "path": "آواتار/dist/v2.d.ts",
+      "bytes": 2221,
+      "sha256": "db5f6989f523c2d750552272f0af77fea90a3a6887a1ba3999a75626c45fd7a5"
+    },
+    {
+      "path": "آواتار/dist/v2.js",
+      "bytes": 6406,
+      "sha256": "81692e3b1a11ece50fc9afbb1450ff489793d424d8633782796a758a909f11c2"
+    },
+    {
+      "path": "آواتار/dist/v2.js.map",
+      "bytes": 5758,
+      "sha256": "4806713f347183d03dd66b431930f931095e9d26fcc095166f9a6508a44497c8"
+    },
+    {
+      "path": "آواتار/dist/web-v2/actor.mjs",
+      "bytes": 10771,
+      "sha256": "5ac5ec8e5e245e595ba33cb5233b6a2d7fcd696df7e386d1a13211f7ba961696"
+    },
+    {
+      "path": "آواتار/dist/web-v2/animation.mjs",
+      "bytes": 26576,
+      "sha256": "8374598d1bbe05f6f5186a41c396d50bc6b02a8817bd79ad2407000650591e08"
+    },
+    {
+      "path": "آواتار/dist/web-v2/expressions.mjs",
+      "bytes": 6029,
+      "sha256": "a242921cbbf2e1eb0d7c759b934fab6d4b2f0a922e245d40826c22434ebecddb"
+    },
+    {
+      "path": "آواتار/dist/web-v2/math.mjs",
+      "bytes": 1365,
+      "sha256": "9f575ae2aa57d2bb7bddd4566ab8f6eebad8278c194824ae8fa30413a48f9162"
+    },
+    {
+      "path": "آواتار/dist/web-v2/physics.mjs",
+      "bytes": 4840,
+      "sha256": "8ab5fdc6f7a3f157b2cb7a59624af62e790dc7d5eec305f8c1f857657873903c"
+    },
+    {
+      "path": "آواتار/dist/web-v2/runtime.d.mts",
+      "bytes": 2215,
+      "sha256": "77e7901cc477af18e643b49b00939ebd8ef2c2a652460e2c5382b49d8abfb02d"
+    },
+    {
+      "path": "آواتار/dist/web-v2/runtime.mjs",
+      "bytes": 4993,
+      "sha256": "a4c88b013f069d32d15b71a6323a4fbc340e80c65d217b2840560fefa3385d1e"
+    },
+    {
+      "path": "آواتار/integration.md",
+      "bytes": 4926,
+      "sha256": "d8ed5f209ff4d6f219e8f55e1fe740c5a0bd0de02ee3478775d8d4ae7a3727da"
+    },
+    {
+      "path": "آواتار/LICENSE",
+      "bytes": 957,
+      "sha256": "ff073eee5087758ab997a7300fe4f96c594d5b1b81aec9b51ae3ac2020a2897e"
+    },
+    {
+      "path": "آواتار/package-lock.json",
+      "bytes": 12411,
+      "sha256": "37d822a95d31cb8ec55d7074107ddfbe5d30d9fa8977895ed9ae62d91a151ab5"
+    },
+    {
+      "path": "آواتار/package.json",
+      "bytes": 1621,
+      "sha256": "a59b2c3bc93de16a520b25c55d7e581483a9e871781b5f826718ccbe09525ac5"
+    },
+    {
+      "path": "آواتار/plugin-icon.png",
+      "bytes": 14173,
+      "sha256": "7b8f3157b099079d21fb30e3dff6cd1081662e1430cf951f1ef698a6f8db495c"
+    },
+    {
+      "path": "آواتار/README.md",
+      "bytes": 9529,
+      "sha256": "83f31fb9139ec5977b4bc4323ed0f008f80e9e9efd2803f3eb671bb0c97b21ae"
+    },
+    {
+      "path": "آواتار/scripts/copy-assets.mjs",
+      "bytes": 1450,
+      "sha256": "bad51c74d0d7eb82879177b6993adb82f936e88462c92e205b5bd84dd6e24607"
+    },
+    {
+      "path": "آواتار/scripts/glb.mjs",
+      "bytes": 4570,
+      "sha256": "2498f8fdc099064d724c60cdb79a4bfb4c01c0f83b766cdb8705a864e4b765da"
+    },
+    {
+      "path": "آواتار/scripts/prepare-v2.mjs",
+      "bytes": 3159,
+      "sha256": "11f1da249d1b1336f7a24611a1630b1607c8d307d0f25c7880840af077a2b9c1"
+    },
+    {
+      "path": "آواتار/src/index.tsx",
+      "bytes": 4272,
+      "sha256": "e199bac13646e2cad3650400a5bd30423a39223f5f411b2d20fbcdcb1f948bc8"
+    },
+    {
+      "path": "آواتار/src/model.ts",
+      "bytes": 2763,
+      "sha256": "31c119bbbcf394a6c4b03a7b7cd4d16a51af40e8dfc5993b4b41d9a2f755ad72"
+    },
+    {
+      "path": "آواتار/src/motion.ts",
+      "bytes": 4423,
+      "sha256": "27a143edc5bcfdbf99ae133f12d23093658750a78c4d4ac1439f8f5246cb87d0"
+    },
+    {
+      "path": "آواتار/src/v2.tsx",
+      "bytes": 7781,
+      "sha256": "6a49030e2bbab8871a1c70b6f5b459f75ab505eead5b3479c0d427190119f173"
+    },
+    {
+      "path": "آواتار/src/web-v2/actor.mjs",
+      "bytes": 10771,
+      "sha256": "5ac5ec8e5e245e595ba33cb5233b6a2d7fcd696df7e386d1a13211f7ba961696"
+    },
+    {
+      "path": "آواتار/src/web-v2/animation.mjs",
+      "bytes": 26576,
+      "sha256": "8374598d1bbe05f6f5186a41c396d50bc6b02a8817bd79ad2407000650591e08"
+    },
+    {
+      "path": "آواتار/src/web-v2/expressions.mjs",
+      "bytes": 6029,
+      "sha256": "a242921cbbf2e1eb0d7c759b934fab6d4b2f0a922e245d40826c22434ebecddb"
+    },
+    {
+      "path": "آواتار/src/web-v2/math.mjs",
+      "bytes": 1365,
+      "sha256": "9f575ae2aa57d2bb7bddd4566ab8f6eebad8278c194824ae8fa30413a48f9162"
+    },
+    {
+      "path": "آواتار/src/web-v2/physics.mjs",
+      "bytes": 4840,
+      "sha256": "8ab5fdc6f7a3f157b2cb7a59624af62e790dc7d5eec305f8c1f857657873903c"
+    },
+    {
+      "path": "آواتار/src/web-v2/runtime.d.mts",
+      "bytes": 2215,
+      "sha256": "77e7901cc477af18e643b49b00939ebd8ef2c2a652460e2c5382b49d8abfb02d"
+    },
+    {
+      "path": "آواتار/src/web-v2/runtime.mjs",
+      "bytes": 4993,
+      "sha256": "a4c88b013f069d32d15b71a6323a4fbc340e80c65d217b2840560fefa3385d1e"
+    },
+    {
+      "path": "آواتار/tests/load-real-avatar.mjs",
+      "bytes": 1200,
+      "sha256": "150a824aed8f4b267f8d40a122b5144c532cae92ffc22ccd7529a43e75eb9885"
+    },
+    {
+      "path": "آواتار/tests/model.test.mjs",
+      "bytes": 2559,
+      "sha256": "0e703ab65cf842f313c0abe4ab8d0d0b7c0d3a3dbefbb23b7883195a28aff89b"
+    },
+    {
+      "path": "آواتار/tests/motion.test.mjs",
+      "bytes": 2235,
+      "sha256": "51c2650ad09e86393f55b6239991f6b0ae03922d0833a71d6742d5348dcbf941"
+    },
+    {
+      "path": "آواتار/tests/package.test.mjs",
+      "bytes": 2840,
+      "sha256": "9a20d1fe14a90814af5ba1542ebdf0987407705c5c3aa1b9a3ab160f6e1fb924"
+    },
+    {
+      "path": "آواتار/tests/web-v2-model.test.mjs",
+      "bytes": 17047,
+      "sha256": "00483c353a8bf485dc361599e0f49652a359422a2a31257e5f3c343907b9eef9"
+    },
+    {
+      "path": "آواتار/tests/web-v2-runtime.test.mjs",
+      "bytes": 10954,
+      "sha256": "76b13e62a9df273dbee15b465b82133232d10a63fed297c5f82928d30d488edf"
+    },
+    {
+      "path": "آواتار/THIRD_PARTY_NOTICES.md",
+      "bytes": 5348,
+      "sha256": "b60312212dac8147dc02c4679e4219ad0ddf97d07e1472beff7ab2c4fdf4baab"
+    },
+    {
+      "path": "آواتار/tsconfig.json",
+      "bytes": 272,
+      "sha256": "3912d3340d55bcf77fe2da983a8087799b07513635a9b744fdf64e7f9a90846d"
+    }
+  ],
+  "format": 1,
+  "scope": "All delivery files except this inventory"
+}

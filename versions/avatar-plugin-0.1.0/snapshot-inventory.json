@@ -1,0 +1,197 @@
+[
+  {
+    "sha256": "5127dcfc15ed75c417f2b62521e9f948adf8417ec7c5ca1525ab3751a3ed763f",
+    "path": ".gitignore",
+    "bytes": 162
+  },
+  {
+    "sha256": "ccadca930e0c127ce4c14215f3aaa86e8b311e5b878c63e5fdd574b96959d31b",
+    "path": "AGENTS.md",
+    "bytes": 2525
+  },
+  {
+    "sha256": "c93791c9cd411a964e149dfa3c3b2472f55bb753d5e5fbe4f2b367a6256eee9e",
+    "path": "al-amr.plugin.json",
+    "bytes": 1915
+  },
+  {
+    "sha256": "f44fff1d1fd548ad027400a3c9afbab45388e28031ebefc927745db319b4a7e4",
+    "path": "alamr.d.ts",
+    "bytes": 56486
+  },
+  {
+    "sha256": "b2872e43c658a41ef03322fa6d81e5717e4f46549613f67abcf3f8c5e0ea5171",
+    "path": "CLAUDE.md",
+    "bytes": 35
+  },
+  {
+    "sha256": "753d108dfaae2922641a01ea95aace89e64b1e72a7ff065192d694c93287dd3c",
+    "path": "integration.md",
+    "bytes": 2981
+  },
+  {
+    "sha256": "97d9454e5657bc0d04602214d5efb00f392e051ed745f72241ab6c81ac967480",
+    "path": "package-lock.json",
+    "bytes": 12351
+  },
+  {
+    "sha256": "74a77d8c7c34ba5396d1d963209c4c86a67fead7be141687bbcb6333cc39d14e",
+    "path": "package.json",
+    "bytes": 959
+  },
+  {
+    "sha256": "7b8f3157b099079d21fb30e3dff6cd1081662e1430cf951f1ef698a6f8db495c",
+    "path": "plugin-icon.png",
+    "bytes": 14173
+  },
+  {
+    "sha256": "2c4f600d5541ea7e1d9bcd34040a7b40fbe0812b1b7e56a1e712a3f86a90f002",
+    "path": "README.md",
+    "bytes": 5559
+  },
+  {
+    "sha256": "3912d3340d55bcf77fe2da983a8087799b07513635a9b744fdf64e7f9a90846d",
+    "path": "tsconfig.json",
+    "bytes": 272
+  },
+  {
+    "sha256": "01a34713366517221e6f6af6d9ee56503b9016c44011e2d7b3070199e9d42943",
+    "path": ".agents/skills/al-amr/agent-backend.md",
+    "bytes": 14715
+  },
+  {
+    "sha256": "57056cd866f5bb1db8a73a6222c9e17e67d68c867f84960fb4ae5a379c13dede",
+    "path": ".agents/skills/al-amr/agent-bundles.md",
+    "bytes": 8037
+  },
+  {
+    "sha256": "19a694ae74e9ef33e14ed077ab53ce157dab89df4c52b2da843de11b81ca236c",
+    "path": ".agents/skills/al-amr/agent-companions.md",
+    "bytes": 2124
+  },
+  {
+    "sha256": "aba0f60de4158e34e781cfe335676c3121511a419ec989c2c47efe044545ff49",
+    "path": ".agents/skills/al-amr/agent-development.md",
+    "bytes": 4244
+  },
+  {
+    "sha256": "8674f7a3355b911469f29e50f3cbf13b6b8d491cffe67f2dc256a9d7ee92ec68",
+    "path": ".agents/skills/al-amr/agent-groups.md",
+    "bytes": 24874
+  },
+  {
+    "sha256": "6c0a6265976e7e120539b702e7ebd635574562c4c9aa3b69562469f4820d649d",
+    "path": ".agents/skills/al-amr/agent-hampa.md",
+    "bytes": 23250
+  },
+  {
+    "sha256": "49f3b1c1f3819e5a982875c206351c463dfacbf24ab81097468328ab3ff99a61",
+    "path": ".agents/skills/al-amr/agent-notifications.md",
+    "bytes": 7364
+  },
+  {
+    "sha256": "87c2be99fd56901f91743ba23e8fb1d5368385676b2b116ea7123fcebfe1a22b",
+    "path": ".agents/skills/al-amr/agent-plugins.md",
+    "bytes": 13030
+  },
+  {
+    "sha256": "dcdf78e9539eb9e8c1cfbf99c68f1527f0cc703a7751d9e556a0e69557132e4f",
+    "path": ".agents/skills/al-amr/agent-publishing.md",
+    "bytes": 5863
+  },
+  {
+    "sha256": "1cbe72b980f4edd14cf6aa19f970def32aaad630db673f61af9918a7f9586036",
+    "path": ".agents/skills/al-amr/agent-runtime.md",
+    "bytes": 7163
+  },
+  {
+    "sha256": "521cab2595ba3cc46d45efa7b95c03fed8818e893e9a9877b8b76fbc043d959b",
+    "path": ".agents/skills/al-amr/SKILL.md",
+    "bytes": 5920
+  },
+  {
+    "sha256": "40a422ab1e9a65e5ac264d47ced5bf4275b5741711a1d38cc6f5a93f114f8076",
+    "path": "dist/index.d.ts",
+    "bytes": 1449
+  },
+  {
+    "sha256": "103bd382aefbd3a6f199c71b3585377bce9f1698f5cf6679f0f372feb87784ce",
+    "path": "dist/index.js",
+    "bytes": 3100
+  },
+  {
+    "sha256": "b2911f284561c59ae859618a207c12dc3f8f7973db85cf6a8db706a2ae241dfd",
+    "path": "dist/index.js.map",
+    "bytes": 3387
+  },
+  {
+    "sha256": "c067ee0d306818ea400f85c56bf7731d0b0507c86a62d0c11ff50b6119fdfed3",
+    "path": "dist/model.d.ts",
+    "bytes": 791
+  },
+  {
+    "sha256": "e3165d7a5cd939105099ebfd9dfc89b66a24d4d11fc639baf541ef79df9d5648",
+    "path": "dist/model.js",
+    "bytes": 2838
+  },
+  {
+    "sha256": "1306e786e3deba18ca53533103676b5a2c403cc7833ae028b3cdbfcb363af378",
+    "path": "dist/model.js.map",
+    "bytes": 2853
+  },
+  {
+    "sha256": "1771a75c2361dd81fcc564d5d27faa4e53f202d186cf740fc9023b759fe96744",
+    "path": "dist/motion.d.ts",
+    "bytes": 1437
+  },
+  {
+    "sha256": "0fd63f7f8b955de31b92367af1188e428a9390e034120a7801979ddc93eb2cee",
+    "path": "dist/motion.js",
+    "bytes": 3869
+  },
+  {
+    "sha256": "961a92cb1b64cca3acdb1d14d370d24fdff57118989ce74f490344a01c8e4275",
+    "path": "dist/motion.js.map",
+    "bytes": 4479
+  },
+  {
+    "sha256": "5344ec24daf8cbc7a9ef08eb2549f2b0084f96283c83dfa1daa9e0e8f7acc822",
+    "path": "dist/assets/avatar03-texture.png",
+    "bytes": 6287128
+  },
+  {
+    "sha256": "bf16883394c2f968faa294e8debe02dc38ff8ba4aaf98d32319e025d8185540d",
+    "path": "dist/assets/avatar03.glb",
+    "bytes": 8657480
+  },
+  {
+    "sha256": "2a48828755dd7ca2b42e5c668b22b0defd63675793309bfa6dabeaedc7d978e7",
+    "path": "scripts/copy-assets.mjs",
+    "bytes": 1489
+  },
+  {
+    "sha256": "f6bad6b760eee2da9b6f53633a10ef9b8e11e50a49c6fb5e7a40351ca34b6a74",
+    "path": "src/index.tsx",
+    "bytes": 3910
+  },
+  {
+    "sha256": "31c119bbbcf394a6c4b03a7b7cd4d16a51af40e8dfc5993b4b41d9a2f755ad72",
+    "path": "src/model.ts",
+    "bytes": 2763
+  },
+  {
+    "sha256": "27a143edc5bcfdbf99ae133f12d23093658750a78c4d4ac1439f8f5246cb87d0",
+    "path": "src/motion.ts",
+    "bytes": 4423
+  },
+  {
+    "sha256": "0e703ab65cf842f313c0abe4ab8d0d0b7c0d3a3dbefbb23b7883195a28aff89b",
+    "path": "tests/model.test.mjs",
+    "bytes": 2559
+  },
+  {
+    "sha256": "51c2650ad09e86393f55b6239991f6b0ae03922d0833a71d6742d5348dcbf941",
+    "path": "tests/motion.test.mjs",
+    "bytes": 2235
+  }
+]

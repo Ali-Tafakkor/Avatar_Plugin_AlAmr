@@ -1,0 +1,34 @@
+{
+  "format": 1,
+  "modules": {
+    "animation.mjs": {
+      "sha256": "8374598d1bbe05f6f5186a41c396d50bc6b02a8817bd79ad2407000650591e08",
+      "byteIdenticalToReviewedRuntime": true
+    },
+    "expressions.mjs": {
+      "sha256": "a242921cbbf2e1eb0d7c759b934fab6d4b2f0a922e245d40826c22434ebecddb",
+      "byteIdenticalToReviewedRuntime": true
+    },
+    "math.mjs": {
+      "sha256": "9f575ae2aa57d2bb7bddd4566ab8f6eebad8278c194824ae8fa30413a48f9162",
+      "byteIdenticalToReviewedRuntime": true
+    },
+    "physics.mjs": {
+      "sha256": "8ab5fdc6f7a3f157b2cb7a59624af62e790dc7d5eec305f8c1f857657873903c",
+      "byteIdenticalToReviewedRuntime": true
+    },
+    "runtime.mjs": {
+      "sha256": "a4c88b013f069d32d15b71a6323a4fbc340e80c65d217b2840560fefa3385d1e",
+      "byteIdenticalToReviewedRuntime": true
+    },
+    "runtime.d.mts": {
+      "sha256": "77e7901cc477af18e643b49b00939ebd8ef2c2a652460e2c5382b49d8abfb02d",
+      "byteIdenticalToReviewedRuntime": true
+    },
+    "actor.mjs": {
+      "sha256": "5ac5ec8e5e245e595ba33cb5233b6a2d7fcd696df7e386d1a13211f7ba961696",
+      "reviewedActorBodyUnchanged": true,
+      "omitted": "Unused standalone renderer/GLB-loader convenience entry only"
+    }
+  }
+}
