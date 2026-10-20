@@ -1,0 +1,39 @@
+✔ repository acceptance fingerprints match the frozen production migration (4.9027ms)
+✔ built hybrid matches the accepted body, dynamic neck, face and V2 jump under transformed host playback (3996.1417ms)
+✔ hybrid dist is a closed package-local import graph and matches its frozen accepted algorithm fingerprints (98.7104ms)
+✔ built hybrid instances isolate both native rigs and face resources and dispose without affecting the cached assets (1813.3162ms)
+✔ standalone hybrid applies all six public emotions, a blink and all 37 effective native face controls (1702.832ms)
+ℹ {"effectiveNativeControls":37,"weakest":{"channel":"eyeWideRight","displacementMeters":0.002861739694196216}}
+THREE.Texture: Unable to serialize Texture.
+THREE.Texture: Unable to serialize Texture.
+✔ real standing animation has feet on the floor and the requested height (67.4409ms)
+✔ instances isolate skeletons/materials and preserve cached geometry and source pose (144.6936ms)
+✔ host motion selects real embedded clips without moving the host root (4.3509ms)
+✔ fall continues jump and land returns to idle with explicit fallback status (0.6844ms)
+✔ manual one-shot holds its final pose and auto mode restores latest host state (0.7303ms)
+✔ missing source clips fail loudly and independent instances do not share animation time (0.6715ms)
+✔ release has one matching version and every declared frontend export exists in the built entry (236.8096ms)
+✔ packaged web model keeps every GLB field and image byte with only external resource URIs changed (65.493ms)
+✔ extraction retains the real body, 73 joints, 66 facial shapes and five finger chains without shared mutable resources (32.1523ms)
+✔ all original expression presets and blinking deform the same face targets after skeleton extraction (51.5959ms)
+✔ retarget baking is independent of host world translation and yaw (131.1551ms)
+✔ real skinned soles remain flat on the floor beneath a translated and rotated host (63.8552ms)
+✔ faster athletic walk/run preserve support, separate foot lanes and use explicit host states (525.0833ms)
+✔ every baked and live swing frame stays upright with bounded anatomical roll/pitch and continuous rotations (1347.1929ms)
+✔ teleport reset clears all motion history without changing facial expression weights (1.4081ms)
+✔ all locomotion knees bend forward in a stable hinge plane, with bounded flex and smooth gait transitions (862.4829ms)
+✔ real model remains continuous through accelerated walk/run/stop at 30 Hz (166.1403ms)
+✔ real model remains continuous through accelerated walk/run/stop at 60 Hz (334.3799ms)
+✔ real model remains continuous through accelerated walk/run/stop at 120 Hz (669.1365ms)
+✔ runtime leaves the host position and heading authoritative and grounds real soles in that world (246.5071ms)
+✔ runtime public face controls bind all 66 channels, all six presets and an actual close/open blink (523.8553ms)
+✔ equivalent world cameras give the same facial gaze even when one camera has a transformed parent (488.3168ms)
+✔ runtime clones keep independent skeletons, materials and face influences and dispose only their own resources once (441.0512ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5033.0336

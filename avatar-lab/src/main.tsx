@@ -6,7 +6,7 @@ import { PlayerRig, createPlayerController, createFlatNavigationSurface, type Av
 import { EMOTIONS, LOCOMOTION_PROFILE, type AvatarV2Status, type EmotionName } from '@al-amr-community/usr-20dfea67-47be-4f4a-b48c-02c5f210a079--avatar03';
 import { AvatarWebV2, type AvatarWebV2Handle } from './AvatarWebV2';
 import './style.css';
-import { CompareApp } from './CompareApp';
+import { App as HybridApp } from './App';
 
 console.info('AVATAR_V2_BOOT','module_loaded');
 
@@ -174,4 +174,4 @@ function App(){
     </aside>
   </main>;
 }
-createRoot(document.getElementById('root')!).render(new URLSearchParams(location.search).get('mode')==='single'?<App/>:<CompareApp/>);
+createRoot(document.getElementById('root')!).render(new URLSearchParams(location.search).get('mode')==='single'?<App/>:<HybridApp/>);

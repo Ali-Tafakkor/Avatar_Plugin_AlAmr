@@ -1,0 +1,20 @@
+✔ switching releases held controls and preserves both independent world locations (1.632ms)
+✔ switching during a jump or flight parks the outgoing avatar on the shared ground (0.2841ms)
+✔ only the chosen actor advances with its own movement profile (5.9372ms)
+✔ reset restores the side-by-side layout without changing the selected avatar (0.4422ms)
+✔ production hybrid physics retain V1 walk/run and the accepted V2 jump (0.4958ms)
+✔ jump and official WASD, Space and flight keys resume V2 locomotion after Sitting or HandRaise preview (7.8673ms)
+✔ production host consumes the public Plugin adapter in one existing Player Rig scene (1.7271ms)
+✔ installed-package preparation preserves the exact accepted V1 binary, skin/animation JSON and local V2 resources (135.4469ms)
+✔ the legacy body uses opaque depth writes while preserving its texture, colour and alpha cutouts (2.0867ms)
+✔ material correction affects only the owned clone and remains safe on repeated application (0.5562ms)
+✔ exact installed Player Rig emits the shared states consumed by Avatar 03 (2.7236ms)
+✔ official camera visibility supports hiding the complete custom avatar in first person (0.1597ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 928.1645

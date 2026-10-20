@@ -1,4 +1,5 @@
 node_modules
+.public-production/
 .env
 node_modules
 .al-amr/*.tmp

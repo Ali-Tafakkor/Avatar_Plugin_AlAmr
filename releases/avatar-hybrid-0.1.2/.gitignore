@@ -1,0 +1,14 @@
+**/node_modules/
+**/.al-amr/*
+!**/.al-amr/docs/
+**/.env
+**/.env.*
+!**/.env.example
+**/.npmrc
+*.log
+*.tmp
+*.tsbuildinfo
+/avatar-lab/dist/
+/avatar-lab/.public-production/
+/avatar-lab/public/avatar-v2/
+/avatar-lab/public/avatar-hybrid/

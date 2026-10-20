@@ -1,0 +1,46 @@
+{
+  "format": 2,
+  "preparedAt": "2026-10-20T05:03:00.110Z",
+  "product": "accepted hybrid avatar",
+  "technicalVersion": "0.1.2",
+  "pluginId": "plg_47f4b254-a610-4f8d-bc5a-560cba8f70b1",
+  "publisher": {
+    "id": "pub_455f1f0e-375a-4ed8-91da-2cac8a114bd6",
+    "handle": "usr-20dfea67-47be-4f4a-b48c-02c5f210a079"
+  },
+  "slug": "avatar03",
+  "pluginDirectory": "آواتار",
+  "sampleEnvironment": "avatar-lab",
+  "readiness": {
+    "localArtifactValidated": true,
+    "pluginRepositoryTests": 28,
+    "hostRepositoryTests": 12,
+    "pluginManifestValid": true,
+    "hostManifestValid": true,
+    "publishDoctorOverallOk": false,
+    "portableCopyReceiptIncluded": true
+  },
+  "assetPermissions": {
+    "applicationAndAdapterCode": "MIT only",
+    "avatarSDKSource": "upstream non-commercial example",
+    "independentCommercialOrPublicRedistributionPermission": "not established by this preparation",
+    "v1Assets": "owner-provided source; no additional asset license asserted",
+    "notices": "آواتار/THIRD_PARTY_NOTICES.md"
+  },
+  "omitted": [
+    "node_modules",
+    "account/session state",
+    "junctions",
+    "experimental build trees and UI",
+    "generated host assets/output",
+    "raw machine-specific acceptance receipts",
+    "repository-only hybrid equivalence test"
+  ],
+  "operations": {
+    "registryUpload": "not performed by this tool",
+    "registryPublication": "not asserted",
+    "remoteVersionAvailability": "not asserted",
+    "gitOrRemotePublication": "not performed by this tool"
+  },
+  "authority": "Local transferable preparation; not an uploaded or immutable Registry candidate."
+}

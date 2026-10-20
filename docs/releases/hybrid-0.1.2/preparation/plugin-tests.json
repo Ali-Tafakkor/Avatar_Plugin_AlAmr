@@ -1,0 +1,19 @@
+{
+  "format": 1,
+  "clientDate": "2026-10-20",
+  "scope": "nonvisual packaging/regression checks",
+  "suite": "plugin",
+  "exitCode": 0,
+  "passed": 28,
+  "failed": 0,
+  "files": [
+    "tests/hybrid-equivalence.test.mjs",
+    "tests/hybrid-package.test.mjs",
+    "tests/model.test.mjs",
+    "tests/motion.test.mjs",
+    "tests/package.test.mjs",
+    "tests/web-v2-model.test.mjs",
+    "tests/web-v2-runtime.test.mjs"
+  ],
+  "visualTestsRepeated": false
+}

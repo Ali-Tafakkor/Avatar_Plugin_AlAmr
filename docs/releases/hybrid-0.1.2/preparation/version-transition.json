@@ -1,0 +1,16 @@
+{
+  "format": 1,
+  "clientDate": "2026-10-20",
+  "previousVersion": "0.1.1",
+  "version": "0.1.2",
+  "reason": "Owner's Desktop screenshot reports 0.1.1 already submitted and locked and suggests 0.1.2.",
+  "command": "alamr bump patch --json",
+  "resultCode": "ALAMR_BUMP_RAISED",
+  "commandSucceeded": true,
+  "successfulIncrementCount": 1,
+  "readBack": {"manifest":"0.1.2", "package":"0.1.2", "pluginLock":"0.1.2", "hostLocalDependency":"0.1.2"},
+  "registryStatus": {"command":"alamr status --json", "code":"ALAMR_AUTH_REQUIRED", "spentVersions":null, "nextVersionAvailabilityVerified":false},
+  "registrySubmitted": false,
+  "registryPublished": false,
+  "note": "Sandbox-only launcher attempts produced no CLI JSON and did not change versions; the official elevated local bump ran once. Desktop and CLI authentication are separate."
+}

@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "clientDate": "2026-10-20",
+  "scope": "Separate transferable kit installed and built without repository experiments or source folders",
+  "observedCommands": [
+    {
+      "directory": "آواتار",
+      "command": "npm ci --offline --ignore-scripts --no-audit --fund=false",
+      "exitCode": 0,
+      "installedPackages": 24
+    },
+    {
+      "directory": "آواتار",
+      "command": "npm run build",
+      "exitCode": 0
+    },
+    {
+      "directory": "آواتار",
+      "command": "npm test",
+      "exitCode": 0,
+      "passed": 26,
+      "failed": 0
+    },
+    {
+      "directory": "avatar-lab",
+      "command": "npm ci --offline --ignore-scripts --no-audit --fund=false",
+      "exitCode": 0,
+      "installedPackages": 84
+    },
+    {
+      "directory": "avatar-lab",
+      "command": "npm test",
+      "exitCode": 0,
+      "passed": 12,
+      "failed": 0
+    },
+    {
+      "directory": "avatar-lab",
+      "command": "npm run build",
+      "exitCode": 0
+    }
+  ],
+  "packagingFix": "Preview exits on jump button and all official movement/flight keys before normal locomotion resumes; included in12 host tests.",
+  "productionOutput": {
+    "byteIdentical": true,
+    "files": 32,
+    "bytes": 46982280
+  },
+  "initialKitReadback": {
+    "passed": true,
+    "files": 177
+  },
+  "preserved": {
+    "previousReleaseFiles": 157,
+    "acceptedNormalFiles": 32,
+    "acceptedInspectionFiles": 32
+  },
+  "installNote": "Initial sandbox offline cache lacked zustand. The real local npm cache was used successfully with network and lifecycle scripts disabled.",
+  "visualTestsRepeated": false,
+  "registrySubmitted": false,
+  "registryPublished": false,
+  "limits": "Command results are recorded from the actual preparation run; this script itself verifies stored files and both generated outputs. This is not a new Desktop rendering or Registry installation claim."
+}

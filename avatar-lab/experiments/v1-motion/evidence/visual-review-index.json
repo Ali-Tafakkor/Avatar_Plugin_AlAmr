@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Local phase1 motion review evidence, not publication inventory",
+  "reviewedByAgent": true,
+  "finalOwnerVisualAcceptance": null,
+  "bodyRuntimeUnchangedAcrossCaptures": true,
+  "retargetSha256": "329f3722e55d7660740718ac1a3aab2b0a1b58fed1092f7c77d4311596747673",
+  "runtimeSha256": "50d041142d0de2c7bf0d96e3c7ba0a3b3131707f933fd935e8edb20b3c38d2b3",
+  "notes": [
+    "13 review poses captured through official Desktop preview API",
+    "Standing additionally captured in inspection-01.jpg and final normal view",
+    "Actual live V1 reference vs sampler and V2: nine body segment directions round to 0.000 degrees in paused Walk",
+    "Additional V2 middle/ring/pinky joints stay at rest; silhouettes are not identical",
+    "Common view has perspective differences; side views partly occlude V1",
+    "Jump button rise and return observed; no frozen apex capture; all73bone matching is unit regression evidence",
+    "No FPS/WebXR/Quest/grasp acceptance and no Git or Registry writes"
+  ],
+  "captures": [
+    {
+      "receipt": "body-probe-walk-capture.json",
+      "ok": true,
+      "previewId": "pv_d4903497f9254c8eb6ef19f8fa154c3d",
+      "buildDigest": "sha256:b0c25ffe29adb9b2179b38e43645ecd821e6d5c5a4c25325f28e710d34c77613",
+      "image": "body-probe-walk.jpg",
+      "width": 1920,
+      "height": 1200
+    },
+    {
+      "receipt": "normal-final-capture.json",
+      "ok": true,
+      "previewId": "pv_3fc0d90c3bf14ecfb48a3846a0296bdc",
+      "buildDigest": "sha256:5e403f6f4aef9348594da806cddd33f34a9c0945af7c5b22e44ee3c9decd37bd",
+      "image": "normal-final.jpg",
+      "width": 1920,
+      "height": 1200
+    },
+    {
+      "receipt": "review-face-smile-capture.json",
+      "ok": true,
+      "previewId": "pv_d0c1f654ec1c49338097f82a21bd007d",
+      "buildDigest": "sha256:fcdd5f7b09c2b4025f55b3255dc948f76b7bcb37a043c3debf2776061bfce0ad",
+      "image": "review-face-smile.jpg",
+      "width": 1920,
+      "height": 1200
+    },
+    {
+      "receipt": "review-face-surprise-capture.json",
+      "ok": true,
+      "previewId": "pv_650bd79e82e443f5b8a4f0ec78a29eb2",
+      "buildDigest": "sha256:f3a25b8250f2c9f5db18dc9a178a86e7df1fbc95cca9d6ca3a1bd0fba0307edf",
+      "image": "review-face-surprise.jpg",
+      "width": 1920,
+      "height": 1200
+    },
+    {
+      "receipt": "review-fly-front-capture.json",
+      "ok": true,
+      "previewId": "pv_16da3535af9546c9b043e7fbd04f964c",
+      "buildDigest": "sha256:82c868f98fe0ae205f986a25e5bbf75c9501fd33b5eaeac4e82e80faddc5fa66",
+      "image": "review-fly-front.jpg",
+      "width": 1920,
+      "height": 1200
+    },
+    {
+      "receipt": "review-handraise-front-capture.json",
+      "ok": true,
+      "previewId": "pv_a097b4927da24422a687a3e2259f3649",
+      "buildDigest": "sha256:a4d7e3d57b4703ebf901a9ed61ad81badfb40c2d79ed7cc3cb2f471a992323e1",
+      "image": "review-handraise-front.jpg",
+      "width": 1920,
+      "height": 1200
+    },
+    {
+      "receipt": "review-handraise-side-capture.json",
+      "ok": true,
+      "previewId": "pv_3f9b79de0c0a43f887fd841cd6f51f2a",
+      "buildDigest": "sha256:651d336517f2afd08349642e8d0783602df345ec8ca53f27d90bc82004f46c11",
+      "image": "review-handraise-side.jpg",
+      "width": 1920,
+      "height": 1200
+    },
+    {
+      "receipt": "review-run-front-capture.json",
+      "ok": true,
+      "previewId": "pv_519d33a4965346808ba954b2d05dddb4",
+      "buildDigest": "sha256:5197f2ecc7186a11eef5c7352943ddab80cb98f9d3f17f976889c27f15f48cb1",
+      "image": "review-run-front.jpg",
+      "width": 1920,
+      "height": 1200
+    },
+    {
+      "receipt": "review-run-side-capture.json",
+      "ok": true,
+      "previewId": "pv_6e713d337d144fc5be611fab64e0b399",
+      "buildDigest": "sha256:91b45fe63ffb77b28500a10042b5a6946ca150393bcc1d3f90fc2fffd96b5be8",
+      "image": "review-run-side.jpg",
+      "width": 1920,
+      "height": 1200
+    },
+    {
+      "receipt": "review-sit-to-stand-front-capture.json",
+      "ok": true,
+      "previewId": "pv_7f9c5f5596204834882e218a7227ea88",
+      "buildDigest": "sha256:5e807a7f6521d0bbe62665a645803090a334385f740009096c883d915fab89fd",
+      "image": "review-sit-to-stand-front.jpg",
+      "width": 1920,
+      "height": 1200
+    },
+    {
+      "receipt": "review-sitting-front-capture.json",
+      "ok": true,
+      "previewId": "pv_bdebd1c68bd6451da391e18e4a931260",
+      "buildDigest": "sha256:42b0bbef53a59782413aed77c208a2d8b95c4a9c290f800606a2af9b6f4db706",
+      "image": "review-sitting-front.jpg",
+      "width": 1920,
+      "height": 1200
+    },
+    {
+      "receipt": "review-sitting-side-capture.json",
+      "ok": true,
+      "previewId": "pv_8c909316826d4a3bb239150d61678f7c",
+      "buildDigest": "sha256:1e10b0c1d8ad07f23ee7a77b9ed66bbd651e19e24cb1255bd6ed5e38b7ebf56f",
+      "image": "review-sitting-side.jpg",
+      "width": 1920,
+      "height": 1200
+    },
+    {
+      "receipt": "review-stand-to-sit-front-capture.json",
+      "ok": true,
+      "previewId": "pv_3eaaef0774a549cb86a776458164a201",
+      "buildDigest": "sha256:4664d8d81d31a1875872eed9ead9a523e028fc13de66159a2af94b17cead2e98",
+      "image": "review-stand-to-sit-front.jpg",
+      "width": 1920,
+      "height": 1200
+    },
+    {
+      "receipt": "review-walk-front-capture.json",
+      "ok": true,
+      "previewId": "pv_b7121c4ef1b74572a37729bd3f0189df",
+      "buildDigest": "sha256:23326fb04cf6699e0f73ae0f9380b8f1c8b05b62be8b57037050ecdf0556eb16",
+      "image": "review-walk-front.jpg",
+      "width": 1920,
+      "height": 1200
+    },
+    {
+      "receipt": "review-walk-side-capture.json",
+      "ok": true,
+      "previewId": "pv_63215dbfb53b4da084a904f715e82d06",
+      "buildDigest": "sha256:77dcfd2e9c5f183291cae837391ad9de3a361dcf1a60c685a132ef53af8bc261",
+      "image": "review-walk-side.jpg",
+      "width": 1920,
+      "height": 1200
+    }
+  ]
+}

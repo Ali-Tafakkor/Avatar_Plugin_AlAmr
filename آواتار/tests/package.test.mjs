@@ -7,7 +7,7 @@ import { parseGLB } from '../scripts/glb.mjs';
 const json=async path=>JSON.parse(await readFile(new URL(path,import.meta.url),'utf8'));
 const manifest=await json('../al-amr.plugin.json'),pkg=await json('../package.json');
 test('release has one matching version and every declared frontend export exists in the built entry',async()=>{
-  assert.equal(pkg.version,'0.1.1');assert.equal(manifest.version,pkg.version);
+  assert.equal(pkg.version,'0.1.2');assert.equal(manifest.version,pkg.version);
   const lock=await json('../package-lock.json');assert.equal(lock.version,pkg.version);
   assert.equal(lock.packages[''].name,pkg.name);assert.equal(lock.packages[''].version,pkg.version);
   const exports=await import('../dist/index.js');

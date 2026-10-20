@@ -9,6 +9,11 @@ export { AvatarWebV2, AVATAR_V2_MODEL_URL, AVATAR_V2_MOTIONS_URL, AVATAR_V2_HEIG
   EMOTIONS, FACE_GROUPS, LOCOMOTION_PROFILE, createWebAvatarRuntime } from './v2.js';
 export type { AvatarWebV2Handle, AvatarWebV2Props, AvatarV2Locomotion, AvatarV2Controller,
   AvatarV2Navigation, AvatarV2Status, EmotionName, WebAvatarRuntime, PoseFrame } from './v2.js';
+export { AvatarHybrid, createHybridRuntime, AVATAR_HYBRID_LEGACY_MODEL_URL, AVATAR_HYBRID_MODEL_URL,
+  AVATAR_HYBRID_MOTIONS_URL, AVATAR_HYBRID_TEXTURE_URL, AVATAR_HYBRID_HEIGHT } from './hybrid.js';
+export type { AvatarHybridHandle, AvatarHybridProps, AvatarHybridStatus, HybridRuntime, HybridRuntimeOptions,
+  HybridClip, HybridPlayback, HybridFaceOptions, HybridManualGroup, HybridStatus, HybridBodyStatus,
+  HybridActor, HybridFaceRig } from './hybrid.js';
 
 export { AVATAR03_CLIPS, MOTION_CLIPS, Avatar03Animator } from './motion.js';
 export type { Avatar03Clip, AvatarMotion, MotionState, AnimationStatus } from './motion.js';

@@ -1,0 +1,28 @@
+✔ sculpture protects the neck anchor and remains a bounded orientation-preserving face warp (13.5043ms)
+✔ native head assembly normals and full morph geometry remain finite and bounded (47.7019ms)
+✔ native eyelids and lower teeth still undergo real nonzero blink/jaw displacement (317.662ms)
+✔ visible V1 geometry owns its resources and all eight native clips reproduce every joint channel and true endpoint (519.3117ms)
+ℹ Native V1 Stand0 heel/toe values in metres: {"left":{"ankle":[0.08306813780552258,0.12201789023356374,-0.05693756006041306],"heelY":0.00011543827591207513,"toeY":0.00011205227380325054,"soleMinY":0.00011205227380325054,"soleMaxY":0.01177373974091367,"sampleCount":275},"right":{"ankle":[-0.1496829020975017,0.12202821703373812,-0.03336248801410976],"heelY":0.0004526526706913007,"toeY":-6.622810112821842e-11,"soleMinY":-6.622810112821842e-11,"soleMaxY":0.010882392774665628,"sampleCount":249}}
+✔ V2 jumping directions map onto all 41 common V1 joints under a translated and rotated host, then release back to V1 (562.7948ms)
+ℹ Maximum common-joint V2-to-V1 jump segment angle: 0.00013456350246276105deg
+✔ normal locomotion and Fly remain exactly native V1 and a second body does not share mutable geometry (673.8535ms)
+✔ optional native contact plants heel and toe at every Stand clock while preserving all other joint rotations and root (387.6108ms)
+ℹ Optional native contact: maximum heel/toe residual 0.0011055634655274815m; maximum ankle offset 0.01858878266663133m
+✔ the mounted native assembly owns six registered skin meshes, all 66 source channels and its complete independent skeleton (45.3619ms)
+✔ all 37 live expression, manual, blink and gaze channels deform referenced visible vertices (637.0781ms)
+ℹ {"effectiveChannels":37,"smallestWorldMovement":{"name":"eyeWideRight","movement":0.002861739607548942,"sourceMovement":0.002829009531120698,"ratio":1.0115694472104793},"sourceRatioRange":[0.9984928484766536,1.098367880163734]}
+✔ the metric head attachment follows all native V1 clip samples under a rotated and translated host without rewriting body joints (20.5914ms)
+✔ lower neck skin follows the moving V1 torso and neck while face skin retains its calibrated head pose (132.4226ms)
+ℹ {"dynamicNeck":[{"name":"lower-neck/torso","vertices":5,"maximumAnchorError":1.124889818687005e-8,"rigidHeadSeparation":0.07075679949590145},{"name":"neck","vertices":86,"maximumAnchorError":5.346672501121221e-7,"rigidHeadSeparation":0.05391194580900751},{"name":"face","vertices":6249,"maximumAnchorError":3.93215353575106e-8,"rigidHeadSeparation":0}]}
+✔ the real ExpressionState preserves all six preset weight contracts while a V1 HandRaise is paused and scrubbed (1226.9144ms)
+✔ manual jaw and an explicit blink reach real visible morph bindings while native body playback stays paused (794.0633ms)
+✔ facial expression and blink coexist with native V1 run and the mapped V2 jump without taking body ownership (428.5428ms)
+✔ two complete hybrids isolate skeletons, face arrays and materials and leave both cached sources unchanged (17.5108ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5553.5402

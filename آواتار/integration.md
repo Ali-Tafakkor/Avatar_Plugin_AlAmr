@@ -1,4 +1,52 @@
-# Avatar 03 Web V2 adapter contract — 0.1.1
+# Avatar 03 hybrid adapter contract — 0.1.2
+
+Current recommended avatar.character surface: **AvatarHybrid**. Plugin ID,
+publisher, slug, platform contract, compatibility and peer ranges are unchanged.
+Avatar03 and AvatarWebV2 remain compatible exports; no automatic migration.
+
+Hybrid props retain the structural public controller/navigation interfaces,
+height=1.78, lighting, portrait, rotationY=PI and ready/error callbacks.
+legacyModelUrl selects the V1 body; modelUrl the native V2 facial donor;
+motionsUrl the V2 motion source. The host owns Canvas, WebGPU rendering,
+Player Rig, input, navigation, world pose and lifetime.
+
+AvatarHybridHandle adds previewClip, seekClip, setPlayback and getRoot to the
+existing facial/locomotion methods. Hybrid face options are blinkEnabled,
+gazeEnabled and microEnabled. See emitted declarations for precise signatures.
+Use host walkSpeed=5 and sprintSpeed=9m/s for V1 timing. LOCOMOTION_PROFILE
+remains the separate Web V2 2.25/6.2m/s profile.
+
+The runtime retains eight native V1 clips and uses only V2 jump. Six native
+V2 facial meshes with 66 morph channels are privately mounted on the V1
+head/neck chain. Neutral sculpt and all morph endpoints are transformed
+coherently; accepted pose synchronization and static shoe contact are retained.
+No runtime imports point into avatar-lab, experiments or the root source tree.
+
+New root exports: AvatarHybrid, createHybridRuntime,
+AVATAR_HYBRID_LEGACY_MODEL_URL, AVATAR_HYBRID_MODEL_URL,
+AVATAR_HYBRID_MOTIONS_URL and AVATAR_HYBRID_HEIGHT. Subpaths ./hybrid and
+./hybrid-runtime ship with types. The sample prepare-avatar-hybrid.mjs resolves
+installed package exports and copies both models plus all sibling resources.
+Explicit sample URLs: /avatar-hybrid/legacy.gltf, /avatar-v2/avatar.gltf,
+/avatar-v2/motions.json. Assets are local. Package-relative defaults also work
+when package layout is preserved.
+
+Both current product version fields are0.1.2. Select the آواتار folder for
+Desktop submission. Local checks do not establish Registry availability,
+submission, review or publication. Asset notices and code-only MIT remain.
+No real VR tracking, hand interaction or audio lip-sync is implemented here.
+
+## Preserved Web V2 contract — 0.1.1
+
+AVATAR_HYBRID_TEXTURE_URL is also public; the optional textureUrl prop
+overrides the bundled V1 texture location when a host relocates this asset.
+
+Hybrid rendering requires the sample's WebGPURenderer and its supported
+backend/fallback because the accepted face/collar use TSL node materials.
+Compatibility with legacy WebGLRenderer has not been established.
+
+The following documents the retained AvatarWebV2 interface. Release selection
+and recommended hybrid integration are defined above.
 
 Local authored contract, not Registry-generated release metadata. Plugin ID,
 publisher, slug, contractVersion and runtime compatibility are retained from

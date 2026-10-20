@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "1",
+  "command": "doctor",
+  "ok": true,
+  "code": "ALAMR_DOCTOR_READY",
+  "exitCode": 0,
+  "message": "bootstrap doctor checks passed.",
+  "diagnostics": [],
+  "nextActions": [],
+  "artifacts": [],
+  "data": {
+    "profile": "bootstrap",
+    "checks": [
+      {
+        "id": "ALAMR_DOCTOR_NODE",
+        "name": "node",
+        "status": "pass",
+        "ok": true,
+        "detail": "24.21.0"
+      },
+      {
+        "id": "ALAMR_DOCTOR_PACKAGE_MANAGER",
+        "name": "package-manager",
+        "status": "pass",
+        "ok": true,
+        "detail": "npm"
+      }
+    ]
+  },
+  "meta": {
+    "cliVersion": "1.0.0",
+    "elapsedMs": 3
+  }
+}

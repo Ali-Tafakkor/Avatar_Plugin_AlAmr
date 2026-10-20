@@ -1,0 +1,196 @@
+{
+  "kind": "frontend_only",
+  "name": "آواتار",
+  "slug": "player-rig",
+  "compat": {
+    "contracts": "^1.0.0"
+  },
+  "version": "1.0.0",
+  "category": "3d-world",
+  "pluginId": "plg_0bec7e8e-8852-4f44-9446-f5df278ab59e",
+  "publisher": {
+    "id": "pub_dc4fa9ec-ad51-4879-b45f-d8a2602b1ee8",
+    "handle": "usr-1328ef22-14d5-4f87-992f-10c9540c9a86"
+  },
+  "runtimeApi": "^1.0.0",
+  "presentation": {
+    "icon": {
+      "alt": "آدمک سفید روی زمینهٔ مرجانی",
+      "path": "plugin-icon.png",
+      "digest": "sha256:0664e62f2e4c87e2d99e27b75979652d8267da570fcd82992acb93170b3964d5",
+      "contentType": "image/png"
+    }
+  },
+  "runtimeClass": "trusted_library",
+  "documentation": {
+    "license": "MIT",
+    "canonicalUrl": "https://agent.al-amr.com/plugins/al-amr/player-rig/README.md",
+    "repositoryUrl": "https://gitlab.al-amr.com/al-amr/plugins/player-rig",
+    "integrationUrl": "https://agent.al-amr.com/plugins/al-amr/player-rig/integration.md"
+  },
+  "contractVersion": "1.0.0",
+  "frontendAdapters": [
+    {
+      "id": "r3f",
+      "exports": [
+        "PlayerRig",
+        "PlayerAvatar",
+        "PlayerAvatarAnchor",
+        "PlayerAvatarOverlay",
+        "PlayerAvatarFleet",
+        "PlayerAvatarFleetOverlay",
+        "PLAYER_AVATAR_FLEET_CAPACITY",
+        "PLAYER_AVATAR_ANCHORS",
+        "avatarOutfitFor",
+        "fleetAppearanceForSeed",
+        "DEFAULT_AVATAR_OUTFIT",
+        "applyPlayerAvatarLocomotion",
+        "createAvatarAnimationDriver",
+        "createPlayerController",
+        "createPlayerStateSource",
+        "createLocalReplicaSource",
+        "createPlayerKeyActionMap",
+        "DEFAULT_PLAYER_INPUT_BINDINGS",
+        "usePlayerSnapshot",
+        "usePlayerPose",
+        "usePlayerCamera",
+        "createFlatNavigationSurface",
+        "playerRigPluginManifest",
+        "PLAYER_RIG_PLUGIN_ID",
+        "DEFAULT_AVATAR_ANIMATION_OPTIONS",
+        "DEFAULT_PLAYER_CAMERA_CONFIG",
+        "shouldRenderLocalAvatar",
+        "stepPlayerCamera",
+        "computeCameraTransform",
+        "stepCameraFollowTransform",
+        "DEFAULT_PLAYER_MOVEMENT_CONFIG",
+        "isPlayerGrounded",
+        "stepPlayerMovement",
+        "AVATAR_SHIRT_COLORS",
+        "AVATAR_TROUSER_COLORS",
+        "AVATAR_HAIR_COLORS",
+        "AVATAR_SKIN_COLORS",
+        "AVATAR_SHOE_COLORS",
+        "AVATAR_ACCENT_COLORS",
+        "AVATAR_OUTFIT_COMBINATIONS",
+        "PLAYER_AVATAR_ROOT_NAME",
+        "PLAYER_AVATAR_HEIGHT",
+        "PLAYER_AVATAR_HEAD_NAME",
+        "PLAYER_AVATAR_JOINT_NAMES",
+        "PLAYER_AVATAR_FLEET_HIGH_CAPACITY",
+        "PLAYER_AVATAR_FLEET_MEDIUM_CAPACITY",
+        "PLAYER_AVATAR_FLEET_LOW_CAPACITY",
+        "reconcileFleetDescriptors",
+        "reconcileFleetSlots"
+      ],
+      "runtime": "react-three-fiber",
+      "hostKinds": [
+        "environment"
+      ],
+      "exportPath": ".",
+      "composition": {
+        "provides": [
+          {
+            "surface": "avatar.overhead",
+            "exportName": "PlayerAvatarOverlay",
+            "description": "RTL-safe fixed-pixel semantic overhead surface for centered Environment-composed identity labels and Plugin actions."
+          },
+          {
+            "surface": "avatar.fleet",
+            "exportName": "PlayerAvatarFleet",
+            "description": "Instanced high/medium/low LOD fleet renderer with one frame sampler and capacity for 160 stable replica slots."
+          },
+          {
+            "surface": "avatar.fleet-overhead",
+            "exportName": "PlayerAvatarFleetOverlay",
+            "description": "One fullscreen DOM projection surface for up to 24 fleet identity labels."
+          }
+        ],
+        "contributes": []
+      },
+      "capabilities": [
+        "render:3d",
+        "player:movement",
+        "player:camera",
+        "avatar:attachment-surfaces",
+        "avatar:instanced-fleet"
+      ],
+      "semanticPorts": {
+        "provides": [
+          {
+            "id": "local-replica",
+            "version": "2.0.0",
+            "lifecycle": "scope",
+            "exportName": "createLocalReplicaSource",
+            "cardinality": "one",
+            "description": "Allocation-free full transform sampling with quaternion orientation, linear velocity, explicit movement mode, and teleport discontinuity counter.",
+            "interfaceId": "spatial.local-replica-source",
+            "actorCorrelation": "none",
+            "protocolArtifactId": "local-replica-schema"
+          },
+          {
+            "id": "player-state",
+            "version": "1.0.0",
+            "lifecycle": "scope",
+            "exportName": "createPlayerStateSource",
+            "cardinality": "one",
+            "description": "Provides the local scope's immutable position, velocity, heading, mode, and avatar-animation snapshot without an account identifier.",
+            "interfaceId": "spatial.player-state-source",
+            "actorCorrelation": "none",
+            "protocolArtifactId": "player-state-schema"
+          }
+        ],
+        "requires": [
+          {
+            "id": "remote-replicas",
+            "optional": true,
+            "lifecycle": "scope",
+            "bindingName": "remoteReplicaSource",
+            "cardinality": "one",
+            "description": "Optionally consumes an Environment-selected remote replica source with explicit movement and freshness semantics for the instanced Fleet and shared overlay.",
+            "interfaceId": "spatial.remote-replica-source",
+            "versionRange": "^2.0.0",
+            "actorCorrelation": "actor_key",
+            "protocolArtifactId": "remote-replica-schema"
+          }
+        ]
+      },
+      "peerDependencies": {
+        "react": ">=19 <19.3",
+        "three": ">=0.185.1 <0.186.0",
+        "@react-three/drei": ">=10.7.7 <11",
+        "@react-three/fiber": ">=9.6.1 <10"
+      }
+    }
+  ],
+  "shortDescription": "نمایش آواتارها و کنترل حرکت، پرواز و دوربین اول‌شخص و سوم‌شخص در محیط‌ها.",
+  "backendComponents": [],
+  "protocolArtifacts": [
+    {
+      "id": "player-state-schema",
+      "kind": "json_schema",
+      "path": "./protocol/player-state.schema.json",
+      "digest": "sha256:40714a846f0b6b0d64f3a82c788f800ca73e39fc9e7f8408d0e2ab777fcb443b",
+      "mediaType": "application/schema+json",
+      "specificationVersion": "2020-12"
+    },
+    {
+      "id": "local-replica-schema",
+      "kind": "json_schema",
+      "path": "./protocol/local-replica.schema.json",
+      "digest": "sha256:bbdac5411de7f5070ff8a8035f6a590abf5d22ed3e89b9a3fbbb9a2673e7ef7d",
+      "mediaType": "application/schema+json",
+      "specificationVersion": "2020-12"
+    },
+    {
+      "id": "remote-replica-schema",
+      "kind": "json_schema",
+      "path": "./protocol/remote-replica.schema.json",
+      "digest": "sha256:246e750e4f9b8a6dda070a55d0770bfd43fadc3ea482ac3c5d6ee846afe1fc7a",
+      "mediaType": "application/schema+json",
+      "specificationVersion": "2020-12"
+    }
+  ],
+  "browserRequirements": [],
+  "platformPermissions": []
+}

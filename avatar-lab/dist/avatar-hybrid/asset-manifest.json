@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "source": "installed Plugin exports",
+  "legacyModelSha256": "bf16883394c2f968faa294e8debe02dc38ff8ba4aaf98d32319e025d8185540d",
+  "legacyBinarySha256": "a94ee13b1e8667d26e2b4c5d431d699469fa24cd03a3bc2d320090a633d73c36",
+  "images": [
+    {
+      "file": "image-0.png",
+      "sha256": "5344ec24daf8cbc7a9ef08eb2549f2b0084f96283c83dfa1daa9e0e8f7acc822"
+    }
+  ],
+  "webModelSha256": "a7596659be5e3bf3e6400fabfe20042277ea03b5e5b6d0c1e37589020ec4ced9",
+  "resources": 20,
+  "legacyGeometryAndAnimationChanged": false
+}

@@ -1,0 +1,173 @@
+{
+  "format": 1,
+  "sourceModelSha256": "193c07c351f1f94b12b499ece3f8813432dbe902afe0b5dd6957e788a9a36605",
+  "sourceMotionSha256": "533829f6f7b4eca37586564c5d55f3807ae3537878e8007f2af55c853d732d24",
+  "geometryAndSkinUnchanged": true,
+  "meshCount": 10,
+  "jointCount": 73,
+  "morphNames": [
+    "browDownLeft",
+    "browDownRight",
+    "browInnerUp",
+    "browOuterUpLeft",
+    "browOuterUpRight",
+    "cheekSquintLeft",
+    "cheekSquintRight",
+    "eyeBlinkLeft",
+    "eyeBlinkRight",
+    "eyeLookDownLeft",
+    "eyeLookDownRight",
+    "eyeLookInLeft",
+    "eyeLookInRight",
+    "eyeLookOutLeft",
+    "eyeLookOutRight",
+    "eyeLookUpLeft",
+    "eyeLookUpRight",
+    "eyeSquintLeft",
+    "eyeSquintRight",
+    "eyeWideLeft",
+    "eyeWideRight",
+    "mouthDimpleLeft",
+    "mouthDimpleRight",
+    "mouthLeft",
+    "mouthRight",
+    "mouthSmileLeft",
+    "mouthSmileRight",
+    "noseSneerLeft",
+    "noseSneerRight",
+    "cheekPuff",
+    "jawForward",
+    "jawLeft",
+    "jawOpen",
+    "jawRight",
+    "mouthClose",
+    "mouthFrownLeft",
+    "mouthFrownRight",
+    "mouthFunnel",
+    "mouthLowerDownLeft",
+    "mouthLowerDownRight",
+    "mouthPressLeft",
+    "mouthPressRight",
+    "mouthPucker",
+    "mouthRollLower",
+    "mouthRollUpper",
+    "mouthShrugLower",
+    "mouthShrugUpper",
+    "mouthStretchLeft",
+    "mouthStretchRight",
+    "mouthUpperUpLeft",
+    "mouthUpperUpRight",
+    "viseme_CH",
+    "viseme_DD",
+    "viseme_E",
+    "viseme_FF",
+    "viseme_PP",
+    "viseme_RR",
+    "viseme_SS",
+    "viseme_TH",
+    "viseme_aa",
+    "viseme_I",
+    "viseme_kk",
+    "viseme_nn",
+    "viseme_O",
+    "viseme_U",
+    "viseme_sil"
+  ],
+  "files": [
+    {
+      "path": "avatar.bin",
+      "bytes": 12169248,
+      "sha256": "52d8a9ee95365468d490e12b4cf8b461cd8e29dcb357db9e726233bdfee1e331"
+    },
+    {
+      "path": "motions.json",
+      "bytes": 343866,
+      "sha256": "533829f6f7b4eca37586564c5d55f3807ae3537878e8007f2af55c853d732d24"
+    },
+    {
+      "path": "images/image-00.jpg",
+      "bytes": 75332,
+      "sha256": "f054e220309a33a18360c0d8c03ca345bacd7e2e02d01f7299f519ab4420c0fc"
+    },
+    {
+      "path": "images/image-01.jpg",
+      "bytes": 75781,
+      "sha256": "19d9c93e42fd0dfd1f284533536c360fd011aa5d2aeea8c20a6841add6d1afdd"
+    },
+    {
+      "path": "images/image-02.jpg",
+      "bytes": 34214,
+      "sha256": "dd9d0b8fb660edc77ff28cefc9075fbaffaab62055e66b7916ed9c5285e7bd71"
+    },
+    {
+      "path": "images/image-03.jpg",
+      "bytes": 144828,
+      "sha256": "501a685f004838d3df0f4552d16847e57dfc82e891d90ba677756737ef1bfcea"
+    },
+    {
+      "path": "images/image-04.jpg",
+      "bytes": 28478,
+      "sha256": "0348d28e48fa362b8c036734d919d1c1f1b9fe691b50828e32191be410823c01"
+    },
+    {
+      "path": "images/image-05.jpg",
+      "bytes": 30967,
+      "sha256": "77e89ad8950eba0411e64af13aac09bb0a32f207d45686d12942923225fb3394"
+    },
+    {
+      "path": "images/image-06.jpg",
+      "bytes": 184265,
+      "sha256": "a6c4e6f076e32905c2726db145040c4a113b2f2fb24ac3492f644cc7aa430329"
+    },
+    {
+      "path": "images/image-07.jpg",
+      "bytes": 71262,
+      "sha256": "e028edc446483c4821fe08fa057b84c8c13291eecfd6cd49323353a7ffb45698"
+    },
+    {
+      "path": "images/image-08.jpg",
+      "bytes": 371528,
+      "sha256": "7b370d184a2b684083503f44b3bff83c6f6e0586c1940492a688dc141906a30c"
+    },
+    {
+      "path": "images/image-09.jpg",
+      "bytes": 269829,
+      "sha256": "42be5fff5db968cc45d860da824c275c37fc72bf89d149402dcea9885953db2f"
+    },
+    {
+      "path": "images/image-10.jpg",
+      "bytes": 262191,
+      "sha256": "17008532afc9d5edbf927d6f3ae64ab32c9f9c54e95eb957e30d838efdb3daa4"
+    },
+    {
+      "path": "images/image-11.jpg",
+      "bytes": 125781,
+      "sha256": "48e76df0685ccf53f1945851b44de14cdbd45b50067ade68d9086a02a3bf1b09"
+    },
+    {
+      "path": "images/image-12.jpg",
+      "bytes": 230173,
+      "sha256": "7cbfc7c79d0e79e92b2da9b0ecae00fe4b98f3e6709258624741d826dd622f36"
+    },
+    {
+      "path": "images/image-13.jpg",
+      "bytes": 115336,
+      "sha256": "1b51d7710fe61c9a1a40118947bdd823716d996b04a390998bf38725db71507a"
+    },
+    {
+      "path": "avatar.gltf",
+      "bytes": 114903,
+      "sha256": "a7596659be5e3bf3e6400fabfe20042277ea03b5e5b6d0c1e37589020ec4ced9"
+    },
+    {
+      "path": "provenance.json",
+      "bytes": 3175,
+      "sha256": "4578bd8ed16f03d3ae4796e3fca6247184599daeb8272a047c335ac9c2c605b6"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 5348,
+      "sha256": "b60312212dac8147dc02c4679e4219ad0ddf97d07e1472beff7ab2c4fdf4baab"
+    }
+  ]
+}

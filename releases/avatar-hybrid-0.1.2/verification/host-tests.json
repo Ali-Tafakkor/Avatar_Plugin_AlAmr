@@ -1,0 +1,16 @@
+{
+  "format": 1,
+  "clientDate": "2026-10-20",
+  "scope": "nonvisual packaging/regression checks",
+  "suite": "host",
+  "exitCode": 0,
+  "passed": 12,
+  "failed": 0,
+  "files": [
+    "tests/comparison.test.mjs",
+    "tests/hybrid-host.test.mjs",
+    "tests/legacy-preview.test.mjs",
+    "tests/rig-contract.test.mjs"
+  ],
+  "visualTestsRepeated": false
+}

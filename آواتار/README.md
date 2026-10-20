@@ -1,4 +1,28 @@
-# آواتار ۳ — Web V2
+# آواتار ۳ — Hybrid 0.1.2
+
+## نسخهٔ جاری، ۲۰ اکتبر ۲۰۲۶
+
+رابط پیشنهادی تازه **`AvatarHybrid`** است: بدن و لباس V1، هشت حرکت اصلی آن، پرش V2 و چهرهٔ تازه بر توپولوژی بومی V2 با ۶۶ morph، شش احساس، پلک، نگاه و کنترل دستی. صورت از V1 مرجع تصویری می‌گیرد و کپی هندسهٔ آن نیست. اصلاح تماس کفش و هماهنگی گردن در حرکت همان خروجی پذیرفته‌شده است.
+
+نسخهٔ جاری در manifest/package/lock برابر **`0.1.2`** است؛ `0.1.1` طبق تصویر Desktop قبلاً ارسال و قفل شده است. bump رسمی فقط یک بار انجام شد. آماده‌سازی محلی به معنی ارسال، تأیید یا انتشار نیست؛ وضعیت زندهٔ Registry به علت نیاز CLI به ورود هنوز تأیید نشده است.
+
+در Canvas موجود میزبان، `AvatarHybrid` را به `PlayerRig.avatar` بدهید. props مانند Web V2 هستند، با `legacyModelUrl` برای بدن V1، `modelUrl` برای صورت V2 و `motionsUrl`. نمونهٔ اجرایی جاری در `../avatar-lab/src/App.tsx` و آماده‌سازی دارایی از exportهای **بستهٔ نصب‌شده** در `../avatar-lab/scripts/prepare-avatar-hybrid.mjs` است. URLهای نمونه `/avatar-hybrid/legacy.gltf`، `/avatar-v2/avatar.gltf` و `/avatar-v2/motions.json` هستند. مدل، bin و تصاویر باید کنار هم بمانند.
+
+Ref تازه تمام کنترل‌های احساسات قبلی و `previewClip`، `seekClip`، `setPlayback`، `getRoot` و `getRuntime` را دارد. `setFaceOptions` در hybrid سه گزینهٔ `blinkEnabled/gazeEnabled/microEnabled` دارد. برای حرکت V1 سرعت میزبان **۵/۹ متر بر ثانیه** است؛ `LOCOMOTION_PROFILE` همچنان پروفایل مستقل Web V2 را بیان می‌کند. نوع‌های دقیق در `dist/hybrid.d.ts` و `dist/hybrid/runtime.d.mts` هستند.
+
+صورت و پوشش گردن از materialهای TSL استفاده می‌کنند؛ مانند نمونهٔ میزبان، **WebGPURenderer** با backend/fallback پشتیبانی‌شدهٔ خودش لازم است. سازگاری با WebGLRenderer قدیمی اثبات نشده است.
+
+Exportهای تازه: `AvatarHybrid`، `createHybridRuntime`، `AVATAR_HYBRID_LEGACY_MODEL_URL`، `AVATAR_HYBRID_MODEL_URL`، `AVATAR_HYBRID_MOTIONS_URL` و `AVATAR_HYBRID_HEIGHT`؛ subpathها `./hybrid` و `./hybrid-runtime`. تمام رابط‌های پیشین حفظ شده‌اند و مصرف‌کنندهٔ قدیمی خودکار مهاجرت نمی‌کند.
+
+`AVATAR_HYBRID_TEXTURE_URL` نشانی بافت بسته‌بندی‌شدهٔ V1 است؛ برای جایگزینی محل آن از prop اختیاری `textureUrl` استفاده کنید.
+
+برای ساخت مستقل، در همین پوشه `npm ci`، `npm run build` و `npm test` اجرا کنید؛ سپس میزبان را نصب و build کنید. برای انتخاب در دکمهٔ ارسال Desktop، همین پوشهٔ **آواتار** با manifest سطح اول انتخاب شود. `alamr validate` و `doctor --profile publish` بررسی هستند؛ `alamr test` **آپلود candidate** است. شماره را برای build دوباره بالا نبرید. پس از انتشار واقعی، نسخهٔ نصب Registry باید `avatar03@0.1.2` باشد.
+
+MIT برای کد است؛ اعلان غیرتجاری AvatarSDK و حقوق جداگانهٔ مدل/بافت/motion حفظ شده‌اند. این آماده‌سازی مجوز تازه‌ای ایجاد نمی‌کند. Quest، کنترل دست/انگشت، گرفتن جسم و lip-sync صوتی در این مرحله اضافه نشده‌اند. خروجی تست پذیرفته‌شده حفظ شده و تست دیداری تازه اجرا نشده است.
+
+## مستندات رابط پیشین Web V2 — نسخهٔ 0.1.1
+
+بخش زیر سابقه و قرارداد **رابط سازگار AvatarWebV2** است؛ شماره و مسیر ارسال جاری از بخش بالا خوانده شود.
 
 نسخهٔ فنی این بسته `0.1.1` و نام مرحلهٔ محصول «نسخهٔ دوم» است. این همان محصول avatar03 با شناسه و ناشر قبلی است؛ نسخهٔ `0.1.0` قبلاً ارسال و قفل شده و این پوشه برای ارسال نسخهٔ تازه آماده می‌شود. آماده‌سازی محلی به معنی ارسال، تأیید مسئول یا انتشار در Registry نیست.
 

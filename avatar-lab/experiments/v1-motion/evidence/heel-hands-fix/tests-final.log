@@ -1,0 +1,23 @@
+✔ calibration leaves the existing pose intact, including all 73 bone transforms (3.2565ms)
+✔ all five digits have finite bounded geometry, mild spread and progressive anatomical curl on both sides (8.1806ms)
+✔ gesture, airborne and explicit override bypass preserve every bone exactly; walking and running opt in (4.7945ms)
+✔ real heels and toes are both within 2mm of the floor over the full Stand clip under identity and transformed hosts (808.2244ms)
+✔ static seated and hand-raise poses plant both shoe ends without cumulative ankle drift (164.0923ms)
+✔ intentional Walk/Run/Fly and every V2 air/landing branch are untouched (83.4003ms)
+✔ real retarget maps every common bone and all eight non-jump clips without malformed poses or time rewrites (1.2184ms)
+✔ independent body/finger directions stay within 0.001deg and palms within 0.05deg of V1 (5.9542ms)
+✔ sampling changes only actor instances and preserves both loaded source skeletons (2.3014ms)
+✔ airborne pose retains the original V2 jump on all 73 bones, including return from run (934.5656ms)
+✔ V1 flight is not replaced by the V2 jump branch (258.0255ms)
+✔ all six V2 facial emotions and blink remain active during exact paused V1 HandRaise sampling (1987.1074ms)
+✔ seated one-shot holds its true endpoint; reset clears preview and the jump branch (291.9627ms)
+✔ grounding removes sole penetration and preserves body rotations outside explicit shoe and finger overrides (442.2101ms)
+✔ integrated standing plants each heel and toe independently throughout the idle clip (392.3598ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5738.0595

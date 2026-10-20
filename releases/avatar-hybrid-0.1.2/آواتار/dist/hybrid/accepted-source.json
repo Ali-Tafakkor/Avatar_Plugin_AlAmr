@@ -1,0 +1,32 @@
+{
+  "format": 1,
+  "baseline": "owner-accepted-local-hybrid-phase2-2026-10-19",
+  "migration": "Import specifiers only; runtime algorithms and material normalization are unchanged.",
+  "files": [
+    {
+      "file": "runtime.mjs",
+      "acceptedSourceSha256": "727e00ed6b3290393990d2740101f891d6e10a7d3441f7e4725be43564888a68",
+      "packageLocalSha256": "0a08bacfdac079e3a6042de39c2244c4413a63cce99b2c159c62f40a271bac82"
+    },
+    {
+      "file": "body-runtime.mjs",
+      "acceptedSourceSha256": "59c29d075ac75582b204007730d26dbcd6a52a700c569018b75b7389858a1342",
+      "packageLocalSha256": "be0d865dcf3d94c008676cd436058b91162502fcca63bf3e2d851dc5a8d567f8"
+    },
+    {
+      "file": "head-mount.mjs",
+      "acceptedSourceSha256": "891fae1656757822cc0f919176a1b0d27b05d88de1422ef1785983f8a8a5d89e",
+      "packageLocalSha256": "b01755feec04ab175f9e084a6099f0fba202cca0f56064c36cbe4331e200a5d1"
+    },
+    {
+      "file": "sculpted-face.mjs",
+      "acceptedSourceSha256": "ce0afe0558945c4e8ca6b9c9f9c72cf6f6452280888c2fa6a2a1d0f3b6bcbaf2",
+      "packageLocalSha256": "a398bf30a3161800d9b489c3454f0361f4d248f1a5740321da855ae40dc274f1"
+    },
+    {
+      "file": "legacy-materials.mjs",
+      "acceptedSourceSha256": "2f171acb024b2d6f7d4d95ca8aa31e5dab30de761ea415d18f8d9db0494c79cc",
+      "packageLocalSha256": "2f171acb024b2d6f7d4d95ca8aa31e5dab30de761ea415d18f8d9db0494c79cc"
+    }
+  ]
+}

@@ -23,3 +23,15 @@ Thumbs.db
 
 # Built bundles are deliberately retained in the v1 baseline.
 # Environment 2 contains a delivered scene that its cover-only build cannot recreate.
+
+# Reproducible experimental bundles and extracted local test assets.
+/avatar-lab/dist-hybrid-test/
+/avatar-lab/dist-hybrid-review/
+/avatar-lab/dist-motion-test/
+/avatar-lab/dist-motion-review/
+/avatar-lab/public/motion-test/
+/avatar-lab/public/avatar-hybrid/
+/avatar-lab/public-production/
+/avatar-lab/.public-production/
+/avatar-lab/experiments/**/validation-host/
+/avatar-lab/experiments/**/review-local.ps1

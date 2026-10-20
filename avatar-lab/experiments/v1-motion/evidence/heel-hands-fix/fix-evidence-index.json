@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Local correction evidence for owner-reported heel gap and splayed fingers",
+  "automatedTests": {
+    "log": "tests-final.log",
+    "fail": 0,
+    "pass": 15
+  },
+  "agentVisualReview": {
+    "afterCases": 7,
+    "normalFinalCaptured": true,
+    "beforeCloseupCases": 4,
+    "completed": true
+  },
+  "finalOwnerAcceptance": null,
+  "standingGeometry": {
+    "afterSampledMaxHeelGapMm": 0.80071,
+    "sampledMaxAnkleCorrectionMm": 36.7068,
+    "independentFullClipHeelToeToleranceMm": 2,
+    "beforeSampledMaxHeelGapMm": 15.7954
+  },
+  "scope": {
+    "phase2Started": false,
+    "rawRetargetChanged": false,
+    "gitWrites": false,
+    "registrySubmission": false,
+    "sourceAssetsChanged": false
+  },
+  "codeSha256": {
+    "runtime.mjs": "129c200b99389eda8e92b2fc533e38f018a89e40809fc94c5686720d9b426eeb",
+    "retarget.mjs": "329f3722e55d7660740718ac1a3aab2b0a1b58fed1092f7c77d4311596747673",
+    "foot-contact.mjs": "7cfb8ac538a433596fafcf5a1d50338dd2c7696b519b94bae3403aa54bb1e9cc",
+    "relaxed-hands.mjs": "5b546e87d3d323dfda2c701506dadaf0dc030b56db47535a067d9290bfaf15ed"
+  },
+  "captures": [
+    {
+      "receipt": "after-body-capture.json",
+      "image": "after-body.jpg",
+      "previewId": "pv_261226b7af1840068568cf2d2f327daf",
+      "buildDigest": "sha256:31111c11809eb3d138a6c5d912b78d2155b1e4212c928ccf1a7faebf30d7dbce",
+      "ok": true
+    },
+    {
+      "receipt": "after-handraise-capture.json",
+      "image": "after-handraise.jpg",
+      "previewId": "pv_67c4ed67cb0b428c912a4b67b2b5b677",
+      "buildDigest": "sha256:94198da7acbc36aab106afbef5a6fe63b568d7c1f34e347a271ca285aadbe2f6",
+      "ok": true
+    },
+    {
+      "receipt": "after-heels-capture.json",
+      "image": "after-heels.jpg",
+      "previewId": "pv_7ecd58cf52924846957cf78ebf5072f1",
+      "buildDigest": "sha256:133fb5842f872488ca8eff093c07e9b2a7f1d3fd6449daf6edbd71bd69f4eea1",
+      "ok": true
+    },
+    {
+      "receipt": "after-left-hand-capture.json",
+      "image": "after-left-hand.jpg",
+      "previewId": "pv_e5b8cdd701cd4bf9941ba08dea3a8b42",
+      "buildDigest": "sha256:2154bf17ed8cbd3063be4cb7242df5b8bd60835b7fe5aafdc72130a0c03f70b9",
+      "ok": true
+    },
+    {
+      "receipt": "after-right-hand-capture.json",
+      "image": "after-right-hand.jpg",
+      "previewId": "pv_2542b35cbad94aedab49a31d665fb3ad",
+      "buildDigest": "sha256:7c9a416b3da76a327198c9dceaf23ad4eb957302d93194660e2642c48fe4e05a",
+      "ok": true
+    },
+    {
+      "receipt": "after-sitting-capture.json",
+      "image": "after-sitting.jpg",
+      "previewId": "pv_dcd9ce195ffe4f49bc2c678d92e325e1",
+      "buildDigest": "sha256:64c01a2671a1a7fe53f76678cde4e0a476736664d172eefab411af3c9ab2a43c",
+      "ok": true
+    },
+    {
+      "receipt": "after-walk-capture.json",
+      "image": "after-walk.jpg",
+      "previewId": "pv_9b4dc4c1ef6f45e79f150287212b3ba7",
+      "buildDigest": "sha256:572a84ea69f4be82ca2c12c9db0e2cc6aefb98a46c61a1b9b26e025d6f3fe3ba",
+      "ok": true
+    },
+    {
+      "receipt": "before-body-capture.json",
+      "image": "before-body.jpg",
+      "previewId": "pv_1420f6ab512e41c8a5555dca643a5d37",
+      "buildDigest": "sha256:2fbd92e21ca18aa776f6928ae9e5b5c3340c462e1c56ac8f782262d0082ca622",
+      "ok": true
+    },
+    {
+      "receipt": "before-heels-capture.json",
+      "image": "before-heels.jpg",
+      "previewId": "pv_2bc7483d74b040a0a8a487cdd9bdddfb",
+      "buildDigest": "sha256:72d455899e1ddd72dd207ce8c1caeb16aeabf3fe5d6eaf9e63885621eb4c37e1",
+      "ok": true
+    },
+    {
+      "receipt": "before-left-hand-capture.json",
+      "image": "before-left-hand.jpg",
+      "previewId": "pv_5b19bad27c8a4ab2b567505c7ea444c1",
+      "buildDigest": "sha256:f2c3754e38c8b1b4a014e987b50f1d6d541c4d68f274a69971e7afe9abf0a750",
+      "ok": true
+    },
+    {
+      "receipt": "before-right-hand-capture.json",
+      "image": "before-right-hand.jpg",
+      "previewId": "pv_edb7a7118bac406a949e92a820ba4d84",
+      "buildDigest": "sha256:dd67ed241c94ef0fe1ac3e8a38076595e9ea39e9ac2525294f60b66e0e5d4b13",
+      "ok": true
+    },
+    {
+      "receipt": "normal-capture.json",
+      "image": "normal-final.jpg",
+      "previewId": "pv_f7e9bf54cb644a819386b38ffe0fb76a",
+      "buildDigest": "sha256:cbb6680cd4c0b7970d2bfdd52161ec597df5d6d070087f3bec2f456b3e606021",
+      "ok": true
+    }
+  ]
+}

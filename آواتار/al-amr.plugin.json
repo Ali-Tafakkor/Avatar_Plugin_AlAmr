@@ -8,8 +8,8 @@
   },
   "slug": "avatar03",
   "name": "آواتار ۳",
-  "version": "0.1.1",
-  "shortDescription": "آواتار وب با حرکت ورزشی، اصلاح پا و زانو و ۶۶ کانال چهره؛ همراه رابط سازگار نسخهٔ قبلی",
+  "version": "0.1.2",
+  "shortDescription": "آواتار ترکیبی وب با بدن، لباس و هشت حرکت V1، پرش V2 و چهرهٔ تازه با ۶۶ کانال بومی احساسات",
   "category": "utility",
   "localizations": {},
   "presentation": {
@@ -44,7 +44,14 @@
         "EMOTIONS",
         "FACE_GROUPS",
         "LOCOMOTION_PROFILE",
-        "createWebAvatarRuntime"
+        "createWebAvatarRuntime",
+        "AvatarHybrid",
+        "AVATAR_HYBRID_LEGACY_MODEL_URL",
+        "AVATAR_HYBRID_MODEL_URL",
+        "AVATAR_HYBRID_MOTIONS_URL",
+        "AVATAR_HYBRID_HEIGHT",
+        "createHybridRuntime",
+        "AVATAR_HYBRID_TEXTURE_URL"
       ],
       "capabilities": [
         "render:3d",
@@ -53,6 +60,11 @@
       "composition": {
         "contributes": [],
         "provides": [
+          {
+            "exportName": "AvatarHybrid",
+            "surface": "avatar.character",
+            "description": "Accepted hybrid: V1 body, outfit and eight native clips, V2 jump and a sculpted native facial rig. Mount in the host-owned PlayerRig avatar prop."
+          },
           {
             "exportName": "AvatarWebV2",
             "description": "Complete web avatar with corrected athletic locomotion, anatomical knees/soles and facial morphs, mounted in the host-owned PlayerRig avatar prop.",

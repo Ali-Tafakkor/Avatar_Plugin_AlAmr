@@ -1,0 +1,35 @@
+{
+  "format": 1,
+  "clientDate": "2026-10-20",
+  "scope": "New and modified non-ignored files before explicit Git staging",
+  "files": 548,
+  "totalBytes": 88349393,
+  "issues": [],
+  "biggest": [
+    {
+      "path": "releases/avatar-hybrid-0.1.2/آواتار/assets-source/web-v2/avatar.glb",
+      "bytes": 12284040
+    },
+    {
+      "path": "releases/avatar-hybrid-0.1.2/آواتار/dist/assets/avatar-v2/avatar.bin",
+      "bytes": 12169248
+    },
+    {
+      "path": "releases/avatar-hybrid-0.1.2/آواتار/assets-source/v1/avatar03.glb",
+      "bytes": 8657480
+    },
+    {
+      "path": "releases/avatar-hybrid-0.1.2/آواتار/dist/assets/avatar03.glb",
+      "bytes": 8657480
+    },
+    {
+      "path": "avatar-lab/dist/avatar-hybrid/legacy.bin",
+      "bytes": 8399876
+    },
+    {
+      "path": "avatar-lab/experiments/v1-motion/evidence/retarget-raw-audit.json",
+      "bytes": 6434748
+    }
+  ],
+  "limitations": "Pattern scan, not a guarantee about all sensitive data. Account/session files and junctions must remain excluded."
+}

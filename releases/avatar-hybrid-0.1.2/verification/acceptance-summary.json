@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "acceptedOn": "2026-10-19",
+  "ownerAcceptance": "خروجی رو دارم میبینم، خیلی خوب شده، برای مرحله فعلی کافیه",
+  "sourceReport": "acceptance/AVATAR_HYBRID_PHASE2_FA.md",
+  "acceptedPreviewBuildDigest": "sha256:229905b27ff8e6835e8fc829f9156f774e03ae272121d4a78e57c6829fc08951",
+  "scope": "V1 body/outfit and eight clips, V2 procedural jump, sculpted native V2 face and dynamic neck",
+  "nativeMorphNames": 66,
+  "currentControllerChannels": 37,
+  "evidenceBoundary": "Historical owner acceptance; preparation does not repeat or establish a new visual acceptance."
+}
