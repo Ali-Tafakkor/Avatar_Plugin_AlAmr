@@ -1,0 +1,43 @@
+{
+  "format": 1,
+  "clientDate": "2026-10-20",
+  "ownerRequest": "Open the final local simulation for viewing/filming and provide repeatable startup using current local avatar sources.",
+  "launcher": "Open-Avatar-Lab.cmd",
+  "implementation": "tools/start-avatar-lab.ps1",
+  "verification": {
+    "windowsPowerShellEndToEndExitCode": 0,
+    "pluginBuild": "pass",
+    "hostBuild": "pass",
+    "environmentValidate": "ALAMR_OK",
+    "projectDoctor": "ALAMR_DOCTOR_READY",
+    "desktopDev": "ALAMR_PREVIEW_READY",
+    "buildOnlyExitCode": 0,
+    "warmDependencyCacheUsed": true,
+    "utf8LogNullBytes": 0,
+    "localPluginSourceLinkVerified": true
+  },
+  "preview": {
+    "previewId": "pv_51a0ed22d76541ef968e84869ccdc432",
+    "buildDigest": "sha256:322bffb25c469d1c5ee9e581ec359f26a830d7d37f6ea9947f6213d9202bd209",
+    "state": "ready",
+    "runtimePainting": "ok",
+    "runtimeReady": "ok",
+    "devElapsedMs": 5765,
+    "visibleModels": ["V1 reference", "AvatarHybrid 0.1.2"],
+    "filmView": "Enabled using the visible button; full-width rendered scene observed after resize settled.",
+    "capture": "film-view.jpg",
+    "captureBytes": 61764,
+    "captureSha256": "e2f015a6ad25cd55f7ef478eb11d51a4f42300de6abdaf999ee0f97dce6a2eb4"
+  },
+  "recovery": "An initial direct dev call timed out while the app was not foreground. The launcher builds both products and reopens the installed Desktop using the executable from its official CLI shim; final dev reached ready in 5.765 seconds.",
+  "scope": {
+    "latestMeans": "Current local checkout, without Git or Registry auto-update",
+    "avatarRuntimeChanged": false,
+    "avatarVersionChanged": false,
+    "releaseSnapshotChanged": false,
+    "videoRecorded": false,
+    "registryAction": "none",
+    "gitPush": false
+  },
+  "limitations": "Install-on-missing/changed-lock and concurrent-start rejection are implemented but were not fault-injected in this run. Existing validated dependencies were used."
+}

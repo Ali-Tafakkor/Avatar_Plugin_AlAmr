@@ -35,3 +35,4 @@ Thumbs.db
 /avatar-lab/.public-production/
 /avatar-lab/experiments/**/validation-host/
 /avatar-lab/experiments/**/review-local.ps1
+/.local/avatar-lab-launcher/
