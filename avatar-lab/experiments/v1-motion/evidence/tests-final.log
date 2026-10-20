@@ -1,0 +1,16 @@
+✔ real retarget maps every common bone and all eight non-jump clips without malformed poses or time rewrites (1.0579ms)
+✔ independent body/finger directions stay within 0.001deg and palms within 0.05deg of V1 (2.3824ms)
+✔ sampling changes only actor instances and preserves both loaded source skeletons (0.8948ms)
+✔ airborne pose retains the original V2 jump on all 73 bones, including return from run (411.6054ms)
+✔ V1 flight is not replaced by the V2 jump branch (169.7772ms)
+✔ all six V2 facial emotions and blink remain active during exact paused V1 HandRaise sampling (763.2069ms)
+✔ seated one-shot holds its true endpoint; reset clears preview and the jump branch (131.9234ms)
+✔ local preview grounding removes sole penetration without changing any V1-mapped joint direction (175.3594ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2621.9175

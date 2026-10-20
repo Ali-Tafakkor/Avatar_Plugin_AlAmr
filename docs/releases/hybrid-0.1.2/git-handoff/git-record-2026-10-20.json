@@ -1,0 +1,36 @@
+{
+  "format": 1,
+  "clientDate": "2026-10-20",
+  "operation": "local Git record of prepared hybrid0.1.2 and successor-agent handoff",
+  "branch": "avatar-v2",
+  "codeCommit": "af7a32d4abb8f3a9d8347efc044d71d6ecbbf81a",
+  "parent": "be8a7d81b1077e4c71013f26efb04b4a72bfd778",
+  "tree": "d58e847d4dbc149abe2e8c58ba5d8fa261c282d3",
+  "codeCommitTrackedChanges": 552,
+  "cleanWorkingTreeVerifiedImmediatelyAfterCodeCommit": true,
+  "documentationReceipt": "Recorded in the following documentation commit; read final HEAD from Git rather than a self-referential hash here.",
+  "tests": {
+    "repositoryPlugin": 28,
+    "repositoryHost": 12,
+    "portablePlugin": 26,
+    "portableHost": 12,
+    "failed": 0,
+    "visualTestsRepeated": false
+  },
+  "artifactValidation": "pass",
+  "publishDoctorOverallOk": false,
+  "registryLinkCode": "ALAMR_AUTH_REQUIRED",
+  "registryVersionHistoryVerified": false,
+  "registrySubmitted": false,
+  "registryPublished": false,
+  "gitPushed": false,
+  "remoteHeadRechecked": false,
+  "kitInventorySha256": "84f3845ceba8737d486649481bd5864b32bf8c018cef503ccc7d52753225651a",
+  "preservation": "All157 previous-release files and32+32 accepted output files verified unchanged; original model/motion hashes unchanged.",
+  "gitChecks": {
+    "authoredSourceWhitespace": "pass with core.whitespace=cr-at-eol; generated bundles and copied release baselines excluded",
+    "generatedWhitespace": "Preserved upstream shader strings and unchanged copied V2 actor trailing blank line, without rewriting built bytes.",
+    "newFileCredentialPatternScan": "No matches; local account/session/junction/dependency/cache files excluded."
+  },
+  "nextBoundary": "Prepared files and local commits are complete. Actual Registry upload/review/publication and remote Git push are separate operations; no new aesthetic or visual-test work without new owner instruction."
+}
