@@ -1,0 +1,491 @@
+{
+  "method": "all hand vertices; paired oriented ray crossings against deformed torso and trouser triangles; 0.3 mm threshold",
+  "triangles": 16485,
+  "samples": 520,
+  "rows": [
+    {
+      "pose": "relaxed",
+      "clip": "Stand",
+      "before": {
+        "count": 20,
+        "depthMm": 1.3295613942154727,
+        "side": "left",
+        "seconds": 8.674999952316284
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "relaxed",
+      "clip": "Walk",
+      "before": {
+        "depthMm": 0
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "relaxed",
+      "clip": "Run",
+      "before": {
+        "depthMm": 0
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "relaxed",
+      "clip": "Fly",
+      "before": {
+        "count": 22,
+        "depthMm": 1.2718122029895529,
+        "side": "left",
+        "seconds": 1.2166666984558105
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "relaxed",
+      "clip": "HandRaise",
+      "before": {
+        "count": 22,
+        "depthMm": 1.6453685852798605,
+        "side": "left",
+        "seconds": 2.9166666666666665
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "relaxed",
+      "clip": "StandToSit",
+      "before": {
+        "count": 303,
+        "depthMm": 44.681816112546485,
+        "side": "left",
+        "seconds": 1.3027777870496113
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "relaxed",
+      "clip": "Sitting",
+      "before": {
+        "depthMm": 0
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "relaxed",
+      "clip": "SittoStand",
+      "before": {
+        "count": 288,
+        "depthMm": 41.921038043050295,
+        "side": "left",
+        "seconds": 1.049999972184499
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "open",
+      "clip": "Stand",
+      "before": {
+        "count": 34,
+        "depthMm": 1.4967861461826493,
+        "side": "left",
+        "seconds": 4.819444417953491
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "open",
+      "clip": "Walk",
+      "before": {
+        "depthMm": 0
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "open",
+      "clip": "Run",
+      "before": {
+        "depthMm": 0
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "open",
+      "clip": "Fly",
+      "before": {
+        "depthMm": 0
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "open",
+      "clip": "HandRaise",
+      "before": {
+        "count": 81,
+        "depthMm": 1.8243957820506251,
+        "side": "right",
+        "seconds": 3.5
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "open",
+      "clip": "StandToSit",
+      "before": {
+        "count": 40,
+        "depthMm": 4.552211873078388,
+        "side": "left",
+        "seconds": 1.4888888994852703
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "open",
+      "clip": "Sitting",
+      "before": {
+        "depthMm": 0
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "open",
+      "clip": "SittoStand",
+      "before": {
+        "count": 44,
+        "depthMm": 2.570832087975483,
+        "side": "left",
+        "seconds": 1.049999972184499
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "fist",
+      "clip": "Stand",
+      "before": {
+        "count": 21,
+        "depthMm": 1.583454468311346,
+        "side": "left",
+        "seconds": 2.8916666507720947
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "fist",
+      "clip": "Walk",
+      "before": {
+        "depthMm": 0
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "fist",
+      "clip": "Run",
+      "before": {
+        "depthMm": 0
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "fist",
+      "clip": "Fly",
+      "before": {
+        "count": 16,
+        "depthMm": 1.0306864063288346,
+        "side": "left",
+        "seconds": 0.8111111323038737
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "fist",
+      "clip": "HandRaise",
+      "before": {
+        "count": 64,
+        "depthMm": 1.5140343824052438,
+        "side": "right",
+        "seconds": 0
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "fist",
+      "clip": "StandToSit",
+      "before": {
+        "count": 109,
+        "depthMm": 8.312215607836487,
+        "side": "left",
+        "seconds": 1.675000011920929
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "fist",
+      "clip": "Sitting",
+      "before": {
+        "count": 28,
+        "depthMm": 5.706310138157756,
+        "side": "left",
+        "seconds": 0.4944444497426351
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "fist",
+      "clip": "SittoStand",
+      "before": {
+        "count": 259,
+        "depthMm": 8.60854046434531,
+        "side": "left",
+        "seconds": 0.44999998807907104
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "point",
+      "clip": "Stand",
+      "before": {
+        "count": 45,
+        "depthMm": 1.9134711018529982,
+        "side": "right",
+        "seconds": 8.674999952316284
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "point",
+      "clip": "Walk",
+      "before": {
+        "depthMm": 0
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "point",
+      "clip": "Run",
+      "before": {
+        "depthMm": 0
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "point",
+      "clip": "Fly",
+      "before": {
+        "count": 27,
+        "depthMm": 1.451936914667662,
+        "side": "left",
+        "seconds": 1.013888915379842
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "point",
+      "clip": "HandRaise",
+      "before": {
+        "count": 39,
+        "depthMm": 1.4895689803639256,
+        "side": "left",
+        "seconds": 1.1666666666666667
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "point",
+      "clip": "StandToSit",
+      "before": {
+        "count": 184,
+        "depthMm": 8.972942744263495,
+        "side": "left",
+        "seconds": 1.4888888994852703
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "point",
+      "clip": "Sitting",
+      "before": {
+        "count": 46,
+        "depthMm": 5.766499635310451,
+        "side": "right",
+        "seconds": 2.719444473584493
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "point",
+      "clip": "SittoStand",
+      "before": {
+        "count": 251,
+        "depthMm": 8.220567903378884,
+        "side": "left",
+        "seconds": 0.5999999841054281
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "pinch",
+      "clip": "Stand",
+      "before": {
+        "count": 71,
+        "depthMm": 1.8695717791007704,
+        "side": "right",
+        "seconds": 8.674999952316284
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "pinch",
+      "clip": "Walk",
+      "before": {
+        "depthMm": 0
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "pinch",
+      "clip": "Run",
+      "before": {
+        "depthMm": 0
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "pinch",
+      "clip": "Fly",
+      "before": {
+        "count": 31,
+        "depthMm": 1.4277793911523506,
+        "side": "left",
+        "seconds": 0.8111111323038737
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "pinch",
+      "clip": "HandRaise",
+      "before": {
+        "count": 48,
+        "depthMm": 1.6731854918649869,
+        "side": "left",
+        "seconds": 0.875
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "pinch",
+      "clip": "StandToSit",
+      "before": {
+        "count": 129,
+        "depthMm": 37.082163897409316,
+        "side": "right",
+        "seconds": 1.4888888994852703
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "pinch",
+      "clip": "Sitting",
+      "before": {
+        "count": 60,
+        "depthMm": 6.127773760956301,
+        "side": "right",
+        "seconds": 2.719444473584493
+      },
+      "after": {
+        "depthMm": 0
+      }
+    },
+    {
+      "pose": "pinch",
+      "clip": "SittoStand",
+      "before": {
+        "count": 327,
+        "depthMm": 47.19401056534923,
+        "side": "left",
+        "seconds": 1.049999972184499
+      },
+      "after": {
+        "depthMm": 0
+      }
+    }
+  ],
+  "beforeMaxMm": 47.19401056534923,
+  "afterMaxMm": 0,
+  "solveMeanMs": 0.530877307692549
+}

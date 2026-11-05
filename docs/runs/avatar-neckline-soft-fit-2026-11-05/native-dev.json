@@ -1,0 +1,2 @@
+
+{"schemaVersion":"1","command":"dev","ok":false,"code":"ALAMR_DESKTOP_UNAVAILABLE","exitCode":1,"message":"The desktop preview controller is not available for this profile.","diagnostics":[],"nextActions":[{"id":"hint-1","title":"Start this profile's desktop client and run the CLI launcher supplied by that client."}],"artifacts":[],"meta":{"cliVersion":"1.0.0","elapsedMs":1489}}

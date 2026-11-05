@@ -5,17 +5,18 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import type { AvatarV2Controller, AvatarV2Locomotion, AvatarV2Navigation } from './v2.js';
 import type { EmotionName } from './web-v2/runtime.mjs';
 import { createHybridRuntime, type HybridClip, type HybridFaceOptions, type HybridManualGroup,
-  type HybridPlayback, type HybridRuntime, type HybridStatus } from './hybrid/runtime.mjs';
+  type HybridPlayback, type HybridRuntime, type HybridStatus, type SpeechFrameOptions, type SpeechOptions } from './hybrid/runtime.mjs';
 
 export { createHybridRuntime } from './hybrid/runtime.mjs';
 export type { HybridClip, HybridFaceOptions, HybridManualGroup, HybridPlayback, HybridRuntime, HybridRuntimeOptions,
-  HybridStatus, HybridBodyStatus, HybridActor, HybridFaceRig } from './hybrid/runtime.mjs';
+  HybridStatus, HybridBodyStatus, HybridActor, HybridFaceRig, SpeechFrameOptions, SpeechOptions, SpeechStatus } from './hybrid/runtime.mjs';
 export type AvatarHybridStatus = HybridStatus;
 export const AVATAR_HYBRID_LEGACY_MODEL_URL = new URL('./assets/avatar03.glb', import.meta.url).href;
 export const AVATAR_HYBRID_MODEL_URL = new URL('./assets/avatar-v2/avatar.gltf', import.meta.url).href;
 export const AVATAR_HYBRID_MOTIONS_URL = new URL('./assets/avatar-v2/motions.json', import.meta.url).href;
 export const AVATAR_HYBRID_TEXTURE_URL = new URL('./assets/avatar03-texture.png', import.meta.url).href;
 export const AVATAR_HYBRID_HEIGHT = 1.78;
+export const AVATAR_HYBRID_FACE_ALBEDO_URL = new URL('./assets/appearance/face-albedo.png', import.meta.url).href;
 
 export interface AvatarHybridHandle {
   setLocomotion(value: AvatarV2Locomotion): void;
@@ -26,6 +27,12 @@ export interface AvatarHybridHandle {
   setManual(group: HybridManualGroup, value: number): void;
   setIntensity(value: number): void;
   setFaceOptions(options: HybridFaceOptions): void;
+  setSpeechFrame(weights: Record<string, number> | null, options?: SpeechFrameOptions): void;
+  setSpeechOptions(options: SpeechOptions): void;
+  setLaughter(score: number, options?: { at?: number }): void;
+  clearSpeech(): void;
+  setHandPose(pose: string, side?: 'both'|'left'|'right'): void;
+  setFingerCurl(side: 'both'|'left'|'right', digit: string, value: number): void;
   blink(): void; reset(): void;
   getStatus(): HybridStatus | null;
   getRoot(): Group | null;
@@ -39,6 +46,7 @@ export interface AvatarHybridProps {
   modelUrl?: string;
   motionsUrl?: string;
   textureUrl?: string;
+  faceAlbedoUrl?: string;
   height?: number;
   lighting?: 'scene' | 'unlit';
   portrait?: boolean;
@@ -67,11 +75,14 @@ function Frames({ runtime, current, controller, locomotion, portrait, onError }:
 export const AvatarHybrid = forwardRef<AvatarHybridHandle, AvatarHybridProps>(function AvatarHybrid({
   controller, navigation, legacyModelUrl = AVATAR_HYBRID_LEGACY_MODEL_URL, modelUrl = AVATAR_HYBRID_MODEL_URL,
   motionsUrl = AVATAR_HYBRID_MOTIONS_URL, textureUrl = AVATAR_HYBRID_TEXTURE_URL,
+  faceAlbedoUrl = AVATAR_HYBRID_FACE_ALBEDO_URL,
   height = AVATAR_HYBRID_HEIGHT, lighting = 'scene', portrait = false, rotationY = Math.PI, onReady, onError,
 }, ref) {
   if (!Number.isFinite(height) || height <= 0) throw new Error('avatar_hybrid_invalid_height');
   const texture = useLoader(TextureLoader, textureUrl);
   texture.flipY = false; texture.colorSpace = SRGBColorSpace;
+  const faceAlbedo = useLoader(TextureLoader, faceAlbedoUrl);
+  faceAlbedo.flipY = false; faceAlbedo.colorSpace = SRGBColorSpace;
   const legacy = useLoader(GLTFLoader, legacyModelUrl, loader => loader.register(() => ({
     name: 'AVATAR_HYBRID_BUNDLED_TEXTURE',
     loadTexture: index => index === 0 ? Promise.resolve(texture) : null,
@@ -82,17 +93,19 @@ export const AvatarHybrid = forwardRef<AvatarHybridHandle, AvatarHybridProps>(fu
   const locomotion = useRef<AvatarV2Locomotion>(IDLE);
   const settings = useRef({ emotion: 'neutral' as EmotionName, intensity: 0.88, manual: new Map<HybridManualGroup, number>(),
     options: {} as HybridFaceOptions, blink: false, clip: null as HybridClip | null, time: null as number | null,
-    playback: {} as HybridPlayback });
+    playback: {} as HybridPlayback, speech: {} as SpeechOptions, handPose:'auto' });
   const callbacks = useRef({ onReady, onError }); callbacks.current = { onReady, onError };
   useEffect(() => {
     let cancelled = false, owned: HybridRuntime | null = null;
     setRuntime(null);
-    void createHybridRuntime(legacy, gltf, motions, { height, lighting,
+    void createHybridRuntime(legacy, gltf, motions, { height, lighting, faceAlbedo,
       groundAt(x, z) { return navigation.sampleGround([x, 0, z])?.position[1] ?? 0; },
     }).then(created => {
       if (cancelled) { created.dispose(); return; }
       const saved = settings.current;
       created.setEmotion(saved.emotion); created.setIntensity(saved.intensity); created.setFaceOptions(saved.options);
+      created.setSpeechOptions(saved.speech);
+      created.setHandPose(saved.handPose);
       for (const [name, value] of saved.manual) created.setManual(name, value);
       if (saved.clip !== null) created.previewClip(saved.clip);
       created.setPlayback(saved.playback);
@@ -101,7 +114,7 @@ export const AvatarHybrid = forwardRef<AvatarHybridHandle, AvatarHybridProps>(fu
       owned = created; current.current = created; setRuntime(created); callbacks.current.onReady?.(created.getStatus());
     }).catch((reason: unknown) => { if (!cancelled) callbacks.current.onError?.(reason instanceof Error ? reason : new Error(String(reason))); });
     return () => { cancelled = true; if (current.current === owned) current.current = null; owned?.dispose(); };
-  }, [gltf, motions, legacy, height, lighting, navigation]);
+  }, [gltf, motions, legacy, faceAlbedo, height, lighting, navigation]);
   useImperativeHandle(ref, () => ({
     setLocomotion(value) { locomotion.current = value; },
     previewClip(value) { settings.current.clip = value; settings.current.time = null; current.current?.previewClip(value); },
@@ -111,6 +124,12 @@ export const AvatarHybrid = forwardRef<AvatarHybridHandle, AvatarHybridProps>(fu
     setManual(name, value) { settings.current.manual.set(name, value); current.current?.setManual(name, value); },
     setIntensity(value) { settings.current.intensity = value; current.current?.setIntensity(value); },
     setFaceOptions(value) { settings.current.options = { ...settings.current.options, ...value }; current.current?.setFaceOptions(value); },
+    setSpeechFrame(weights, options) { current.current?.setSpeechFrame(weights, options); },
+    setSpeechOptions(value) { settings.current.speech = { ...settings.current.speech, ...value }; current.current?.setSpeechOptions(value); },
+    setLaughter(score, options) { current.current?.setLaughter(score, options); },
+    clearSpeech() { current.current?.clearSpeech(); },
+    setHandPose(pose,side) { settings.current.handPose=pose;current.current?.setHandPose(pose,side); },
+    setFingerCurl(side,digit,value) { current.current?.setFingerCurl(side,digit,value); },
     blink() { if (current.current) current.current.blink(); else settings.current.blink = true; },
     reset() { locomotion.current = IDLE; settings.current.clip = null; settings.current.time = null; current.current?.reset(); },
     getStatus() { return current.current?.getStatus() ?? null; }, getRuntime() { return current.current; },

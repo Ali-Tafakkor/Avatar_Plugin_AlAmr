@@ -1,22 +1,23 @@
 {
   "format": 1,
   "baseline": "owner-accepted-local-hybrid-phase2-2026-10-19",
-  "migration": "Import specifiers only; runtime algorithms and material normalization are unchanged.",
+  "migration": "Local owner-authorized 2026-11-03 accepted face and five-finger hands, followed by modest lightweight cloth material detail. Original source model/animations and prior accepted snapshots preserved.",
   "files": [
     {
       "file": "runtime.mjs",
       "acceptedSourceSha256": "727e00ed6b3290393990d2740101f891d6e10a7d3441f7e4725be43564888a68",
-      "packageLocalSha256": "0a08bacfdac079e3a6042de39c2244c4413a63cce99b2c159c62f40a271bac82"
+      "packageLocalSha256": "2f4b29b67f945779ff4945e935b723f80814bbf0eb163616229417919c946880",
+      "baselinePackageLocalSha256": "0a08bacfdac079e3a6042de39c2244c4413a63cce99b2c159c62f40a271bac82"
     },
     {
       "file": "body-runtime.mjs",
       "acceptedSourceSha256": "59c29d075ac75582b204007730d26dbcd6a52a700c569018b75b7389858a1342",
-      "packageLocalSha256": "be0d865dcf3d94c008676cd436058b91162502fcca63bf3e2d851dc5a8d567f8"
+      "packageLocalSha256": "31456716019946ece507a9850aba5bf17c2b701fc41f728698f64d46c6314372"
     },
     {
       "file": "head-mount.mjs",
       "acceptedSourceSha256": "891fae1656757822cc0f919176a1b0d27b05d88de1422ef1785983f8a8a5d89e",
-      "packageLocalSha256": "b01755feec04ab175f9e084a6099f0fba202cca0f56064c36cbe4331e200a5d1"
+      "packageLocalSha256": "6fe1700f45a5af118bb2bed31d3b6c72cd9721b338cc2f43b3fdf8a281b1a97a"
     },
     {
       "file": "sculpted-face.mjs",
@@ -27,6 +28,79 @@
       "file": "legacy-materials.mjs",
       "acceptedSourceSha256": "2f171acb024b2d6f7d4d95ca8aa31e5dab30de761ea415d18f8d9db0494c79cc",
       "packageLocalSha256": "2f171acb024b2d6f7d4d95ca8aa31e5dab30de761ea415d18f8d9db0494c79cc"
+    },
+    {
+      "file": "detailed-hands.mjs",
+      "packageLocalSha256": "cbcf38e9a3c1019006094d79db5ad6bb52917c5db3966a57c2d6b0b0e1c27990"
+    },
+    {
+      "file": "hand-skin-mask.mjs",
+      "packageLocalSha256": "3bcc36635aadfbda4d8498b820cc13d645965b529f7703422db897e425300573"
+    },
+    {
+      "file": "surface-materials.mjs",
+      "packageLocalSha256": "daa2208dbb79ac91499e6b82f5eacce589a6e76018203740bbf906f62fb2dec1"
+    },
+    {
+      "file": "hand-contact.mjs",
+      "packageLocalSha256": "09380516853fae207ac814a20050fbd6cb8104a8d7d32f323980b2c9e3b960af"
+    },
+    {
+      "file": "quiet-idle.mjs",
+      "packageLocalSha256": "d1f8bba64a958cd386b603835711cb20e09b41b7240521e5c39b5524af371e55"
+    },
+    {
+      "file": "neck-collar.mjs",
+      "packageLocalSha256": "364a74644aa6a60d81af41891879bfba4c079a32c5ddf34068740a0922b0682b"
+    },
+    {
+      "file": "garment-neckline.mjs",
+      "packageLocalSha256": "529166eb7418d8aa444b73d173a9768f008bc35553a3ba3d848ea01578be7872"
     }
-  ]
+  ],
+  "localExtension": {
+    "version": "0.1.3",
+    "date": "2026-10-27",
+    "scope": "microphone speech and optional local laughter",
+    "published": false
+  },
+  "appearanceExtension": {
+    "date": "2026-11-03",
+    "faceOwnerAccepted": true,
+    "published": false,
+    "handsOwnerAccepted": true,
+    "clothOwnerAccepted": true,
+    "clothDetail": "128-square numeric weave; existing albedo and topology preserved"
+  },
+  "localPoseExtension": {
+    "handContact": "garment-calibrated convex proxies",
+    "face": "friendly neutral, stronger smile and laugh",
+    "ownerAccepted": false
+  },
+  "neckIdleExtension": {
+    "date": "2026-11-05",
+    "headLoweringMeters": 0.025,
+    "quietIdle": true,
+    "collarOpacityPreserved": true,
+    "ownerAccepted": false
+  },
+  "neckCollarExtension": {
+    "date": "2026-11-05",
+    "smoothUnderEarContour": true,
+    "garmentRestoredToBeforeCollarEdits": true,
+    "collarFitRemoved": true,
+    "collarBandRemoved": true,
+    "ownerInstruction": "Stop collar repairs and restore original clothing.",
+    "published": false
+  },
+  "garmentNecklineExtension": {
+    "date": "2026-11-05",
+    "ownerRequestedRetry": true,
+    "neckUnchanged": true,
+    "method": "bounded smooth original garment contraction; original UV, alpha mask, weights and material",
+    "ownerAccepted": true,
+    "published": false,
+    "ownerFeedback": "چیزی که من میبینم خوب بنظر میرسه و مشکلی نداره",
+    "visualWorkStoppedOnAcceptance": true
+  }
 }

@@ -1,0 +1,105 @@
+{
+  "clientDate": "2026-11-03",
+  "clientTimezone": "Asia/Tehran",
+  "status": "owner_accepted_visual_result_and_method_documented",
+  "canonicalGuide": "AVATAR_CREATION_METHOD_FA.md",
+  "ownerAcceptance": {
+    "source": "explicit user message in this conversation",
+    "visualQuote": "خروجی رو دیدم، بنظرم ارتقای قابل قبول و محسوسی داره نسبت به نسخه خودمون.",
+    "decision": "Use this method as the project baseline for future avatar creation and upgrades.",
+    "scope": "Local appearance improvement and reusable method; future character identity remains selectable."
+  },
+  "method": {
+    "base": "rigged mesh with existing facial controls",
+    "surface": "ImageGen edit of the actual head UV albedo plus separate skin/eye materials",
+    "referenceImplementation": "avatar-lab/experiments/face-inspiration",
+    "chatAvatarGeneratedAsset": false,
+    "dreamFaceModelReproduction": false
+  },
+  "previousImplementationEvidence": {
+    "preservationReport": "docs/runs/face-inspiration-2026-11-03/preservation-tests.json",
+    "preservationResult": {
+      "status": "passed",
+      "scope": "Actual native geometry, skin, morphs, source isolation and six emotion poses; rendered appearance is a separate check.",
+      "checks": {
+        "candidateGeometrySkinUVAndMorphsUnchanged": true,
+        "referenceGeometryUnchanged": true,
+        "referenceMaterialsUnchanged": true,
+        "facialChannelsPreserved": 66,
+        "emotions": {
+          "neutral": "same native deformation as reference",
+          "smile": "same native deformation as reference",
+          "laugh": "same native deformation as reference",
+          "sad": "same native deformation as reference",
+          "angry": "same native deformation as reference",
+          "surprise": "same native deformation as reference"
+        },
+        "realBlinkPreserved": true,
+        "changedMeshes": [
+          "AvatarHead",
+          "AvatarLeftEyeball",
+          "AvatarRightEyeball",
+          "AvatarTeethLower"
+        ],
+        "cachedSourceAssetsUnchanged": true
+      }
+    },
+    "buildReceipt": {
+      "builtAt": "2026-11-03T12:01:32.643Z",
+      "provenance": "Local material/texture study inspired by published DreamFace principles; not ChatAvatar output or model reproduction",
+      "speechCapture": false,
+      "sourceModelGeometryModified": false,
+      "hashes": {
+        "assets-source/skin-albedo.png": "8807601273bc9c4dabc919746e6f9f804e5a2942ba634fb982d6fe0ed5c20677",
+        "../../../آواتار/dist/assets/avatar03.glb": "bf16883394c2f968faa294e8debe02dc38ff8ba4aaf98d32319e025d8185540d",
+        "../../../آواتار/dist/assets/avatar-v2/avatar.gltf": "a7596659be5e3bf3e6400fabfe20042277ea03b5e5b6d0c1e37589020ec4ced9"
+      }
+    },
+    "browserVisualsObserved": true,
+    "nativePreviewFinalVerification": "not confirmed; two inspected attempts timed out; the last inspection was interrupted with Escape",
+    "inspectedTimedOutPreviews": [
+      {
+        "id": "pv_838bc6b7787c4d9b9c5ebf2431c5a000",
+        "buildDigest": "sha256:e56323d821dd11186b7b59816fac8801410f90c46a5bf2209a8ac8374ea029a6"
+      },
+      {
+        "id": "pv_aec37199f89342e48732448cb139dad5",
+        "buildDigest": "sha256:e3489527f83b7177706f518b9f73c2edacfb492ee71d2443fa2c66d4f717797f"
+      }
+    ],
+    "note": "These are prior implementation observations, not new runtime tests in this documentation step."
+  },
+  "documentationStep": {
+    "runtimeCodeChanged": false,
+    "assetsGenerated": false,
+    "runtimeTestsRerun": false,
+    "renderRerun": false,
+    "originalPluginIntegrationChanged": false,
+    "meetingRoomChanged": false,
+    "skillZipChanged": false,
+    "gitCommitPushPerformed": false,
+    "publicationPerformed": false,
+    "verification": "Local links, UTF-8 text, source hashes and guide references checked."
+  },
+  "gitHeadObserved": "221d477f8574f0ab204342848b99470deff52d09",
+  "methodFilesSha256": {
+    "avatar-lab/experiments/face-inspiration/src/main.jsx": "70264d107f994ab48d090199319dcbff4e6e7d800ff552493c30586c642d6055",
+    "avatar-lab/experiments/face-inspiration/src/material-study.mjs": "e6e86357963faf0aa0a31d201d2712c42e6ed37c4cdd317edc2ee9d0aea1c607",
+    "avatar-lab/experiments/face-inspiration/scripts/build.mjs": "02e962247413de1c5f101092cdc9a9aaa36b57fcd58f9c57b77d88010c5c54b7",
+    "avatar-lab/experiments/face-inspiration/scripts/verify-preservation.mjs": "872f9a3701f3008371b387721bb9d484e4f355fc4ba7dec2cd19969456964738",
+    "avatar-lab/experiments/face-inspiration/assets-source/provenance.json": "1f5f983cfee1d5b8f8f8c6aed18f468d9d1c953ae2a9eb9ab7264c11519bbe45",
+    "avatar-lab/experiments/face-inspiration/assets-source/skin-albedo.png": "8807601273bc9c4dabc919746e6f9f804e5a2942ba634fb982d6fe0ed5c20677",
+    "avatar-lab/experiments/face-inspiration/build-receipt.json": "5994c5505972d939dfc2a6248c6f0829f7f746090eeafed111b68eabb2a8af19"
+  },
+  "documentationSha256": {
+    "AVATAR_CREATION_METHOD_FA.md": "7578fb27a0ff83062e6a5a85d148d6afde47019d27a7d0d017a496067e40ab86",
+    "AGENTS.md": "0a97338dd189a6810e10928b01c6e50ece39a6886d75c32dd424efe6e144ca87",
+    "NEXT_AGENT_START_HERE.md": "7c8dad1648507bf017cfe300f7a8f2c4c04d566fa71681d7ff3fa5d4cdff1e08",
+    "PROJECT_HANDOFF.md": "a2706ed49245b5b1ab7bb792c8b240f3cc97c07eefa379a04ebdfc4f13fdf18d",
+    "DOCUMENTATION_INDEX_FA.md": "b9d7b6523cb359de1b8fb9d853f10313a20e12b2a13c0e793b248ac85ad7544c",
+    "PROJECT_HISTORY_FA.md": "f4f6e4095c2e7fdeba104ba00228b3af7ada84ef8dfc3ac1047a5e5b100a1b45",
+    "README.md": "d45a9aa4018bfad7cf09b4601af0e6b07250a460fb2893684d4e1f3c900e6614",
+    "RUN_AVATAR_LAB_FA.md": "5b3724914e192be942c0d641c14e6117756ce6b732e62ddcd61f0c7dd0bf0978",
+    "AVATAR_BUILDER_SKILL_HANDOFF_FA.md": "aff1263ca2235eb7ff3de1d9e6cd724db7901e70f860944ad0332b3aa6b408e3"
+  }
+}

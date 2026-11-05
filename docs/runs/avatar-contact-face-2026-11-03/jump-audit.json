@@ -1,0 +1,7 @@
+{
+  "method": "all hand vertices; paired oriented ray crossings against deformed torso and trouser triangles; 0.3 mm threshold",
+  "frames": 94,
+  "retargetedFrames": 59,
+  "maxGarmentDepthMm": 0,
+  "maxProxyDepthMm": 2.404750627056418
+}

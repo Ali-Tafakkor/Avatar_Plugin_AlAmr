@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "measuredAt": "2026-11-05T09:31:41.792Z",
+  "units": "bytes",
+  "model": {
+    "bytes": 30457820,
+    "files": 26,
+    "resources": [
+      {
+        "file": "appearance/face-albedo.png",
+        "bytes": 2861146
+      },
+      {
+        "file": "appearance/face-provenance.json",
+        "bytes": 2427
+      },
+      {
+        "file": "avatar-hybrid/asset-manifest.json",
+        "bytes": 701
+      },
+      {
+        "file": "avatar-hybrid/image-0.png",
+        "bytes": 6287128
+      },
+      {
+        "file": "avatar-hybrid/legacy.buffer",
+        "bytes": 8399876
+      },
+      {
+        "file": "avatar-hybrid/legacy.gltf",
+        "bytes": 257532
+      },
+      {
+        "file": "avatar-v2/asset-manifest.json",
+        "bytes": 12442
+      },
+      {
+        "file": "avatar-v2/avatar.buffer",
+        "bytes": 10149258
+      },
+      {
+        "file": "avatar-v2/avatar.gltf",
+        "bytes": 114120
+      },
+      {
+        "file": "avatar-v2/images/image-00.jpg",
+        "bytes": 75332
+      },
+      {
+        "file": "avatar-v2/images/image-01.jpg",
+        "bytes": 75781
+      },
+      {
+        "file": "avatar-v2/images/image-02.jpg",
+        "bytes": 34214
+      },
+      {
+        "file": "avatar-v2/images/image-03.jpg",
+        "bytes": 144828
+      },
+      {
+        "file": "avatar-v2/images/image-04.jpg",
+        "bytes": 28478
+      },
+      {
+        "file": "avatar-v2/images/image-05.jpg",
+        "bytes": 30967
+      },
+      {
+        "file": "avatar-v2/images/image-06.jpg",
+        "bytes": 184265
+      },
+      {
+        "file": "avatar-v2/images/image-07.jpg",
+        "bytes": 71262
+      },
+      {
+        "file": "avatar-v2/images/image-08.jpg",
+        "bytes": 371528
+      },
+      {
+        "file": "avatar-v2/images/image-09.jpg",
+        "bytes": 269829
+      },
+      {
+        "file": "avatar-v2/images/image-10.jpg",
+        "bytes": 262191
+      },
+      {
+        "file": "avatar-v2/images/image-11.jpg",
+        "bytes": 125781
+      },
+      {
+        "file": "avatar-v2/images/image-12.jpg",
+        "bytes": 230173
+      },
+      {
+        "file": "avatar-v2/images/image-13.jpg",
+        "bytes": 115336
+      },
+      {
+        "file": "avatar-v2/motions.json",
+        "bytes": 343866
+      },
+      {
+        "file": "avatar-v2/provenance.json",
+        "bytes": 3175
+      },
+      {
+        "file": "avatar-v2/THIRD_PARTY_NOTICES.md",
+        "bytes": 6184
+      }
+    ]
+  },
+  "speech": {
+    "bytes": 177137320,
+    "files": 18,
+    "resources": [
+      {
+        "file": "speech/model-profile.json",
+        "bytes": 1608
+      },
+      {
+        "file": "speech/NOTICE.md",
+        "bytes": 2320
+      },
+      {
+        "file": "speech/onnx/ort-wasm-simd-threaded.mjs",
+        "bytes": 24218
+      },
+      {
+        "file": "speech/onnx/ort-wasm-simd-threaded.wasm",
+        "bytes": 13961845
+      },
+      {
+        "file": "speech/wav2arkit/config.json",
+        "bytes": 1985
+      },
+      {
+        "file": "speech/wav2arkit/model.json",
+        "bytes": 677
+      },
+      {
+        "file": "speech/wav2arkit/provenance.json",
+        "bytes": 5159
+      },
+      {
+        "file": "speech/wav2arkit/README.md",
+        "bytes": 5058
+      },
+      {
+        "file": "speech/wav2arkit/wav2arkit_cpu.onnx.part1",
+        "bytes": 50331648
+      },
+      {
+        "file": "speech/wav2arkit/wav2arkit_cpu.onnx.part2",
+        "bytes": 50331648
+      },
+      {
+        "file": "speech/wav2arkit/wav2arkit_cpu.onnx.part3",
+        "bytes": 46211912
+      },
+      {
+        "file": "speech/workers/capture-worklet.js",
+        "bytes": 1072
+      },
+      {
+        "file": "speech/workers/inference-worker.js",
+        "bytes": 75790
+      },
+      {
+        "file": "speech/workers/laughter.worker.js",
+        "bytes": 73805
+      },
+      {
+        "file": "speech/yamnet/provenance.json",
+        "bytes": 591
+      },
+      {
+        "file": "speech/yamnet/README.md",
+        "bytes": 285
+      },
+      {
+        "file": "speech/yamnet/yamnet.onnx",
+        "bytes": 16093603
+      },
+      {
+        "file": "speech/yamnet/yamnet_class_map.csv",
+        "bytes": 14096
+      }
+    ]
+  },
+  "bundle": {
+    "bytes": 228091286,
+    "files": 57
+  },
+  "note": "Disk bytes. Model includes geometry, images and motion. Speech assets are optional runtime loads. GPU allocations and JS heap are measured separately in the live panel."
+}

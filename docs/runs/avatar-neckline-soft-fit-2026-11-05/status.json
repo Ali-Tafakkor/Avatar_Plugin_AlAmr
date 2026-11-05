@@ -1,0 +1,139 @@
+{
+  "date": "2026-11-05",
+  "scope": "owner-authorized garment-only retry; neck and dimensions fixed",
+  "ownerAccepted": true,
+  "ownerFeedback": "چیزی که من میبینم خوب بنظر میرسه و مشکلی نداره",
+  "appearanceWorkStopped": true,
+  "method": "smooth contraction of the existing upper garment, strongest at sides/back and protected at front; original normals transported by inverse-transpose Jacobian",
+  "preserved": [
+    "replacement head/neck position, normals and all morph arrays byte-for-byte",
+    "all body UV, skin indices/weights, alpha-mask attribute, triangle index and original materials",
+    "source assets and cached models",
+    "body bones and facial anchors in all existing clips"
+  ],
+  "geometry": {
+    "changedSourceCloneVerticesIncludingHiddenOldHead": 4643,
+    "unaffectedVerticesOutsideTransition": 22397,
+    "maximumDisplacementMm": 20.25003012625191,
+    "minimumTriangleNormalDot": 0.931346395634786,
+    "addedTriangles": 0,
+    "addedTextures": 0,
+    "addedDrawCalls": 0,
+    "perFrameSolver": false
+  },
+  "clearance": {
+    "referencePoseOnly": true,
+    "method": "12 radial rays, 1mm vertical steps, first 3 visible purple-texel intersections; signed gap to unchanged neck",
+    "samples": [
+      {
+        "degrees": 0,
+        "beforeMm": -0.2741208505964571,
+        "afterMm": -0.2741208505964571
+      },
+      {
+        "degrees": 30,
+        "beforeMm": 4.733884477148037,
+        "afterMm": 4.642013464201726
+      },
+      {
+        "degrees": 60,
+        "beforeMm": 12.861404204182046,
+        "afterMm": 7.177453011859222
+      },
+      {
+        "degrees": 90,
+        "beforeMm": 16.499741521270884,
+        "afterMm": 1.8980367776859284
+      },
+      {
+        "degrees": 120,
+        "beforeMm": 19.388967635200682,
+        "afterMm": 6.385606317563151
+      },
+      {
+        "degrees": 150,
+        "beforeMm": 17.502451159903455,
+        "afterMm": 6.099728713765046
+      },
+      {
+        "degrees": 180,
+        "beforeMm": 9.15565893296809,
+        "afterMm": 0.9644789095160228
+      },
+      {
+        "degrees": 210,
+        "beforeMm": 14.766766529991814,
+        "afterMm": 5.412082827849607
+      },
+      {
+        "degrees": 240,
+        "beforeMm": 18.76668532011487,
+        "afterMm": 6.321967884717311
+      },
+      {
+        "degrees": 270,
+        "beforeMm": 17.981238110182527,
+        "afterMm": 3.5685250246249507
+      },
+      {
+        "degrees": 300,
+        "beforeMm": 9.273886129959413,
+        "afterMm": 4.024683703866355
+      },
+      {
+        "degrees": 330,
+        "beforeMm": 3.6125560178074947,
+        "afterMm": 3.3111513674423385
+      }
+    ],
+    "note": "The pre-existing -0.274mm front overlap is unchanged. These sparse radial measurements do not assert collision freedom in every animation."
+  },
+  "checks": {
+    "pluginTests": 75,
+    "hostTests": 13,
+    "pluginBuild": true,
+    "hostBuild": true,
+    "pluginValidate": "ALAMR_OK",
+    "hostValidate": "ALAMR_OK",
+    "hostDoctor": "ALAMR_DOCTOR_READY",
+    "pluginDoctor": "ALAMR_DOCTOR_FAILED: existing managed artifact exceeds 25 MiB",
+    "nativePreview": "ALAMR_DESKTOP_UNAVAILABLE",
+    "browserViews": [
+      "front",
+      "side",
+      "back"
+    ],
+    "ownerObservedAndAccepted": true,
+    "motionVisualReview": "not continued after owner acceptance; numerical bone/face preservation checked across clips",
+    "hostTestsSandboxRetry": "EPERM on src/main.tsx; 13 tests passed outside sandbox"
+  },
+  "output": {
+    "url": "http://127.0.0.1:5390/",
+    "bundle": "./assets/index-C_V6J2GR.js",
+    "bundleSha256": "c6632805c11019528ca8cec8570e2c254954eba55352f19fecb75c011efb4844",
+    "modelAssetBytes": 32470744,
+    "screenshots": [
+      "final-front.png",
+      "final-side.png",
+      "final-back.png"
+    ],
+    "metrics": "No fresh 10-second benchmark; topology/textures and frame loop unchanged"
+  },
+  "backup": ".local/backups/avatar-neckline-soft-fit-2026-11-05",
+  "protectedFileHashes": {
+    "آواتار/src/hybrid/neck-collar.mjs": "364a74644aa6a60d81af41891879bfba4c079a32c5ddf34068740a0922b0682b",
+    "آواتار/src/hybrid/surface-materials.mjs": "daa2208dbb79ac91499e6b82f5eacce589a6e76018203740bbf906f62fb2dec1"
+  },
+  "gitHead": "221d477f8574f0ab204342848b99470deff52d09",
+  "commit": false,
+  "push": false,
+  "published": false,
+  "meetingRoomChanged": false,
+  "skillPackageChanged": false,
+  "earlierCandidateEvidence": [
+    "candidate-quarter.png",
+    "candidate-back.png",
+    "neckline-tests.log"
+  ],
+  "earlierCandidateEvidenceNote": "Initial contraction before protecting front rim; final evidence uses final-* screenshots and plugin-tests.log."
+}

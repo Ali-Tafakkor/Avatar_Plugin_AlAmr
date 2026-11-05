@@ -1,0 +1,14 @@
+{
+  "left": {
+    "referenceReachMeters": 0.19345058347325453,
+    "measuredOpenReachMeters": 0.19345060087518842,
+    "calibration": "symmetric size from the original open hand surface",
+    "scale": 1.115986307769336
+  },
+  "right": {
+    "referenceReachMeters": 0.19345058347325453,
+    "measuredOpenReachMeters": 0.1934506047239594,
+    "calibration": "symmetric size from the original open hand surface",
+    "scale": 1.1159912801592726
+  }
+}

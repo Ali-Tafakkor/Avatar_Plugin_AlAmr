@@ -1,0 +1,11 @@
+{
+  "model": "zeropointnine/yamnet-onnx",
+  "revision": "ac2ca3bd45d12ec1f19f1144205ea529b4e9dedf",
+  "modelCardLicense": "Apache-2.0",
+  "bytes": 16093603,
+  "sha256": "1510041dce24a2e9e84ec546807ac408ae496da6d1ed41bc3ccba649623f8e19",
+  "upstream": "Google YAMNet / AudioSet, converted to ONNX by zeropointnine",
+  "sourceUrl": "https://huggingface.co/zeropointnine/yamnet-onnx/tree/ac2ca3bd45d12ec1f19f1144205ea529b4e9dedf",
+  "meaning": "Audio-event classification. Does not infer a person's internal emotion.",
+  "classes": ["Laughter", "Giggle", "Snicker", "Belly laugh", "Chuckle"]
+}

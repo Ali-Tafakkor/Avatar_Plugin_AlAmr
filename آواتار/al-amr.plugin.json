@@ -8,8 +8,8 @@
   },
   "slug": "avatar03",
   "name": "آواتار ۳",
-  "version": "0.1.2",
-  "shortDescription": "آواتار ترکیبی وب با بدن، لباس و هشت حرکت V1، پرش V2 و چهرهٔ تازه با ۶۶ کانال بومی احساسات",
+  "version": "0.1.3",
+  "shortDescription": "آواتار با چهره و دست‌های ارتقایافته، احساسات، حرکت طبیعی و کنترل اختیاری صورت از میکروفن",
   "category": "utility",
   "localizations": {},
   "presentation": {
@@ -51,6 +51,11 @@
         "AVATAR_HYBRID_MOTIONS_URL",
         "AVATAR_HYBRID_HEIGHT",
         "createHybridRuntime",
+        "createMicrophoneSpeechController",
+        "LaughterDetector",
+        "SPEECH_WORKER_URL",
+        "SPEECH_CAPTURE_WORKLET_URL",
+        "DEFAULT_LAUGHTER_WORKER_URL",
         "AVATAR_HYBRID_TEXTURE_URL"
       ],
       "capabilities": [
@@ -63,7 +68,7 @@
           {
             "exportName": "AvatarHybrid",
             "surface": "avatar.character",
-            "description": "Accepted hybrid: V1 body, outfit and eight native clips, V2 jump and a sculpted native facial rig. Mount in the host-owned PlayerRig avatar prop."
+            "description": "Current accepted AvatarHybrid: enhanced expressive face, fully rigged hands, relaxed idle, hand contact guard and fitted original garment. Mount in the host-owned scene."
           },
           {
             "exportName": "AvatarWebV2",
@@ -92,5 +97,6 @@
   },
   "documentation": {
     "license": "MIT"
-  }
+  },
+  "webAssembly": []
 }

@@ -1,134 +1,43 @@
-# Avatar 03 hybrid adapter contract — 0.1.2
+# Avatar 03 — accepted Hybrid 0.1.3 contract
 
-Current recommended avatar.character surface: **AvatarHybrid**. Plugin ID,
-publisher, slug, platform contract, compatibility and peer ranges are unchanged.
-Avatar03 and AvatarWebV2 remain compatible exports; no automatic migration.
+Recommended avatar.character export: **AvatarHybrid**. The November 5 owner-approved appearance includes enhanced skin/albedo and eyes, 66 native facial channels, detailed rigged hands, relaxed fingers, contact guard, friendly neutral, lightweight cloth, smooth shortened neck, fitted original neckline and quiet idle. Plugin/publisher/slug/contractVersion and peer compatibility are unchanged.
 
-Hybrid props retain the structural public controller/navigation interfaces,
-height=1.78, lighting, portrait, rotationY=PI and ready/error callbacks.
-legacyModelUrl selects the V1 body; modelUrl the native V2 facial donor;
-motionsUrl the V2 motion source. The host owns Canvas, WebGPU rendering,
-Player Rig, input, navigation, world pose and lifetime.
+## Host integration
 
-AvatarHybridHandle adds previewClip, seekClip, setPlayback and getRoot to the
-existing facial/locomotion methods. Hybrid face options are blinkEnabled,
-gazeEnabled and microEnabled. See emitted declarations for precise signatures.
-Use host walkSpeed=5 and sprintSpeed=9m/s for V1 timing. LOCOMOTION_PROFILE
-remains the separate Web V2 2.25/6.2m/s profile.
+Import from `@al-amr-community/usr-20dfea67-47be-4f4a-b48c-02c5f210a079--avatar03`. The host owns Canvas, WebGPURenderer, lights, camera, navigation, world transforms, input and frame loop. Use the existing Player Rig avatar slot. The face/garment use Three TSL node materials; standard WebGLRenderer compatibility is not established.
 
-The runtime retains eight native V1 clips and uses only V2 jump. Six native
-V2 facial meshes with 66 morph channels are privately mounted on the V1
-head/neck chain. Neutral sculpt and all morph endpoints are transformed
-coherently; accepted pose synchronization and static shoe contact are retained.
-No runtime imports point into avatar-lab, experiments or the root source tree.
+```tsx
+import {AvatarHybrid} from '@al-amr-community/usr-20dfea67-47be-4f4a-b48c-02c5f210a079--avatar03';
+// Inside the host Canvas, Suspense and PlayerRig.avatar:
+<AvatarHybrid ref={avatar} controller={controller} navigation={navigation}
+  legacyModelUrl={asset('avatar-hybrid/legacy.gltf')}
+  textureUrl={asset('avatar-hybrid/image-0.png')}
+  modelUrl={asset('avatar-v2/avatar.gltf')}
+  motionsUrl={asset('avatar-v2/motions.json')}
+  faceAlbedoUrl={asset('appearance/face-albedo.png')}/>
+```
 
-New root exports: AvatarHybrid, createHybridRuntime,
-AVATAR_HYBRID_LEGACY_MODEL_URL, AVATAR_HYBRID_MODEL_URL,
-AVATAR_HYBRID_MOTIONS_URL and AVATAR_HYBRID_HEIGHT. Subpaths ./hybrid and
-./hybrid-runtime ship with types. The sample prepare-avatar-hybrid.mjs resolves
-installed package exports and copies both models plus all sibling resources.
-Explicit sample URLs: /avatar-hybrid/legacy.gltf, /avatar-v2/avatar.gltf,
-/avatar-v2/motions.json. Assets are local. Package-relative defaults also work
-when package layout is preserved.
+`asset` is the consuming host's local URL resolver. Copy full sibling resources, not only JSON. The repository's `avatar-lab/scripts/prepare-avatar-hybrid.mjs` demonstrates preparation using installed package exports `/model`, `/web-model`, `/web-motions`, and dist/assets/appearance. The face texture is also exported as AVATAR_HYBRID_FACE_ALBEDO_URL from `/hybrid`. Package-relative defaults work with the original package layout. No runtime import depends on experiments, repository source or a development server.
 
-Both current product version fields are0.1.2. Select the آواتار folder for
-Desktop submission. Local checks do not establish Registry availability,
-submission, review or publication. Asset notices and code-only MIT remain.
-No real VR tracking, hand interaction or audio lip-sync is implemented here.
+Peers: React >=19 <19.3, Three >=0.185.1 <0.186.0, Fiber >=9.6.1 <10.
+Props: controller, navigation, optional local asset URLs, height=1.78, lighting='scene'|'unlit', rotationY=PI, portrait=false, onReady and onError. Use host walkSpeed=5 and sprintSpeed=9 for retained V1 timing. The separate AvatarWebV2 LOCOMOTION_PROFILE remains 2.25/6.2m/s.
 
-## Preserved Web V2 contract — 0.1.1
+The host applies world position/yaw once. Runtime instances own their mutable rigs, geometry, materials and expression state; unmount disposes owned resources. The body uses eight V1 clips and V2 jump. Native face/neck anchors follow current torso and head poses.
 
-AVATAR_HYBRID_TEXTURE_URL is also public; the optional textureUrl prop
-overrides the bundled V1 texture location when a host relocates this asset.
+## Controls
 
-Hybrid rendering requires the sample's WebGPURenderer and its supported
-backend/fallback because the accepted face/collar use TSL node materials.
-Compatibility with legacy WebGLRenderer has not been established.
+The handle supports setLocomotion, previewClip, seekClip, setPlayback, setEmotion, setIntensity, setManual, setFaceOptions, blink, reset, getStatus, getRoot and getRuntime (inspection). Exact types ship in dist. Emotions: neutral, smile, laugh, sad, angry, surprise. Face options: blinkEnabled, gazeEnabled, microEnabled.
 
-The following documents the retained AvatarWebV2 interface. Release selection
-and recommended hybrid integration are defined above.
+Hand controls: `setHandPose(pose,side?)` and `setFingerCurl(side,digit,value)`. Poses: auto, open, relaxed, fist, point, pinch. Sides: both, left, right. Digits: thumb, index, middle, ring, pinky; curl 0..1.
 
-Local authored contract, not Registry-generated release metadata. Plugin ID,
-publisher, slug, contractVersion and runtime compatibility are retained from
-0.1.0; only the product release version advances. Semantic adapter: `r3f`,
-runtime `react-three-fiber`, export path `.`, host kind `environment`.
+createHybridRuntime also works without React. Its option garmentNeckline:false restores the original garment opening independently of neckContour. The contact guard is avatar-specific, not general physics collision.
 
-The recommended `avatar.character` surface is `AvatarWebV2`. It mounts as a
-React node in the consuming Environment's `PlayerRig.avatar` prop. The host
-owns Canvas, rendering, camera, controller input, world pose, navigation and
-lifetime. This Plugin does not mount or import Player Rig internally. Its
-controller/navigation types are structural subsets of public host methods.
-No platform ports, identity claims, settings surface, backend or permissions
-are required. The host's Three/React/Fiber instances must be shared.
+## Optional microphone and audible laughter
 
-Peers: React >=19 <19.3; Three >=0.185.1 <0.186.0; R3F >=9.6.1 <10.
-The complete consuming Environment at ../avatar-lab uses the exact managed
-Player Rig 1.0.0 and WebGPURenderer. All resources load from the local bundle.
+setSpeechFrame, setSpeechOptions, setLaughter and clearSpeech feed a single face compositor. Import createMicrophoneSpeechController and LaughterDetector from `/speech`. The host owns explicit user activation, native/browser permission, model/WASM URLs, status UI, stopping on hide and disposal. Model/WASM assets are host-owned and optional for rendering/manual expressions. See SPEECH_INTEGRATION.md and the sample SpeechPanel.tsx. PCM stays local and is not recorded/uploaded. Audible laughter detection is experimental and does not infer internal emotion.
 
-## Web V2 props and methods
+## Compatible APIs and release
 
-Required props: `controller.getPoseSnapshot()` returns world position,
-velocity, yaw and mode; `navigation.sampleGround([x,y,z])` returns a ground
-position or no result. Optional props: modelUrl, motionsUrl, height=1.78,
-lighting='scene'|'unlit', rotationY=PI, portrait=false, onReady and onError.
-Positive finite height is required. Loader errors belong to the host's
-Suspense/error boundary; runtime initialization/frame errors reach onError.
+Avatar03, Avatar03Animator, AVATAR03_CLIPS and the original model remain intact. AvatarWebV2, `/web-v2`, `/runtime`, `/web-model`, `/web-motions`, `/web-asset-manifest`, `/hybrid`, `/hybrid-runtime` and `/speech` remain available. Existing consumers are not automatically migrated; select AvatarHybrid explicitly.
 
-Ref AvatarWebV2Handle:
-- setLocomotion({state,horizontalSpeed,verticalSpeed,grounded}) receives the
-  current public Player Rig onAnimationFrame snapshot.
-- setEmotion(neutral|smile|laugh|sad|angry|surprise), setIntensity(0..1).
-- setManual(jaw|smile|frown|brows|browDown|wide, 0..1).
-- setFaceOptions({blinkEnabled?,gazeEnabled?,microEnabled?,ikEnabled?}).
-- blink(), reset(), getStatus(); getRuntime() is for explicit test inspection.
-
-The host supplies current pose before the runtime's frame subscriber runs.
-The adapter registers that subscriber after async initialization, at R3F
-priority zero; it never takes over host rendering. +Z anatomical forward is
-aligned to the official Player Rig's -Z by the default PI rotation. Root
-world translation/yaw is not applied a second time.
-
-The extracted actor retains 73 bones, ten meshes and 66 facial shapes. Every
-instance clones its mutable skeleton, geometry, materials, textures and
-facial influences. Unmount disposes only those resources, stopping and
-uncaching its mixer. Standalone runtime dispose is idempotent. reset clears
-motion/contact history while preserving facial settings.
-
-The recommended host movement profile is exported as LOCOMOTION_PROFILE:
-walkSpeed=2.25 and runSpeed=6.2 m/s. Set the host's walkSpeed/sprintSpeed to
-these values; an animation-only Plugin does not change host travel speed.
-Knee/sole correction, stride timing and transitions are built into the runtime.
-
-## Packaged assets and exports
-
-Copy the complete dist/assets/avatar-v2 directory to the host's public
-avatar-v2 directory, preserving avatar.gltf, avatar.bin, images and motions.json,
-and pass their host-local URLs. The executable example's preparation script
-does this. A bundler import of only the glTF does not copy sibling images.
-The module-relative default URLs work when the package asset layout is kept.
-
-Frontend exports: AvatarWebV2, AVATAR_V2_MODEL_URL, AVATAR_V2_MOTIONS_URL,
-AVATAR_V2_HEIGHT, EMOTIONS, FACE_GROUPS, LOCOMOTION_PROFILE,
-createWebAvatarRuntime; plus the preserved legacy exports below. Types are
-in dist/index.d.ts, dist/v2.d.ts and dist/web-v2/runtime.d.mts. Public package
-subpaths are ./web-v2, ./runtime, ./web-model, ./web-motions and ./web-asset-manifest.
-
-## Compatible legacy API
-
-Avatar03, AVATAR03_CLIPS, AVATAR03_MODEL_URL, AVATAR03_HEIGHT, MOTION_CLIPS and
-Avatar03Animator retain the old model/API and nine embedded clips. Its ref
-still exposes setLocomotion, previewClip and getStatus. Fall continues Jump;
-land uses Stand with fallback status. Existing Avatar03 consumers are not
-silently migrated to the new model. Use AvatarWebV2 for this release's new
-character. Consumers pinned to published 0.1.0 retain their original bytes.
-
-## Publication and scope
-
-The local Plugin folder is the submit-button source. Both versions are 0.1.1;
-no manual npm pack is required. README describes installation after an actual
-Registry release exists. The provided local example is not proof of a
-published-version installation. A submitted candidate is not a published one.
-The model/motion asset permissions in LICENSE and THIRD_PARTY_NOTICES.md are
-separate from the application code license. No new commercial permission is
-asserted. Real VR pose tracking, remote replication, audio lip-sync and a
-platform-wide avatar replacement are outside this release's tested scope.
+Both product version fields are **0.1.3**. Select this **آواتار** folder in Desktop to send a new release of the same product. Local build/validation is separate from Registry upload/review/publication. Online version availability remains unverified because CLI authentication is required. MIT covers code only; model/texture/motion notices remain in THIRD_PARTY_NOTICES.md.

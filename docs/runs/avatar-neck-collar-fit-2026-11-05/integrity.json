@@ -1,0 +1,25 @@
+{
+  "head": "221d477f8574f0ab204342848b99470deff52d09",
+  "assets": [
+    {
+      "path": "\u0622\u0648\u0627\u062a\u0627\u0631/assets-source/v1/avatar03.glb",
+      "sha256": "bf16883394c2f968faa294e8debe02dc38ff8ba4aaf98d32319e025d8185540d"
+    },
+    {
+      "path": "Avatar_V2_WebBase/AvatarRuntime/assets/avatar.gltf",
+      "sha256": "a7596659be5e3bf3e6400fabfe20042277ea03b5e5b6d0c1e37589020ec4ced9"
+    },
+    {
+      "path": "\u0622\u0648\u0627\u062a\u0627\u0631/assets-source/appearance/face-albedo.png",
+      "sha256": "8807601273bc9c4dabc919746e6f9f804e5a2942ba634fb982d6fe0ed5c20677"
+    },
+    {
+      "path": "\u0622\u0648\u0627\u062a\u0627\u0631/src/hybrid/detailed-hands.mjs",
+      "sha256": "cbcf38e9a3c1019006094d79db5ad6bb52917c5db3966a57c2d6b0b0e1c27990"
+    },
+    {
+      "path": "\u0622\u0648\u0627\u062a\u0627\u0631/src/hybrid/quiet-idle.mjs",
+      "sha256": "d1f8bba64a958cd386b603835711cb20e09b41b7240521e5c39b5524af371e55"
+    }
+  ]
+}

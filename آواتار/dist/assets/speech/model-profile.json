@@ -1,0 +1,45 @@
+{
+  "format": 1,
+  "hostOwnedAssets": true,
+  "onnxRuntimeWeb": "1.29.0",
+  "speech": {
+    "repository": "myned-ai/wav2arkit_cpu",
+    "revision": "48b7d27a147d4dfcce4c8225b11209ce4cd76e05",
+    "graph": "wav2arkit_cpu.onnx",
+    "graphSha256": "67ca8278e3ce2fa022368eb76c8777afa7f6497b98eaa0feee58b19adf7f79bb",
+    "sourceTensorData": "wav2arkit_cpu.onnx.data",
+    "sourceTensorBytes": 402063360,
+    "sourceTensorSha256": "c0f0364673c6e50be126b193e2b56809c16ac6bee4805aea9b8251ce53429bf8",
+    "modelFile": "wav2arkit_cpu.onnx",
+    "dataFile": null,
+    "partitionBytes": 50331648,
+    "quantized": true,
+    "sourceGraphSha256": "cdecbfad3915dd20b2f0718942d0b8894b2ee11edcc5a9a9da45d29a46af2ed9",
+    "graphBytes": 146875208,
+    "quantization": "ORT dynamic int8 MatMul/Gemm, per-channel",
+    "modelParts": [
+      {
+        "file": "wav2arkit_cpu.onnx.part1",
+        "bytes": 50331648,
+        "sha256": "80c2273458d5e5f7a22d33c2dabe5f708e635527c39afb03dee0a97f6343c356"
+      },
+      {
+        "file": "wav2arkit_cpu.onnx.part2",
+        "bytes": 50331648,
+        "sha256": "e78f55a978303609ce356668b6292e93cae4bcb8647a03bf9b91a32b44288f23"
+      },
+      {
+        "file": "wav2arkit_cpu.onnx.part3",
+        "bytes": 46211912,
+        "sha256": "7761350ded9e6a76feb267a8d5c4b981382c33805f9d8ebcfb775c0f46b6e0cb"
+      }
+    ]
+  },
+  "laughter": {
+    "repository": "zeropointnine/yamnet-onnx",
+    "revision": "ac2ca3bd45d12ec1f19f1144205ea529b4e9dedf",
+    "model": "yamnet.onnx",
+    "bytes": 16093603,
+    "sha256": "1510041dce24a2e9e84ec546807ac408ae496da6d1ed41bc3ccba649623f8e19"
+  }
+}

@@ -88,7 +88,7 @@ test('built hybrid instances isolate both native rigs and face resources and dis
 });
 
 test('standalone hybrid applies all six public emotions, a blink and all 37 effective native face controls', async context => {
-  const runtime = await createHybridRuntime(fixture.legacy, fixture.web, fixture.motions);
+  const runtime = await createHybridRuntime(fixture.legacy, fixture.web, fixture.motions,{friendlyFace:false,handContact:false});
   try {
     runtime.previewClip('HandRaise'); runtime.setPlayback({ paused: true }); runtime.seekClip(1.5);
     runtime.setFaceOptions({ blinkEnabled: false, gazeEnabled: false, microEnabled: false }); runtime.setIntensity(1);

@@ -1,0 +1,42 @@
+Avatar Lab local startup 2026-10-27T20:01:00.1199755+03:30
+
+Install locked dependencies: host
+
+added 84 packages in 9s
+
+[1/4] Build the current local avatar Plugin
+
+> @al-amr-community/usr-***--avatar03@0.1.3 build
+> tsc && node scripts/copy-assets.mjs && node scripts/prepare-v2.mjs && node scripts/prepare-hybrid.mjs && node scripts/prepare-speech.mjs
+
+Avatar 03 copied unchanged (8657480 bytes, SHA-256 bf16883394c2f968faa294e8debe02dc38ff8ba4aaf98d32319e025d8185540d).
+{"code":"AVATAR_V2_PLUGIN_ASSETS_READY","joints":73,"morphs":66,"images":14,"files":20}
+{"code":"AVATAR_HYBRID_PLUGIN_READY","files":5,"baseline":"owner-accepted-local-hybrid-phase2-2026-10-19","sharedAssets":["avatar03.glb","avatar-v2/avatar.gltf","avatar-v2/motions.json"]}
+{"code":"AVATAR_SPEECH_READY","version":"0.1.3","workers":3,"modelsAndWasm":"host-owned"}
+
+[2/4] Build the current simulation
+
+> alamr-avatar-lab@0.1.0 build
+> node scripts/prepare-avatar-hybrid.mjs && tsc --noEmit && vite build --config vite.production.config.ts
+
+{"code":"AVATAR_HYBRID_HOST_USES_PLUGIN_ASSETS","schemaVersion":1,"source":"installed Plugin exports","legacyModelSha256":"bf16883394c2f968faa294e8debe02dc38ff8ba4aaf98d32319e025d8185540d","legacyBinarySha256":"a94ee13b1e8667d26e2b4c5d431d699469fa24cd03a3bc2d320090a633d73c36","images":[{"file":"image-0.png","sha256":"5344ec24daf8cbc7a9ef08eb2549f2b0084f96283c83dfa1daa9e0e8f7acc822"}],"webModelSha256":"a7596659be5e3bf3e6400fabfe20042277ea03b5e5b6d0c1e37589020ec4ced9","preparedWebModelSha256":"67c596ee24f58f4b942e0bd5172cba2ab99980205b63534b6d3ec23338a012ae","webBufferRemap":{"avatar.bin":"avatar.buffer"},"resources":20,"legacyGeometryAndAnimationChanged":false}
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 627 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                0.44 kB │ gzip:   0.33 kB
+dist/assets/capture-worklet-FG2cjRwd.js        1.07 kB
+dist/assets/laughter.worker-BREVWtDV.js       73.81 kB
+dist/assets/inference-worker-DFJZ9pN1.js      75.59 kB
+dist/assets/avatar-w3gfIAW7.gltf             114.90 kB
+dist/assets/motions-Dvd7jl-Q.json            343.87 kB │ gzip:  78.13 kB
+dist/assets/avatar03-texture-DDeX7F8r.png  6,287.13 kB
+dist/assets/avatar03-COr9lszz.glb          8,657.48 kB
+dist/assets/index-BV7ECqey.css                 8.93 kB │ gzip:   2.75 kB
+dist/assets/index-CJmQfGJa.js              1,962.20 kB │ gzip: 555.01 kB
+✓ built in 5.97s
+
+[3/4] Validate the built Environment
+
+{"schemaVersion":"1","command":"validate","ok":true,"code":"ALAMR_OK","exitCode":0,"message":"environment manifest is valid.","diagnostics":[],"nextActions":[],"artifacts":[],"data":{"kind":"environment","path":"C:\\Files\\Programming\\Avatar_Al_Amr\\avatar-lab\\al-amr.environment.json"},"meta":{"cliVersion":"1.0.0","elapsedMs":40}}

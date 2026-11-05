@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "stageDate": "2026-11-03",
+  "priorClothOwnerAccepted": true,
+  "newOwnerVisualAcceptance": false,
+  "browser": {
+    "scripts": [
+      "http://127.0.0.1:5390/assets/index-Yvvqb2w-.js"
+    ],
+    "errors": [],
+    "renderer": "WebGPU",
+    "handContact": {
+      "regions": 14,
+      "hands": {
+        "left": {
+          "before": 0.0010522105216497213,
+          "after": 0,
+          "region": "leftUpperThigh",
+          "angle": 0.06532005552953338,
+          "samples": 513
+        },
+        "right": {
+          "before": 0,
+          "after": 0,
+          "region": null,
+          "angle": 0.011724140091210864,
+          "samples": 503
+        }
+      }
+    },
+    "inventory": {
+      "meshes": 9,
+      "triangles": 64398,
+      "vertices": 56062,
+      "geometryBytes": 21940848,
+      "textures": 8,
+      "skinnedJoints": 156,
+      "skinPaletteJoints": 521
+    },
+    "face": {
+      "neutral": {
+        "browInnerUp": 0.10499999999999995,
+        "browOuterUpLeft": 0.1499999999999999,
+        "browOuterUpRight": 0.1499999999999999,
+        "eyeWideLeft": 0.052898902295709,
+        "eyeWideRight": 0.052898902295709,
+        "mouthSmileLeft": 0.10499999999999995,
+        "mouthSmileRight": 0.10499999999999995,
+        "cheekSquintLeft": 0.041249999999999974,
+        "cheekSquintRight": 0.041249999999999974,
+        "eyeBlinkLeft": 0,
+        "eyeBlinkRight": 0,
+        "eyeLookInRight": 0,
+        "eyeLookOutLeft": 0,
+        "eyeLookOutRight": 0,
+        "eyeLookInLeft": 0,
+        "eyeLookUpRight": 0,
+        "eyeLookUpLeft": 0,
+        "eyeLookDownRight": 0,
+        "eyeLookDownLeft": 0
+      },
+      "smile": {
+        "browInnerUp": 0.0975000000000298,
+        "browOuterUpLeft": 0.1574999999999702,
+        "browOuterUpRight": 0.1574999999999702,
+        "eyeWideLeft": 0,
+        "eyeWideRight": 0,
+        "mouthSmileLeft": 0.38999999999886764,
+        "mouthSmileRight": 0.38999999999886764,
+        "cheekSquintLeft": 0.17249999999947854,
+        "cheekSquintRight": 0.17249999999947854,
+        "eyeBlinkLeft": 0,
+        "eyeBlinkRight": 0,
+        "eyeLookInRight": 0,
+        "eyeLookOutLeft": 0,
+        "eyeLookOutRight": 0,
+        "eyeLookInLeft": 0,
+        "eyeLookUpRight": 0,
+        "eyeLookUpLeft": 0,
+        "eyeLookDownRight": 0,
+        "eyeLookDownLeft": 0,
+        "eyeSquintLeft": 0.06374999999974673,
+        "eyeSquintRight": 0.06374999999974673,
+        "jawOpen": 0.03374999999986592
+      },
+      "laugh": {
+        "browInnerUp": 0,
+        "browOuterUpLeft": 0,
+        "browOuterUpRight": 0,
+        "eyeWideLeft": 0,
+        "eyeWideRight": 0,
+        "mouthSmileLeft": 0.6784963173362082,
+        "mouthSmileRight": 0.7499999999999996,
+        "cheekSquintLeft": 0.4124999999999998,
+        "cheekSquintRight": 0.4124999999999998,
+        "eyeBlinkLeft": 0,
+        "eyeBlinkRight": 0,
+        "eyeLookInRight": 0,
+        "eyeLookOutLeft": 0,
+        "eyeLookOutRight": 0,
+        "eyeLookInLeft": 0,
+        "eyeLookUpRight": 0,
+        "eyeLookUpLeft": 0,
+        "eyeLookDownRight": 0,
+        "eyeLookDownLeft": 0,
+        "eyeSquintLeft": 0.2699999999999998,
+        "eyeSquintRight": 0.2699999999999998,
+        "jawOpen": 0.30931566188594084,
+        "mouthUpperUpLeft": 0.1724999999999999,
+        "mouthUpperUpRight": 0.1724999999999999,
+        "mouthLowerDownLeft": 0.1274999999999999,
+        "mouthLowerDownRight": 0.1274999999999999
+      }
+    }
+  },
+  "motionAudit": {
+    "method": "all hand vertices; paired oriented ray crossings against deformed torso and trouser triangles; 0.3 mm threshold",
+    "triangles": 16485,
+    "samples": 520,
+    "beforeMaxMm": 47.19401056534923,
+    "afterMaxMm": 0,
+    "solveMeanMs": 0.530877307692549
+  },
+  "jumpAudit": {
+    "method": "all hand vertices; paired oriented ray crossings against deformed torso and trouser triangles; 0.3 mm threshold",
+    "frames": 94,
+    "retargetedFrames": 59,
+    "maxGarmentDepthMm": 0,
+    "maxProxyDepthMm": 2.404750627056418
+  },
+  "modelBytes": 32470744,
+  "bundleAddedBytes": 6811,
+  "verification": {
+    "pluginTests": 70,
+    "hostTests": 13,
+    "buildsPassed": true,
+    "bothManifestsValidated": true,
+    "hostDoctorPassed": true,
+    "nativeReady": false,
+    "nativeFailureCode": "ALAMR_PREVIEW_READY_TIMEOUT",
+    "nativeBuildDigest": "sha256:380daf5de4aa2680516cc9e1f6e15538c94ad511c848941f2684d40ca7c4de45"
+  },
+  "boundaries": {
+    "gitHead": "221d477f8574f0ab204342848b99470deff52d09",
+    "commit": false,
+    "push": false,
+    "publication": false,
+    "meetingRoom2Edited": false
+  },
+  "sha256": {
+    "آواتار/src/hybrid/hand-contact.mjs": "09380516853fae207ac814a20050fbd6cb8104a8d7d32f323980b2c9e3b960af",
+    "آواتار/src/hybrid/runtime.mjs": "2f4b29b67f945779ff4945e935b723f80814bbf0eb163616229417919c946880",
+    "آواتار/src/web-v2/expressions.mjs": "7fc1c035de77c015c1b401376cb8a7f3c4e6b6453d6131f44eb0b13af924f08a",
+    "آواتار/scripts/audit-hand-contact.mjs": "df0bbdd0022d1d079496da4255fd5de286bec439d0e68002347498d6424509fa",
+    "آواتار/tests/hand-contact-face.test.mjs": "77414815932a83e3564d42d8e9365752cde3c8d4710f25472106730eaa9223b8",
+    "avatar-lab/dist/assets/index-Yvvqb2w-.js": "81ecece1a84c1d98121f09ce86aacf5112f83257873c73f7426c728fceeb4e49",
+    "AVATAR_HAND_CONTACT_AND_EXPRESSION_FA.md": "cb413e4b931c39e980323b58c773eb813081d1316b457f99a07f52f59a476e45",
+    "docs/runs/avatar-contact-face-2026-11-03/browser-evidence.json": "bbf83912171531b4be5b60d5e059252536225e1721c1fc2fbf2166a13b24872d",
+    "docs/runs/avatar-contact-face-2026-11-03/contact-audit.json": "4edf331a961c9a5d36a45b37d26130d682ec113d85b76085d85edef6e97204f1",
+    "docs/runs/avatar-contact-face-2026-11-03/hand-clearance.png": "4ed54d4dd825506a86dc9fee4e97c5dfd2a12a193b1874715c70b45256a9db9a",
+    "docs/runs/avatar-contact-face-2026-11-03/host-tests.log": "5fac76a70bff699ba7592592a8c3e46e1d91bca419d023d6fe5e7c989afc5090",
+    "docs/runs/avatar-contact-face-2026-11-03/jump-audit.json": "79d65eeeafa6d823cef46ad3577298b2c6b6efdeed47b36cc4cb248b362c32d3",
+    "docs/runs/avatar-contact-face-2026-11-03/laugh.png": "f80583d309153fb2469cb2c96f780b0932e54576f8e2b0e12de4625af46afde6",
+    "docs/runs/avatar-contact-face-2026-11-03/native-dev.json": "fac70533b1e7a1359d4f72c2b0440abda36fe2d4ae1fdca4562aa201583ff416",
+    "docs/runs/avatar-contact-face-2026-11-03/native-inspect.json": "b5cd860d026db1728bac3461dfbeb4943540ba6ca332ad4c3fbd21415ebc50ae",
+    "docs/runs/avatar-contact-face-2026-11-03/neutral.png": "d892ee49e9851bbff820788bc6e1eebc60870c223c7adbd82d2e92be6ed8301c",
+    "docs/runs/avatar-contact-face-2026-11-03/plugin-tests.log": "7324c05e0fc433a3039d0df5a98bdd4c775f29ba1e068d33e92f87d054fd2c6e",
+    "docs/runs/avatar-contact-face-2026-11-03/smile.png": "30c19ee36e8a085f25c06f687dda674568d2fd1445f35405cf5c79ee6704438d"
+  }
+}

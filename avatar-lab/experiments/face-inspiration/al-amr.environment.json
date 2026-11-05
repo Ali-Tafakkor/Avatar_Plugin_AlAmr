@@ -1,0 +1,35 @@
+{
+  "contractVersion": "1.0.0",
+  "runtimeApi": "^1.0.0",
+  "environmentId": "env_local_902d0bec1103",
+  "name": "مقایسهٔ چهرهٔ آواتار — نمونهٔ محلی",
+  "shortDescription": "مقایسهٔ ظاهر و احساسات چهره با بدن و لباس یکسان",
+  "category": "custom",
+  "localizations": {},
+  "entry": {
+    "kind": "bundle",
+    "version": "0.1.0"
+  },
+  "portal": {
+    "title": "مقایسهٔ چهرهٔ آواتار",
+    "blurb": "نمونهٔ مستقل الهام‌گرفته از پژوهش DreamFace",
+    "art": {
+      "imageUrl": "environment-cover.png",
+      "alt": "آزمایشگاه محلی مقایسهٔ کیفیت چهرهٔ آواتار"
+    },
+    "visibility": "private"
+  },
+  "capabilities": [],
+  "notifications": {
+    "eventTypes": [],
+    "audience": "none"
+  },
+  "plugins": [
+    {
+      "integrationKind": "frontend_adapter",
+      "pluginId": "plg_0bec7e8e-8852-4f44-9446-f5df278ab59e",
+      "releaseVersion": "1.0.0",
+      "adapterId": "r3f"
+    }
+  ]
+}

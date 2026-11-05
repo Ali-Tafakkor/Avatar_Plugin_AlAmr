@@ -3,6 +3,8 @@ import { MeshBasicNodeMaterial, MeshStandardNodeMaterial } from 'three/webgpu';
 import { attribute, float, mix, texture } from 'three/tsl';
 import { clone as cloneSkeleton } from 'three/addons/utils/SkeletonUtils.js';
 import { boneName } from '../web-v2/actor.mjs';
+import { refineNeckGeometry } from './neck-collar.mjs';
+import { fitGarmentNeckline } from './garment-neckline.mjs';
 
 const FACE_MESHES = new Set(['AvatarHead', 'AvatarEyelashes', 'AvatarLeftEyeball', 'AvatarRightEyeball', 'AvatarTeethLower', 'AvatarTeethUpper']);
 const V = () => new Vector3(), Q = () => new Quaternion();
@@ -106,7 +108,7 @@ function fitNativeNeck(mesh, targetFrame) {
 export function mountReplacementHead(body, donor, options = {}) {
   const targetHead = body.bones?.get('head'), donorHead = donor.bones?.get('head');
   if (!targetHead || !donorHead || !body.model || !donor.model) throw new Error('hybrid_mount_missing_actor_head');
-  const headOffset = options.headOffset ?? [0, 0.060, -0.012];
+  const headOffset = options.headOffset ?? [0, 0.035, -0.012];
   const headScale = options.headScale ?? 1;
   const headPitch = options.headPitch ?? -0.08;
   if (!Array.isArray(headOffset) || headOffset.length !== 3 || !headOffset.every(Number.isFinite)
@@ -156,8 +158,9 @@ export function mountReplacementHead(body, donor, options = {}) {
   if (meshes.length !== FACE_MESHES.size) { root.removeFromParent(); throw new Error('hybrid_mount_incomplete_native_face'); }
   refresh(body.root);
   const neckFit = fitNativeNeck(meshes.find(mesh => mesh.name === 'AvatarHead'), targetFrame);
+  if(options.neckContour!==false)neckFit.refinement=refineNeckGeometry(meshes.find(mesh=>mesh.name==='AvatarHead'),targetFrame);
 
-  const masks = [], cutY = options.neckCutY ?? -0.085;
+  const masks = [], garmentNeckline = [], cutY = options.neckCutY ?? -0.085;
   let removedTriangles = 0, preservedGarmentTriangles = 0, conservativeFallback = false, pixelMaskedCollars = 0;
   for (const mesh of body.meshes.filter(item => item.isSkinnedMesh && !item.userData.hybridFaceMesh)) {
     const original = mesh.geometry, geometry = original.clone(), inverse = targetFrame.clone().invert();
@@ -193,6 +196,8 @@ export function mountReplacementHead(body, donor, options = {}) {
     }
     geometry.setIndex(keep); geometry.computeBoundingBox(); geometry.computeBoundingSphere();
     mesh.geometry = geometry; masks.push({ mesh, original, geometry, originalMaterial, maskResources });
+    if (options.garmentNeckline !== false && mesh.name === 'Meshy_AI_Lilac_Sweatshirt_Port_0809081014_texture')
+      garmentNeckline.push(fitGarmentNeckline(mesh, targetFrame));
   }
   refresh(body.root);
   const mountedHead = bones.get('head');
@@ -210,7 +215,7 @@ export function mountReplacementHead(body, donor, options = {}) {
     nativeMorphChannels: new Set(meshes.flatMap(mesh => Object.keys(mesh.morphTargetDictionary ?? {}))).size,
     headOffset: [...headOffset], headScale, headPitch, headPitchDegrees: headPitch * 180 / Math.PI,
     neckCutY: cutY, removedTriangles, preservedGarmentTriangles,
-    pixelMaskedCollars, neckFit,
+    pixelMaskedCollars, neckFit, garmentNeckline,
     sourceAttributesPreserved: true, originalV1BonesUntouched: true, clonedBonesTagged: bones.size,
     mountedNativeHeadBoundsMeters: nativeBounds,
     conservativeTexturelessFallback: conservativeFallback, neckJoin: 'native neck overlaps V1 skin cut behind original preserved collar',

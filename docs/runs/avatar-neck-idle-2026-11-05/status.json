@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "stageDate": "2026-11-05",
+  "ownerVisualAcceptance": false,
+  "changes": {
+    "headLoweringMeters": 0.025,
+    "headScale": 1,
+    "collarOpacityRetained": true,
+    "collarGeometryRetained": true,
+    "idle": "private 12 second Stand with tiny yaw and 4 second breathing; neck compensation"
+  },
+  "measurement": {
+    "before": {
+      "duration": 11.566666603088379,
+      "pitchYawRollPeakToPeakDegrees": [
+        42.806960333460744,
+        47.471279809485075,
+        18.090659591295744
+      ],
+      "headVerticalPeakToPeakMm": 26.63291261014922,
+      "headDepthPeakToPeakMm": 88.01449012991723,
+      "chestWidthScaleRange": 0
+    },
+    "after": {
+      "duration": 12,
+      "pitchYawRollPeakToPeakDegrees": [
+        0.010753663417094841,
+        2.3939830233193256,
+        0.16947266008250744
+      ],
+      "headVerticalPeakToPeakMm": 3.618234289959332e-05,
+      "headDepthPeakToPeakMm": 0.01573394314890314,
+      "chestWidthScaleRange": 0.0034999847412109375
+    }
+  },
+  "browserEvidence": {
+    "scripts": [
+      "http://127.0.0.1:5390/assets/index-gjpAMUHh.js"
+    ],
+    "errors": [],
+    "consoleErrors": [],
+    "headOffset": [
+      0,
+      0.035,
+      -0.012
+    ],
+    "headScale": 1,
+    "pixelMaskedCollars": 1,
+    "idle": {
+      "periodSeconds": 12,
+      "breathPeriodSeconds": 4,
+      "headYawDegrees": 1,
+      "neckYawDegrees": 0.2,
+      "chestWidthExpansion": 0.0035,
+      "chestDepthExpansion": 0.0035
+    },
+    "firstTime": 0,
+    "lastTime": 5.433700000047609,
+    "frames": 7724,
+    "mode": "locomotion",
+    "inventory": {
+      "meshes": 9,
+      "triangles": 64398,
+      "vertices": 56062,
+      "geometryBytes": 21940848,
+      "textures": 8,
+      "skinnedJoints": 156,
+      "skinPaletteJoints": 521
+    },
+    "metrics": {
+      "frames": 103,
+      "fps": 102.03070827142149,
+      "frameMs": 9.800970873786408,
+      "p95Ms": 10.899999976158142,
+      "cpuSubmitMs": 1.0699029177137949,
+      "avatarUpdateMs": 2.548543688163017,
+      "gpuMs": 2.9421210097087402,
+      "rendererMemory": {
+        "attributes": 49,
+        "attributesSize": 3770756,
+        "geometries": 11,
+        "indexAttributes": 10,
+        "indexAttributesSize": 772800,
+        "indirectStorageAttributes": 0,
+        "indirectStorageAttributesSize": 0,
+        "programs": 34,
+        "programsSize": 307250,
+        "readbackBuffers": 0,
+        "readbackBuffersSize": 0,
+        "renderTargets": 2,
+        "storageAttributes": 0,
+        "storageAttributesSize": 0,
+        "textures": 19,
+        "texturesSize": 213433647,
+        "uniformBuffers": 59,
+        "uniformBuffersSize": 80912,
+        "total": 218365365
+      },
+      "drawCalls": 20,
+      "renderedTriangles": 128799,
+      "jsHeapBytes": 204034028,
+      "canvas": [
+        1395,
+        1080
+      ],
+      "dpr": 1.5,
+      "cameraDistance": 4.400007272721262,
+      "timestampSupported": true
+    }
+  },
+  "assets": {
+    "modelBytes": 32470744,
+    "modelBytesUnchanged": true,
+    "bundleBytes": 230100584,
+    "bundleAddedBytes": 1594
+  },
+  "checks": {
+    "pluginTests": {
+      "passed": 72,
+      "failed": 0
+    },
+    "hostTests": {
+      "passed": 13,
+      "failed": 0
+    },
+    "pluginBuild": true,
+    "hostBuild": true,
+    "pluginValidate": "ALAMR_OK",
+    "hostValidate": "ALAMR_OK",
+    "hostDoctor": "ALAMR_DOCTOR_READY",
+    "nativePreview": {
+      "verified": false,
+      "code": "ALAMR_DESKTOP_UNAVAILABLE"
+    }
+  },
+  "boundaries": {
+    "gitHead": "221d477f8574f0ab204342848b99470deff52d09",
+    "commit": false,
+    "push": false,
+    "publication": false,
+    "meetingRoom2Edited": false,
+    "skillPackageEdited": false
+  },
+  "backup": ".local/backups/avatar-neck-idle-2026-11-05/",
+  "sha256": {
+    "آواتار/src/hybrid/head-mount.mjs": "29a3a19e80db3b8ae62ef20d6a7eb63a6747d199f60a34901bfc0c887a8166d5",
+    "آواتار/src/hybrid/body-runtime.mjs": "31456716019946ece507a9850aba5bf17c2b701fc41f728698f64d46c6314372",
+    "آواتار/src/hybrid/surface-materials.mjs": "daa2208dbb79ac91499e6b82f5eacce589a6e76018203740bbf906f62fb2dec1",
+    "آواتار/src/hybrid/quiet-idle.mjs": "d1f8bba64a958cd386b603835711cb20e09b41b7240521e5c39b5524af371e55",
+    "آواتار/src/hybrid/accepted-source.json": "c433a9ff8f533b50d679ee54ca4f9fc8b271915d5c66eeb9a061d8ef8a926273",
+    "آواتار/tests/neck-idle.test.mjs": "dd5c7b06c924131f9a409506a17b917f8f22350bb519231de22c9410f739bdc3",
+    "آواتار/tests/cloth-materials.test.mjs": "3a1454510a211ec2f015f1feb89ea26bea1d0e47c2182c686136c37a44c00c58",
+    "avatar-lab/dist/assets/index-gjpAMUHh.js": "eacde201f11774fd3db7d1eed4a7781a0efe416cf61974434210898383350eba",
+    "AVATAR_NECK_AND_IDLE_FA.md": "bb7d229ba05942ab3987791207daa9547dd9db118ae59744e0dcc3cde9938969",
+    "docs/runs/avatar-neck-idle-2026-11-05/browser-evidence.json": "c89d7bbc9742152785336a2437e4fcca7120a119a3e2df4bf44bd0559aa1f8a0",
+    "docs/runs/avatar-neck-idle-2026-11-05/host-tests.log": "479224e4b3792bfa4222a60492e93f33cfb7ba0b44fbbf076a23f8f96960add4",
+    "docs/runs/avatar-neck-idle-2026-11-05/idle-live.png": "2e312273baa5068be32c104cd30b44734f3fb709f166dacdb27d8a9f48607719",
+    "docs/runs/avatar-neck-idle-2026-11-05/idle-measurement.json": "01fbd6f9fe91fded5623cb07ba8f517bb832b640c3e1f60a87660553df2acd2f",
+    "docs/runs/avatar-neck-idle-2026-11-05/native-dev.json": "91e8e0407b89713f1fac74fef3c68be34851aa8ce9e447ffb2f7d59fef776e6c",
+    "docs/runs/avatar-neck-idle-2026-11-05/neck-back.png": "4ca00ad036a03cedfd31c877d2b0c1858d580208353e658993b4df30cb4ba6d1",
+    "docs/runs/avatar-neck-idle-2026-11-05/neck-front.png": "943513c389a13a6f41650f54397dc7334c4292896eff5c22d7def6007e001b3f",
+    "docs/runs/avatar-neck-idle-2026-11-05/neck-quarter.png": "1abdc8cb07da2acc0e70fa2626dec15e920378cf6c67d37bcd1f04a9a4ab72c3",
+    "docs/runs/avatar-neck-idle-2026-11-05/plugin-tests.log": "dbfda9d2465c1a128bca2bd08837555a8618a84c432e2340cf6b596d3671906f"
+  }
+}

@@ -1,0 +1,282 @@
+[
+  {
+    "name": "Stand",
+    "phase": 0,
+    "probes": 96,
+    "maxGapMm": 3.9990048991946923,
+    "minSignedMm": 3.3657140521529576,
+    "maxSignedMm": 3.9990048991946923
+  },
+  {
+    "name": "Stand",
+    "phase": 0.25,
+    "probes": 96,
+    "maxGapMm": 4.049104086533516,
+    "minSignedMm": 3.368073992896414,
+    "maxSignedMm": 4.049104086533516
+  },
+  {
+    "name": "Stand",
+    "phase": 0.5,
+    "probes": 96,
+    "maxGapMm": 4.081298086823575,
+    "minSignedMm": 3.3816501373938137,
+    "maxSignedMm": 4.081298086823575
+  },
+  {
+    "name": "Stand",
+    "phase": 0.75,
+    "probes": 96,
+    "maxGapMm": 4.065477451210241,
+    "minSignedMm": 3.3649674592354613,
+    "maxSignedMm": 4.065477451210241
+  },
+  {
+    "name": "Stand",
+    "phase": 0.97,
+    "probes": 96,
+    "maxGapMm": 4.010215928878896,
+    "minSignedMm": 3.365332247804135,
+    "maxSignedMm": 4.010215928878896
+  },
+  {
+    "name": "Walk",
+    "phase": 0,
+    "probes": 96,
+    "maxGapMm": 5.315189864667194,
+    "minSignedMm": 3.3731422018562047,
+    "maxSignedMm": 5.315189864667194
+  },
+  {
+    "name": "Walk",
+    "phase": 0.25,
+    "probes": 96,
+    "maxGapMm": 6.267484356375449,
+    "minSignedMm": 0.16193955131612572,
+    "maxSignedMm": 6.267484356375449
+  },
+  {
+    "name": "Walk",
+    "phase": 0.5,
+    "probes": 96,
+    "maxGapMm": 5.752385904934601,
+    "minSignedMm": 3.3647222894417426,
+    "maxSignedMm": 5.752385904934601
+  },
+  {
+    "name": "Walk",
+    "phase": 0.75,
+    "probes": 96,
+    "maxGapMm": 6.535964541427922,
+    "minSignedMm": 2.841705832167692,
+    "maxSignedMm": 6.535964541427922
+  },
+  {
+    "name": "Walk",
+    "phase": 0.97,
+    "probes": 96,
+    "maxGapMm": 5.2768404067993115,
+    "minSignedMm": 3.4288140723488607,
+    "maxSignedMm": 5.2768404067993115
+  },
+  {
+    "name": "Run",
+    "phase": 0,
+    "probes": 96,
+    "maxGapMm": 5.797752026563307,
+    "minSignedMm": 1.4002179350617359,
+    "maxSignedMm": 5.797752026563307
+  },
+  {
+    "name": "Run",
+    "phase": 0.25,
+    "probes": 96,
+    "maxGapMm": 5.339944095569492,
+    "minSignedMm": 0.2551706392223352,
+    "maxSignedMm": 5.339944095569492
+  },
+  {
+    "name": "Run",
+    "phase": 0.5,
+    "probes": 96,
+    "maxGapMm": 5.755044829841231,
+    "minSignedMm": 1.5622394432384767,
+    "maxSignedMm": 5.755044829841231
+  },
+  {
+    "name": "Run",
+    "phase": 0.75,
+    "probes": 96,
+    "maxGapMm": 5.323309215329644,
+    "minSignedMm": 2.1623138606225227,
+    "maxSignedMm": 5.323309215329644
+  },
+  {
+    "name": "Run",
+    "phase": 0.97,
+    "probes": 96,
+    "maxGapMm": 5.72229850405778,
+    "minSignedMm": 1.8529983277463407,
+    "maxSignedMm": 5.72229850405778
+  },
+  {
+    "name": "HandRaise",
+    "phase": 0,
+    "probes": 96,
+    "maxGapMm": 5.654832248954485,
+    "minSignedMm": 3.4346361897950013,
+    "maxSignedMm": 5.654832248954485
+  },
+  {
+    "name": "HandRaise",
+    "phase": 0.25,
+    "probes": 96,
+    "maxGapMm": 5.979496007879124,
+    "minSignedMm": 1.664400197147045,
+    "maxSignedMm": 5.979496007879124
+  },
+  {
+    "name": "HandRaise",
+    "phase": 0.5,
+    "probes": 96,
+    "maxGapMm": 6.232036310785832,
+    "minSignedMm": 1.538958373001534,
+    "maxSignedMm": 6.232036310785832
+  },
+  {
+    "name": "HandRaise",
+    "phase": 0.75,
+    "probes": 96,
+    "maxGapMm": 5.967905483907558,
+    "minSignedMm": 1.9616366108689245,
+    "maxSignedMm": 5.967905483907558
+  },
+  {
+    "name": "HandRaise",
+    "phase": 0.97,
+    "probes": 96,
+    "maxGapMm": 5.657454283502133,
+    "minSignedMm": 3.3956254794413283,
+    "maxSignedMm": 5.657454283502133
+  },
+  {
+    "name": "Sitting",
+    "phase": 0,
+    "probes": 96,
+    "maxGapMm": 4.9535544699788865,
+    "minSignedMm": 3.36034066414972,
+    "maxSignedMm": 4.9535544699788865
+  },
+  {
+    "name": "Sitting",
+    "phase": 0.25,
+    "probes": 96,
+    "maxGapMm": 4.9903532878563475,
+    "minSignedMm": 3.368391366865512,
+    "maxSignedMm": 4.9903532878563475
+  },
+  {
+    "name": "Sitting",
+    "phase": 0.5,
+    "probes": 96,
+    "maxGapMm": 4.988129341978872,
+    "minSignedMm": 3.3589537946464407,
+    "maxSignedMm": 4.988129341978872
+  },
+  {
+    "name": "Sitting",
+    "phase": 0.75,
+    "probes": 96,
+    "maxGapMm": 4.968075395215008,
+    "minSignedMm": 3.357391428675006,
+    "maxSignedMm": 4.968075395215008
+  },
+  {
+    "name": "Sitting",
+    "phase": 0.97,
+    "probes": 96,
+    "maxGapMm": 4.939075019228715,
+    "minSignedMm": 3.3696015260583807,
+    "maxSignedMm": 4.939075019228715
+  },
+  {
+    "name": "StandToSit",
+    "phase": 0,
+    "probes": 96,
+    "maxGapMm": 6.147630668777843,
+    "minSignedMm": 1.480115731905522,
+    "maxSignedMm": 6.147630668777843
+  },
+  {
+    "name": "StandToSit",
+    "phase": 0.25,
+    "probes": 96,
+    "maxGapMm": 6.648771396229596,
+    "minSignedMm": 1.2876102328255603,
+    "maxSignedMm": 6.648771396229596
+  },
+  {
+    "name": "StandToSit",
+    "phase": 0.5,
+    "probes": 96,
+    "maxGapMm": 5.367051472279735,
+    "minSignedMm": -1.0660116883319015,
+    "maxSignedMm": 5.367051472279735
+  },
+  {
+    "name": "StandToSit",
+    "phase": 0.75,
+    "probes": 96,
+    "maxGapMm": 5.145170916359473,
+    "minSignedMm": -0.6027683326749228,
+    "maxSignedMm": 5.145170916359473
+  },
+  {
+    "name": "StandToSit",
+    "phase": 0.97,
+    "probes": 96,
+    "maxGapMm": 6.3089172360101236,
+    "minSignedMm": 0.5263760079333488,
+    "maxSignedMm": 6.3089172360101236
+  },
+  {
+    "name": "SittoStand",
+    "phase": 0,
+    "probes": 96,
+    "maxGapMm": 6.1253223229205,
+    "minSignedMm": 0.32579850600340515,
+    "maxSignedMm": 6.1253223229205
+  },
+  {
+    "name": "SittoStand",
+    "phase": 0.25,
+    "probes": 96,
+    "maxGapMm": 5.496439968365936,
+    "minSignedMm": 0.10572546285919021,
+    "maxSignedMm": 5.496439968365936
+  },
+  {
+    "name": "SittoStand",
+    "phase": 0.5,
+    "probes": 96,
+    "maxGapMm": 5.376237589188414,
+    "minSignedMm": -1.1692251799016262,
+    "maxSignedMm": 5.376237589188414
+  },
+  {
+    "name": "SittoStand",
+    "phase": 0.75,
+    "probes": 96,
+    "maxGapMm": 6.257770138954967,
+    "minSignedMm": -0.14065597597962778,
+    "maxSignedMm": 6.257770138954967
+  },
+  {
+    "name": "SittoStand",
+    "phase": 0.97,
+    "probes": 96,
+    "maxGapMm": 6.438832783462855,
+    "minSignedMm": 0.20861990091636873,
+    "maxSignedMm": 6.438832783462855
+  }
+]

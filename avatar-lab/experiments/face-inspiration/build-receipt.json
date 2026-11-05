@@ -1,0 +1,11 @@
+{
+  "builtAt": "2026-11-03T12:01:32.643Z",
+  "provenance": "Local material/texture study inspired by published DreamFace principles; not ChatAvatar output or model reproduction",
+  "speechCapture": false,
+  "sourceModelGeometryModified": false,
+  "hashes": {
+    "assets-source/skin-albedo.png": "8807601273bc9c4dabc919746e6f9f804e5a2942ba634fb982d6fe0ed5c20677",
+    "../../../آواتار/dist/assets/avatar03.glb": "bf16883394c2f968faa294e8debe02dc38ff8ba4aaf98d32319e025d8185540d",
+    "../../../آواتار/dist/assets/avatar-v2/avatar.gltf": "a7596659be5e3bf3e6400fabfe20042277ea03b5e5b6d0c1e37589020ec4ced9"
+  }
+}

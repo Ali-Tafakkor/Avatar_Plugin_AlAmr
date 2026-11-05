@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "version": "0.1.3",
+  "acceptedDate": "2026-11-05",
+  "pluginDirectory": "آواتار",
+  "manifest": "آواتار/al-amr.plugin.json",
+  "recommendedExport": "AvatarHybrid",
+  "runtimeExport": "createHybridRuntime",
+  "portableCopy": "releases/avatar-hybrid-0.1.3/آواتار",
+  "guide": "LATEST_AVATAR_FA.md",
+  "testEnvironment": "avatar-lab",
+  "ownerApprovedAppearance": true,
+  "publication": {
+    "prepared": true,
+    "uploadedByAgent": false,
+    "registryVersionAvailability": "unverified: CLI authentication required",
+    "ownerUsesDesktopSubmitButton": true
+  }
+}

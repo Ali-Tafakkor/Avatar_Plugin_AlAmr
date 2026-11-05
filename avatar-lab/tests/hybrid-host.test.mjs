@@ -33,8 +33,8 @@ test('jump and official WASD, Space and flight keys resume V2 locomotion after S
   }
   for (const code of ['KeyE', 'KeyB', 'Digit1']) assert.equal(isComparisonLocomotionKey(code), false, code);
   const app = await readFile(new URL('../src/App.tsx', import.meta.url), 'utf8');
-  assert.match(app, /function jump\(\) \{ normalControl\(\);/);
-  assert.match(app, /isComparisonLocomotionKey\(event.code\)\) normalControl\(\)/);
+  assert.ok(app.includes("avatar.current?.previewClip(null)"));
+  assert.ok(app.includes("['KeyW','KeyA','KeyS','KeyD','Space','KeyF']"));
   assert.doesNotThrow(() => resumeComparisonLocomotion(null, null));
 });
 
@@ -44,17 +44,21 @@ test('production host consumes the public Plugin adapter in one existing Player 
   const entry = await readFile(new URL('../src/main.tsx', import.meta.url), 'utf8');
   assert.equal((app.match(/<PlayerRig\s/g) ?? []).length, 1);
   assert.equal((app.match(/<Canvas\s/g) ?? []).length, 1);
-  assert.ok(app.includes('<LegacyComparisonAvatar') && app.includes('<HybridComparisonAvatar'));
+  assert.equal((app.match(/<AvatarHybrid\s/g)??[]).length,1);assert.ok(!app.includes('<LegacyComparisonAvatar'));assert.ok(app.includes('inventoryAvatar')&&app.includes('resolveTimestampsAsync'));
   assert.ok(adapter.includes('AvatarHybrid as HybridComparisonAvatar') && adapter.includes(packageName));
   assert.ok(!/experiments|HybridTestAvatar|آواتار\//.test(app + adapter));
-  assert.ok(entry.includes('<HybridApp/>'));
-  assert.ok(app.includes("useState<EmotionName>('neutral')"));
+  assert.ok(entry.includes('<App/>'));assert.ok(!entry.includes('URLSearchParams'));
+  assert.ok(app.includes("[emotion,setEmotion]=useState('neutral')"));
 });
 
 test('installed-package preparation preserves the exact accepted V1 binary, skin/animation JSON and local V2 resources', async () => {
   const directory = await mkdtemp(join(tmpdir(), 'avatar-hybrid-host-'));
   try {
     const manifest = await prepareHybridAssets({ publicRoot: directory });
+    const nativeDeclaration = JSON.parse(await readFile(join(directory, 'al-amr.product.json'), 'utf8'));
+    assert.deepEqual(nativeDeclaration.capabilities, ['platform.media.microphone@1'],
+      'the built-root declaration must let Al-Amr ask for microphone consent');
+    assert.deepEqual(nativeDeclaration.backends, [], 'microphone processing needs no remote destination');
     const sourceBytes = await readFile(fileURLToPath(import.meta.resolve(packageName + '/model')));
     const { json, binary } = parseLegacyGlb(sourceBytes);
     const extracted = JSON.parse(await readFile(join(directory, 'avatar-hybrid/legacy.gltf'), 'utf8'));
@@ -66,15 +70,19 @@ test('installed-package preparation preserves the exact accepted V1 binary, skin
         binary.subarray(view.byteOffset ?? 0, (view.byteOffset ?? 0) + view.byteLength));
     }
     assert.deepEqual(normalized, json, 'all skins, clips, nodes, meshes and UV accessors stay byte-value identical');
-    assert.deepEqual(await readFile(join(directory, 'avatar-hybrid/legacy.bin')), binary);
+    assert.equal(extracted.buffers[0].uri, 'legacy.buffer');
+    assert.deepEqual(await readFile(join(directory, 'avatar-hybrid', extracted.buffers[0].uri)), binary);
     assert.equal(manifest.legacyBinarySha256, 'a94ee13b1e8667d26e2b4c5d431d699469fa24cd03a3bc2d320090a633d73c36',
       'the original V1 binary is the same accepted source, without requiring an experiment directory');
     const modelUrl = import.meta.resolve(packageName + '/web-model');
-    assert.deepEqual(await readFile(join(directory, 'avatar-v2/avatar.gltf')), await readFile(fileURLToPath(modelUrl)));
+    const originalWeb = JSON.parse(await readFile(fileURLToPath(modelUrl), 'utf8'));
     const web = JSON.parse(await readFile(join(directory, 'avatar-v2/avatar.gltf'), 'utf8'));
-    for (const item of [...web.buffers, ...web.images]) {
+    const normalizedWeb = structuredClone(web);
+    for (let i = 0; i < normalizedWeb.buffers.length; i++) normalizedWeb.buffers[i].uri = originalWeb.buffers[i].uri;
+    assert.deepEqual(normalizedWeb, originalWeb, 'only buffer URL extensions change in this browser host');
+    for (const item of [...originalWeb.buffers, ...originalWeb.images]) {
       if (!item.uri || item.uri.startsWith('data:')) continue;
-      assert.deepEqual(await readFile(join(directory, 'avatar-v2', item.uri)), await readFile(fileURLToPath(new URL(item.uri, modelUrl))));
+      assert.deepEqual(await readFile(join(directory, 'avatar-v2', manifest.webBufferRemap[item.uri] ?? item.uri)), await readFile(fileURLToPath(new URL(item.uri, modelUrl))));
     }
     assert.equal(manifest.legacyGeometryAndAnimationChanged, false);
   } finally {

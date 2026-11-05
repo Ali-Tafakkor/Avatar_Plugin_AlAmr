@@ -9,7 +9,11 @@
       "sha256": "5344ec24daf8cbc7a9ef08eb2549f2b0084f96283c83dfa1daa9e0e8f7acc822"
     }
   ],
-  "webModelSha256": "a7596659be5e3bf3e6400fabfe20042277ea03b5e5b6d0c1e37589020ec4ced9",
+  "webModelSha256": "2ff6bd948331eb2952fbbd172c067685fa3f1f0525917223f8f1b68a5fa5206c",
+  "preparedWebModelSha256": "cc2782e949c854eb1001df08c7e7c8e9d725f86cf63bae2f1ddbdccd514a3f5e",
+  "webBufferRemap": {
+    "avatar.bin": "avatar.buffer"
+  },
   "resources": 20,
   "legacyGeometryAndAnimationChanged": false
 }

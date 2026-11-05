@@ -1,0 +1,18 @@
+{
+  "createdAt": "2026-11-03",
+  "mode": "built-in ImageGen edit of the project's existing head UV albedo",
+  "asset": "skin-albedo.png",
+  "sha256": "8807601273bc9c4dabc919746e6f9f804e5a2942ba634fb982d6fe0ed5c20677",
+  "input": "آواتار/dist/assets/avatar-v2/images/image-03.jpg",
+  "outputOrigin": "C:/Users/alita/.codex/generated_images/01a17ddc-e3fb-7f43-8d4c-f782847eba33/exec-8c7bea3f-5577-4c49-929c-420065609c8e.png",
+  "chatAvatarServiceUsed": false,
+  "dreamFaceModelReproduced": false,
+  "geometryModified": false,
+  "normalMap": "The existing head normal map is reused. No new learned normal/specular map was generated.",
+  "prompt": "Edit this existing square 1024x1024 3D character UV albedo texture atlas into a higher quality photoreal skin texture. It is a technical UV map, NOT a portrait. Keep EXACTLY the same UV layout, spatial registration and scale of every feature and every edge: eye sockets/hole positions, ear islands, nose and nostrils, closed lips, eyebrows, hairline and scalp shape, face silhouette, beard shape, neck/chest region and the two small dark purple corner patches. Do not translate, rotate, crop, expand or warp any part of the atlas. Output must remain a square texture with the same full extent. Keep the eye sockets dark/empty; eyeballs are separate geometry. Improve only surface appearance. A healthy attractive Iranian/Mediterranean man aged about 30 with medium warm olive skin, fine realistic pores, subtle natural skin color variation, restrained soft redness near nose and lips, naturally detailed short dark brown/near-black hair, dark groomed eyebrows and a neat short dark beard and moustache matching the existing exact hair/beard coverage. Preserve natural individual hairs and transitions rather than solid black paint. Natural closed lips in their existing exact shape and place. Face must be neutral. Remove harsh baked lighting, specular glints, hard shadows and obvious age spots; evenly lit shadow-free diffuse albedo for PBR rendering. Fine skin texture but not grain, not exaggerated pores, no plastic airbrush skin, no cinematic color grading, no labels or text, no background and no new geometry. Match every anatomical feature location and preserve UV seams exactly.",
+  "publicMethodReferences": [
+    "https://arxiv.org/abs/2304.03117",
+    "https://sites.google.com/view/dreamface",
+    "https://github.com/DeemosTech/ChatAvatarImportTool-Omni"
+  ]
+}

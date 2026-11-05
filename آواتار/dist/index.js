@@ -1,5 +1,6 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { forwardRef, useEffect, useImperativeHandle, useMemo, useRef } from 'react';
+export { createMicrophoneSpeechController, LaughterDetector, SPEECH_WORKER_URL, SPEECH_CAPTURE_WORKLET_URL, DEFAULT_LAUGHTER_WORKER_URL } from './speech/index.js';
 import { useFrame, useLoader } from '@react-three/fiber';
 import { TextureLoader, SRGBColorSpace } from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';

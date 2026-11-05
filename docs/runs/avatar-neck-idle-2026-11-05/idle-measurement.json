@@ -1,0 +1,24 @@
+{
+  "before": {
+    "duration": 11.566666603088379,
+    "pitchYawRollPeakToPeakDegrees": [
+      42.806960333460744,
+      47.471279809485075,
+      18.090659591295744
+    ],
+    "headVerticalPeakToPeakMm": 26.63291261014922,
+    "headDepthPeakToPeakMm": 88.01449012991723,
+    "chestWidthScaleRange": 0
+  },
+  "after": {
+    "duration": 12,
+    "pitchYawRollPeakToPeakDegrees": [
+      0.010753663417094841,
+      2.3939830233193256,
+      0.16947266008250744
+    ],
+    "headVerticalPeakToPeakMm": 0.00003618234289959332,
+    "headDepthPeakToPeakMm": 0.01573394314890314,
+    "chestWidthScaleRange": 0.0034999847412109375
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "scripts": [
+    "http://127.0.0.1:5390/assets/index-Yvvqb2w-.js"
+  ],
+  "errors": [],
+  "renderer": "WebGPU",
+  "handContact": {
+    "regions": 14,
+    "hands": {
+      "left": {
+        "before": 0.0010522105216497213,
+        "after": 0,
+        "region": "leftUpperThigh",
+        "angle": 0.06532005552953338,
+        "samples": 513
+      },
+      "right": {
+        "before": 0,
+        "after": 0,
+        "region": null,
+        "angle": 0.011724140091210864,
+        "samples": 503
+      }
+    }
+  },
+  "inventory": {
+    "meshes": 9,
+    "triangles": 64398,
+    "vertices": 56062,
+    "geometryBytes": 21940848,
+    "textures": 8,
+    "skinnedJoints": 156,
+    "skinPaletteJoints": 521
+  },
+  "face": {
+    "neutral": {
+      "browInnerUp": 0.10499999999999995,
+      "browOuterUpLeft": 0.1499999999999999,
+      "browOuterUpRight": 0.1499999999999999,
+      "eyeWideLeft": 0.052898902295709,
+      "eyeWideRight": 0.052898902295709,
+      "mouthSmileLeft": 0.10499999999999995,
+      "mouthSmileRight": 0.10499999999999995,
+      "cheekSquintLeft": 0.041249999999999974,
+      "cheekSquintRight": 0.041249999999999974,
+      "eyeBlinkLeft": 0,
+      "eyeBlinkRight": 0,
+      "eyeLookInRight": 0,
+      "eyeLookOutLeft": 0,
+      "eyeLookOutRight": 0,
+      "eyeLookInLeft": 0,
+      "eyeLookUpRight": 0,
+      "eyeLookUpLeft": 0,
+      "eyeLookDownRight": 0,
+      "eyeLookDownLeft": 0
+    },
+    "smile": {
+      "browInnerUp": 0.0975000000000298,
+      "browOuterUpLeft": 0.1574999999999702,
+      "browOuterUpRight": 0.1574999999999702,
+      "eyeWideLeft": 0,
+      "eyeWideRight": 0,
+      "mouthSmileLeft": 0.38999999999886764,
+      "mouthSmileRight": 0.38999999999886764,
+      "cheekSquintLeft": 0.17249999999947854,
+      "cheekSquintRight": 0.17249999999947854,
+      "eyeBlinkLeft": 0,
+      "eyeBlinkRight": 0,
+      "eyeLookInRight": 0,
+      "eyeLookOutLeft": 0,
+      "eyeLookOutRight": 0,
+      "eyeLookInLeft": 0,
+      "eyeLookUpRight": 0,
+      "eyeLookUpLeft": 0,
+      "eyeLookDownRight": 0,
+      "eyeLookDownLeft": 0,
+      "eyeSquintLeft": 0.06374999999974673,
+      "eyeSquintRight": 0.06374999999974673,
+      "jawOpen": 0.03374999999986592
+    },
+    "laugh": {
+      "browInnerUp": 0,
+      "browOuterUpLeft": 0,
+      "browOuterUpRight": 0,
+      "eyeWideLeft": 0,
+      "eyeWideRight": 0,
+      "mouthSmileLeft": 0.6784963173362082,
+      "mouthSmileRight": 0.7499999999999996,
+      "cheekSquintLeft": 0.4124999999999998,
+      "cheekSquintRight": 0.4124999999999998,
+      "eyeBlinkLeft": 0,
+      "eyeBlinkRight": 0,
+      "eyeLookInRight": 0,
+      "eyeLookOutLeft": 0,
+      "eyeLookOutRight": 0,
+      "eyeLookInLeft": 0,
+      "eyeLookUpRight": 0,
+      "eyeLookUpLeft": 0,
+      "eyeLookDownRight": 0,
+      "eyeLookDownLeft": 0,
+      "eyeSquintLeft": 0.2699999999999998,
+      "eyeSquintRight": 0.2699999999999998,
+      "jawOpen": 0.30931566188594084,
+      "mouthUpperUpLeft": 0.1724999999999999,
+      "mouthUpperUpRight": 0.1724999999999999,
+      "mouthLowerDownLeft": 0.1274999999999999,
+      "mouthLowerDownRight": 0.1274999999999999
+    }
+  }
+}

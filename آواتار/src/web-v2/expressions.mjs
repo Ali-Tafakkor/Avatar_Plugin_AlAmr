@@ -21,7 +21,8 @@ export function normalizeShape(s) {
 
 /** All animation layers produce weights, never replace the face with a texture or an emoji. */
 export class ExpressionState {
-  constructor() {
+  constructor(presets = EMOTIONS) {
+    this.presets = presets;
     this.name = 'smile'; this.intensity = 0.88; this.transition = 7.5;
     this.blinkEnabled = true; this.gazeEnabled = true; this.microEnabled = true;
     this.time = 0; this.random = seededRandom(1952); this.blinkAt = 2.4; this.blinkT = -1;
@@ -36,7 +37,7 @@ export class ExpressionState {
   update(dt, look = { x: 0, y: 0 }) {
     this.time += dt;
     const desired = {};
-    for (const [name, weight] of Object.entries(EMOTIONS[this.name].values)) desired[name] = weight * this.intensity;
+    for (const [name, weight] of Object.entries(this.presets[this.name].values)) desired[name] = weight * this.intensity;
     if (this.microEnabled && this.name === 'laugh') {
       desired.jawOpen *= 0.75 + 0.25 * Math.sin(this.time * 9.5) ** 2;
       desired.mouthSmileLeft *= 0.95 + 0.05 * Math.sin(this.time * 3.2);

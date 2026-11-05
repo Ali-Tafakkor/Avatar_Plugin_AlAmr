@@ -4,6 +4,7 @@ import { Avatar03Animator } from '../motion.js';
 import { createWebAvatarRuntime } from '../web-v2/runtime.mjs';
 import { boneName } from '../web-v2/actor.mjs';
 import { fixLegacyPreviewMaterials } from './legacy-materials.mjs';
+import { createQuietStandClip, QUIET_IDLE } from './quiet-idle.mjs';
 
 export const HYBRID_BODY_CLIPS = Object.freeze(['Stand', 'Walk', 'Run', 'Fly', 'HandRaise', 'StandToSit', 'Sitting', 'SittoStand']);
 const ONCE = new Set(['HandRaise', 'StandToSit', 'SittoStand']);
@@ -157,7 +158,9 @@ export async function createHybridBodyRuntime(legacyGltf, webGltf, motions, opti
   const legLength = (root, bones) => pointInRoot(root, bones.get('leftupleg')).distanceTo(pointInRoot(root, bones.get('leftleg')))
     + pointInRoot(root, bones.get('leftleg')).distanceTo(pointInRoot(root, bones.get('leftfoot')));
   const jumpScale = legLength(actor.root, actor.bones) / legLength(jumpDonor.root, jumpDonor.actor.bones);
-  const sourceAnimator = new Avatar03Animator(actor.model, legacyGltf.animations);
+  const animationClips = options.quietIdle === false ? legacyGltf.animations : legacyGltf.animations.map(clip=>
+    clip.name==='Stand'?createQuietStandClip(clip,actor.model):clip);
+  const sourceAnimator = new Avatar03Animator(actor.model, animationClips);
   actor.refresh(); const targetHipReference = pointInRoot(actor.root, actor.bones.get('hips'));
   const camera = new PerspectiveCamera(); camera.position.set(0, 1.5, 5);
   jumpDonor.update(0, { pose: { position: [0, 0, 0], velocity: [0, 0, 0], yaw: 0, mode: 'grounded' },
@@ -172,7 +175,7 @@ export async function createHybridBodyRuntime(legacyGltf, webGltf, motions, opti
     }
     return result;
   };
-  const clips = new Map(HYBRID_BODY_CLIPS.map(name => [name, legacyGltf.animations.find(clip => clip.name === name)]));
+  const clips = new Map(HYBRID_BODY_CLIPS.map(name => [name, animationClips.find(clip => clip.name === name)]));
   let preview = null, previewTime = 0, paused = false, timeScale = 1, disposed = false, state = 'idle', jumpWeight = 0, landing = 0, previousGrounded = true;
   let staticContact = { active: false, reason: 'not_applied', feet: {} };
   const basePose = new Map([...actor.bones].map(([name, bone]) => [name, { p: bone.position.clone(), q: bone.quaternion.clone(), s: bone.scale.clone() }]));
@@ -329,7 +332,8 @@ export async function createHybridBodyRuntime(legacyGltf, webGltf, motions, opti
         duration: clips.get(selected)?.duration ?? 0, activeMotionSource: jumpWeight ? 'V2-jump-retargeted-to-V1' : 'V1-original-native-tracks',
         jumpWeight, staticContact, mappingCount: mapping.length, matchedBones: mapping.length, rootMotionScale: jumpScale,
         clips: [...clips].map(([name, clip]) => ({ name, duration: clip.duration })),
-        feet: actor.measureFeet(), knees: actor.measureKnees(), stats: { meshes: actor.meshes.length, joints: actor.bones.size }, disposed };
+        feet: actor.measureFeet(), knees: actor.measureKnees(), idle:options.quietIdle===false?null:{...QUIET_IDLE},
+        stats: { meshes: actor.meshes.length, joints: actor.bones.size }, disposed };
     },
     dispose() { if (disposed) return; disposed = true; sourceAnimator.dispose(); jumpDonor.dispose(); actor.dispose(); },
   };

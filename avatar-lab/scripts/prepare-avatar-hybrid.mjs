@@ -1,7 +1,8 @@
-import { copyFile, mkdir, readFile, writeFile } from 'node:fs/promises';
-import { dirname, join, resolve } from 'node:path';
+import { copyFile, cp, mkdir, readFile, writeFile, rm } from 'node:fs/promises';
+import { dirname, join, resolve, sep } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { createHash } from 'node:crypto';
+import { createRequire } from 'node:module';
 
 const packageName = '@al-amr-community/usr-20dfea67-47be-4f4a-b48c-02c5f210a079--avatar03';
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
@@ -25,14 +26,37 @@ export function parseLegacyGlb(bytes) {
  * Externalization preserves every accessor, skin, clip, UV and binary byte.
  */
 export async function prepareHybridAssets({ publicRoot = fileURLToPath(new URL('../.public-production/', import.meta.url)) } = {}) {
+  // These three generated directories previously retained obsolete .bin copies.
+  // Rebuild only direct children of the declared output, preserving all sources.
+  const generatedBase=resolve(publicRoot);
+  for(const name of ['avatar-hybrid','avatar-v2','appearance']){
+    const target=resolve(generatedBase,name);
+    if(dirname(target)!==generatedBase||!target.startsWith(generatedBase+sep))throw new Error('avatar_generated_target_escaped');
+    await rm(target,{recursive:true,force:true});
+  }
   const legacySource = fileURLToPath(import.meta.resolve(packageName + '/model'));
   const modelSource = fileURLToPath(import.meta.resolve(packageName + '/web-model'));
   const motionsSource = fileURLToPath(import.meta.resolve(packageName + '/web-motions'));
+  const hybridEntry = fileURLToPath(import.meta.resolve(packageName + '/hybrid'));
+  await cp(join(dirname(hybridEntry), 'assets/appearance'), join(publicRoot,'appearance'), {recursive:true});
+  const speechEntry = fileURLToPath(import.meta.resolve(packageName + '/speech'));
+  const generatedModelTarget = resolve(publicRoot, 'speech/wav2arkit');
+  if (!generatedModelTarget.startsWith(resolve(publicRoot) + sep)) throw new Error('speech_generated_target_escaped_host');
+  await rm(generatedModelTarget, { recursive: true, force: true });
+  await cp(join(dirname(speechEntry), '../assets/speech'), join(publicRoot, 'speech'), { recursive: true });
+  // Model files belong to this Environment; the Plugin's managed artifact is
+  // limited to 25MiB. It supplies the adapter, workers and pinned model profile.
+  await cp(fileURLToPath(new URL('../assets-source/speech/', import.meta.url)), join(publicRoot, 'speech'), { recursive: true });
+  const ortRoot = dirname(createRequire(speechEntry).resolve('onnxruntime-web/wasm'));
+  const ortTarget = join(publicRoot, 'speech/onnx'); await mkdir(ortTarget, { recursive: true });
+  for (const name of ['ort-wasm-simd-threaded.mjs', 'ort-wasm-simd-threaded.wasm']) {
+    await copyFile(join(ortRoot, name), join(ortTarget, name));
+  }
   const legacyBytes = await readFile(legacySource), { json: source, binary } = parseLegacyGlb(legacyBytes);
   const legacy = structuredClone(source), legacyTarget = join(publicRoot, 'avatar-hybrid');
   await mkdir(legacyTarget, { recursive: true });
-  legacy.buffers[0].uri = 'legacy.bin';
-  await writeFile(join(legacyTarget, 'legacy.bin'), binary);
+  legacy.buffers[0].uri = 'legacy.buffer';
+  await writeFile(join(legacyTarget, 'legacy.buffer'), binary);
   const images = [];
   for (let index = 0; index < (legacy.images?.length ?? 0); index++) {
     const image = legacy.images[index], original = source.images[index];
@@ -46,18 +70,27 @@ export async function prepareHybridAssets({ publicRoot = fileURLToPath(new URL('
   await writeFile(join(legacyTarget, 'legacy.gltf'), JSON.stringify(legacy));
 
   const webTarget = join(publicRoot, 'avatar-v2'), modelBytes = await readFile(modelSource), web = JSON.parse(modelBytes);
+  const webBufferRemap = Object.fromEntries((web.buffers ?? []).filter(item => item.uri?.endsWith('.bin'))
+    .map(item => [item.uri, item.uri.replace(/\.bin$/, '.buffer')]));
   const resources = [...new Set(['avatar.gltf', 'motions.json', 'asset-manifest.json', 'THIRD_PARTY_NOTICES.md', 'provenance.json',
     ...[...(web.buffers ?? []), ...(web.images ?? [])].map(item => item.uri).filter(Boolean)])];
   for (const relative of resources) {
     if (/^[a-z]+:/i.test(relative) || relative.split(/[\\/]/).includes('..')) throw new Error('hybrid_nonlocal_packaged_resource:' + relative);
-    const target = join(webTarget, relative); await mkdir(dirname(target), { recursive: true });
+    if (relative === 'avatar.gltf') continue;
+    const target = join(webTarget, webBufferRemap[relative] ?? relative); await mkdir(dirname(target), { recursive: true });
     await copyFile(relative === 'motions.json' ? motionsSource : join(dirname(modelSource), relative), target);
   }
+  for (const buffer of web.buffers ?? []) buffer.uri = webBufferRemap[buffer.uri] ?? buffer.uri;
+  const preparedWeb = JSON.stringify(web);
+  await writeFile(join(webTarget, 'avatar.gltf'), preparedWeb);
   const manifest = { schemaVersion: 1, source: 'installed Plugin exports', legacyModelSha256: hash(legacyBytes),
-    legacyBinarySha256: hash(binary), images, webModelSha256: hash(modelBytes), resources: resources.length,
+    legacyBinarySha256: hash(binary), images, webModelSha256: hash(modelBytes), preparedWebModelSha256: hash(preparedWeb), webBufferRemap, resources: resources.length,
     legacyGeometryAndAnimationChanged: false };
   await writeFile(join(legacyTarget, 'asset-manifest.json'), JSON.stringify(manifest, null, 2) + '\n');
   await copyFile(new URL('../public/environment-cover.png', import.meta.url), join(publicRoot, 'environment-cover.png'));
+  // Native media consent reads this declaration from the built root, separately
+  // from the Environment manifest and the CLI Runtime permission fixture.
+  await copyFile(new URL('../public/al-amr.product.json', import.meta.url), join(publicRoot, 'al-amr.product.json'));
   return manifest;
 }
 

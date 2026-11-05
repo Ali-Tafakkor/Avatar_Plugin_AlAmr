@@ -1,0 +1,315 @@
+{
+  "scope": "Actual ONNX Runtime Web1.29 WASM Node inference on local ESC-50 test fixtures. Not live user microphone or browser render quality.",
+  "model": "zeropointnine/yamnet-onnx@ac2ca3bd45d12ec1f19f1144205ea529b4e9dedf",
+  "fixtureLicense": "ESC50 CC BY-NC3.0; local evaluation only, not bundled.",
+  "results": [
+    {
+      "filename": "coughing-1-19111-A-24.pcm16k.f32",
+      "activeWindows": 0,
+      "maxRawScore": 0.10643342137336731,
+      "windows": [
+        {
+          "rawScore": 0.10643342137336731,
+          "speechScore": 0.03445243835449219,
+          "topScore": 0.49736863374710083,
+          "label": "Laughter",
+          "active": false,
+          "score": 0,
+          "atMs": 0,
+          "inferenceMs": 58.76840000000004
+        },
+        {
+          "rawScore": 0.007755786180496216,
+          "speechScore": 0.6196932792663574,
+          "topScore": 0.6196932792663574,
+          "label": "Laughter",
+          "active": false,
+          "score": 0,
+          "atMs": 600,
+          "inferenceMs": 13.905100000000004
+        },
+        {
+          "rawScore": 0,
+          "speechScore": 8.940696716308594e-8,
+          "topScore": 1,
+          "label": "Laughter",
+          "active": false,
+          "score": 0,
+          "atMs": 1200,
+          "inferenceMs": 14.55419999999998
+        },
+        {
+          "rawScore": 0,
+          "speechScore": 8.940696716308594e-8,
+          "topScore": 1,
+          "label": "Laughter",
+          "active": false,
+          "score": 0,
+          "atMs": 1800,
+          "inferenceMs": 16.28819999999996
+        },
+        {
+          "rawScore": 0,
+          "speechScore": 8.940696716308594e-8,
+          "topScore": 1,
+          "label": "Laughter",
+          "active": false,
+          "score": 0,
+          "atMs": 2400,
+          "inferenceMs": 14.562299999999993
+        },
+        {
+          "rawScore": 0,
+          "speechScore": 8.940696716308594e-8,
+          "topScore": 1,
+          "label": "Laughter",
+          "active": false,
+          "score": 0,
+          "atMs": 3000,
+          "inferenceMs": 14.08639999999997
+        },
+        {
+          "rawScore": 0,
+          "speechScore": 8.940696716308594e-8,
+          "topScore": 1,
+          "label": "Laughter",
+          "active": false,
+          "score": 0,
+          "atMs": 3600,
+          "inferenceMs": 14.50789999999995
+        }
+      ]
+    },
+    {
+      "filename": "laughing-1-1791-A-26.pcm16k.f32",
+      "activeWindows": 1,
+      "maxRawScore": 0.3739857077598572,
+      "windows": [
+        {
+          "rawScore": 0.3739857077598572,
+          "speechScore": 0.2585126757621765,
+          "topScore": 0.3739857077598572,
+          "label": "Laughter",
+          "active": true,
+          "score": 0.43998318559983196,
+          "atMs": 0,
+          "inferenceMs": 12.766900000000021
+        },
+        {
+          "rawScore": 0.04606658220291138,
+          "speechScore": 0.8176817893981934,
+          "topScore": 0.8176817893981934,
+          "label": "Laughter",
+          "active": false,
+          "score": 0,
+          "atMs": 600,
+          "inferenceMs": 15.94240000000002
+        },
+        {
+          "rawScore": 0.060277581214904785,
+          "speechScore": 0.10409539937973022,
+          "topScore": 0.10409539937973022,
+          "label": "Laughter",
+          "active": false,
+          "score": 0,
+          "atMs": 1200,
+          "inferenceMs": 14.958700000000022
+        },
+        {
+          "rawScore": 0.0022481679916381836,
+          "speechScore": 0.05811682343482971,
+          "topScore": 0.242000550031662,
+          "label": "Laughter",
+          "active": false,
+          "score": 0,
+          "atMs": 1800,
+          "inferenceMs": 13.89979999999997
+        },
+        {
+          "rawScore": 0,
+          "speechScore": 8.940696716308594e-8,
+          "topScore": 1,
+          "label": "Laughter",
+          "active": false,
+          "score": 0,
+          "atMs": 2400,
+          "inferenceMs": 14.000399999999956
+        },
+        {
+          "rawScore": 0,
+          "speechScore": 8.940696716308594e-8,
+          "topScore": 1,
+          "label": "Laughter",
+          "active": false,
+          "score": 0,
+          "atMs": 3000,
+          "inferenceMs": 13.88330000000002
+        },
+        {
+          "rawScore": 0,
+          "speechScore": 8.940696716308594e-8,
+          "topScore": 1,
+          "label": "Laughter",
+          "active": false,
+          "score": 0,
+          "atMs": 3600,
+          "inferenceMs": 14.096900000000005
+        }
+      ]
+    },
+    {
+      "filename": "laughing-1-30039-A-26.pcm16k.f32",
+      "activeWindows": 0,
+      "maxRawScore": 0.30513736605644226,
+      "windows": [
+        {
+          "rawScore": 0.02801188826560974,
+          "speechScore": 0.8399817943572998,
+          "topScore": 0.8399817943572998,
+          "label": "Chuckle, chortle",
+          "active": false,
+          "score": 0,
+          "atMs": 0,
+          "inferenceMs": 14.377700000000004
+        },
+        {
+          "rawScore": 0.09829658269882202,
+          "speechScore": 0.6582739353179932,
+          "topScore": 0.6582739353179932,
+          "label": "Chuckle, chortle",
+          "active": false,
+          "score": 0,
+          "atMs": 600,
+          "inferenceMs": 13.144899999999893
+        },
+        {
+          "rawScore": 0.0416090190410614,
+          "speechScore": 0.6549707651138306,
+          "topScore": 0.6549707651138306,
+          "label": "Chuckle, chortle",
+          "active": false,
+          "score": 0,
+          "atMs": 1200,
+          "inferenceMs": 14.643799999999942
+        },
+        {
+          "rawScore": 0.024060755968093872,
+          "speechScore": 0.9799693822860718,
+          "topScore": 0.9799693822860718,
+          "label": "Chuckle, chortle",
+          "active": false,
+          "score": 0,
+          "atMs": 1800,
+          "inferenceMs": 15.343700000000013
+        },
+        {
+          "rawScore": 0.010572642087936401,
+          "speechScore": 0.5842009782791138,
+          "topScore": 0.5842009782791138,
+          "label": "Chuckle, chortle",
+          "active": false,
+          "score": 0,
+          "atMs": 2400,
+          "inferenceMs": 13.89670000000001
+        },
+        {
+          "rawScore": 0.30513736605644226,
+          "speechScore": 0.9344545006752014,
+          "topScore": 0.9344545006752014,
+          "label": "Chuckle, chortle",
+          "active": false,
+          "score": 0,
+          "atMs": 3000,
+          "inferenceMs": 14.866600000000062
+        },
+        {
+          "rawScore": 0.18119695782661438,
+          "speechScore": 0.9717258214950562,
+          "topScore": 0.9717258214950562,
+          "label": "Chuckle, chortle",
+          "active": false,
+          "score": 0,
+          "atMs": 3600,
+          "inferenceMs": 13.19119999999998
+        }
+      ]
+    },
+    {
+      "filename": "laughing-1-36164-A-26.pcm16k.f32",
+      "activeWindows": 1,
+      "maxRawScore": 0.28149574995040894,
+      "windows": [
+        {
+          "rawScore": 0.28149574995040894,
+          "speechScore": 0.10530200600624084,
+          "topScore": 0.28149574995040894,
+          "label": "Laughter",
+          "active": true,
+          "score": 0.3311714705298929,
+          "atMs": 0,
+          "inferenceMs": 13.386499999999955
+        },
+        {
+          "rawScore": 0.00048401951789855957,
+          "speechScore": 0.5050485730171204,
+          "topScore": 0.5050485730171204,
+          "label": "Laughter",
+          "active": false,
+          "score": 0,
+          "atMs": 600,
+          "inferenceMs": 14.405999999999949
+        },
+        {
+          "rawScore": 0.034735262393951416,
+          "speechScore": 0.25805920362472534,
+          "topScore": 0.25805920362472534,
+          "label": "Laughter",
+          "active": false,
+          "score": 0,
+          "atMs": 1200,
+          "inferenceMs": 13.300599999999918
+        },
+        {
+          "rawScore": 0.009318888187408447,
+          "speechScore": 0.7525930404663086,
+          "topScore": 0.7525930404663086,
+          "label": "Laughter",
+          "active": false,
+          "score": 0,
+          "atMs": 1800,
+          "inferenceMs": 12.989099999999894
+        },
+        {
+          "rawScore": 0,
+          "speechScore": 0.0004855692386627197,
+          "topScore": 0.995244562625885,
+          "label": "Laughter",
+          "active": false,
+          "score": 0,
+          "atMs": 2400,
+          "inferenceMs": 13.780899999999974
+        },
+        {
+          "rawScore": 0,
+          "speechScore": 0.002355217933654785,
+          "topScore": 1,
+          "label": "Laughter",
+          "active": false,
+          "score": 0,
+          "atMs": 3000,
+          "inferenceMs": 15.92489999999998
+        },
+        {
+          "rawScore": 0,
+          "speechScore": 0.0004697144031524658,
+          "topScore": 0.9976242780685425,
+          "label": "Laughter",
+          "active": false,
+          "score": 0,
+          "atMs": 3600,
+          "inferenceMs": 13.666799999999967
+        }
+      ]
+    }
+  ]
+}

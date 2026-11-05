@@ -1,4 +1,8 @@
 import { forwardRef, useEffect, useImperativeHandle, useMemo, useRef, type ReactNode } from 'react';
+export { createMicrophoneSpeechController, LaughterDetector, SPEECH_WORKER_URL, SPEECH_CAPTURE_WORKLET_URL,
+  DEFAULT_LAUGHTER_WORKER_URL } from './speech/index.js';
+export type { MicrophoneSpeechController, MicrophoneSpeechOptions, MicrophoneSpeechStatus,
+  MicrophoneSpeechFrame, LaughterDetectorOptions, LaughterResult, LaughterStatus } from './speech/index.js';
 import { useFrame, useLoader } from '@react-three/fiber';
 import { TextureLoader, SRGBColorSpace } from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
@@ -13,7 +17,7 @@ export { AvatarHybrid, createHybridRuntime, AVATAR_HYBRID_LEGACY_MODEL_URL, AVAT
   AVATAR_HYBRID_MOTIONS_URL, AVATAR_HYBRID_TEXTURE_URL, AVATAR_HYBRID_HEIGHT } from './hybrid.js';
 export type { AvatarHybridHandle, AvatarHybridProps, AvatarHybridStatus, HybridRuntime, HybridRuntimeOptions,
   HybridClip, HybridPlayback, HybridFaceOptions, HybridManualGroup, HybridStatus, HybridBodyStatus,
-  HybridActor, HybridFaceRig } from './hybrid.js';
+  HybridActor, HybridFaceRig, SpeechFrameOptions, SpeechOptions, SpeechStatus } from './hybrid.js';
 
 export { AVATAR03_CLIPS, MOTION_CLIPS, Avatar03Animator } from './motion.js';
 export type { Avatar03Clip, AvatarMotion, MotionState, AnimationStatus } from './motion.js';

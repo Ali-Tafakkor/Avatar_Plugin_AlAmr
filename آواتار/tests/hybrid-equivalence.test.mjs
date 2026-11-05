@@ -60,15 +60,19 @@ function assertEquivalent(plugin, accepted) {
 
 test('repository acceptance fingerprints match the frozen production migration', async () => {
   const provenance = JSON.parse(await fs.readFile(new URL('../dist/hybrid/accepted-source.json', import.meta.url), 'utf8'));
-  for (const file of provenance.files) {
+  assert.equal(provenance.files.filter(file=>file.acceptedSourceSha256).length,5,'all five historical references remain pinned');
+  for (const file of provenance.files.filter(file=>file.acceptedSourceSha256)) {
     const accepted = file.file === 'legacy-materials.mjs' ? '../../avatar-lab/src/legacy-preview.mjs'
       : '../../avatar-lab/experiments/hybrid-v2-face/' + file.file;
     assert.equal(sha(await fs.readFile(new URL(accepted, import.meta.url))), file.acceptedSourceSha256, file.file);
   }
+  const added=provenance.files.filter(file=>!file.acceptedSourceSha256);
+  assert.deepEqual(added.map(file=>file.file).sort(),['detailed-hands.mjs','garment-neckline.mjs','hand-contact.mjs','hand-skin-mask.mjs','neck-collar.mjs','quiet-idle.mjs','surface-materials.mjs']);
+  for(const file of added)assert.equal(sha(await fs.readFile(new URL('../src/hybrid/'+file.file,import.meta.url))),file.packageLocalSha256,file.file);
 });
 
 test('built hybrid matches the accepted body, dynamic neck, face and V2 jump under transformed host playback', async () => {
-  const options = { groundAt: () => 3.2 };
+  const options = { groundAt: () => 3.2, handContact:false, friendlyFace:false, quietIdle:false,headOffset:[0,.060,-.012],neckContour:false,garmentNeckline:false };
   const plugin = await createHybridRuntime(fixture.legacy, fixture.web, fixture.motions, options);
   const accepted = await createAcceptedHybrid(fixture.legacy, fixture.web, fixture.motions, options);
   const hosts = [plugin, accepted].map(runtime => { const host = new Group(); host.position.set(8, 3.2, -7); host.rotation.y = 1.8; host.add(runtime.root); return host; });

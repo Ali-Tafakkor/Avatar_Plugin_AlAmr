@@ -1,5 +1,20 @@
 # Changes
 
+## 0.1.3 — Accepted appearance and release preparation, 2026-11-05
+
+- Include the accepted enhanced face/albedo, rigged detailed hands, hand contact guard, friendly expression presets, lightweight cloth, quiet idle, smooth shortened neck and fitted original garment neckline.
+- Remove duplicate embedded image bytes from the externalized V2 buffer losslessly; retain exact geometry, skin, morph, animation and image bytes. Local managed artifact validation now passes.
+- Make the root Plugin and portable 0.1.3 copy the canonical delivery. Registry submission/publication remains owner-controlled.
+
+### Microphone work, 2026-10-27
+
+- Fix repetitive mouth closing at every 200ms inference boundary: use rolling acoustic context, real lookahead, interior frames and source-time deduplication. Preserve final voiced context through the first silent hop.
+- Add local microphone PCM capture and wav2arkit inference in a dedicated worker.
+- Compose speech articulation with existing facial emotion, blink and gaze once; release on silence/stale input/stop.
+- Add optional local YAMNet audible-laughter detection with confidence gating and independent smile/cheek overlay.
+- Expose typed speech/laughter APIs, selectable microphone, local model/worker URLs and lifecycle diagnostics.
+- Preserve accepted 0.1.2 models, sculpt, body animation, material behavior and snapshots. No publication or Git operation is part of this local change.
+
 ## 0.1.2 — Accepted hybrid, 2026-10-20
 
 - Add AvatarHybrid and a standalone packaged runtime: V1 body/outfit and eight native clips, V2 jump and a newly sculpted face on the native V2 facial rig.

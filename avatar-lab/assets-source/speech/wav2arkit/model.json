@@ -1,0 +1,23 @@
+{
+  "modelFile": "wav2arkit_cpu.onnx",
+  "dataFile": null,
+  "modelParts": [
+    {
+      "file": "wav2arkit_cpu.onnx.part1",
+      "bytes": 50331648,
+      "sha256": "80c2273458d5e5f7a22d33c2dabe5f708e635527c39afb03dee0a97f6343c356"
+    },
+    {
+      "file": "wav2arkit_cpu.onnx.part2",
+      "bytes": 50331648,
+      "sha256": "e78f55a978303609ce356668b6292e93cae4bcb8647a03bf9b91a32b44288f23"
+    },
+    {
+      "file": "wav2arkit_cpu.onnx.part3",
+      "bytes": 46211912,
+      "sha256": "7761350ded9e6a76feb267a8d5c4b981382c33805f9d8ebcfb775c0f46b6e0cb"
+    }
+  ],
+  "quantized": true,
+  "modelSha256": "67ca8278e3ce2fa022368eb76c8777afa7f6497b98eaa0feee58b19adf7f79bb"
+}

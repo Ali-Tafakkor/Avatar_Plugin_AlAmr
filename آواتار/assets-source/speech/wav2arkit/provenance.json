@@ -1,0 +1,18 @@
+{
+  "model": "myned-ai/wav2arkit_cpu",
+  "revision": "48b7d27a147d4dfcce4c8225b11209ce4cd76e05",
+  "modelCardLicense": "Apache-2.0",
+  "original": {
+    "wav2arkit_cpu.onnx": {
+      "bytes": 1862753,
+      "sha256": "cdecbfad3915dd20b2f0718942d0b8894b2ee11edcc5a9a9da45d29a46af2ed9"
+    },
+    "wav2arkit_cpu.onnx.data": {
+      "bytes": 402063360,
+      "sha256": "c0f0364673c6e50be126b193e2b56809c16ac6bee4805aea9b8251ce53429bf8"
+    }
+  },
+  "partitionBytes": 50331648,
+  "quantized": false,
+  "sourceUrl": "https://huggingface.co/myned-ai/wav2arkit_cpu/tree/48b7d27a147d4dfcce4c8225b11209ce4cd76e05"
+}

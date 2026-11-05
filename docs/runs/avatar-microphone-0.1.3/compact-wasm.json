@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "runtime": "onnxruntime-web 1.29.0 WASM, Node",
+  "totalMs": 727.0513,
+  "scope": "Actual compact model inference on synthetic English speech; browser and user acceptance separate.",
+  "rows": [
+    {
+      "seconds": 0.5,
+      "dims": [
+        1,
+        6,
+        52
+      ],
+      "inferenceMs": 106.99869999999999,
+      "max": 0.31672006845474243,
+      "jaw": 0.09273692965507507
+    },
+    {
+      "seconds": 1.2,
+      "dims": [
+        1,
+        6,
+        52
+      ],
+      "inferenceMs": 63.24329999999998,
+      "max": 0.29477977752685547,
+      "jaw": 0.05803379416465759
+    },
+    {
+      "seconds": 2.2,
+      "dims": [
+        1,
+        6,
+        52
+      ],
+      "inferenceMs": 65.31020000000001,
+      "max": 0.0925738513469696,
+      "jaw": 0.029239505529403687
+    },
+    {
+      "seconds": 3.5,
+      "dims": [
+        1,
+        6,
+        52
+      ],
+      "inferenceMs": 63.295900000000074,
+      "max": 0.5265479683876038,
+      "jaw": 0.017312318086624146
+    }
+  ]
+}

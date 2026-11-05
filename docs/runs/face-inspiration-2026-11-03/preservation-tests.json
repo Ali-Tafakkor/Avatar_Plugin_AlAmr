@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "scope": "Actual native geometry, skin, morphs, source isolation and six emotion poses; rendered appearance is a separate check.",
+  "checks": {
+    "candidateGeometrySkinUVAndMorphsUnchanged": true,
+    "referenceGeometryUnchanged": true,
+    "referenceMaterialsUnchanged": true,
+    "facialChannelsPreserved": 66,
+    "emotions": {
+      "neutral": "same native deformation as reference",
+      "smile": "same native deformation as reference",
+      "laugh": "same native deformation as reference",
+      "sad": "same native deformation as reference",
+      "angry": "same native deformation as reference",
+      "surprise": "same native deformation as reference"
+    },
+    "realBlinkPreserved": true,
+    "changedMeshes": [
+      "AvatarHead",
+      "AvatarLeftEyeball",
+      "AvatarRightEyeball",
+      "AvatarTeethLower"
+    ],
+    "cachedSourceAssetsUnchanged": true
+  }
+}

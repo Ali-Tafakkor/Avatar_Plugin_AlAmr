@@ -1,15 +1,16 @@
 import { type Group } from 'three';
 import type { AvatarV2Controller, AvatarV2Locomotion, AvatarV2Navigation } from './v2.js';
 import type { EmotionName } from './web-v2/runtime.mjs';
-import { type HybridClip, type HybridFaceOptions, type HybridManualGroup, type HybridPlayback, type HybridRuntime, type HybridStatus } from './hybrid/runtime.mjs';
+import { type HybridClip, type HybridFaceOptions, type HybridManualGroup, type HybridPlayback, type HybridRuntime, type HybridStatus, type SpeechFrameOptions, type SpeechOptions } from './hybrid/runtime.mjs';
 export { createHybridRuntime } from './hybrid/runtime.mjs';
-export type { HybridClip, HybridFaceOptions, HybridManualGroup, HybridPlayback, HybridRuntime, HybridRuntimeOptions, HybridStatus, HybridBodyStatus, HybridActor, HybridFaceRig } from './hybrid/runtime.mjs';
+export type { HybridClip, HybridFaceOptions, HybridManualGroup, HybridPlayback, HybridRuntime, HybridRuntimeOptions, HybridStatus, HybridBodyStatus, HybridActor, HybridFaceRig, SpeechFrameOptions, SpeechOptions, SpeechStatus } from './hybrid/runtime.mjs';
 export type AvatarHybridStatus = HybridStatus;
 export declare const AVATAR_HYBRID_LEGACY_MODEL_URL: string;
 export declare const AVATAR_HYBRID_MODEL_URL: string;
 export declare const AVATAR_HYBRID_MOTIONS_URL: string;
 export declare const AVATAR_HYBRID_TEXTURE_URL: string;
 export declare const AVATAR_HYBRID_HEIGHT = 1.78;
+export declare const AVATAR_HYBRID_FACE_ALBEDO_URL: string;
 export interface AvatarHybridHandle {
     setLocomotion(value: AvatarV2Locomotion): void;
     previewClip(value: HybridClip | null): void;
@@ -19,6 +20,14 @@ export interface AvatarHybridHandle {
     setManual(group: HybridManualGroup, value: number): void;
     setIntensity(value: number): void;
     setFaceOptions(options: HybridFaceOptions): void;
+    setSpeechFrame(weights: Record<string, number> | null, options?: SpeechFrameOptions): void;
+    setSpeechOptions(options: SpeechOptions): void;
+    setLaughter(score: number, options?: {
+        at?: number;
+    }): void;
+    clearSpeech(): void;
+    setHandPose(pose: string, side?: 'both' | 'left' | 'right'): void;
+    setFingerCurl(side: 'both' | 'left' | 'right', digit: string, value: number): void;
     blink(): void;
     reset(): void;
     getStatus(): HybridStatus | null;
@@ -33,6 +42,7 @@ export interface AvatarHybridProps {
     modelUrl?: string;
     motionsUrl?: string;
     textureUrl?: string;
+    faceAlbedoUrl?: string;
     height?: number;
     lighting?: 'scene' | 'unlit';
     portrait?: boolean;

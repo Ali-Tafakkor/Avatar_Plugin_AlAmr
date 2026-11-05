@@ -1,0 +1,4 @@
+{
+  "capabilities": ["platform.media.microphone@1"],
+  "backends": []
+}

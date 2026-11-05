@@ -1,6 +1,7 @@
 import { readFile, writeFile, mkdir, copyFile, rm } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { parseGLB } from './glb.mjs';
+import { externalizeGltf } from './externalize-gltf.mjs';
 
 const from = path => new URL('../assets-source/web-v2/' + path, import.meta.url);
 const into = path => new URL('../dist/assets/avatar-v2/' + path, import.meta.url);
@@ -9,22 +10,15 @@ const expectedModel = '193c07c351f1f94b12b499ece3f8813432dbe902afe0b5dd6957e788a
 const expectedMotions = '533829f6f7b4eca37586564c5d55f3807ae3537878e8007f2af55c853d732d24';
 const model = await readFile(from('avatar.glb')), motions = await readFile(from('motions.json'));
 if (hash(model) !== expectedModel || hash(motions) !== expectedMotions) throw new Error('avatar_v2_source_integrity_mismatch');
-const original = parseGLB(model), document = structuredClone(original.json);
-if (document.buffers.length !== 1 || document.buffers[0].uri) throw new Error('avatar_v2_unexpected_buffer_layout');
-const outputs = new Map([['avatar.bin',original.binary],['motions.json',motions]]);
-for (const [index,image] of document.images.entries()) {
-  const view = document.bufferViews[image.bufferView];
-  const extension = {'image/png':'png','image/jpeg':'jpg','image/webp':'webp'}[image.mimeType];
-  if (!view || image.uri || !extension) throw new Error('avatar_v2_unexpected_embedded_image');
-  const name = `images/image-${String(index).padStart(2,'0')}.${extension}`;
-  outputs.set(name,original.binary.subarray(view.byteOffset??0,(view.byteOffset??0)+view.byteLength));
-  delete image.bufferView;image.uri=name;
-}
-document.buffers[0].uri='avatar.bin';
+const original = parseGLB(model);
+const {document,binary,images,bufferViewRemap} = externalizeGltf(original.json,original.binary);
+if (document.buffers.length !== 1) throw new Error('avatar_v2_unexpected_buffer_layout');
+const outputs = new Map([['avatar.bin',binary],['motions.json',motions],...images]);
 outputs.set('avatar.gltf',Buffer.from(JSON.stringify(document)));
 outputs.set('provenance.json',await readFile(from('provenance.json')));
 outputs.set('THIRD_PARTY_NOTICES.md',await readFile(new URL('../THIRD_PARTY_NOTICES.md',import.meta.url)));
 const manifest={format:1,sourceModelSha256:expectedModel,sourceMotionSha256:expectedMotions,
+  bufferViewRemap,duplicateImageBytesRemoved:original.binary.length-binary.length,
   geometryAndSkinUnchanged:true,meshCount:document.meshes.length,jointCount:document.skins[0].joints.length,
   morphNames:[...new Set(document.meshes.flatMap(mesh=>mesh.extras?.targetNames??[]))],
   files:[...outputs].map(([path,bytes])=>({path,bytes:bytes.length,sha256:hash(bytes)}))};

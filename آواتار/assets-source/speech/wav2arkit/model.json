@@ -1,0 +1,48 @@
+{
+  "modelFile": "wav2arkit_cpu.onnx",
+  "dataFile": "wav2arkit_cpu.onnx.data",
+  "dataParts": [
+    {
+      "file": "wav2arkit_cpu.onnx.data.part1",
+      "bytes": 50331648,
+      "sha256": "9640ba3681e83ae8ae63aebf90f8dd2e94b13e9c415b5d0bc9b4da8af7496970"
+    },
+    {
+      "file": "wav2arkit_cpu.onnx.data.part2",
+      "bytes": 50331648,
+      "sha256": "c0d2f94fa87d5cb4223f7e381102804d8d48b387689abf686f37d787751326d5"
+    },
+    {
+      "file": "wav2arkit_cpu.onnx.data.part3",
+      "bytes": 50331648,
+      "sha256": "3f38e268e73c9b017828832e582e007239106406a5421b73f8359f64ee340a1c"
+    },
+    {
+      "file": "wav2arkit_cpu.onnx.data.part4",
+      "bytes": 50331648,
+      "sha256": "8e2ffceb862819c2f496dd94bae18ae0168380c5e98156131dfa68a8cdc06b04"
+    },
+    {
+      "file": "wav2arkit_cpu.onnx.data.part5",
+      "bytes": 50331648,
+      "sha256": "1cdb00f85a0cdebf05a5e34afd2381c97e4dedc2e67719b75369b72963bce275"
+    },
+    {
+      "file": "wav2arkit_cpu.onnx.data.part6",
+      "bytes": 50331648,
+      "sha256": "696af9d6819e6663d5ca84deaf5f8e1f840caf30a4b33d012ba777850e231284"
+    },
+    {
+      "file": "wav2arkit_cpu.onnx.data.part7",
+      "bytes": 50331648,
+      "sha256": "a9701c368c690dc2296a9eb39c9e26733af0b9d1bf2aa3879498a9dee0f0a6f6"
+    },
+    {
+      "file": "wav2arkit_cpu.onnx.data.part8",
+      "bytes": 49741824,
+      "sha256": "e901e8d0ab5fcead1e9c14f3c80d3782fb33c66283b081157eba0deb2f2d8083"
+    }
+  ],
+  "tensorDataSha256": "c0f0364673c6e50be126b193e2b56809c16ac6bee4805aea9b8251ce53429bf8",
+  "representation": "Original float32 tensors; byte-exact partition, no quantization."
+}

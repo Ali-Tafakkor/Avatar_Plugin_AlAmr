@@ -1,0 +1,85 @@
+{
+  "version": "0.1.3",
+  "localOnly": true,
+  "completedAt": "2026-10-27T16:35:38.878Z",
+  "pluginTestsPassed": 59,
+  "hostTestsPassed": 12,
+  "typescript": "passed",
+  "build": "passed",
+  "pluginValidate": "passed",
+  "pluginDoctor": "passed",
+  "hostValidate": "passed",
+  "hostDoctor": "passed",
+  "browser": {
+    "passed": true,
+    "entrySha256": "6ff4ad6504b81240fa0d56053a1885fdf544ee99af49ee0a6e8860f7a395f826",
+    "modelSha256": "67ca8278e3ce2fa022368eb76c8777afa7f6497b98eaa0feee58b19adf7f79bb",
+    "checks": {
+      "preparationWithoutCapture": true,
+      "realSpeechFrames": true,
+      "variedRawMouthPredictions": 122,
+      "appliedJaw": {
+        "minimum": 0,
+        "maximum": 0.37699669956176896,
+        "span": 0.37699669956176896
+      },
+      "changingLipChannels": [
+        "mouthFunnel",
+        "mouthPucker",
+        "mouthClose",
+        "mouthUpperUpLeft",
+        "mouthLowerDownLeft",
+        "mouthSmileLeft"
+      ],
+      "blinkAndSmileDuringSpeech": true,
+      "silentTailRestoration": true,
+      "laughterObservation": {
+        "maximumScore": 0.8175138866200167,
+        "readyObserved": true,
+        "qualification": "Observed on local evaluation waveform only; conservative detector miss does not establish broken speech, and a hit does not prove real-user/Persian generalization."
+      },
+      "stopRestoresFaceAndZeroInput": true,
+      "restartProducesNewFrames": true
+    },
+    "externalRequests": 0,
+    "uncaughtErrors": 0
+  },
+  "native": {
+    "previewId": "pv_937ee4719089400f8582d348addc968b",
+    "buildDigest": "sha256:626f4fd18e938bb44bd78f1744436cb7258c6a2bfb40b4af9f1d7254a53fe7ec",
+    "verified": true,
+    "modelPreparedThroughUI": true,
+    "observedStatus": "آمادهٔ شروع میکروفن",
+    "inputLevel": 0,
+    "physicalMicrophoneActivated": false
+  },
+  "compactModel": {
+    "bytes": 146875208,
+    "sha256": "67ca8278e3ce2fa022368eb76c8777afa7f6497b98eaa0feee58b19adf7f79bb",
+    "comparison": {
+      "windows": 40,
+      "durationSeconds": 0.2,
+      "meanAbsoluteError": 0.000558375206310302,
+      "maxAbsoluteError": 0.02900424599647522,
+      "p99AbsoluteError": 0.007979560643434525,
+      "scope": "Synthetic English speech, not user/Persian acceptance"
+    }
+  },
+  "launchers": {
+    "stopAndRestart": "passed",
+    "fullRebuildAndServe": "passed",
+    "url": "http://127.0.0.1:5390/"
+  },
+  "git": {
+    "head": "221d477f8574f0ab204342848b99470deff52d09",
+    "commitPerformed": false,
+    "pushPerformed": false
+  },
+  "registryCandidateCreated": false,
+  "published": false,
+  "pendingAcceptance": [
+    "Owner physical microphone",
+    "Persian speech appearance and timing",
+    "Owner laughter accuracy and naturalness"
+  ]
+}

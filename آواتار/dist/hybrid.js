@@ -10,6 +10,7 @@ export const AVATAR_HYBRID_MODEL_URL = new URL('./assets/avatar-v2/avatar.gltf',
 export const AVATAR_HYBRID_MOTIONS_URL = new URL('./assets/avatar-v2/motions.json', import.meta.url).href;
 export const AVATAR_HYBRID_TEXTURE_URL = new URL('./assets/avatar03-texture.png', import.meta.url).href;
 export const AVATAR_HYBRID_HEIGHT = 1.78;
+export const AVATAR_HYBRID_FACE_ALBEDO_URL = new URL('./assets/appearance/face-albedo.png', import.meta.url).href;
 const IDLE = { state: 'idle', horizontalSpeed: 0, verticalSpeed: 0, grounded: true };
 function Frames({ runtime, current, controller, locomotion, portrait, onError }) {
     const failed = useRef(false);
@@ -28,12 +29,15 @@ function Frames({ runtime, current, controller, locomotion, portrait, onError })
 }
 /** The host owns Canvas, navigation, position, heading and camera. This adapter
  * mounts the accepted V1-body/native-V2-face runtime with privately owned state. */
-export const AvatarHybrid = forwardRef(function AvatarHybrid({ controller, navigation, legacyModelUrl = AVATAR_HYBRID_LEGACY_MODEL_URL, modelUrl = AVATAR_HYBRID_MODEL_URL, motionsUrl = AVATAR_HYBRID_MOTIONS_URL, textureUrl = AVATAR_HYBRID_TEXTURE_URL, height = AVATAR_HYBRID_HEIGHT, lighting = 'scene', portrait = false, rotationY = Math.PI, onReady, onError, }, ref) {
+export const AvatarHybrid = forwardRef(function AvatarHybrid({ controller, navigation, legacyModelUrl = AVATAR_HYBRID_LEGACY_MODEL_URL, modelUrl = AVATAR_HYBRID_MODEL_URL, motionsUrl = AVATAR_HYBRID_MOTIONS_URL, textureUrl = AVATAR_HYBRID_TEXTURE_URL, faceAlbedoUrl = AVATAR_HYBRID_FACE_ALBEDO_URL, height = AVATAR_HYBRID_HEIGHT, lighting = 'scene', portrait = false, rotationY = Math.PI, onReady, onError, }, ref) {
     if (!Number.isFinite(height) || height <= 0)
         throw new Error('avatar_hybrid_invalid_height');
     const texture = useLoader(TextureLoader, textureUrl);
     texture.flipY = false;
     texture.colorSpace = SRGBColorSpace;
+    const faceAlbedo = useLoader(TextureLoader, faceAlbedoUrl);
+    faceAlbedo.flipY = false;
+    faceAlbedo.colorSpace = SRGBColorSpace;
     const legacy = useLoader(GLTFLoader, legacyModelUrl, loader => loader.register(() => ({
         name: 'AVATAR_HYBRID_BUNDLED_TEXTURE',
         loadTexture: index => index === 0 ? Promise.resolve(texture) : null,
@@ -44,13 +48,13 @@ export const AvatarHybrid = forwardRef(function AvatarHybrid({ controller, navig
     const locomotion = useRef(IDLE);
     const settings = useRef({ emotion: 'neutral', intensity: 0.88, manual: new Map(),
         options: {}, blink: false, clip: null, time: null,
-        playback: {} });
+        playback: {}, speech: {}, handPose: 'auto' });
     const callbacks = useRef({ onReady, onError });
     callbacks.current = { onReady, onError };
     useEffect(() => {
         let cancelled = false, owned = null;
         setRuntime(null);
-        void createHybridRuntime(legacy, gltf, motions, { height, lighting,
+        void createHybridRuntime(legacy, gltf, motions, { height, lighting, faceAlbedo,
             groundAt(x, z) { return navigation.sampleGround([x, 0, z])?.position[1] ?? 0; },
         }).then(created => {
             if (cancelled) {
@@ -61,6 +65,8 @@ export const AvatarHybrid = forwardRef(function AvatarHybrid({ controller, navig
             created.setEmotion(saved.emotion);
             created.setIntensity(saved.intensity);
             created.setFaceOptions(saved.options);
+            created.setSpeechOptions(saved.speech);
+            created.setHandPose(saved.handPose);
             for (const [name, value] of saved.manual)
                 created.setManual(name, value);
             if (saved.clip !== null)
@@ -80,7 +86,7 @@ export const AvatarHybrid = forwardRef(function AvatarHybrid({ controller, navig
             callbacks.current.onError?.(reason instanceof Error ? reason : new Error(String(reason))); });
         return () => { cancelled = true; if (current.current === owned)
             current.current = null; owned?.dispose(); };
-    }, [gltf, motions, legacy, height, lighting, navigation]);
+    }, [gltf, motions, legacy, faceAlbedo, height, lighting, navigation]);
     useImperativeHandle(ref, () => ({
         setLocomotion(value) { locomotion.current = value; },
         previewClip(value) { settings.current.clip = value; settings.current.time = null; current.current?.previewClip(value); },
@@ -90,6 +96,12 @@ export const AvatarHybrid = forwardRef(function AvatarHybrid({ controller, navig
         setManual(name, value) { settings.current.manual.set(name, value); current.current?.setManual(name, value); },
         setIntensity(value) { settings.current.intensity = value; current.current?.setIntensity(value); },
         setFaceOptions(value) { settings.current.options = { ...settings.current.options, ...value }; current.current?.setFaceOptions(value); },
+        setSpeechFrame(weights, options) { current.current?.setSpeechFrame(weights, options); },
+        setSpeechOptions(value) { settings.current.speech = { ...settings.current.speech, ...value }; current.current?.setSpeechOptions(value); },
+        setLaughter(score, options) { current.current?.setLaughter(score, options); },
+        clearSpeech() { current.current?.clearSpeech(); },
+        setHandPose(pose, side) { settings.current.handPose = pose; current.current?.setHandPose(pose, side); },
+        setFingerCurl(side, digit, value) { current.current?.setFingerCurl(side, digit, value); },
         blink() { if (current.current)
             current.current.blink();
         else

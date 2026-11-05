@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-03",
+  "recordedAt": "2026-11-03T17:09:49.867878+00:00",
+  "stage": "modest lightweight clothing material improvement",
+  "ownerReview": {
+    "clothingAccepted": false,
+    "status": "ready for owner visual review",
+    "acceptedFaceAndHandsPreserved": true
+  },
+  "build": {
+    "entryScript": "index-C4p4tpCm.js",
+    "nativeDigest": "sha256:239791e1c52b1ffa942e8a605bff7b6997229cb4987f920b71072f1aa1dbcf21",
+    "pluginWorkingVersion": "0.1.3"
+  },
+  "cost": {
+    "originalModelBytesUnchanged": true,
+    "modelBytes": 32470744,
+    "bundleBefore": 230089836,
+    "bundleAfter": 230092179,
+    "bundleAddedBytes": 2343,
+    "clothing": {
+      "enabled": true,
+      "style": "lightweight-woven-2026-11-03",
+      "changedMeshes": [
+        "Meshy_AI_Lilac_Sweatshirt_Port_0809081014_texture"
+      ],
+      "textureSize": [
+        128,
+        128
+      ],
+      "textureBytes": 65536,
+      "textureBytesWithMipmaps": 87380,
+      "addedTriangles": 0,
+      "addedDrawCalls": 0,
+      "sourceAlbedoReused": true,
+      "disposed": false
+    },
+    "drawCallsBefore": 20,
+    "drawCallsAfter": 20,
+    "geometryInventoryUnchanged": true,
+    "textureInventoryBefore": 7,
+    "textureInventoryAfter": 8
+  },
+  "performance": {
+    "before": {
+      "fps": 118.45102505694761,
+      "frameMs": 8.442307692307692,
+      "p95Ms": 9.899999976158142,
+      "cpuSubmitMs": 1.0216039274796331,
+      "avatarUpdateMs": 3.8877250417554827,
+      "gpuMs": 2.825717106383004
+    },
+    "after": {
+      "fps": 102.34667718398738,
+      "frameMs": 9.770712909441233,
+      "p95Ms": 10.900000095367432,
+      "cpuSubmitMs": 1.1468208104888828,
+      "avatarUpdateMs": 3.546531793010028,
+      "gpuMs": 2.786732146435461
+    },
+    "sameCanvas": [
+      1395,
+      1200
+    ],
+    "sameCamera": {
+      "position": [
+        0,
+        0.9419999999999997,
+        4.4
+      ],
+      "quaternion": [
+        -0.0013636325601234184,
+        0,
+        0,
+        0.9999990702526882
+      ],
+      "near": 0.008,
+      "far": 100
+    },
+    "dpr": 1.5,
+    "shadows": true,
+    "speech": false,
+    "caveat": "Sequential browser samples, not controlled OS load; final FPS was lower. GPU memory is tracked allocations, not whole VRAM. No FPS-equivalence or system-wide cost-reduction claim."
+  },
+  "verification": {
+    "pluginTests": {
+      "pass": 68,
+      "fail": 0
+    },
+    "hostTests": {
+      "pass": 13,
+      "fail": 0
+    },
+    "pluginBuild": true,
+    "hostBuild": true,
+    "pluginValidate": {
+      "ok": true,
+      "code": "ALAMR_OK"
+    },
+    "hostValidate": {
+      "ok": true,
+      "code": "ALAMR_OK"
+    },
+    "hostDoctor": {
+      "ok": true,
+      "code": "ALAMR_DOCTOR_READY"
+    },
+    "pluginDoctor": {
+      "ok": false,
+      "code": "ALAMR_DOCTOR_FAILED",
+      "diagnostic": "ALAMR_DOCTOR_PLUGIN_ARTIFACT",
+      "detail": "Managed Plugin artifact must be between 1 byte and 25 MiB."
+    },
+    "native": {
+      "readyVerified": false,
+      "previewId": "pv_a2477001ab1e4ef48fe1c99ae5aec3e9",
+      "failureCode": "ALAMR_PREVIEW_READY_TIMEOUT",
+      "inspectionState": "failed"
+    },
+    "browser": {
+      "url": "http://127.0.0.1:5390/",
+      "renderObserved": true,
+      "frontAndCloseObserved": true,
+      "errors": [],
+      "backObserved": true,
+      "temporaryViewportReset": true,
+      "tabKeptAsDeliverable": true
+    }
+  },
+  "preservedSourceSha256": {
+    "آواتار/assets-source/v1/avatar03.glb": "bf16883394c2f968faa294e8debe02dc38ff8ba4aaf98d32319e025d8185540d",
+    "Avatar_V2_WebBase/AvatarRuntime/assets/avatar.gltf": "a7596659be5e3bf3e6400fabfe20042277ea03b5e5b6d0c1e37589020ec4ced9"
+  },
+  "acceptedFaceSha256": "8807601273bc9c4dabc919746e6f9f804e5a2942ba634fb982d6fe0ed5c20677",
+  "boundaries": {
+    "gitHead": "221d477f8574f0ab204342848b99470deff52d09",
+    "commit": false,
+    "push": false,
+    "publication": false,
+    "registrySubmission": false,
+    "meetingRoom2Edited": false,
+    "skillPackageEdited": false
+  },
+  "backup": ".local/backups/avatar-cloth-2026-11-03/",
+  "sha256": {
+    "آواتار/src/hybrid/runtime.mjs": "5b4b577fa684651a9325a0f21a2ca71bf0ccdea9ef1c177dcd43e0b5c4b62e6e",
+    "آواتار/src/hybrid/runtime.d.mts": "dcbe244829d6df6ba40eb5cfa4dc7bf68e1b27100255d98ca35c0dbb3203ea7d",
+    "آواتار/src/hybrid/surface-materials.mjs": "94b4e9e25206054781cbe456279db0b349fd95fbc8a0af785d2fdd36c37188fd",
+    "آواتار/src/hybrid/accepted-source.json": "7341a404e141fbfccf1c55c1fd345785bd4540b2c112ccbc604827c8b6e54ad3",
+    "آواتار/tests/cloth-materials.test.mjs": "4bf417907c772b7b18bdb5a6ac60964d384a34b9470e5b95945fec9be6912c52",
+    "avatar-lab/src/App.tsx": "ff67a55610e26ed173144ba3a39ce24f594502a73654e15b08468a47b9d726e2",
+    "avatar-lab/dist/index.html": "7504daa2f56cacd9bf22667fb4cfa42855fd87699fa3567f7c9cffd64d8626f6",
+    "avatar-lab/dist/assets/index-C4p4tpCm.js": "0112aca8fb942234f759d86762b7356006622f207411e1e154a0d0baaf3a9761",
+    "AVATAR_CLOTH_LIGHTWEIGHT_FA.md": "d51d194ed788e20d56b4df571e3ea0375a597ae8d47293be40a8abba3cac2fc9",
+    "docs/runs/avatar-cloth-2026-11-03/before-performance.json": "bb292c7e222415c343a192d94095894256e60fa5405702c7ea4604fd3402be84",
+    "docs/runs/avatar-cloth-2026-11-03/after-performance.json": "7aa8b6a07639da0d39f0eae745539c1048f493f898b5dca2bd3e09c171f6775d",
+    "docs/runs/avatar-cloth-2026-11-03/before-close.png": "84ba39e166dc53ddd706685cd3b23f015dc52c65861c6f571a2690b24073b217",
+    "docs/runs/avatar-cloth-2026-11-03/after-close.png": "bf5c69bfaec50340e2fa5284b2f68da5c0147f7370d04039b6722fd4e9615c1f",
+    "docs/runs/avatar-cloth-2026-11-03/cloth-detail.png": "08887284c3e896e3b703bf726c85fd741145bc5444f524deeb54f2ed1b83a00e",
+    "docs/runs/avatar-cloth-2026-11-03/plugin-tests.log": "f3f9514c0d494c148aa9b533a9d1f6a7bd7668dfb86b5c59440fbc691c5fd3f6",
+    "docs/runs/avatar-cloth-2026-11-03/host-tests.log": "7fe04eeabfc7e6c83036a72f8dfc4fa24eeb709be669a136d6cc2f536f11d006",
+    "docs/runs/avatar-cloth-2026-11-03/native-dev.json": "c4efcfa07f10c13d1097d2703d7fc93336b9a2b5d2b02df4e92dc7bfd070be57",
+    "docs/runs/avatar-cloth-2026-11-03/native-inspect.json": "6a17f0bc0e8d4625528d5da4fb240208f2aa98e06a94cbf79d61ab2dd277b01d",
+    "docs/runs/avatar-cloth-2026-11-03/after-back.png": "c5fe1de180493dc3a33a79a361b66e76c80d2a57b4bc9df65176c19dfed26df2"
+  }
+}

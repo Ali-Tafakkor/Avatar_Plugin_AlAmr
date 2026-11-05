@@ -1,0 +1,1077 @@
+{
+  "version": "0.1.3",
+  "source": "root آواتار",
+  "scope": "delivery files except this inventory; later ignored node_modules/report files excluded",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 59,
+      "sha256": "24467fa948a27227c6de38d7ea99c216b4248a453566ce58dd90d5227c27679e"
+    },
+    {
+      "path": "README_FA.md",
+      "bytes": 990,
+      "sha256": "8efbc761b5a37438b3b91d126362462ae1b7f5f831f0c778e384711fd3dbc13f"
+    },
+    {
+      "path": "docs/runs/avatar-hands-2026-11-03/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/runs/avatar-neck-idle-2026-11-05/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reference/AVATAR_GARMENT_NECKLINE_FA.md",
+      "bytes": 7555,
+      "sha256": "ca4a60cb6f19635c9d2bcc0158e6e66ceb551a6916e806f4ced91dd6d7cd3eb1"
+    },
+    {
+      "path": "reference/LATEST_AVATAR_FA.md",
+      "bytes": 4122,
+      "sha256": "df187cd729ccda40b87dd0566c04b8deeff91560a0cc6d87408bd19bd6f76d80"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/SKILL.md",
+      "bytes": 6478,
+      "sha256": "b658c83ff6c0c9f573de74cf1b30e3abf1875c7a523b0c4f0c1e21dedc40d057"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-backend.md",
+      "bytes": 14844,
+      "sha256": "d015d0138f9dbbf8af3884bb9939878cf0886b7c86cd688c8015b4772bf387c8"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-bundles.md",
+      "bytes": 8792,
+      "sha256": "5f5fdac3450f7536ac7f08fb9a0bc9faa5cc46a56059a2e7802c8f63607b9035"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-changes.md",
+      "bytes": 1596,
+      "sha256": "86e336a10c1254d66f10b9abdbdf32a7fba02d265a3340f2b522ac22fcf9fe1a"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-companions.md",
+      "bytes": 3125,
+      "sha256": "e714defa94ed9bf29f1a7e5d9bc0f7dbbcc8bc7eb9af79ffe2ea35005bd52641"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-development.md",
+      "bytes": 5460,
+      "sha256": "04bef10c5baef54262da89c683ccb1d04beaa673d77d3124518771a7826f4312"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-groups.md",
+      "bytes": 24874,
+      "sha256": "8674f7a3355b911469f29e50f3cbf13b6b8d491cffe67f2dc256a9d7ee92ec68"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-hampa.md",
+      "bytes": 23757,
+      "sha256": "5b6c90f042dd7e8d7e8a6ae4204e4f150250c6ae51d5b26dcc7e941fa9ffa5c1"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-notifications.md",
+      "bytes": 7722,
+      "sha256": "bab0407b512a55f299c50634128dfe97a1c86714e086788eaef9ec8d14ea8e70"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-plugins.md",
+      "bytes": 14972,
+      "sha256": "185e973e7be5a2c7bbd8779b3c93a145a7da09704c2454d7632ed81591e72a6f"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-publishing.md",
+      "bytes": 6978,
+      "sha256": "23703a69c9fb25fa270bfe4afed15abdc5aec0d9e8d86e33b7a9f1f6dae159bb"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-runtime.md",
+      "bytes": 10182,
+      "sha256": "b395806939a9d9c00d3db1678d89943785562e5cecbc46ea1dddd766ecb94de1"
+    },
+    {
+      "path": "آواتار/.agents/skills/al-amr/agent-subject-families.md",
+      "bytes": 10151,
+      "sha256": "17c67a52869a2c0b5900a6677ed9a86287c3bc3a4810bd92244b09b68012024b"
+    },
+    {
+      "path": "آواتار/AGENTS.md",
+      "bytes": 2525,
+      "sha256": "ccadca930e0c127ce4c14215f3aaa86e8b311e5b878c63e5fdd574b96959d31b"
+    },
+    {
+      "path": "آواتار/CHANGELOG.md",
+      "bytes": 3146,
+      "sha256": "5f9fd597157cdbbe92926a686ff6be851188427c3f1529524891a2a5f5da679a"
+    },
+    {
+      "path": "آواتار/CODE-LICENSE.txt",
+      "bytes": 1418,
+      "sha256": "4b8bdab9c47e4cc19309e3d1a4cf96b3cfd6a97e3e6fe017e3555137102dd3e2"
+    },
+    {
+      "path": "آواتار/LICENSE",
+      "bytes": 957,
+      "sha256": "ff073eee5087758ab997a7300fe4f96c594d5b1b81aec9b51ae3ac2020a2897e"
+    },
+    {
+      "path": "آواتار/README.md",
+      "bytes": 3311,
+      "sha256": "5ffdacb47561abf978b5ff72ab87432dd307fc5a761a5720d96baa4a01ae67b5"
+    },
+    {
+      "path": "آواتار/SPEECH_INTEGRATION.md",
+      "bytes": 4220,
+      "sha256": "a21ed6b3d407f812c9cedc2b5ab1424aa22a3dcc22c27897760acfabea8ec381"
+    },
+    {
+      "path": "آواتار/THIRD_PARTY_NOTICES.md",
+      "bytes": 6184,
+      "sha256": "e38f0add7f903f056dd58ca4a38b68681e8988b0224d991a55239ab69660f0e8"
+    },
+    {
+      "path": "آواتار/al-amr.plugin.json",
+      "bytes": 3326,
+      "sha256": "766d378473ff26d49c25392a8b87ecbeaa74ad2f1d71ddb942928d3ed3ec0a0d"
+    },
+    {
+      "path": "آواتار/alamr.d.ts",
+      "bytes": 76782,
+      "sha256": "f04e85562d64a02d31896191c53e4ad584341ea93ca85d92a395db624dd4215a"
+    },
+    {
+      "path": "آواتار/assets-source/appearance/face-albedo.png",
+      "bytes": 2861146,
+      "sha256": "8807601273bc9c4dabc919746e6f9f804e5a2942ba634fb982d6fe0ed5c20677"
+    },
+    {
+      "path": "آواتار/assets-source/appearance/face-provenance.json",
+      "bytes": 2427,
+      "sha256": "1f5f983cfee1d5b8f8f8c6aed18f468d9d1c953ae2a9eb9ab7264c11519bbe45"
+    },
+    {
+      "path": "آواتار/assets-source/speech/wav2arkit/README.md",
+      "bytes": 5058,
+      "sha256": "43e39dab820a9e42242dfb4923ebe83902fc441465667d2ec598bf4b9c666ccd"
+    },
+    {
+      "path": "آواتار/assets-source/speech/wav2arkit/config.json",
+      "bytes": 1985,
+      "sha256": "281cdabf83258d3bbb4954452e55e9c68abe579e130de107d2b16b10a6320151"
+    },
+    {
+      "path": "آواتار/assets-source/speech/wav2arkit/model.json",
+      "bytes": 1624,
+      "sha256": "c8639af168462e745de87c32b5a51974db91ba208d343dbf726304506488f439"
+    },
+    {
+      "path": "آواتار/assets-source/speech/wav2arkit/provenance.json",
+      "bytes": 607,
+      "sha256": "bb2358a66daf7340935a0ef07b8b2cffb3a96ea903b9d896090820aa83a2f1f4"
+    },
+    {
+      "path": "آواتار/assets-source/speech/yamnet/README.md",
+      "bytes": 285,
+      "sha256": "7623bebe52dbcc66526447e5c8649f7087545b07596651c47f2778f80be1c73e"
+    },
+    {
+      "path": "آواتار/assets-source/speech/yamnet/provenance.json",
+      "bytes": 591,
+      "sha256": "37a89f25728558501e69d090c1e84be6a3d13518606a16fe1978372e0500c9ea"
+    },
+    {
+      "path": "آواتار/assets-source/speech/yamnet/yamnet_class_map.csv",
+      "bytes": 14096,
+      "sha256": "cdf24d193e196d9e95912a2667051ae203e92a2ba09449218ccb40ef787c6df2"
+    },
+    {
+      "path": "آواتار/assets-source/v1/avatar03.glb",
+      "bytes": 8657480,
+      "sha256": "bf16883394c2f968faa294e8debe02dc38ff8ba4aaf98d32319e025d8185540d"
+    },
+    {
+      "path": "آواتار/assets-source/web-v2/avatar.glb",
+      "bytes": 12284040,
+      "sha256": "193c07c351f1f94b12b499ece3f8813432dbe902afe0b5dd6957e788a9a36605"
+    },
+    {
+      "path": "آواتار/assets-source/web-v2/motions.json",
+      "bytes": 343866,
+      "sha256": "533829f6f7b4eca37586564c5d55f3807ae3537878e8007f2af55c853d732d24"
+    },
+    {
+      "path": "آواتار/assets-source/web-v2/provenance.json",
+      "bytes": 3175,
+      "sha256": "4578bd8ed16f03d3ae4796e3fca6247184599daeb8272a047c335ac9c2c605b6"
+    },
+    {
+      "path": "آواتار/dist/assets/appearance/face-albedo.png",
+      "bytes": 2861146,
+      "sha256": "8807601273bc9c4dabc919746e6f9f804e5a2942ba634fb982d6fe0ed5c20677"
+    },
+    {
+      "path": "آواتار/dist/assets/appearance/face-provenance.json",
+      "bytes": 2427,
+      "sha256": "1f5f983cfee1d5b8f8f8c6aed18f468d9d1c953ae2a9eb9ab7264c11519bbe45"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/THIRD_PARTY_NOTICES.md",
+      "bytes": 6184,
+      "sha256": "e38f0add7f903f056dd58ca4a38b68681e8988b0224d991a55239ab69660f0e8"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/asset-manifest.json",
+      "bytes": 12442,
+      "sha256": "6f7feb96b5306cfd687af6475964c4656f43588dd1ca351e2fcb2a7b89512451"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/avatar.bin",
+      "bytes": 10149258,
+      "sha256": "1a9c31cc0ceb5dc26b77b20aa154c9e5a63ac3148f31b7d038e37a40fe928a90"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/avatar.gltf",
+      "bytes": 114117,
+      "sha256": "2ff6bd948331eb2952fbbd172c067685fa3f1f0525917223f8f1b68a5fa5206c"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-00.jpg",
+      "bytes": 75332,
+      "sha256": "f054e220309a33a18360c0d8c03ca345bacd7e2e02d01f7299f519ab4420c0fc"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-01.jpg",
+      "bytes": 75781,
+      "sha256": "19d9c93e42fd0dfd1f284533536c360fd011aa5d2aeea8c20a6841add6d1afdd"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-02.jpg",
+      "bytes": 34214,
+      "sha256": "dd9d0b8fb660edc77ff28cefc9075fbaffaab62055e66b7916ed9c5285e7bd71"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-03.jpg",
+      "bytes": 144828,
+      "sha256": "501a685f004838d3df0f4552d16847e57dfc82e891d90ba677756737ef1bfcea"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-04.jpg",
+      "bytes": 28478,
+      "sha256": "0348d28e48fa362b8c036734d919d1c1f1b9fe691b50828e32191be410823c01"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-05.jpg",
+      "bytes": 30967,
+      "sha256": "77e89ad8950eba0411e64af13aac09bb0a32f207d45686d12942923225fb3394"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-06.jpg",
+      "bytes": 184265,
+      "sha256": "a6c4e6f076e32905c2726db145040c4a113b2f2fb24ac3492f644cc7aa430329"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-07.jpg",
+      "bytes": 71262,
+      "sha256": "e028edc446483c4821fe08fa057b84c8c13291eecfd6cd49323353a7ffb45698"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-08.jpg",
+      "bytes": 371528,
+      "sha256": "7b370d184a2b684083503f44b3bff83c6f6e0586c1940492a688dc141906a30c"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-09.jpg",
+      "bytes": 269829,
+      "sha256": "42be5fff5db968cc45d860da824c275c37fc72bf89d149402dcea9885953db2f"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-10.jpg",
+      "bytes": 262191,
+      "sha256": "17008532afc9d5edbf927d6f3ae64ab32c9f9c54e95eb957e30d838efdb3daa4"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-11.jpg",
+      "bytes": 125781,
+      "sha256": "48e76df0685ccf53f1945851b44de14cdbd45b50067ade68d9086a02a3bf1b09"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-12.jpg",
+      "bytes": 230173,
+      "sha256": "7cbfc7c79d0e79e92b2da9b0ecae00fe4b98f3e6709258624741d826dd622f36"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/images/image-13.jpg",
+      "bytes": 115336,
+      "sha256": "1b51d7710fe61c9a1a40118947bdd823716d996b04a390998bf38725db71507a"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/motions.json",
+      "bytes": 343866,
+      "sha256": "533829f6f7b4eca37586564c5d55f3807ae3537878e8007f2af55c853d732d24"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar-v2/provenance.json",
+      "bytes": 3175,
+      "sha256": "4578bd8ed16f03d3ae4796e3fca6247184599daeb8272a047c335ac9c2c605b6"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar03-texture.png",
+      "bytes": 6287128,
+      "sha256": "5344ec24daf8cbc7a9ef08eb2549f2b0084f96283c83dfa1daa9e0e8f7acc822"
+    },
+    {
+      "path": "آواتار/dist/assets/avatar03.glb",
+      "bytes": 8657480,
+      "sha256": "bf16883394c2f968faa294e8debe02dc38ff8ba4aaf98d32319e025d8185540d"
+    },
+    {
+      "path": "آواتار/dist/assets/speech/NOTICE.md",
+      "bytes": 2320,
+      "sha256": "fe953929adfa591150857431c62c5db0953be7d5fe6c341753f5a430fc58e1d2"
+    },
+    {
+      "path": "آواتار/dist/assets/speech/model-profile.json",
+      "bytes": 1608,
+      "sha256": "f98926c39d1eb98a6578c8820395b0791961d3c527ef0900f4cf8c3f0d7e0550"
+    },
+    {
+      "path": "آواتار/dist/assets/speech/workers/capture-worklet.js",
+      "bytes": 1072,
+      "sha256": "5c443ed54bea3344f00f6a6652f46c80560c022c22390e59f6eb0a7f30d9d4dd"
+    },
+    {
+      "path": "آواتار/dist/assets/speech/workers/inference-worker.js",
+      "bytes": 75790,
+      "sha256": "2273c28f2b743291f66cecf28141e427d1eaea1ea55b39ca94907c69c553da5f"
+    },
+    {
+      "path": "آواتار/dist/assets/speech/workers/laughter.worker.js",
+      "bytes": 73805,
+      "sha256": "fa458ff2b8a535ff64bc20612777247575eb5dff60b462b8e24983831483e9ae"
+    },
+    {
+      "path": "آواتار/dist/hybrid/accepted-source.json",
+      "bytes": 4233,
+      "sha256": "d99df6b681133134f5603ac8da48837b515cf8110e36ef4384f3c0cd838540aa"
+    },
+    {
+      "path": "آواتار/dist/hybrid/body-runtime.mjs",
+      "bytes": 23135,
+      "sha256": "31456716019946ece507a9850aba5bf17c2b701fc41f728698f64d46c6314372"
+    },
+    {
+      "path": "آواتار/dist/hybrid/detailed-hands.mjs",
+      "bytes": 15061,
+      "sha256": "cbcf38e9a3c1019006094d79db5ad6bb52917c5db3966a57c2d6b0b0e1c27990"
+    },
+    {
+      "path": "آواتار/dist/hybrid/garment-neckline.mjs",
+      "bytes": 3161,
+      "sha256": "529166eb7418d8aa444b73d173a9768f008bc35553a3ba3d848ea01578be7872"
+    },
+    {
+      "path": "آواتار/dist/hybrid/hand-contact.mjs",
+      "bytes": 9610,
+      "sha256": "09380516853fae207ac814a20050fbd6cb8104a8d7d32f323980b2c9e3b960af"
+    },
+    {
+      "path": "آواتار/dist/hybrid/hand-skin-mask.mjs",
+      "bytes": 62828,
+      "sha256": "3bcc36635aadfbda4d8498b820cc13d645965b529f7703422db897e425300573"
+    },
+    {
+      "path": "آواتار/dist/hybrid/head-mount.mjs",
+      "bytes": 17933,
+      "sha256": "6fe1700f45a5af118bb2bed31d3b6c72cd9721b338cc2f43b3fdf8a281b1a97a"
+    },
+    {
+      "path": "آواتار/dist/hybrid/legacy-materials.mjs",
+      "bytes": 1077,
+      "sha256": "2f171acb024b2d6f7d4d95ca8aa31e5dab30de761ea415d18f8d9db0494c79cc"
+    },
+    {
+      "path": "آواتار/dist/hybrid/neck-collar.mjs",
+      "bytes": 4706,
+      "sha256": "364a74644aa6a60d81af41891879bfba4c079a32c5ddf34068740a0922b0682b"
+    },
+    {
+      "path": "آواتار/dist/hybrid/quiet-idle.mjs",
+      "bytes": 2839,
+      "sha256": "d1f8bba64a958cd386b603835711cb20e09b41b7240521e5c39b5524af371e55"
+    },
+    {
+      "path": "آواتار/dist/hybrid/runtime.d.mts",
+      "bytes": 6806,
+      "sha256": "64e1c905910d4e1193499e1f047f0805493434dec70caeab9e210dbff9a0dcdb"
+    },
+    {
+      "path": "آواتار/dist/hybrid/runtime.mjs",
+      "bytes": 6995,
+      "sha256": "2f4b29b67f945779ff4945e935b723f80814bbf0eb163616229417919c946880"
+    },
+    {
+      "path": "آواتار/dist/hybrid/sculpted-face.mjs",
+      "bytes": 15056,
+      "sha256": "a398bf30a3161800d9b489c3454f0361f4d248f1a5740321da855ae40dc274f1"
+    },
+    {
+      "path": "آواتار/dist/hybrid/surface-materials.mjs",
+      "bytes": 7872,
+      "sha256": "daa2208dbb79ac91499e6b82f5eacce589a6e76018203740bbf906f62fb2dec1"
+    },
+    {
+      "path": "آواتار/dist/hybrid.d.ts",
+      "bytes": 2897,
+      "sha256": "fe7ef726af77611573af736fec1ba9cbc5825d6d60831b7b3da17b630e5494e3"
+    },
+    {
+      "path": "آواتار/dist/hybrid.js",
+      "bytes": 7510,
+      "sha256": "2db5c11b799f064c6dd12e3d6c7de380ec32df13fe6c3cc575f31af026acc330"
+    },
+    {
+      "path": "آواتار/dist/hybrid.js.map",
+      "bytes": 8128,
+      "sha256": "7b6c4e6575e7994e3d07cdbae63849bf3f4015fb340a8c0f30b585babfc39067"
+    },
+    {
+      "path": "آواتار/dist/index.d.ts",
+      "bytes": 2669,
+      "sha256": "0ebfb51d1e630a37cb222495ac6566ce78905e3c5e193ccdf36872f960ed0c8f"
+    },
+    {
+      "path": "آواتار/dist/index.js",
+      "bytes": 3630,
+      "sha256": "aeafce5c4885a09f2626502b10db172bc45dacafcff08b7e184d288978847a52"
+    },
+    {
+      "path": "آواتار/dist/index.js.map",
+      "bytes": 3717,
+      "sha256": "c546adc54c70fa01967277cc9340d9aa0db06772cb864469386b67668b0f8ac6"
+    },
+    {
+      "path": "آواتار/dist/model.d.ts",
+      "bytes": 791,
+      "sha256": "c067ee0d306818ea400f85c56bf7731d0b0507c86a62d0c11ff50b6119fdfed3"
+    },
+    {
+      "path": "آواتار/dist/model.js",
+      "bytes": 2838,
+      "sha256": "e3165d7a5cd939105099ebfd9dfc89b66a24d4d11fc639baf541ef79df9d5648"
+    },
+    {
+      "path": "آواتار/dist/model.js.map",
+      "bytes": 2853,
+      "sha256": "1306e786e3deba18ca53533103676b5a2c403cc7833ae028b3cdbfcb363af378"
+    },
+    {
+      "path": "آواتار/dist/motion.d.ts",
+      "bytes": 1437,
+      "sha256": "1771a75c2361dd81fcc564d5d27faa4e53f202d186cf740fc9023b759fe96744"
+    },
+    {
+      "path": "آواتار/dist/motion.js",
+      "bytes": 3869,
+      "sha256": "0fd63f7f8b955de31b92367af1188e428a9390e034120a7801979ddc93eb2cee"
+    },
+    {
+      "path": "آواتار/dist/motion.js.map",
+      "bytes": 4479,
+      "sha256": "961a92cb1b64cca3acdb1d14d370d24fdff57118989ce74f490344a01c8e4275"
+    },
+    {
+      "path": "آواتار/dist/speech/NOTICE.md",
+      "bytes": 2320,
+      "sha256": "fe953929adfa591150857431c62c5db0953be7d5fe6c341753f5a430fc58e1d2"
+    },
+    {
+      "path": "آواتار/dist/speech/arkit.d.ts",
+      "bytes": 1417,
+      "sha256": "2e786856f4c10fc2ab68c686dadd17cfe0a473162997e81515f00887e6410c3e"
+    },
+    {
+      "path": "آواتار/dist/speech/arkit.js",
+      "bytes": 1505,
+      "sha256": "4818c034fa315c21319288a04688abe8a4e82191ffdf6ef9ae76882d51ea59f2"
+    },
+    {
+      "path": "آواتار/dist/speech/arkit.js.map",
+      "bytes": 1134,
+      "sha256": "f89ff7993cf5c9e22d42ee3d8c150f342a9829c468278d5296775ed1c411e0e0"
+    },
+    {
+      "path": "آواتار/dist/speech/audio-core.d.mts",
+      "bytes": 624,
+      "sha256": "34774429b849b759f8922f160e70aa6bd504dc0cc0503264abea90fec4051d14"
+    },
+    {
+      "path": "آواتار/dist/speech/audio-core.mjs",
+      "bytes": 3176,
+      "sha256": "8fb004cff116c93657317966cfc13efab75582042681445cd4029fd191ca772b"
+    },
+    {
+      "path": "آواتار/dist/speech/capture-worklet.d.ts",
+      "bytes": 11,
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+    },
+    {
+      "path": "آواتار/dist/speech/capture-worklet.js",
+      "bytes": 1072,
+      "sha256": "5c443ed54bea3344f00f6a6652f46c80560c022c22390e59f6eb0a7f30d9d4dd"
+    },
+    {
+      "path": "آواتار/dist/speech/capture-worklet.js.map",
+      "bytes": 1321,
+      "sha256": "820a3464a06fbd52c1a9e7ff78661b581f6c943df2489927eb1184e719bc9a7e"
+    },
+    {
+      "path": "آواتار/dist/speech/compositor.d.mts",
+      "bytes": 877,
+      "sha256": "32d7b41740ee3181e05a3b870ed0cf2919ffff8d33d84414f651483301297843"
+    },
+    {
+      "path": "آواتار/dist/speech/compositor.mjs",
+      "bytes": 6908,
+      "sha256": "cb7eaf963d22636885e67d5a011ca9822381ee7172f1c5f8eb5127c9c9d5ee1d"
+    },
+    {
+      "path": "آواتار/dist/speech/index.d.ts",
+      "bytes": 573,
+      "sha256": "d469c8afffe62835033c7eb41b71552343eaf3fbbf337a0ad22ff2188111e429"
+    },
+    {
+      "path": "آواتار/dist/speech/index.js",
+      "bytes": 280,
+      "sha256": "cdc34d850d530478069ae177f1cba9cd44b6d933d491269470fcfd9a7622e87e"
+    },
+    {
+      "path": "آواتار/dist/speech/index.js.map",
+      "bytes": 277,
+      "sha256": "ec60e69b4ba8d2514f99dd2357155aba0f1bd139e9265623f68596fb2d22e0b0"
+    },
+    {
+      "path": "آواتار/dist/speech/inference-worker.d.ts",
+      "bytes": 11,
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+    },
+    {
+      "path": "آواتار/dist/speech/inference-worker.js",
+      "bytes": 6478,
+      "sha256": "7c7660be585011f48740d2995afcc03839fdd2dec12f73fbd681f7281b0c23e4"
+    },
+    {
+      "path": "آواتار/dist/speech/inference-worker.js.map",
+      "bytes": 7461,
+      "sha256": "c4b941ef346e7c138c9ca024ba14ac3ff9b4f9df18650b5d03105e024b2ff21f"
+    },
+    {
+      "path": "آواتار/dist/speech/laughter-core.d.mts",
+      "bytes": 680,
+      "sha256": "f5bfc7292ceada8357d31527e9d40ce01edac0e7ca22d8f864598cb0cf5b7e80"
+    },
+    {
+      "path": "آواتار/dist/speech/laughter-core.mjs",
+      "bytes": 2987,
+      "sha256": "7eeeca79f55ccd7a0e61bcbc45e1b31cec6514388b2c6ebcf5973ece2028b330"
+    },
+    {
+      "path": "آواتار/dist/speech/laughter.d.ts",
+      "bytes": 1954,
+      "sha256": "34114b1bb6b5423b797508eea1560e23be44bf7742ddb5ab0c3059b171232357"
+    },
+    {
+      "path": "آواتار/dist/speech/laughter.js",
+      "bytes": 7521,
+      "sha256": "987fd4bc3b04e6bd290132c5909344a6bd1aa5ad2ba4f0d4fc4c9f639ded1ec2"
+    },
+    {
+      "path": "آواتار/dist/speech/laughter.js.map",
+      "bytes": 8156,
+      "sha256": "bbc470e08738695ec62e7b41fd5bf719cf772ef87b4343544c93ea3870e6517c"
+    },
+    {
+      "path": "آواتار/dist/speech/laughter.worker.d.ts",
+      "bytes": 11,
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+    },
+    {
+      "path": "آواتار/dist/speech/laughter.worker.js",
+      "bytes": 2482,
+      "sha256": "26502bd0a30e820fa1cc7ded4386d43591e49da4260f8a04b9e2ae093d4a420d"
+    },
+    {
+      "path": "آواتار/dist/speech/laughter.worker.js.map",
+      "bytes": 3201,
+      "sha256": "eb6e94e0612c9c35bc566665eb9f46cf5955e58731fe4eea9e416c1b37ae52fc"
+    },
+    {
+      "path": "آواتار/dist/speech/microphone.d.ts",
+      "bytes": 2375,
+      "sha256": "6f33146f4451a24f49adc83b7ed56b7bfd4cc330d090c3501c35e58af58d9005"
+    },
+    {
+      "path": "آواتار/dist/speech/microphone.js",
+      "bytes": 14063,
+      "sha256": "aba8d0aa65ed8335f53f79019979d39c1b7bb84ce61b94250a9518aa655b538a"
+    },
+    {
+      "path": "آواتار/dist/speech/microphone.js.map",
+      "bytes": 13688,
+      "sha256": "07627fe471667ce169b46b1895525c7a79b86c6d6150256d1f19e1b11353fb17"
+    },
+    {
+      "path": "آواتار/dist/speech/protocol.d.ts",
+      "bytes": 1229,
+      "sha256": "abaaa91169e502c389edfd3b639213fc3ef480e6bf4eca156160b63a0b091295"
+    },
+    {
+      "path": "آواتار/dist/speech/protocol.js",
+      "bytes": 47,
+      "sha256": "b5ab69287989be4a830cf388cb3030d92eb9659a48f3e37ce718ba7282bd6417"
+    },
+    {
+      "path": "آواتار/dist/speech/protocol.js.map",
+      "bytes": 118,
+      "sha256": "acddee6569cd713b16835db801bcb2df25c83d3cf86e930e36417a688bc220b9"
+    },
+    {
+      "path": "آواتار/dist/v2.d.ts",
+      "bytes": 2221,
+      "sha256": "db5f6989f523c2d750552272f0af77fea90a3a6887a1ba3999a75626c45fd7a5"
+    },
+    {
+      "path": "آواتار/dist/v2.js",
+      "bytes": 6406,
+      "sha256": "81692e3b1a11ece50fc9afbb1450ff489793d424d8633782796a758a909f11c2"
+    },
+    {
+      "path": "آواتار/dist/v2.js.map",
+      "bytes": 5758,
+      "sha256": "4806713f347183d03dd66b431930f931095e9d26fcc095166f9a6508a44497c8"
+    },
+    {
+      "path": "آواتار/dist/web-v2/actor.mjs",
+      "bytes": 10771,
+      "sha256": "5ac5ec8e5e245e595ba33cb5233b6a2d7fcd696df7e386d1a13211f7ba961696"
+    },
+    {
+      "path": "آواتار/dist/web-v2/animation.mjs",
+      "bytes": 26576,
+      "sha256": "8374598d1bbe05f6f5186a41c396d50bc6b02a8817bd79ad2407000650591e08"
+    },
+    {
+      "path": "آواتار/dist/web-v2/expressions.mjs",
+      "bytes": 6079,
+      "sha256": "7fc1c035de77c015c1b401376cb8a7f3c4e6b6453d6131f44eb0b13af924f08a"
+    },
+    {
+      "path": "آواتار/dist/web-v2/math.mjs",
+      "bytes": 1365,
+      "sha256": "9f575ae2aa57d2bb7bddd4566ab8f6eebad8278c194824ae8fa30413a48f9162"
+    },
+    {
+      "path": "آواتار/dist/web-v2/physics.mjs",
+      "bytes": 4840,
+      "sha256": "8ab5fdc6f7a3f157b2cb7a59624af62e790dc7d5eec305f8c1f857657873903c"
+    },
+    {
+      "path": "آواتار/dist/web-v2/runtime.d.mts",
+      "bytes": 2215,
+      "sha256": "77e7901cc477af18e643b49b00939ebd8ef2c2a652460e2c5382b49d8abfb02d"
+    },
+    {
+      "path": "آواتار/dist/web-v2/runtime.mjs",
+      "bytes": 4993,
+      "sha256": "a4c88b013f069d32d15b71a6323a4fbc340e80c65d217b2840560fefa3385d1e"
+    },
+    {
+      "path": "آواتار/integration.md",
+      "bytes": 4566,
+      "sha256": "633da1bf4407715e4b7d39dbcbb95bbe321e7c5c784d15cac0d2d891e555cfaa"
+    },
+    {
+      "path": "آواتار/package-lock.json",
+      "bytes": 32754,
+      "sha256": "473fcea26bd11a95b0ae6ac596c63fb93775c77d66758ea035d62e491e7a9698"
+    },
+    {
+      "path": "آواتار/package.json",
+      "bytes": 2236,
+      "sha256": "df6d220dea01e74be6157ebaa17669a9c231dd7857cad154e7beb60724ba20f6"
+    },
+    {
+      "path": "آواتار/plugin-icon.png",
+      "bytes": 14173,
+      "sha256": "7b8f3157b099079d21fb30e3dff6cd1081662e1430cf951f1ef698a6f8db495c"
+    },
+    {
+      "path": "آواتار/scripts/audit-garment-neckline.mjs",
+      "bytes": 3793,
+      "sha256": "0b8ce73319bcf0c71787a5afffe6c1301f09abcaed95a7c506e8f1c609e3548d"
+    },
+    {
+      "path": "آواتار/scripts/audit-hand-contact.mjs",
+      "bytes": 5587,
+      "sha256": "df0bbdd0022d1d079496da4255fd5de286bec439d0e68002347498d6424509fa"
+    },
+    {
+      "path": "آواتار/scripts/audit-hands.mjs",
+      "bytes": 1636,
+      "sha256": "f39b0dc750de298f87a000eadb0c4398cf9587bb3317e9d29323a0ba851b7220"
+    },
+    {
+      "path": "آواتار/scripts/copy-assets.mjs",
+      "bytes": 1450,
+      "sha256": "bad51c74d0d7eb82879177b6993adb82f936e88462c92e205b5bd84dd6e24607"
+    },
+    {
+      "path": "آواتار/scripts/externalize-gltf.mjs",
+      "bytes": 2295,
+      "sha256": "258b571c57cb552632dcf85bc0d17e928b4466e412c03137f1c2f968ebd85635"
+    },
+    {
+      "path": "آواتار/scripts/glb.mjs",
+      "bytes": 4570,
+      "sha256": "2498f8fdc099064d724c60cdb79a4bfb4c01c0f83b766cdb8705a864e4b765da"
+    },
+    {
+      "path": "آواتار/scripts/prepare-hybrid.mjs",
+      "bytes": 1165,
+      "sha256": "dfe4ac990335438bca3a1e496fcb830bb8833868252f152aef9dad8370f717ef"
+    },
+    {
+      "path": "آواتار/scripts/prepare-speech.mjs",
+      "bytes": 1820,
+      "sha256": "4ddf97054dbe1163f4a0b739e19e60959543d139f6d1718efd4a08a5b18cebd8"
+    },
+    {
+      "path": "آواتار/scripts/prepare-v2.mjs",
+      "bytes": 2762,
+      "sha256": "a4d5b123861a6ebaf270d272513cd06703dd9528d5596a75338704304ea521a2"
+    },
+    {
+      "path": "آواتار/src/hybrid/accepted-source.json",
+      "bytes": 4233,
+      "sha256": "d99df6b681133134f5603ac8da48837b515cf8110e36ef4384f3c0cd838540aa"
+    },
+    {
+      "path": "آواتار/src/hybrid/body-runtime.mjs",
+      "bytes": 23135,
+      "sha256": "31456716019946ece507a9850aba5bf17c2b701fc41f728698f64d46c6314372"
+    },
+    {
+      "path": "آواتار/src/hybrid/detailed-hands.mjs",
+      "bytes": 15061,
+      "sha256": "cbcf38e9a3c1019006094d79db5ad6bb52917c5db3966a57c2d6b0b0e1c27990"
+    },
+    {
+      "path": "آواتار/src/hybrid/garment-neckline.mjs",
+      "bytes": 3161,
+      "sha256": "529166eb7418d8aa444b73d173a9768f008bc35553a3ba3d848ea01578be7872"
+    },
+    {
+      "path": "آواتار/src/hybrid/hand-contact.mjs",
+      "bytes": 9610,
+      "sha256": "09380516853fae207ac814a20050fbd6cb8104a8d7d32f323980b2c9e3b960af"
+    },
+    {
+      "path": "آواتار/src/hybrid/hand-skin-mask.mjs",
+      "bytes": 62828,
+      "sha256": "3bcc36635aadfbda4d8498b820cc13d645965b529f7703422db897e425300573"
+    },
+    {
+      "path": "آواتار/src/hybrid/head-mount.mjs",
+      "bytes": 17933,
+      "sha256": "6fe1700f45a5af118bb2bed31d3b6c72cd9721b338cc2f43b3fdf8a281b1a97a"
+    },
+    {
+      "path": "آواتار/src/hybrid/legacy-materials.mjs",
+      "bytes": 1077,
+      "sha256": "2f171acb024b2d6f7d4d95ca8aa31e5dab30de761ea415d18f8d9db0494c79cc"
+    },
+    {
+      "path": "آواتار/src/hybrid/neck-collar.mjs",
+      "bytes": 4706,
+      "sha256": "364a74644aa6a60d81af41891879bfba4c079a32c5ddf34068740a0922b0682b"
+    },
+    {
+      "path": "آواتار/src/hybrid/quiet-idle.mjs",
+      "bytes": 2839,
+      "sha256": "d1f8bba64a958cd386b603835711cb20e09b41b7240521e5c39b5524af371e55"
+    },
+    {
+      "path": "آواتار/src/hybrid/runtime.d.mts",
+      "bytes": 6806,
+      "sha256": "64e1c905910d4e1193499e1f047f0805493434dec70caeab9e210dbff9a0dcdb"
+    },
+    {
+      "path": "آواتار/src/hybrid/runtime.mjs",
+      "bytes": 6995,
+      "sha256": "2f4b29b67f945779ff4945e935b723f80814bbf0eb163616229417919c946880"
+    },
+    {
+      "path": "آواتار/src/hybrid/sculpted-face.mjs",
+      "bytes": 15056,
+      "sha256": "a398bf30a3161800d9b489c3454f0361f4d248f1a5740321da855ae40dc274f1"
+    },
+    {
+      "path": "آواتار/src/hybrid/surface-materials.mjs",
+      "bytes": 7872,
+      "sha256": "daa2208dbb79ac91499e6b82f5eacce589a6e76018203740bbf906f62fb2dec1"
+    },
+    {
+      "path": "آواتار/src/hybrid.tsx",
+      "bytes": 9303,
+      "sha256": "b1f7cb4f0b66232958ca4aed17ee0fad583d3f116293245dc6ad49907e0aae18"
+    },
+    {
+      "path": "آواتار/src/index.tsx",
+      "bytes": 5170,
+      "sha256": "75ccc0ab97e96fa4db2bd7cf2e31bd1f7501b03402fa5a062cd62e5468b3344b"
+    },
+    {
+      "path": "آواتار/src/model.ts",
+      "bytes": 2763,
+      "sha256": "31c119bbbcf394a6c4b03a7b7cd4d16a51af40e8dfc5993b4b41d9a2f755ad72"
+    },
+    {
+      "path": "آواتار/src/motion.ts",
+      "bytes": 4423,
+      "sha256": "27a143edc5bcfdbf99ae133f12d23093658750a78c4d4ac1439f8f5246cb87d0"
+    },
+    {
+      "path": "آواتار/src/speech/NOTICE.md",
+      "bytes": 2320,
+      "sha256": "fe953929adfa591150857431c62c5db0953be7d5fe6c341753f5a430fc58e1d2"
+    },
+    {
+      "path": "آواتار/src/speech/arkit.ts",
+      "bytes": 1645,
+      "sha256": "e9e67fd05855710fa80615ca5137feba0a55df40e96a864e437fc89ad1ac4121"
+    },
+    {
+      "path": "آواتار/src/speech/audio-core.d.mts",
+      "bytes": 624,
+      "sha256": "34774429b849b759f8922f160e70aa6bd504dc0cc0503264abea90fec4051d14"
+    },
+    {
+      "path": "آواتار/src/speech/audio-core.mjs",
+      "bytes": 3176,
+      "sha256": "8fb004cff116c93657317966cfc13efab75582042681445cd4029fd191ca772b"
+    },
+    {
+      "path": "آواتار/src/speech/capture-worklet.ts",
+      "bytes": 1265,
+      "sha256": "ab7e049c3fc839562d5d9bdfec349cce69af5f425276ea4bd2fd664c185e5c9f"
+    },
+    {
+      "path": "آواتار/src/speech/compositor.d.mts",
+      "bytes": 877,
+      "sha256": "32d7b41740ee3181e05a3b870ed0cf2919ffff8d33d84414f651483301297843"
+    },
+    {
+      "path": "آواتار/src/speech/compositor.mjs",
+      "bytes": 6908,
+      "sha256": "cb7eaf963d22636885e67d5a011ca9822381ee7172f1c5f8eb5127c9c9d5ee1d"
+    },
+    {
+      "path": "آواتار/src/speech/index.ts",
+      "bytes": 573,
+      "sha256": "d469c8afffe62835033c7eb41b71552343eaf3fbbf337a0ad22ff2188111e429"
+    },
+    {
+      "path": "آواتار/src/speech/inference-worker.ts",
+      "bytes": 6638,
+      "sha256": "4ee06853c20d208a1e4ae19dd22f0278559dacf9810011310a210c383b709ad5"
+    },
+    {
+      "path": "آواتار/src/speech/laughter-core.d.mts",
+      "bytes": 680,
+      "sha256": "f5bfc7292ceada8357d31527e9d40ce01edac0e7ca22d8f864598cb0cf5b7e80"
+    },
+    {
+      "path": "آواتار/src/speech/laughter-core.mjs",
+      "bytes": 2987,
+      "sha256": "7eeeca79f55ccd7a0e61bcbc45e1b31cec6514388b2c6ebcf5973ece2028b330"
+    },
+    {
+      "path": "آواتار/src/speech/laughter.ts",
+      "bytes": 7908,
+      "sha256": "9a44b18249e5af07693b1ad7b1de1cbc432a4dbf0666be84aabeadb45d782b4f"
+    },
+    {
+      "path": "آواتار/src/speech/laughter.worker.ts",
+      "bytes": 2794,
+      "sha256": "b308527dce67543f74157b5d797795eaaa132bf0e4be7176dad78dc95111635c"
+    },
+    {
+      "path": "آواتار/src/speech/microphone.ts",
+      "bytes": 14533,
+      "sha256": "58c3846b9ff1242315f43e6f9681e7ac811e67ea98a4709b08878a3da6dbd7ef"
+    },
+    {
+      "path": "آواتار/src/speech/model-profile.json",
+      "bytes": 1608,
+      "sha256": "f98926c39d1eb98a6578c8820395b0791961d3c527ef0900f4cf8c3f0d7e0550"
+    },
+    {
+      "path": "آواتار/src/speech/protocol.ts",
+      "bytes": 1075,
+      "sha256": "1db54f0c87f1eba487896daee743591451df047ff559b5e7a3c9b9af253fefe0"
+    },
+    {
+      "path": "آواتار/src/v2.tsx",
+      "bytes": 7781,
+      "sha256": "6a49030e2bbab8871a1c70b6f5b459f75ab505eead5b3479c0d427190119f173"
+    },
+    {
+      "path": "آواتار/src/web-v2/actor.mjs",
+      "bytes": 10771,
+      "sha256": "5ac5ec8e5e245e595ba33cb5233b6a2d7fcd696df7e386d1a13211f7ba961696"
+    },
+    {
+      "path": "آواتار/src/web-v2/animation.mjs",
+      "bytes": 26576,
+      "sha256": "8374598d1bbe05f6f5186a41c396d50bc6b02a8817bd79ad2407000650591e08"
+    },
+    {
+      "path": "آواتار/src/web-v2/expressions.mjs",
+      "bytes": 6079,
+      "sha256": "7fc1c035de77c015c1b401376cb8a7f3c4e6b6453d6131f44eb0b13af924f08a"
+    },
+    {
+      "path": "آواتار/src/web-v2/math.mjs",
+      "bytes": 1365,
+      "sha256": "9f575ae2aa57d2bb7bddd4566ab8f6eebad8278c194824ae8fa30413a48f9162"
+    },
+    {
+      "path": "آواتار/src/web-v2/physics.mjs",
+      "bytes": 4840,
+      "sha256": "8ab5fdc6f7a3f157b2cb7a59624af62e790dc7d5eec305f8c1f857657873903c"
+    },
+    {
+      "path": "آواتار/src/web-v2/runtime.d.mts",
+      "bytes": 2215,
+      "sha256": "77e7901cc477af18e643b49b00939ebd8ef2c2a652460e2c5382b49d8abfb02d"
+    },
+    {
+      "path": "آواتار/src/web-v2/runtime.mjs",
+      "bytes": 4993,
+      "sha256": "a4c88b013f069d32d15b71a6323a4fbc340e80c65d217b2840560fefa3385d1e"
+    },
+    {
+      "path": "آواتار/tests/cloth-materials.test.mjs",
+      "bytes": 2770,
+      "sha256": "3a1454510a211ec2f015f1feb89ea26bea1d0e47c2182c686136c37a44c00c58"
+    },
+    {
+      "path": "آواتار/tests/detailed-hands.test.mjs",
+      "bytes": 5770,
+      "sha256": "e93c64b16dd5f090bc7f56166b4cd650d0a9701c53fa2a9f98ebad06ebcdae7e"
+    },
+    {
+      "path": "آواتار/tests/garment-neckline.test.mjs",
+      "bytes": 4448,
+      "sha256": "8b9097a40d5f4e5e0ebcfae387761eb2841d417b0bef65eb60357dd4b629ff53"
+    },
+    {
+      "path": "آواتار/tests/hand-contact-face.test.mjs",
+      "bytes": 3882,
+      "sha256": "77414815932a83e3564d42d8e9365752cde3c8d4710f25472106730eaa9223b8"
+    },
+    {
+      "path": "آواتار/tests/hybrid-package.test.mjs",
+      "bytes": 10024,
+      "sha256": "2f42114131e133192fd24e466b23e17659676ed3d35c71d6150fa1f47422aba3"
+    },
+    {
+      "path": "آواتار/tests/laughter-lifecycle.test.mjs",
+      "bytes": 4867,
+      "sha256": "0427d743d230ffb2c086da21f603d3501eaa3c8a3c463a3345a4a407f631831c"
+    },
+    {
+      "path": "آواتار/tests/laughter.test.mjs",
+      "bytes": 2370,
+      "sha256": "1b346721e9c9ae735e14e1c54837b25ff0bb81039b8fa556442aec9ce2b10514"
+    },
+    {
+      "path": "آواتار/tests/load-hybrid-assets.mjs",
+      "bytes": 1614,
+      "sha256": "744212aebb5e96ca817f614c1848e3308aee6044366e5a432893490ac9f3a9ab"
+    },
+    {
+      "path": "آواتار/tests/load-real-avatar.mjs",
+      "bytes": 1200,
+      "sha256": "150a824aed8f4b267f8d40a122b5144c532cae92ffc22ccd7529a43e75eb9885"
+    },
+    {
+      "path": "آواتار/tests/model.test.mjs",
+      "bytes": 2559,
+      "sha256": "0e703ab65cf842f313c0abe4ab8d0d0b7c0d3a3dbefbb23b7883195a28aff89b"
+    },
+    {
+      "path": "آواتار/tests/motion.test.mjs",
+      "bytes": 2235,
+      "sha256": "51c2650ad09e86393f55b6239991f6b0ae03922d0833a71d6742d5348dcbf941"
+    },
+    {
+      "path": "آواتار/tests/neck-idle.test.mjs",
+      "bytes": 4061,
+      "sha256": "dd5c7b06c924131f9a409506a17b917f8f22350bb519231de22c9410f739bdc3"
+    },
+    {
+      "path": "آواتار/tests/package.test.mjs",
+      "bytes": 3910,
+      "sha256": "80a0fcd09c8e8f6ea2c90e37000e2482ee6c9f9162da1f98a01522ba68555cba"
+    },
+    {
+      "path": "آواتار/tests/speech-audio.test.mjs",
+      "bytes": 2631,
+      "sha256": "6f7ff2477377bbd7e0753225ebc038b3cc23ba6d6624c317a36822a5e04a6368"
+    },
+    {
+      "path": "آواتار/tests/speech-compositor.test.mjs",
+      "bytes": 5126,
+      "sha256": "3d986955f055ae04643da719179bacb12bee142da7cf6402ba1b1af05de36ae3"
+    },
+    {
+      "path": "آواتار/tests/speech-freshness.test.mjs",
+      "bytes": 7852,
+      "sha256": "9df7f898227df056def8421ac963073aa3be570b63fc045e60e9d170e267920d"
+    },
+    {
+      "path": "آواتار/tests/speech-microphone.test.mjs",
+      "bytes": 7007,
+      "sha256": "78fbf1e74634c03bdc5094177538c56626177921b6981b427506e427c72af5d2"
+    },
+    {
+      "path": "آواتار/tests/speech-runtime.test.mjs",
+      "bytes": 6245,
+      "sha256": "7ac92029d0574f7d373fc41d0c2f51f982e9ee2eaeccb5b5a843c9acb843c4e8"
+    },
+    {
+      "path": "آواتار/tests/web-v2-model.test.mjs",
+      "bytes": 17047,
+      "sha256": "00483c353a8bf485dc361599e0f49652a359422a2a31257e5f3c343907b9eef9"
+    },
+    {
+      "path": "آواتار/tests/web-v2-runtime.test.mjs",
+      "bytes": 10954,
+      "sha256": "76b13e62a9df273dbee15b465b82133232d10a63fed297c5f82928d30d488edf"
+    },
+    {
+      "path": "آواتار/tsconfig.json",
+      "bytes": 272,
+      "sha256": "3912d3340d55bcf77fe2da983a8087799b07513635a9b744fdf64e7f9a90846d"
+    }
+  ]
+}

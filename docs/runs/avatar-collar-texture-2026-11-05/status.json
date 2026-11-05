@@ -1,0 +1,8 @@
+{
+  "stageDate": "2026-11-05",
+  "active": false,
+  "ownerRejected": true,
+  "result": "Owner stopped repair attempts and requested original garment restoration.",
+  "supersededBy": "../avatar-cloth-restore-2026-11-05/status.json",
+  "publication": false
+}

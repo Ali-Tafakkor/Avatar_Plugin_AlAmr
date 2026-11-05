@@ -1,11 +1,26 @@
 import type { Bone, Group, Mesh, Object3D } from 'three';
 import type { EmotionName, FaceOptions, PoseFrame, WebAvatarRuntime } from '../web-v2/runtime.mjs';
+import type { SpeechFrameOptions, SpeechOptions, SpeechStatus } from '../speech/compositor.mjs';
+export type { SpeechFrameOptions, SpeechOptions, SpeechStatus } from '../speech/compositor.mjs';
 
 export type HybridClip = 'Stand' | 'Walk' | 'Run' | 'Fly' | 'HandRaise' | 'StandToSit' | 'Sitting' | 'SittoStand';
 export type HybridPlayback = { paused?: boolean; timeScale?: number };
 export type HybridManualGroup = 'jaw' | 'smile' | 'frown' | 'brows' | 'browDown' | 'wide';
 export type HybridFaceOptions = Pick<FaceOptions, 'blinkEnabled' | 'gazeEnabled' | 'microEnabled'>;
 export type HybridRuntimeOptions = {
+  faceAlbedo?: import('three').Texture;
+  detailedHands?: boolean;
+  handContact?: boolean;
+  friendlyFace?: boolean;
+  quietIdle?: boolean;
+  /** Smooth under-ear contour, independent of the unchanged garment. */
+  neckContour?: boolean;
+  /** Gently tighten the existing shirt opening; false restores original clothing. */
+  garmentNeckline?: boolean;
+  /** Metric placement of the privately mounted expressive head. */
+  headOffset?: [number,number,number];
+  /** Small procedural weave and matte clothing; false restores source shading. */
+  clothDetail?: boolean;
   height?: number;
   lighting?: 'scene' | 'unlit';
   groundAt?: (x: number, z: number, maxY?: number) => number;
@@ -30,6 +45,7 @@ export type HybridBodyStatus = {
   feet: Record<string, HybridFootStatus>;
   knees: Record<string, { hip: number[]; knee: number[]; ankle: number[]; flexDeg: number }>;
   stats: { meshes: number; joints: number }; disposed: boolean;
+  idle: null | {periodSeconds:number;breathPeriodSeconds:number;headYawDegrees:number;neckYawDegrees:number;chestWidthExpansion:number;chestDepthExpansion:number};
 };
 export type HybridFaceStats = {
   stage: string; targets: number; nativeMorphChannels: number; sourceFaceMeshes: string[];
@@ -40,9 +56,15 @@ export type HybridFaceStats = {
   [name: string]: unknown;
 };
 export type HybridStatus = HybridBodyStatus & {
+  hands: any; cpuUpdateMs: number; appearance: string;
+  handContact: { regions: number; hands: Record<string,{before:number;after:number;region:string|null;angle:number;samples:number}> } | null;
+  clothing: null | { enabled: boolean; style: string; changedMeshes: string[];
+    textureSize: number[] | null; textureBytes: number; textureBytesWithMipmaps: number;
+    addedTriangles: number; addedDrawCalls: number; sourceAlbedoReused: boolean; disposed: boolean };
   emotion: EmotionName; intensity: number; weights: Record<string, number>;
   morphCount: number; missingShapes: string[]; faceTransfer: HybridFaceStats;
   inspectionFace: Record<string, number> | null;
+  speech: SpeechStatus;
 };
 export interface HybridFaceRig {
   shapes: Set<string>;
@@ -69,6 +91,9 @@ export interface HybridBodyRuntime {
   refresh(): void; reset(): void; getStatus(): HybridBodyStatus; dispose(): void;
 }
 export interface HybridRuntime {
+  hands: any;
+  setHandPose(pose: string, side?: 'both'|'left'|'right'): void;
+  setFingerCurl(side: 'both'|'left'|'right', digit: string, value: number): void;
   root: Group; model: Object3D; actor: HybridActor; body: HybridBodyRuntime; face: HybridFaceRig;
   expressions: {
     name: EmotionName; intensity: number; weights: Record<string, number>;
@@ -82,6 +107,11 @@ export interface HybridRuntime {
   setManual(group: HybridManualGroup, value: number): void;
   setIntensity(value: number): void;
   setFaceOptions(options: HybridFaceOptions): void;
+  /** Frame receipt clock is performance.now milliseconds; omit at for immediate live input. */
+  setSpeechFrame(weights: Record<string, number> | null, options?: SpeechFrameOptions): void;
+  setSpeechOptions(options: SpeechOptions): void;
+  setLaughter(score: number, options?: { at?: number }): void;
+  clearSpeech(): void;
   blink(): void;
   /** Local inspection only; null restores the normal expression controller. */
   setInspectionFace(weights: Record<string, number> | null): void;

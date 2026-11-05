@@ -1,0 +1,355 @@
+{
+  "date": "2026-11-03T17:05:11.326Z",
+  "kind": "single-avatar-visible-page-10s",
+  "frames": 1038,
+  "fps": 102.34667718398738,
+  "frameMs": 9.770712909441233,
+  "p95Ms": 10.900000095367432,
+  "cpuSubmitMs": 1.1468208104888828,
+  "avatarUpdateMs": 3.546531793010028,
+  "gpuMs": 2.786732146435461,
+  "renderer": "WebGPU",
+  "metrics": {
+    "frames": 103,
+    "fps": 102.34499204117608,
+    "frameMs": 9.770873787333665,
+    "p95Ms": 11.199999928474426,
+    "cpuSubmitMs": 1.130097084832423,
+    "avatarUpdateMs": 3.7582524262585686,
+    "gpuMs": 2.737877747572813,
+    "rendererMemory": {
+      "attributes": 48,
+      "attributesSize": 3654912,
+      "geometries": 11,
+      "indexAttributes": 10,
+      "indexAttributesSize": 772800,
+      "indirectStorageAttributes": 0,
+      "indirectStorageAttributesSize": 0,
+      "programs": 34,
+      "programsSize": 306768,
+      "readbackBuffers": 0,
+      "readbackBuffersSize": 0,
+      "renderTargets": 2,
+      "storageAttributes": 0,
+      "storageAttributesSize": 0,
+      "textures": 18,
+      "texturesSize": 198665231,
+      "uniformBuffers": 59,
+      "uniformBuffersSize": 80864,
+      "total": 203480575
+    },
+    "drawCalls": 20,
+    "renderedTriangles": 128799,
+    "jsHeapBytes": 193957435,
+    "canvas": [
+      1395,
+      1200
+    ],
+    "dpr": 1.5,
+    "cameraDistance": 4.400007272721262,
+    "timestampSupported": true
+  },
+  "inventory": {
+    "meshes": 9,
+    "triangles": 64398,
+    "vertices": 56062,
+    "geometryBytes": 21940848,
+    "textures": 8,
+    "skinnedJoints": 156,
+    "skinPaletteJoints": 521
+  },
+  "handRig": {
+    "enabled": true,
+    "source": "existing AvatarBody authored topology and five-finger skeleton",
+    "removedLegacySkinTriangles": 3377,
+    "hands": {
+      "left": {
+        "vertices": 3751,
+        "triangles": 6828,
+        "joints": 21,
+        "articulatedJoints": 15,
+        "scale": 1.115986307769336,
+        "referenceReachMeters": 0.19345058347325453,
+        "legacyReachBySide": {
+          "left": 0.19345058347325453,
+          "right": 0.1205179477659574
+        },
+        "sizeCalibration": "symmetric size from the original open hand surface",
+        "pose": "auto",
+        "overrides": {},
+        "curl": {
+          "thumb": 0.21999999999999995,
+          "index": 0.15999999999999995,
+          "middle": 0.17999999999999994,
+          "ring": 0.20999999999999994,
+          "pinky": 0.23999999999999994
+        }
+      },
+      "right": {
+        "vertices": 3751,
+        "triangles": 6828,
+        "joints": 21,
+        "articulatedJoints": 15,
+        "scale": 1.1159912801592726,
+        "referenceReachMeters": 0.19345058347325453,
+        "legacyReachBySide": {
+          "left": 0.19345058347325453,
+          "right": 0.1205179477659574
+        },
+        "sizeCalibration": "symmetric size from the original open hand surface",
+        "pose": "auto",
+        "overrides": {},
+        "curl": {
+          "thumb": 0.21999999999999995,
+          "index": 0.15999999999999995,
+          "middle": 0.17999999999999994,
+          "ring": 0.20999999999999994,
+          "pinky": 0.23999999999999994
+        }
+      }
+    }
+  },
+  "clothing": {
+    "enabled": true,
+    "style": "lightweight-woven-2026-11-03",
+    "changedMeshes": [
+      "Meshy_AI_Lilac_Sweatshirt_Port_0809081014_texture"
+    ],
+    "textureSize": [
+      128,
+      128
+    ],
+    "textureBytes": 65536,
+    "textureBytesWithMipmaps": 87380,
+    "addedTriangles": 0,
+    "addedDrawCalls": 0,
+    "sourceAlbedoReused": true,
+    "disposed": false
+  },
+  "hardware": {
+    "cores": 16,
+    "memoryGiB": 16,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36"
+  },
+  "notes": [
+    "CPU timings are JS update and render submission, not OS utilization.",
+    "GPU time is timestamp-query render pass time when supported.",
+    "Renderer GPU memory is tracked allocations, not total VRAM or process RAM."
+  ],
+  "assetCost": {
+    "schemaVersion": 1,
+    "measuredAt": "2026-11-03T17:04:15.668Z",
+    "units": "bytes",
+    "model": {
+      "bytes": 32470744,
+      "files": 26,
+      "resources": [
+        {
+          "file": "appearance/face-albedo.png",
+          "bytes": 2861146
+        },
+        {
+          "file": "appearance/face-provenance.json",
+          "bytes": 2427
+        },
+        {
+          "file": "avatar-hybrid/asset-manifest.json",
+          "bytes": 701
+        },
+        {
+          "file": "avatar-hybrid/image-0.png",
+          "bytes": 6287128
+        },
+        {
+          "file": "avatar-hybrid/legacy.buffer",
+          "bytes": 8399876
+        },
+        {
+          "file": "avatar-hybrid/legacy.gltf",
+          "bytes": 257532
+        },
+        {
+          "file": "avatar-v2/asset-manifest.json",
+          "bytes": 4590
+        },
+        {
+          "file": "avatar-v2/avatar.buffer",
+          "bytes": 12169248
+        },
+        {
+          "file": "avatar-v2/avatar.gltf",
+          "bytes": 114906
+        },
+        {
+          "file": "avatar-v2/images/image-00.jpg",
+          "bytes": 75332
+        },
+        {
+          "file": "avatar-v2/images/image-01.jpg",
+          "bytes": 75781
+        },
+        {
+          "file": "avatar-v2/images/image-02.jpg",
+          "bytes": 34214
+        },
+        {
+          "file": "avatar-v2/images/image-03.jpg",
+          "bytes": 144828
+        },
+        {
+          "file": "avatar-v2/images/image-04.jpg",
+          "bytes": 28478
+        },
+        {
+          "file": "avatar-v2/images/image-05.jpg",
+          "bytes": 30967
+        },
+        {
+          "file": "avatar-v2/images/image-06.jpg",
+          "bytes": 184265
+        },
+        {
+          "file": "avatar-v2/images/image-07.jpg",
+          "bytes": 71262
+        },
+        {
+          "file": "avatar-v2/images/image-08.jpg",
+          "bytes": 371528
+        },
+        {
+          "file": "avatar-v2/images/image-09.jpg",
+          "bytes": 269829
+        },
+        {
+          "file": "avatar-v2/images/image-10.jpg",
+          "bytes": 262191
+        },
+        {
+          "file": "avatar-v2/images/image-11.jpg",
+          "bytes": 125781
+        },
+        {
+          "file": "avatar-v2/images/image-12.jpg",
+          "bytes": 230173
+        },
+        {
+          "file": "avatar-v2/images/image-13.jpg",
+          "bytes": 115336
+        },
+        {
+          "file": "avatar-v2/motions.json",
+          "bytes": 343866
+        },
+        {
+          "file": "avatar-v2/provenance.json",
+          "bytes": 3175
+        },
+        {
+          "file": "avatar-v2/THIRD_PARTY_NOTICES.md",
+          "bytes": 6184
+        }
+      ]
+    },
+    "speech": {
+      "bytes": 177137320,
+      "files": 18,
+      "resources": [
+        {
+          "file": "speech/model-profile.json",
+          "bytes": 1608
+        },
+        {
+          "file": "speech/NOTICE.md",
+          "bytes": 2320
+        },
+        {
+          "file": "speech/onnx/ort-wasm-simd-threaded.mjs",
+          "bytes": 24218
+        },
+        {
+          "file": "speech/onnx/ort-wasm-simd-threaded.wasm",
+          "bytes": 13961845
+        },
+        {
+          "file": "speech/wav2arkit/config.json",
+          "bytes": 1985
+        },
+        {
+          "file": "speech/wav2arkit/model.json",
+          "bytes": 677
+        },
+        {
+          "file": "speech/wav2arkit/provenance.json",
+          "bytes": 5159
+        },
+        {
+          "file": "speech/wav2arkit/README.md",
+          "bytes": 5058
+        },
+        {
+          "file": "speech/wav2arkit/wav2arkit_cpu.onnx.part1",
+          "bytes": 50331648
+        },
+        {
+          "file": "speech/wav2arkit/wav2arkit_cpu.onnx.part2",
+          "bytes": 50331648
+        },
+        {
+          "file": "speech/wav2arkit/wav2arkit_cpu.onnx.part3",
+          "bytes": 46211912
+        },
+        {
+          "file": "speech/workers/capture-worklet.js",
+          "bytes": 1072
+        },
+        {
+          "file": "speech/workers/inference-worker.js",
+          "bytes": 75790
+        },
+        {
+          "file": "speech/workers/laughter.worker.js",
+          "bytes": 73805
+        },
+        {
+          "file": "speech/yamnet/provenance.json",
+          "bytes": 591
+        },
+        {
+          "file": "speech/yamnet/README.md",
+          "bytes": 285
+        },
+        {
+          "file": "speech/yamnet/yamnet.onnx",
+          "bytes": 16093603
+        },
+        {
+          "file": "speech/yamnet/yamnet_class_map.csv",
+          "bytes": 14096
+        }
+      ]
+    },
+    "bundle": {
+      "bytes": 230092179,
+      "files": 57
+    },
+    "note": "Disk bytes. Model includes geometry, images and motion. Speech assets are optional runtime loads. GPU allocations and JS heap are measured separately in the live panel."
+  },
+  "camera": {
+    "position": [
+      0,
+      0.9419999999999997,
+      4.4
+    ],
+    "quaternion": [
+      -0.0013636325601234184,
+      0,
+      0,
+      0.9999990702526882
+    ],
+    "near": 0.008,
+    "far": 100
+  },
+  "scripts": [
+    "http://127.0.0.1:5390/assets/index-C4p4tpCm.js"
+  ]
+}

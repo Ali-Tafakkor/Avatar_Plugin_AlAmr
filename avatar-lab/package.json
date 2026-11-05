@@ -5,7 +5,7 @@
   "type": "module",
   "packageManager": "npm@11.9.0",
   "scripts": {
-    "build": "node scripts/prepare-avatar-hybrid.mjs && tsc --noEmit && vite build --config vite.production.config.ts",
+    "build": "node scripts/prepare-avatar-hybrid.mjs && tsc --noEmit && vite build --config vite.production.config.ts && node scripts/write-bundle-cost.mjs",
     "dev": "vite --host 127.0.0.1",
     "test": "node --test tests/*.test.mjs"
   },

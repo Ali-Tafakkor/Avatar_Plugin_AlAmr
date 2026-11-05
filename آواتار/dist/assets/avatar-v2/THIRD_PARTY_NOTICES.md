@@ -1,5 +1,21 @@
 # Third-party sources, scope, and usage limits
 
+## Local speech extension 0.1.3
+
+Speech adapter provenance and the full upstream MIT notice are in
+`src/speech/NOTICE.md` and copied into the build. The adapter derives its ARKit
+order/session handling from `NavodPeiris/gsplat-talkinghead` at
+`5da2574ef3fc9820c3d74cc89e00a0c3c771091a`.
+
+Selected local model cards declare Apache-2.0: `myned-ai/wav2arkit_cpu` revision
+`48b7d27a147d4dfcce4c8225b11209ce4cd76e05` and
+`zeropointnine/yamnet-onnx` revision
+`ac2ca3bd45d12ec1f19f1144205ea529b4e9dedf` (Google YAMNet conversion).
+Their exact files, hashes and preserved upstream cards are stored beside the
+local model assets. Code licensing does not replace model/asset licensing.
+ONNX Runtime Web 1.29.0 is MIT-licensed; the consuming host supplies its local
+WASM runtime. The local evaluation audio is excluded from every product bundle.
+
 ## This Plugin release
 
 The Web V2 Plugin now bundles the pinned avatar GLB, externalized textures and extracted motion data for offline loading. Their hashes and source revision are preserved in `dist/assets/avatar-v2/asset-manifest.json` and `provenance.json`. The application uses the host's Three.js 0.185.1 peer; the older starter references below describe the original acquisition at r180. Library code is not relicensed as model or motion rights. This local preparation does not establish additional public redistribution or commercial rights.

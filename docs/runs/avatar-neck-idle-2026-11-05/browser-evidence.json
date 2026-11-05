@@ -1,0 +1,75 @@
+{
+  "scripts": [
+    "http://127.0.0.1:5390/assets/index-gjpAMUHh.js"
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "headOffset": [
+    0,
+    0.035,
+    -0.012
+  ],
+  "headScale": 1,
+  "pixelMaskedCollars": 1,
+  "idle": {
+    "periodSeconds": 12,
+    "breathPeriodSeconds": 4,
+    "headYawDegrees": 1,
+    "neckYawDegrees": 0.2,
+    "chestWidthExpansion": 0.0035,
+    "chestDepthExpansion": 0.0035
+  },
+  "firstTime": 0,
+  "lastTime": 5.433700000047609,
+  "frames": 7724,
+  "mode": "locomotion",
+  "inventory": {
+    "meshes": 9,
+    "triangles": 64398,
+    "vertices": 56062,
+    "geometryBytes": 21940848,
+    "textures": 8,
+    "skinnedJoints": 156,
+    "skinPaletteJoints": 521
+  },
+  "metrics": {
+    "frames": 103,
+    "fps": 102.03070827142149,
+    "frameMs": 9.800970873786408,
+    "p95Ms": 10.899999976158142,
+    "cpuSubmitMs": 1.0699029177137949,
+    "avatarUpdateMs": 2.548543688163017,
+    "gpuMs": 2.9421210097087402,
+    "rendererMemory": {
+      "attributes": 49,
+      "attributesSize": 3770756,
+      "geometries": 11,
+      "indexAttributes": 10,
+      "indexAttributesSize": 772800,
+      "indirectStorageAttributes": 0,
+      "indirectStorageAttributesSize": 0,
+      "programs": 34,
+      "programsSize": 307250,
+      "readbackBuffers": 0,
+      "readbackBuffersSize": 0,
+      "renderTargets": 2,
+      "storageAttributes": 0,
+      "storageAttributesSize": 0,
+      "textures": 19,
+      "texturesSize": 213433647,
+      "uniformBuffers": 59,
+      "uniformBuffersSize": 80912,
+      "total": 218365365
+    },
+    "drawCalls": 20,
+    "renderedTriangles": 128799,
+    "jsHeapBytes": 204034028,
+    "canvas": [
+      1395,
+      1080
+    ],
+    "dpr": 1.5,
+    "cameraDistance": 4.400007272721262,
+    "timestampSupported": true
+  }
+}

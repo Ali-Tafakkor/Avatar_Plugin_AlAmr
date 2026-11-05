@@ -1,0 +1,153 @@
+Window: "الامر", App: al-amr.exe.
+	0 window الامر Secondary Actions: Raise
+		1 pane (disabled)
+		2 region الامر
+			3 region
+				4 region
+					5 region
+						6 region
+							7 region
+								8 region
+									9 region
+										10 document آزمایشگاه آواتار الامر Value: alamr-env://env_preview_8a64259c35fb4eb0bab00e51d73f5e4c/ ID: RootWebArea
+											11 group ID: root
+												12 main
+													13 region محیط مشترک مقایسه دو آواتار
+														14 group
+															15 group
+																16 text مرجع اصلی · V1
+															17 group
+																18 text آواتار ترکیبی
+																19 text کنترل فعال
+														20 text AL-AMR
+														21 text AVATAR / V1 + HYBRID
+														22 text کنترل:
+														23 text نسخهٔ جدید
+														24 text 0.00
+														25 text m/s
+													26 complementary
+														27 section header
+															28 text الامر / آواتار ترکیبی
+															29 heading دو آواتار، یک محیط
+															30 text مرجع V1 و آواتار ترکیبی با لباس و حرکت‌های اصلی و چهرهٔ تازه، در یک صحنه.
+														31 heading آواتار تحت کنترل
+														32 toggle button مرجع · V1
+														33 toggle button آواتار ترکیبی
+														34 button تعویض آواتار · V
+														35 text هر دو مدل در صحنه می‌مانند؛ ورودی و دوربین به آواتار انتخاب‌شده منتقل می‌شود.
+														36 region گفتار با میکروفن
+															37 heading گفتار با میکروفن
+															38 text خاموش
+															39 text با صدای خودتان، لب و فک آواتار ترکیبی را حرکت دهید.
+															40 text پس از شروع، پنل «میکروفون» پایین پنجرهٔ الامر باز می‌شود؛ «اجازه بده» را بزنید. نیازی به تنظیمات مرورگر نیست.
+															41 button شروع میکروفن
+															42 button (disabled) قطع میکروفن
+															43 status
+																44 text میکروفن خاموش است
+															45 meter سطح صدای میکروفن Value: 0
+															46 check box (settable, string) خندهٔ خودکار آزمایشی
+															47 text خندهٔ خودکار
+															48 text آزمایشی
+															49 status
+																50 text با شروع میکروفن فعال می‌شود
+															51 text شدت حرکت لب
+															52 status شدت حرکت لب 1
+																53 text ۱
+															54 slider (settable, float) شدت حرکت لب Value: 1
+															55 button نمای نزدیک صورت
+															56 button آماده‌سازی پیش از شروع
+															57 details
+																58 disclosure triangle تنظیم میکروفن
+																	59 text تنظیم میکروفن
+															60 text یک جمله بگویید، مکث کنید و بخندید. صدا در همین دستگاه پردازش می‌شود و ضبط یا ارسال نمی‌شود. با پنهان‌شدن صفحه، میکروفن قطع می‌شود.
+														61 heading دوربین
+														62 toggle button نمای هر دو
+														63 toggle button دنبال‌کننده
+														64 toggle button صورت
+														65 toggle button پا و زانو
+														66 heading حرکت آواتار انتخاب‌شده
+														67 button راه‌رفتن
+														68 button دویدن
+														69 button توقف
+														70 button پرش
+														71 button بازگشت هر دو
+														72 text W A S D حرکت · Shift دویدن · Space پرش · F پرواز
+														73 text 
+														74 text راست‌کلیک و حرکت ماوس: دوربین · غلتک: فاصله
+														75 text 
+														76 text سرعت این نسخه:
+														77 text 5
+														78 text /
+														79 text 9
+														80 text متر بر ثانیه
+														81 heading حرکت‌های اصلی
+														82 toggle button ایستادن
+														83 toggle button راه‌رفتن
+														84 toggle button دویدن
+														85 toggle button پرواز
+														86 toggle button بالابردن دست
+														87 toggle button نشستن
+														88 toggle button نشسته
+														89 toggle button برخاستن
+														90 heading چهرهٔ نسخهٔ جدید
+														91 toggle button خنثی
+														92 toggle button لبخند آرام
+														93 toggle button خنده
+														94 toggle button ناراحتی
+														95 toggle button عصبانیت
+														96 toggle button تعجب
+														97 button یک پلک · B
+														98 text شدت احساس
+														99 slider (settable, float) شدت احساس Value: 0.8799999952316284
+														100 text بازشدن فک
+														101 slider (settable, float) بازشدن فک Value: 0
+														102 toggle button پلک خودکار
+														103 toggle button نگاه به دوربین
+														104 toggle button حرکت ظریف چهره
+														105 heading نمایش
+														106 toggle button نور محیط
+														107 toggle button بافت اصلی
+														108 button نمای فیلم · H
+														109 group وضعیت هر دو آواتار
+															110 text V1
+															111 text آماده
+															112 text ·
+															113 text ایستادن
+															114 text ·
+															115 text 0.00
+															116 text m/s
+															117 text ترکیبی
+															118 text آماده
+															119 text ·
+															120 text ایستاده
+															121 text ·
+															122 text 0.00
+															123 text m/s
+														124 details
+															125 disclosure triangle وضعیت فنی
+																126 text وضعیت فنی
+														127 section footer
+															128 text هر دو آواتار آماده‌اند
+															129 text آزمایش محلی
+									130 region
+										131 document الامر Value: alamr-panel://panel/ ID: RootWebArea
+											132 group ID: root
+												133 group
+													134 toggle button سکو را پین کن Description: پین کردن سکو
+
+Document text: ```
+￼
+سکو را پین کن
+env_preview_8a64259c35fb4eb0bab00e51d73f5e4c
+این محصول می‌خواهد صدای شما را بشنود.
+نه
+اجازه بده
+```
+
+Document text:
+￼
+سکو را پین کن
+env_preview_8a64259c35fb4eb0bab00e51d73f5e4c
+این محصول می‌خواهد صدای شما را بشنود.
+نه
+اجازه بده

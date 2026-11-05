@@ -1,0 +1,604 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-11-05T06:58:06.362397+00:00",
+  "stageDate": "2026-11-05",
+  "ownerVisualAcceptance": false,
+  "changes": {
+    "underEarContour": "smooth tapered metric neck; coherent position and normal morph endpoints",
+    "garment": "private collar fit with local weights and continuous neckline mask/color; inward source folds removed",
+    "headLoweringAndQuietIdle": "preserved",
+    "sourceAlbedo": "preserved",
+    "newMeshes": 0,
+    "newTextures": 0,
+    "newBones": 0,
+    "perFrameSolverAdded": false
+  },
+  "geometryMeasurement": {
+    "sectionBendReductionPercent": 56.38058539416366,
+    "poseSamples": 35,
+    "maximumSeamDistanceMm": 8.785537491829652,
+    "standMaximumSeamDistanceMm": 5.78802284273586,
+    "minimumSignedSeamDistanceMm": -7.564987128134863,
+    "limitation": "A signed nearest-surface overlap remains in an intermediate sit-to-stand pose; this is not a full cloth collision solution."
+  },
+  "tests": {
+    "plugin": {
+      "passed": 74,
+      "failed": 0
+    },
+    "host": {
+      "passed": 13,
+      "failed": 0
+    }
+  },
+  "cli": {
+    "plugin-validate": {
+      "schemaVersion": "1",
+      "command": "validate",
+      "ok": true,
+      "code": "ALAMR_OK",
+      "exitCode": 0,
+      "message": "plugin manifest is valid.",
+      "diagnostics": [],
+      "nextActions": [],
+      "artifacts": [],
+      "data": {
+        "kind": "plugin",
+        "path": "C:\\Files\\Programming\\Avatar_Al_Amr\\آواتار\\al-amr.plugin.json"
+      },
+      "meta": {
+        "cliVersion": "1.0.0",
+        "elapsedMs": 57
+      }
+    },
+    "host-validate": {
+      "schemaVersion": "1",
+      "command": "validate",
+      "ok": true,
+      "code": "ALAMR_OK",
+      "exitCode": 0,
+      "message": "environment manifest is valid.",
+      "diagnostics": [],
+      "nextActions": [],
+      "artifacts": [],
+      "data": {
+        "kind": "environment",
+        "path": "C:\\Files\\Programming\\Avatar_Al_Amr\\avatar-lab\\al-amr.environment.json"
+      },
+      "meta": {
+        "cliVersion": "1.0.0",
+        "elapsedMs": 59
+      }
+    },
+    "plugin-doctor": {
+      "schemaVersion": "1",
+      "command": "doctor",
+      "ok": false,
+      "code": "ALAMR_DOCTOR_FAILED",
+      "exitCode": 1,
+      "message": "1 project doctor check(s) failed or blocked.",
+      "diagnostics": [
+        {
+          "code": "ALAMR_DOCTOR_PLUGIN_ARTIFACT",
+          "message": "Managed Plugin artifact must be between 1 byte and 25 MiB.",
+          "severity": "error"
+        }
+      ],
+      "nextActions": [
+        {
+          "id": "hint-1",
+          "title": "plugin-package: Run `alamr build --json` and repair the package diagnostics."
+        },
+        {
+          "id": "hint-2",
+          "title": "Troubleshooting: https://agent.al-amr.com/docs/reference/cli.md"
+        }
+      ],
+      "artifacts": [],
+      "data": {
+        "profile": "project",
+        "checks": [
+          {
+            "id": "ALAMR_DOCTOR_NODE",
+            "name": "node",
+            "status": "pass",
+            "ok": true,
+            "detail": "24.21.0"
+          },
+          {
+            "id": "ALAMR_DOCTOR_DEPENDENCIES",
+            "name": "dependencies",
+            "status": "pass",
+            "ok": true,
+            "detail": "node_modules is present."
+          },
+          {
+            "id": "ALAMR_DOCTOR_PROJECT",
+            "name": "manifest",
+            "status": "pass",
+            "ok": true,
+            "detail": "plugin manifest is valid."
+          },
+          {
+            "id": "ALAMR_DOCTOR_PLUGIN_ARTIFACT",
+            "name": "plugin-package",
+            "status": "fail",
+            "ok": false,
+            "detail": "Managed Plugin artifact must be between 1 byte and 25 MiB.",
+            "nextAction": "Run `alamr build --json` and repair the package diagnostics."
+          }
+        ]
+      },
+      "meta": {
+        "cliVersion": "1.0.0",
+        "elapsedMs": 1411
+      }
+    },
+    "host-doctor": {
+      "schemaVersion": "1",
+      "command": "doctor",
+      "ok": true,
+      "code": "ALAMR_DOCTOR_READY",
+      "exitCode": 0,
+      "message": "project doctor checks passed.",
+      "diagnostics": [],
+      "nextActions": [],
+      "artifacts": [],
+      "data": {
+        "profile": "project",
+        "checks": [
+          {
+            "id": "ALAMR_DOCTOR_NODE",
+            "name": "node",
+            "status": "pass",
+            "ok": true,
+            "detail": "24.21.0"
+          },
+          {
+            "id": "ALAMR_DOCTOR_DEPENDENCIES",
+            "name": "dependencies",
+            "status": "pass",
+            "ok": true,
+            "detail": "node_modules is present."
+          },
+          {
+            "id": "ALAMR_DOCTOR_PROJECT",
+            "name": "manifest",
+            "status": "pass",
+            "ok": true,
+            "detail": "environment manifest is valid."
+          },
+          {
+            "id": "ALAMR_DOCTOR_BUNDLE",
+            "name": "build-folder",
+            "status": "pass",
+            "ok": true,
+            "detail": "dist/index.html is present."
+          }
+        ]
+      },
+      "meta": {
+        "cliVersion": "1.0.0",
+        "elapsedMs": 43
+      }
+    },
+    "native-dev": {
+      "schemaVersion": "1",
+      "command": "dev",
+      "ok": false,
+      "code": "ALAMR_DESKTOP_UNAVAILABLE",
+      "exitCode": 1,
+      "message": "The desktop preview controller is not available for this profile.",
+      "diagnostics": [],
+      "nextActions": [
+        {
+          "id": "hint-1",
+          "title": "Start this profile's desktop client and run the CLI launcher supplied by that client."
+        }
+      ],
+      "artifacts": [],
+      "meta": {
+        "cliVersion": "1.0.0",
+        "elapsedMs": 1280
+      }
+    }
+  },
+  "browser": {
+    "verified": true,
+    "url": "http://127.0.0.1:5390/",
+    "bundle": "./assets/index-BiBgmH8V.js",
+    "bundleSha256": "19468cbe7c169e70fdbfb5fd569e7fd1731ac5acaec8e4cf664966ddedf589f1",
+    "consoleErrors": [],
+    "renderer": "WebGPU",
+    "inventory": {
+      "meshes": 9,
+      "triangles": 63816,
+      "vertices": 56062,
+      "geometryBytes": 22165552,
+      "textures": 8,
+      "skinnedJoints": 156,
+      "skinPaletteJoints": 521
+    },
+    "benchmark": {
+      "date": "2026-11-05T06:53:18.756Z",
+      "kind": "single-avatar-visible-page-10s",
+      "frames": 1296,
+      "fps": 119.99888889891196,
+      "frameMs": 8.333410493845557,
+      "p95Ms": 9,
+      "cpuSubmitMs": 0.9489197528656618,
+      "avatarUpdateMs": 2.2878858018436548,
+      "gpuMs": 1.832783012345668,
+      "renderer": "WebGPU",
+      "metrics": {
+        "frames": 121,
+        "fps": 120.0158698614136,
+        "frameMs": 8.332231405352758,
+        "p95Ms": 8.800000071525574,
+        "cpuSubmitMs": 0.9380165269552183,
+        "avatarUpdateMs": 2.217355373477148,
+        "gpuMs": 1.8100934876033008,
+        "rendererMemory": {
+          "attributes": 50,
+          "attributesSize": 4002444,
+          "geometries": 11,
+          "indexAttributes": 10,
+          "indexAttributesSize": 765816,
+          "indirectStorageAttributes": 0,
+          "indirectStorageAttributesSize": 0,
+          "programs": 34,
+          "programsSize": 307935,
+          "readbackBuffers": 0,
+          "readbackBuffersSize": 0,
+          "renderTargets": 2,
+          "storageAttributes": 0,
+          "storageAttributesSize": 0,
+          "textures": 19,
+          "texturesSize": 199752231,
+          "uniformBuffers": 59,
+          "uniformBuffersSize": 80912,
+          "total": 204909338
+        },
+        "drawCalls": 20,
+        "renderedTriangles": 127635,
+        "jsHeapBytes": 193176249,
+        "canvas": [
+          713,
+          514
+        ],
+        "dpr": 1.5,
+        "cameraDistance": 1.0474509244608405,
+        "timestampSupported": true
+      },
+      "inventory": {
+        "meshes": 9,
+        "triangles": 63816,
+        "vertices": 56062,
+        "geometryBytes": 22165552,
+        "textures": 8,
+        "skinnedJoints": 156,
+        "skinPaletteJoints": 521
+      },
+      "handRig": {
+        "enabled": true,
+        "source": "existing AvatarBody authored topology and five-finger skeleton",
+        "removedLegacySkinTriangles": 3377,
+        "hands": {
+          "left": {
+            "vertices": 3751,
+            "triangles": 6828,
+            "joints": 21,
+            "articulatedJoints": 15,
+            "scale": 1.115986307769336,
+            "referenceReachMeters": 0.19345058347325453,
+            "legacyReachBySide": {
+              "left": 0.19345058347325453,
+              "right": 0.1205179477659574
+            },
+            "sizeCalibration": "symmetric size from the original open hand surface",
+            "pose": "auto",
+            "overrides": {},
+            "curl": {
+              "thumb": 0.22,
+              "index": 0.16,
+              "middle": 0.18,
+              "ring": 0.21,
+              "pinky": 0.24
+            }
+          },
+          "right": {
+            "vertices": 3751,
+            "triangles": 6828,
+            "joints": 21,
+            "articulatedJoints": 15,
+            "scale": 1.1159912801592726,
+            "referenceReachMeters": 0.19345058347325453,
+            "legacyReachBySide": {
+              "left": 0.19345058347325453,
+              "right": 0.1205179477659574
+            },
+            "sizeCalibration": "symmetric size from the original open hand surface",
+            "pose": "auto",
+            "overrides": {},
+            "curl": {
+              "thumb": 0.22,
+              "index": 0.16,
+              "middle": 0.18,
+              "ring": 0.21,
+              "pinky": 0.24
+            }
+          }
+        }
+      },
+      "clothing": {
+        "enabled": true,
+        "style": "lightweight-woven-2026-11-03",
+        "changedMeshes": [
+          "Meshy_AI_Lilac_Sweatshirt_Port_0809081014_texture"
+        ],
+        "textureSize": [
+          128,
+          128
+        ],
+        "textureBytes": 65536,
+        "textureBytesWithMipmaps": 87380,
+        "addedTriangles": 0,
+        "addedDrawCalls": 0,
+        "sourceAlbedoReused": true,
+        "disposed": false
+      },
+      "hardware": {
+        "cores": 16,
+        "memoryGiB": 16,
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36"
+      },
+      "notes": [
+        "CPU timings are JS update and render submission, not OS utilization.",
+        "GPU time is timestamp-query render pass time when supported.",
+        "Renderer GPU memory is tracked allocations, not total VRAM or process RAM."
+      ]
+    },
+    "microphoneActive": false,
+    "leftOpen": true,
+    "view": "face quarter; neutral; live Stand"
+  },
+  "cost": {
+    "schemaVersion": 1,
+    "measuredAt": "2026-11-05T06:47:49.674Z",
+    "units": "bytes",
+    "model": {
+      "bytes": 32470744,
+      "files": 26,
+      "resources": [
+        {
+          "file": "appearance/face-albedo.png",
+          "bytes": 2861146
+        },
+        {
+          "file": "appearance/face-provenance.json",
+          "bytes": 2427
+        },
+        {
+          "file": "avatar-hybrid/asset-manifest.json",
+          "bytes": 701
+        },
+        {
+          "file": "avatar-hybrid/image-0.png",
+          "bytes": 6287128
+        },
+        {
+          "file": "avatar-hybrid/legacy.buffer",
+          "bytes": 8399876
+        },
+        {
+          "file": "avatar-hybrid/legacy.gltf",
+          "bytes": 257532
+        },
+        {
+          "file": "avatar-v2/asset-manifest.json",
+          "bytes": 4590
+        },
+        {
+          "file": "avatar-v2/avatar.buffer",
+          "bytes": 12169248
+        },
+        {
+          "file": "avatar-v2/avatar.gltf",
+          "bytes": 114906
+        },
+        {
+          "file": "avatar-v2/images/image-00.jpg",
+          "bytes": 75332
+        },
+        {
+          "file": "avatar-v2/images/image-01.jpg",
+          "bytes": 75781
+        },
+        {
+          "file": "avatar-v2/images/image-02.jpg",
+          "bytes": 34214
+        },
+        {
+          "file": "avatar-v2/images/image-03.jpg",
+          "bytes": 144828
+        },
+        {
+          "file": "avatar-v2/images/image-04.jpg",
+          "bytes": 28478
+        },
+        {
+          "file": "avatar-v2/images/image-05.jpg",
+          "bytes": 30967
+        },
+        {
+          "file": "avatar-v2/images/image-06.jpg",
+          "bytes": 184265
+        },
+        {
+          "file": "avatar-v2/images/image-07.jpg",
+          "bytes": 71262
+        },
+        {
+          "file": "avatar-v2/images/image-08.jpg",
+          "bytes": 371528
+        },
+        {
+          "file": "avatar-v2/images/image-09.jpg",
+          "bytes": 269829
+        },
+        {
+          "file": "avatar-v2/images/image-10.jpg",
+          "bytes": 262191
+        },
+        {
+          "file": "avatar-v2/images/image-11.jpg",
+          "bytes": 125781
+        },
+        {
+          "file": "avatar-v2/images/image-12.jpg",
+          "bytes": 230173
+        },
+        {
+          "file": "avatar-v2/images/image-13.jpg",
+          "bytes": 115336
+        },
+        {
+          "file": "avatar-v2/motions.json",
+          "bytes": 343866
+        },
+        {
+          "file": "avatar-v2/provenance.json",
+          "bytes": 3175
+        },
+        {
+          "file": "avatar-v2/THIRD_PARTY_NOTICES.md",
+          "bytes": 6184
+        }
+      ]
+    },
+    "speech": {
+      "bytes": 177137320,
+      "files": 18,
+      "resources": [
+        {
+          "file": "speech/model-profile.json",
+          "bytes": 1608
+        },
+        {
+          "file": "speech/NOTICE.md",
+          "bytes": 2320
+        },
+        {
+          "file": "speech/onnx/ort-wasm-simd-threaded.mjs",
+          "bytes": 24218
+        },
+        {
+          "file": "speech/onnx/ort-wasm-simd-threaded.wasm",
+          "bytes": 13961845
+        },
+        {
+          "file": "speech/wav2arkit/config.json",
+          "bytes": 1985
+        },
+        {
+          "file": "speech/wav2arkit/model.json",
+          "bytes": 677
+        },
+        {
+          "file": "speech/wav2arkit/provenance.json",
+          "bytes": 5159
+        },
+        {
+          "file": "speech/wav2arkit/README.md",
+          "bytes": 5058
+        },
+        {
+          "file": "speech/wav2arkit/wav2arkit_cpu.onnx.part1",
+          "bytes": 50331648
+        },
+        {
+          "file": "speech/wav2arkit/wav2arkit_cpu.onnx.part2",
+          "bytes": 50331648
+        },
+        {
+          "file": "speech/wav2arkit/wav2arkit_cpu.onnx.part3",
+          "bytes": 46211912
+        },
+        {
+          "file": "speech/workers/capture-worklet.js",
+          "bytes": 1072
+        },
+        {
+          "file": "speech/workers/inference-worker.js",
+          "bytes": 75790
+        },
+        {
+          "file": "speech/workers/laughter.worker.js",
+          "bytes": 73805
+        },
+        {
+          "file": "speech/yamnet/provenance.json",
+          "bytes": 591
+        },
+        {
+          "file": "speech/yamnet/README.md",
+          "bytes": 285
+        },
+        {
+          "file": "speech/yamnet/yamnet.onnx",
+          "bytes": 16093603
+        },
+        {
+          "file": "speech/yamnet/yamnet_class_map.csv",
+          "bytes": 14096
+        }
+      ]
+    },
+    "bundle": {
+      "bytes": 230108549,
+      "files": 57
+    },
+    "note": "Disk bytes. Model includes geometry, images and motion. Speech assets are optional runtime loads. GPU allocations and JS heap are measured separately in the live panel."
+  },
+  "deltaFromPreviousNeckIdle": {
+    "modelFileBytes": 0,
+    "bundleBytes": 7965,
+    "geometryBufferBytes": 224704,
+    "visibleTriangles": -582
+  },
+  "integrity": {
+    "head": "221d477f8574f0ab204342848b99470deff52d09",
+    "assets": [
+      {
+        "path": "آواتار/assets-source/v1/avatar03.glb",
+        "sha256": "bf16883394c2f968faa294e8debe02dc38ff8ba4aaf98d32319e025d8185540d"
+      },
+      {
+        "path": "Avatar_V2_WebBase/AvatarRuntime/assets/avatar.gltf",
+        "sha256": "a7596659be5e3bf3e6400fabfe20042277ea03b5e5b6d0c1e37589020ec4ced9"
+      },
+      {
+        "path": "آواتار/assets-source/appearance/face-albedo.png",
+        "sha256": "8807601273bc9c4dabc919746e6f9f804e5a2942ba634fb982d6fe0ed5c20677"
+      },
+      {
+        "path": "آواتار/src/hybrid/detailed-hands.mjs",
+        "sha256": "cbcf38e9a3c1019006094d79db5ad6bb52917c5db3966a57c2d6b0b0e1c27990"
+      },
+      {
+        "path": "آواتار/src/hybrid/quiet-idle.mjs",
+        "sha256": "d1f8bba64a958cd386b603835711cb20e09b41b7240521e5c39b5524af371e55"
+      }
+    ]
+  },
+  "gitActions": {
+    "commit": false,
+    "push": false
+  },
+  "registryActions": false,
+  "publication": false,
+  "meetingRoomEditedInThisStage": false,
+  "ownerRejectedCollarAppearance": true,
+  "supersededBy": "../avatar-cloth-restore-2026-11-05/status.json",
+  "active": false
+}
