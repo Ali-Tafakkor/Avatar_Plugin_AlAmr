@@ -1,5 +1,7 @@
 # آماده‌سازی تحویل Hybrid 0.1.3 — ۵ نوامبر ۲۰۲۶
 
+**رفع مانع پیوند Registry، ۵ نوامبر:** مالک هنگام ارسال، خطای different Registry دید. پیوند قدیمی `new-registry.al-amr.com` پس از پشتیبان‌گیری با دستور رسمی unlink حذف شد؛ آدرس پیش‌فرض فعلی CLI `registry.al-amr.com` است. بررسی پسین دیگر conflict ندارد و ALAMR_PROJECT_NOT_LINKED می‌دهد؛ اتصال تازه باید در تلاش بعدی دکمهٔ Desktop با نشست خود مالک انجام شود. manifest/نسخه/مدل ثابت و artifact محلی همچنان موفق است. هیچ پروژه یا release دوردستی حذف/ارسال نشد. [رسید اصلاح](docs/releases/hybrid-0.1.3/registry-link-repair.json). توضیحات Registry قبلی پایین، سابقه‌اند.
+
 طبق دستور تازهٔ مالک، نسخهٔ پذیرفته‌شده مرجع اصلی ریشه و آمادهٔ انتخاب در دکمهٔ ارسال الامر شد. مجوز این نوبت شامل ثبت و push Git است؛ آپلود/ارسال Registry با دکمهٔ خود مالک باقی می‌ماند. راهنمای مسیرها [LATEST_AVATAR_FA.md](LATEST_AVATAR_FA.md) و [LATEST_AVATAR.json](LATEST_AVATAR.json) است.
 
 ## مسیر معتبر

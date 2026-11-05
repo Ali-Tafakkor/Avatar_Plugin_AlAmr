@@ -1,5 +1,7 @@
 # گزارش و تحویل پروژهٔ آواتار الامر
 
+**رفع خطای ارسال Registry، ۵ نوامبر:** pointer قدیمی پوشهٔ اصلی آواتار به new-registry پس از backup و official unlink حذف شد. doctor محلی موفق، status اکنون PROJECT_NOT_LINKED است؛ خطای different Registry رفع شده ولی اتصال/ارسال جدید باید در retry دکمهٔ Desktop با حساب مالک انجام شود. [رسید](docs/releases/hybrid-0.1.3/registry-link-repair.json). کد، نسخهٔ 0.1.3 و ظاهر تغییر نکردند.
+
 **ارسال Git تکمیل شد، ۵ نوامبر:** کد نهایی و کپی مستقل 0.1.3 در commit `6dc1c5111dafc42aeb1e9a7c373b2de8a5b1a8c6` روی شاخهٔ avatar-v2 به origin ارسال شدند. [گزارش تحویل](AVATAR_RELEASE_0_1_3_FA.md) و [رسید](docs/releases/hybrid-0.1.3/status.json) مرجع‌اند؛ ۷۵/۱۳/۷۱ آزمون و artifact محلی موفق. ارسال نهایی الامر با مالک، آزادبودن آنلاین نسخه نیازمند نشست معتبر است.
 
 **دستور تحویل و Git، ۵ نوامبر:** مالک نسخهٔ نهایی پذیرفته‌شده را مرجع اصلی و آمادهٔ دکمهٔ ارسال 0.1.3 خواست و ثبت/ارسال Git را مجاز کرد. [LATEST_AVATAR_FA.md](LATEST_AVATAR_FA.md) و [LATEST_AVATAR.json](LATEST_AVATAR.json) مرجع فعال مسیرها هستند: پوشهٔ اصلی `آواتار`، رابط `AvatarHybrid`، کپی مستقل `releases/avatar-hybrid-0.1.3/آواتار`. [گزارش تحویل](AVATAR_RELEASE_0_1_3_FA.md) وضعیت واقعی Git/بررسی‌ها را ثبت می‌کند. این دستور منع Git/آماده‌سازی پایین را برای همین نسخه رفع می‌کند؛ ارسال Registry با دکمهٔ خود مالک است.

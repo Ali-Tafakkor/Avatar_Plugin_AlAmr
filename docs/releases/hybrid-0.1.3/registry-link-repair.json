@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-05",
+  "reason": "Desktop submission blocked by different Registry local link",
+  "oldRegistry": "https://new-registry.al-amr.com",
+  "activeDefaultRegistry": "https://registry.al-amr.com",
+  "operation": "official alamr unlink --yes --json after verified local backup",
+  "unlinkCode": "ALAMR_OK",
+  "oldLocalPointerRemoved": true,
+  "postCheck": "ALAMR_PROJECT_NOT_LINKED; previous ALAMR_CONFLICT gone",
+  "localArtifactDoctor": "ALAMR_DOCTOR_READY",
+  "pluginVersion": "0.1.3",
+  "productIdentityChanged": false,
+  "runtimeAndModelChanged": false,
+  "remoteProjectDeleted": false,
+  "registryUpload": false,
+  "nextStep": "Owner retries Desktop submit using آواتار; Desktop must link using its current authenticated session. Do not reuse an old Registry project ID.",
+  "backup": "ignored .local/backups/registry-link-2026-11-05/",
+  "remoteConnectionConfirmed": false
+}
