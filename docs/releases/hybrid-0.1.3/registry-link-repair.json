@@ -15,5 +15,7 @@
   "registryUpload": false,
   "nextStep": "Owner retries Desktop submit using آواتار; Desktop must link using its current authenticated session. Do not reuse an old Registry project ID.",
   "backup": "ignored .local/backups/registry-link-2026-11-05/",
-  "remoteConnectionConfirmed": false
+  "remoteConnectionConfirmed": false,
+  "supersededBy": "registry-reconnection.json",
+  "phase": "historical unlink-only mitigation; insufficient by itself"
 }

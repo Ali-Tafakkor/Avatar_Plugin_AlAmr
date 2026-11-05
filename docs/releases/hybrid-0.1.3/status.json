@@ -15,8 +15,8 @@
   "hostBuild": true,
   "manifestValidation": "ALAMR_OK",
   "localArtifactDoctor": "ALAMR_DOCTOR_READY",
-  "publishDoctor": "ALAMR_DOCTOR_FAILED",
-  "publishDoctorOnlyBlocker": "CLI authentication required for linked Registry project; version availability unknown",
+  "publishDoctor": "ALAMR_DOCTOR_READY",
+  "publishDoctorOnlyBlocker": null,
   "losslessPackaging": {
     "duplicateBytesRemoved": 2019990,
     "retainedBufferViewsByteIdentical": true,
@@ -42,5 +42,19 @@
   "registryUpload": false,
   "registrySubmission": false,
   "registryPublication": false,
-  "previousReleasesChanged": false
+  "previousReleasesChanged": false,
+  "registryConnection": {
+    "registry": "https://registry.al-amr.com",
+    "projectId": "proj_071ab2d3-de4c-40b4-90a4-87f7be57ad8d",
+    "productId": "plg_47f4b254-a610-4f8d-bc5a-560cba8f70b1",
+    "createdProject": false,
+    "currentRole": "owner",
+    "spentVersions": [
+      "0.1.0",
+      "0.1.1",
+      "0.1.2"
+    ],
+    "currentVersionInSpentVersions": false,
+    "receipt": "registry-reconnection.json"
+  }
 }

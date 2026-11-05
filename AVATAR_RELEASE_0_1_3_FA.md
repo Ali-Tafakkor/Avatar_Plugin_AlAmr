@@ -1,5 +1,7 @@
 # آماده‌سازی تحویل Hybrid 0.1.3 — ۵ نوامبر ۲۰۲۶
 
+**اتصال نهایی و آماده‌بودن ارسال، ۵ نوامبر:** پس از خطای تکراری slug و تأیید ورود رسمی توسط مالک، دستور link با شناسهٔ صریح پروژهٔ موجود اجرا شد. پوشهٔ دقیق `C:/Files/Programming/Avatar_Al_Amr/آواتار` اکنون به `proj_071ab2d3-de4c-40b4-90a4-87f7be57ad8d` در Registry فعلی متصل است؛ محصول و ناشر و slug قبلی تأیید شدند و پروژهٔ جدید ساخته نشد. **publish doctor اکنون کاملاً موفق است.** status مالکیت و spentVersions برابر 0.1.0/0.1.1/0.1.2 را تأیید کرد؛ 0.1.3 در آن فهرست نیست. هیچ upload/test/publish شبکه‌ای انجام نشد و ارسال نهایی با مالک است. [رسید](docs/releases/hybrid-0.1.3/registry-reconnection.json). توضیحات auth/پیوند حذف‌شده در ادامه صرفاً سابقه‌اند.
+
 **رفع مانع پیوند Registry، ۵ نوامبر:** مالک هنگام ارسال، خطای different Registry دید. پیوند قدیمی `new-registry.al-amr.com` پس از پشتیبان‌گیری با دستور رسمی unlink حذف شد؛ آدرس پیش‌فرض فعلی CLI `registry.al-amr.com` است. بررسی پسین دیگر conflict ندارد و ALAMR_PROJECT_NOT_LINKED می‌دهد؛ اتصال تازه باید در تلاش بعدی دکمهٔ Desktop با نشست خود مالک انجام شود. manifest/نسخه/مدل ثابت و artifact محلی همچنان موفق است. هیچ پروژه یا release دوردستی حذف/ارسال نشد. [رسید اصلاح](docs/releases/hybrid-0.1.3/registry-link-repair.json). توضیحات Registry قبلی پایین، سابقه‌اند.
 
 طبق دستور تازهٔ مالک، نسخهٔ پذیرفته‌شده مرجع اصلی ریشه و آمادهٔ انتخاب در دکمهٔ ارسال الامر شد. مجوز این نوبت شامل ثبت و push Git است؛ آپلود/ارسال Registry با دکمهٔ خود مالک باقی می‌ماند. راهنمای مسیرها [LATEST_AVATAR_FA.md](LATEST_AVATAR_FA.md) و [LATEST_AVATAR.json](LATEST_AVATAR.json) است.

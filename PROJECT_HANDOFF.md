@@ -1,5 +1,7 @@
 # گزارش و تحویل پروژهٔ آواتار الامر
 
+**رفع نهایی اتصال Registry، ۵ نوامبر:** پوشهٔ اصلی `آواتار` با ورود تأییدشدهٔ مالک و official link صریح به پروژهٔ موجود در `registry.al-amr.com` متصل شد. [رسید نهایی](docs/releases/hybrid-0.1.3/registry-reconnection.json): مالکیت و هویت قبلی تأیید، پروژهٔ تازه ساخته نشده و publish doctor کاملاً موفق است. 0.1.3 در spentVersions نیست. خطای slug با تغییر نام یا link بدون شناسه رفع نشود؛ روش صحیح در [LATEST_AVATAR_FA.md](LATEST_AVATAR_FA.md) است. فایل پیوند و اعتبارنامه محلی/نادیده‌گرفته‌اند. ارسال 0.1.3 هنوز با دکمهٔ خود مالک است؛ ادعای قبلی کافی‌بودن unlink، سابقهٔ ناکافیِ قبل از اتصال نهایی است.
+
 **رفع خطای ارسال Registry، ۵ نوامبر:** pointer قدیمی پوشهٔ اصلی آواتار به new-registry پس از backup و official unlink حذف شد. doctor محلی موفق، status اکنون PROJECT_NOT_LINKED است؛ خطای different Registry رفع شده ولی اتصال/ارسال جدید باید در retry دکمهٔ Desktop با حساب مالک انجام شود. [رسید](docs/releases/hybrid-0.1.3/registry-link-repair.json). کد، نسخهٔ 0.1.3 و ظاهر تغییر نکردند.
 
 **ارسال Git تکمیل شد، ۵ نوامبر:** کد نهایی و کپی مستقل 0.1.3 در commit `6dc1c5111dafc42aeb1e9a7c373b2de8a5b1a8c6` روی شاخهٔ avatar-v2 به origin ارسال شدند. [گزارش تحویل](AVATAR_RELEASE_0_1_3_FA.md) و [رسید](docs/releases/hybrid-0.1.3/status.json) مرجع‌اند؛ ۷۵/۱۳/۷۱ آزمون و artifact محلی موفق. ارسال نهایی الامر با مالک، آزادبودن آنلاین نسخه نیازمند نشست معتبر است.
