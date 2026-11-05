@@ -33,8 +33,11 @@
   "git": {
     "branch": "avatar-v2",
     "remote": "origin",
-    "commit": "pending",
-    "push": "pending"
+    "sourceCommit": "6dc1c5111dafc42aeb1e9a7c373b2de8a5b1a8c6",
+    "sourcePushed": true,
+    "sourcePushResult": "be8a7d8..6dc1c51 avatar-v2 -> avatar-v2",
+    "documentationReceiptCommit": "follows source commit",
+    "excludedWorktreeChanges": "pre-existing generated platform guides/types, generic skill packages and unrelated products preserved"
   },
   "registryUpload": false,
   "registrySubmission": false,
