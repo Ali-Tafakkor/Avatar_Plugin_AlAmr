@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-15",
+  "method": "Private Hybrid sculpt with coherent morph endpoints, built-in ImageGen UV albedo, procedural wardrobe UV bake",
+  "generatedImage": "exec-58d824c7-1dcf-4d63-a93f-b473ab1da380.png",
+  "files": [
+    {
+      "file": "references/full-body.png",
+      "bytes": 1651426,
+      "sha256": "0097a2f98da826b3ff371f7789518b94637097cf3ae902dc8c9f20104df8d10b"
+    },
+    {
+      "file": "references/four-view.png",
+      "bytes": 2144549,
+      "sha256": "14c5fd4ab245fa209a225de7f7a70e4c960f9293ade31813ae4ef3f420ca4dea"
+    },
+    {
+      "file": "assets/elder-face-albedo.png",
+      "bytes": 2722260,
+      "sha256": "e819c06c40d95f4e8739e19664a69c5716894c33966b6ef246a769c07325265a"
+    },
+    {
+      "file": "assets/elder-clothing-albedo.jpg",
+      "bytes": 1043571,
+      "sha256": "73e218b32750c671f44a4e5bca03ad5e4c3c5861666dfc485142231516bfb1b9"
+    },
+    {
+      "file": "assets/imagegen-prompt.txt",
+      "bytes": 1647,
+      "sha256": "cf7e5986d68ca77eda0c550cb5234d8c4a4e085c10883ea2198d15f176136934"
+    }
+  ],
+  "sourceModel": "آواتار/dist/assets/avatar-v2/avatar.gltf",
+  "sourceBody": "آواتار/dist/assets/avatar03.glb",
+  "rights": "See آواتار/THIRD_PARTY_NOTICES.md; references supplied by owner",
+  "ownerReview": "pending"
+}

@@ -1,0 +1,25 @@
+{
+  "validator": "NVIDIA validate_skillevaluators; no Harbor runtime",
+  "results": [
+    {
+      "path": "evals/evals.json",
+      "status": "ok",
+      "message": "Dataset found (7126 bytes)."
+    },
+    {
+      "path": "evals.json",
+      "status": "ok",
+      "message": "Dataset has 5 entries."
+    },
+    {
+      "path": "Dataset size",
+      "status": "ok",
+      "message": "Dataset size: provisional \u2014 5 cases (policy needs 10), 1 negative case (needs 1) (policy dataset-sufficiency-v1)"
+    },
+    {
+      "path": "evals/scenarios.json",
+      "status": "warning",
+      "message": "Unrecognised file/directory. The toolchain will ignore this."
+    }
+  ]
+}

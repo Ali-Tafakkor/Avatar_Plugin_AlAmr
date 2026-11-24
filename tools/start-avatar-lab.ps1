@@ -146,7 +146,7 @@ try {
     Write-AvatarLaunchRecord (Join-Path $stateDirectory 'last-success.json') $successRecord
     Write-Host ('Plugin ' + $pluginVersion + ' | ' + $preview.data.previewId) -ForegroundColor Green
     Write-Host ('Build: ' + $preview.data.buildDigest)
-    Write-Host 'Avatar Studio is ready: one current avatar, hand controls and live resource monitoring.' -ForegroundColor Green
+    Write-Host 'Avatar Studio is ready. Select a character to test the face, motion and hands.' -ForegroundColor Green
 } catch {
     Write-Host $_.Exception.Message -ForegroundColor Red
     Add-Content -LiteralPath $logPath -Encoding UTF8 -Value $_.Exception.Message

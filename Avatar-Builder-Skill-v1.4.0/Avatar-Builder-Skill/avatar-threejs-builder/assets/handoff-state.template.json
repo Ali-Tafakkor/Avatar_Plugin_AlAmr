@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectRoot": null,
+  "requestSummary": null,
+  "resolvedProfile": null,
+  "assetHashes": {},
+  "completedGates": [],
+  "pendingGates": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H"
+  ],
+  "decisions": [],
+  "actualTestEvidence": [],
+  "licenseBlockers": [],
+  "toolLimitations": [],
+  "nextVerifiableAction": null,
+  "warnings": [
+    "A previous agent summary is not execution evidence. Inspect the files."
+  ],
+  "calibrationEvidence": {
+    "shoeContact": "not-run",
+    "handsAndPosture": "not-run",
+    "faceBodySeatedMotion": "not-run",
+    "profileSchemaVersion": "1.1.0",
+    "notes": "Record current asset and tested states; do not inherit historical results."
+  }
+}

@@ -63,6 +63,16 @@ function Get-AvatarSourceFingerprint {
         $file = Join-Path $ProjectRoot $name
         if (Test-Path -LiteralPath $file) { $files += $file }
     }
+    foreach ($character in @('olive', 'blue', 'elder')) {
+        $characterDirectory = Join-Path $ProjectRoot "avatar-$character-man"
+        if (Test-Path -LiteralPath $characterDirectory) {
+            $files += @(Get-ChildItem -LiteralPath $characterDirectory -File | Where-Object { $_.Extension -in @('.mjs', '.mts') } | Select-Object -ExpandProperty FullName)
+            $assets = Join-Path $characterDirectory 'assets'
+            if (Test-Path -LiteralPath $assets) {
+                $files += @(Get-ChildItem -LiteralPath $assets -File | Where-Object { $_.Name -like "$character-*-albedo.*" -and $_.Extension -in @('.jpg','.png') } | Select-Object -ExpandProperty FullName)
+            }
+        }
+    }
     $records = @()
     $nodePath = (Get-Command node.exe -ErrorAction Stop).Source
     # Use the build's Node serializer on both PowerShell versions: PS5's own

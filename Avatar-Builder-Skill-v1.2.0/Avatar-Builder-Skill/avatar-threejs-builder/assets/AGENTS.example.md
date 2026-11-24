@@ -1,0 +1,3 @@
+# Web avatar work
+
+When a request concerns a full-body web avatar, use the available avatar-threejs-builder skill and its relevant references. Appearance is supplied by the user's brief; rig/motion/face/contact mappings are per-asset data. Preserve working inputs and existing host ownership. Read reference08 for shoe contact, hands and posture; reference09 for custom face/outfit or hybrid rigs. Do not require Al-Amr, a particular character or a fixed morph/bone count. Record real visual/runtime evidence separately from schema and synthetic tests. Merge these instructions with existing project rules rather than replacing them.

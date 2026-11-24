@@ -1,0 +1,9 @@
+{
+  "model": "gemma-4-E4B-it-Q4_K_M.gguf",
+  "contract": "Answer the user in Persian, in at most 180 words. This is a commissioning decision only. Do not call tools or read files. Use any guidance supplied below if applicable; the user's request still defines the work.",
+  "model_runtime": "version: 0.9.0-dev (build 1, commit 6c01da6)\nbuilt with MSVC 19.44.35229.0 for x64",
+  "backend": "llama.cpp Windows offline IPv4 loopback, reasoning off, greedy",
+  "skill_delivery": "entrypoint and one task-specific reference inline; no routing tested",
+  "dataset_sha256": "676b90c9d61b9c8a6760ef98142d3d35a5724f0f36fb9adfca8c9c6bad472e34",
+  "guidance_sha256": "9c0e3cd6c869dcff4cdabafcb9a8b3347d54e586b39acd72fbc6d455c1a888f7"
+}

@@ -1,13 +1,13 @@
-# آخرین نسخهٔ آواتار — Hybrid 0.1.3
+# آخرین نسخهٔ آواتار — Hybrid 0.1.4
 
-**پوشهٔ `آواتار` در ریشه، مرجع اصلی توسعه و استفادهٔ سایر پروژه‌ها و پوشهٔ انتخابی دکمهٔ ارسال الامر است.** ظاهر نهایی در ۵ نوامبر پذیرفته شد. رابط پیشنهادی **AvatarHybrid** است؛ فایل [LATEST_AVATAR.json](LATEST_AVATAR.json) مسیرهای معتبر را برای ابزارها مشخص می‌کند.
+**پوشهٔ `آواتار` در ریشه، مرجع اصلی Plugin 0.1.4 است.** بسته فقط جوان بنفش را با رابط **AvatarHybrid** ارائه می‌کند. ابزار عمق پیراهن برای میزبان دارای گذر وضوح چهره همراه بسته است. مالک انتشار 0.1.4 را گزارش کرد؛ در بررسی عمومی ۱۶ نوامبر، 0.1.3 همچنان آخرین نسخهٔ قابل مشاهده بود. [گزارش 0.1.4](AVATAR_RELEASE_0_1_4_FA.md) · [مسیرهای معتبر](LATEST_AVATAR.json)
 
 | کاربرد | مسیر |
 | --- | --- |
 | نسخهٔ اصلی/پوشهٔ ارسال الامر | [آواتار](آواتار/) |
-| manifest نسخهٔ 0.1.3 | [al-amr.plugin.json](آواتار/al-amr.plugin.json) |
+| manifest نسخهٔ 0.1.4 | [al-amr.plugin.json](آواتار/al-amr.plugin.json) |
 | اتصال به پروژهٔ دیگر | [integration.md](آواتار/integration.md) |
-| کپی مستقل تحویل | [releases/avatar-hybrid-0.1.3](releases/avatar-hybrid-0.1.3/) |
+| کپی مستقل تاریخی 0.1.3 | [releases/avatar-hybrid-0.1.3](releases/avatar-hybrid-0.1.3/) |
 | محیط تست همین نسخه | [avatar-lab](avatar-lab/) |
 | آخرین اصلاح پذیرفته‌شده | [یقهٔ لباس](AVATAR_GARMENT_NECKLINE_FA.md) |
 
@@ -23,22 +23,22 @@ npm install "C:/Files/Programming/Avatar_Al_Amr/آواتار"
 
 سپس AvatarHybrid را از نام پکیج در package.json وارد کنید. میزبان مالک Canvas، WebGPURenderer، دوربین، کنترلر و navigation است. برای کپی دارایی‌ها، از `avatar-lab/scripts/prepare-avatar-hybrid.mjs` الگو بگیرید؛ glTF، buffer و تصاویر کنار هم بمانند و `appearance/face-albedo.png` به faceAlbedoUrl داده شود. قرارداد کامل در integration است.
 
-**GLB قدیمی به‌تنهایی آواتار جدید نیست.** ارتقای چهره، دست، یقه و idle هنگام ساخت runtime اعمال می‌شود. برای همین ظاهر از پکیج کامل و AvatarHybrid استفاده کنید. Avatar03 و AvatarWebV2 APIهای سازگار پیشین‌اند. source، versions و releaseهای 0.1.1/0.1.2 تاریخی‌اند.
+ساخت runtime، ارتقای چهره، دست، یقه و idle را روی داده‌های پایه اعمال می‌کند. برای این ظاهر از پکیج کامل و AvatarHybrid استفاده کنید. میزبان‌های وابسته به Avatar03 یا AvatarWebV2 می‌توانند نسخهٔ پیشین خود را نگه دارند.
 
-## انتخاب برای الامر
+## پیوند پروژه و وضعیت انتشار
 
-در دکمهٔ «نسخهٔ تازه را بفرست»، پوشهٔ `C:/Files/Programming/Avatar_Al_Amr/آواتار` انتخاب شود. manifest، package و lock همگی **0.1.3** هستند، مطابق تصویر مالک؛ نام محصول و pluginId/publisher/slug همان محصول قبلی‌اند. ریشهٔ کل مخزن یا محیط تست برای انتشار Plugin انتخاب نشود.
+کارت «آواتار ۳» به همان محصول قبلی تعلق دارد و پوشهٔ پروژه `C:/Files/Programming/Avatar_Al_Amr/آواتار` است. پس از گزارش انتشار مالک، ابتدا وضعیت همان نسخه را در کارت Desktop یا status مجاز Registry بررسی کنید. در بازخوانی عمومی، مسیر نسخهٔ اختصاصی 0.1.4 پاسخ ۴۰۴ داشت. [کاتالوگ عمومی](https://registry.al-amr.com/v1/catalog/plugins/usr-20dfea67-47be-4f4a-b48c-02c5f210a079/avatar03)
 
-بسته با حذف تصاویر تکراری داخل بافر، بدون افت کیفیت کوچک شد؛ داده‌های هندسه، morph، ریگ، انیمیشن و تصاویر با منبع مقایسه می‌شوند. artifact محلی الامر قبول شده است. عامل آپلود یا ارسال بازبینی انجام نمی‌دهد؛ ارسال نهایی با دکمهٔ مالک است. اتصال به پروژهٔ موجود در Registry فعلی با حساب مالک تأیید شد؛ نسخه‌های مصرف‌شده 0.1.0، 0.1.1 و 0.1.2 هستند و 0.1.3 در این فهرست نیست. ارسال تازهٔ 0.1.3 توسط عامل انجام نشده است.
+مانیفست و بسته در اعتبارسنج محلی پذیرفته شده‌اند. آزمون رسمی ساخت با فایل‌های در حال استفادهٔ Windows و ساخت تمیز نتیجهٔ یکسانی داشتند. سابقهٔ رفع خطا و مرز شواهد در [رسید انتشار](docs/releases/hybrid-0.1.4/verification.json) است.
 
-ساخت در پوشهٔ Plugin: `npm ci` و `npm run build`؛ آزمون: `npm test`. وضعیت تحویل، Git و بررسی‌ها در [گزارش آماده‌سازی](AVATAR_RELEASE_0_1_3_FA.md) ثبت می‌شود.
+برای ساخت در پوشهٔ Plugin از `npm ci`، `npm run build` و `npm test` استفاده کنید. [گزارش تاریخی آماده‌سازی 0.1.3](AVATAR_RELEASE_0_1_3_FA.md)
 
 **اتصال نهایی تأییدشده، ۵ نوامبر:** حذف پیوند قدیمی به‌تنهایی کافی نبود و تلاش بعدی Desktop به «slug already exists» رسید. پس از تأیید ورود توسط مالک، همین پوشه با دستور رسمی به پروژهٔ موجود متصل شد و publish doctor کاملاً موفق است. [رسید نهایی اتصال](docs/releases/hybrid-0.1.3/registry-reconnection.json).
 
 شناسهٔ موجود و تأییدشده `proj_071ab2d3-de4c-40b4-90a4-87f7be57ad8d` در `https://registry.al-amr.com` است. اگر فایل پیوند در همین ماشین از بین رفت، پس از ورود مجاز از اتصال صریح استفاده شود؛ دستور link بدون شناسه تلاش به ساخت پروژهٔ تکراری می‌کند:
 
 ```powershell
-& 'C:/Users/alita/AppData/Roaming/al-amr/bin/alamr.cmd' link proj_071ab2d3-de4c-40b4-90a4-87f7be57ad8d --registry https://registry.al-amr.com --json
+& (Join-Path $env:APPDATA 'al-amr/bin/alamr.cmd') link proj_071ab2d3-de4c-40b4-90a4-87f7be57ad8d --registry https://registry.al-amr.com --json
 ```
 
 پیوند `.al-amr/project.json` خصوصی/محلی است و وارد Git یا کیت مستقل نمی‌شود. شناسه‌ها باید در Registry جاری با دسترسی مالک دوباره تأیید شوند؛ slug یا هویت محصول برای رفع این خطا عوض نشود.

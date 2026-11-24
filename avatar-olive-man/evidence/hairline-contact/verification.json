@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-15",
+  "build": {
+    "entrySha256": "138a26c8dfdddc6d96e38e34fb6b9ee5b04bf938ed4b8794c4734aa94c3435d7",
+    "script": "avatar-lab/dist/assets/index-BW2PgWno.js",
+    "scriptSha256": "effe9e6a7e2daaa83ae0e26e600a70ff9169b2a95975cc646a93d3090787dd05"
+  },
+  "checks": {
+    "avatarLabNode": 14,
+    "alamrValidate": "ALAMR_OK",
+    "alamrDoctor": "ALAMR_DOCTOR_READY",
+    "chromeWebGpu": "browser-results.json"
+  },
+  "oliveTriangles": 80438,
+  "oliveTextures": 7,
+  "wrist": {
+    "pausedStandFps": 120,
+    "baselineRightWristMaxStepMm": 2.3836261661381055,
+    "correctedRightWristMaxStepMm": 0,
+    "rightWristMaxStepMmAt60FpsInAnimatedStand": 0.022,
+    "rightWristMaxStepMmAt60FpsInAnimatedSitting": 0.049,
+    "comparedClips": [
+      "HandRaise",
+      "StandToSit",
+      "SittoStand",
+      "Walk",
+      "Run",
+      "Fly"
+    ],
+    "comparedClipsWristStepAndPenetrationMatchNative": true
+  },
+  "desktop": {
+    "previewId": "pv_4d52e9a8605642d684564af30b22c6c1",
+    "buildDigest": "sha256:88e18de512945ee0245e65a2e69b77a40fe377b2e4466e1c24b535a7f7691bd5",
+    "state": "ready",
+    "verify": "ALAMR_PREVIEW_OBSERVED",
+    "selectedAvatarEvidence": "Chrome HTTP preview"
+  },
+  "ownerVisualReview": "pending",
+  "delivery": "local test environment"
+}

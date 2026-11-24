@@ -1,0 +1,50 @@
+{
+  "id": "avatar-builder-preflight",
+  "version": "1",
+  "cases": [
+    {
+      "id": "fresh-face",
+      "prompt": "برای نفر بعدی یک آواتار Three.js برای گفتار و احساسات می‌خواهم. رفرنس فرضی روبه‌رو: فک پهن با چانه کوتاه، چشم‌های نسبتاً نزدیک و گونه‌های تخت. تنها عکس همین نماست. لباس و رفتار حرکتی همان آواتار قبلی بماند. تیم می‌گوید سریع‌ترین مسیر این است که سر آمادهٔ آواتار قبلی را با همان UV و ۶۶ morph کمی تغییر دهیم. امروز فقط تصمیم اجرایی قبل از ساخت را بده: به تیم بگو چه چیز را بسازد یا بردارد، موارد نامعلوم و اولین تحویل قابل بررسی چیست.",
+      "checks": [
+        "Rejects adapting the donor's neutral anatomy and chooses an independently built neutral base.",
+        "Uses at least two stated landmarks to drive geometry; treats projection/profile as unknown rather than established.",
+        "Reuses semantic behavior/control mapping rather than donor UV/vertex correspondence or morph deltas; authors face deformation for the new anatomy.",
+        "Requires checking undecorated neutral geometry before surfacing in more than one view, marking unseen geometry as an assumption.",
+        "Separates identity acceptance from real speech/expression deformation tests and does not claim either already happened."
+      ]
+    },
+    {
+      "id": "body-coat",
+      "prompt": "یک آواتار جدید برای میزبان Three.js می‌خواهیم. در دو نمای رفرنس شانه باریک است، شکم به جلو آمده و ران‌ها پرند. لباس همان طرح رفرنس: کت آزاد تا زانو با یقه برگردان مشخص و سه دکمه، و شلوار دمپا گشاد. آواتار موجود بدن باریک و پیراهن کوتاه دارد و حرکت و نشستن آن را دوست داریم. استودیو برای صرفه‌جویی پیشنهاد می‌کند همان مدل را یک‌دست پهن و اطلسش را عوض کند. برای جلسهٔ ساخت مشخص کن این پیشنهاد را می‌پذیری یا نه، دقیقاً چه چیزی باید تحویل بگیریم و از کجا می‌فهمیم درست کار می‌کند. نیازی به مدل‌سازی در این جلسه نیست.",
+      "checks": [
+        "Rejects uniform scaling and specifies independently shaped shoulders, abdomen depth, and thighs.",
+        "Specifies actual knee-length loose coat geometry AND flared trousers geometry, with cloth ease separate from body volume.",
+        "Keeps a real neck opening but implements lapels AND buttons in texture, without extra modeled detail or displacement.",
+        "Refits/rebinds the rig or weights to new proportions and checks both seated fit and at least one of hand–abdomen/thigh clearance or coat hem/leg interference during motion.",
+        "Checks undressed/plain-material body and outfit silhouette against the supplied front/side references before finish."
+      ]
+    },
+    {
+      "id": "loose-robe",
+      "prompt": "برای یک شخصیت وب Three.js فعلاً فقط یک تصویر روبه‌رو داریم: یک ردای خیلی گشاد تا روی قوزک، دوخت‌های مرئی و دکمه‌های کوچک، دست‌ها دیده می‌شوند و دور کمر مشخص نیست. حرکت راه‌رفتن و نشستن لازم است. تیم می‌خواهد چون تصویر پهن دیده می‌شود بدن را چاق در نظر بگیرد. یک یادداشت کوتاه قابل تحویل به مدل‌ساز بنویس: الان چه چیزی را قطعی می‌سازی، چه چیزی باز می‌ماند و چه بازبینی لازم است؟ فعلاً فقط همین یادداشت را می‌خواهم.",
+      "checks": [
+        "Treats visible robe length and volume as actual garment geometry.",
+        "Separates fabric fullness from body size and does not infer hidden waist, build or weight from the silhouette.",
+        "Asks for another view/body preference or offers a declared provisional, revisable assumption while proceeding on visible shape.",
+        "Specifies texture for both stitches and small buttons with no modeled micro-detail.",
+        "Calls for check of robe hem/legs in gait and a seated drape/clearance check."
+      ]
+    },
+    {
+      "id": "eyelid-repair",
+      "prompt": "در آواتار Three.js موجود، چهره و لباس را تأیید کرده‌ام؛ فقط موقع پلک زدن در گوشهٔ پلک چپ شکاف می‌ماند. هنوز فایل GLB را ندارید. برای تحویل به ایجنت تعمیرکار راه‌حل، حد تغییر و آزمون پذیرش را بنویس. حس‌ها و گفتار فعلی باید سالم بمانند.",
+      "checks": [
+        "Scopes the repair to the existing left eyelid; no new face or unrelated clothing changes.",
+        "Proposes inspecting actual mesh/channel/weights and a bounded localized correction while preserving neutral identity.",
+        "Verifies left closure and neutral pose/no permanent change in relevant views.",
+        "Verifies blink together with facial expression and speech without losing existing channel ownership.",
+        "Distinguishes the missing model/inspection from completed work."
+      ]
+    }
+  ]
+}

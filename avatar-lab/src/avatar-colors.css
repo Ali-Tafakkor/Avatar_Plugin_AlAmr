@@ -1,0 +1,82 @@
+.avatar-color-panel {
+  border: 0;
+  padding: 0;
+  margin: 22px 0 0;
+  min-inline-size: 0;
+}
+
+.avatar-color-panel legend {
+  font-size: 14px;
+  padding: 0;
+  margin-block-end: 12px;
+}
+
+.avatar-color-slots,
+.avatar-color-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.avatar-swatches {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+  margin: 19px 0 15px;
+}
+
+.avatar-swatches .avatar-swatch {
+  min-width: 0;
+  aspect-ratio: 1;
+  border: 1px solid #45584c66;
+  border-radius: 8px;
+  padding: 0;
+}
+
+.avatar-swatches .avatar-swatch[aria-pressed=true] {
+  outline: 2px solid #315e4a;
+  outline-offset: 2px;
+}
+
+.avatar-color-panel :focus-visible {
+  outline: 2px solid #315e4a;
+  outline-offset: 3px;
+}
+
+.avatar-color-selection,
+.avatar-custom-color {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 11px;
+}
+
+.avatar-current-color {
+  width: 17px;
+  height: 17px;
+  border: 1px solid #45584c66;
+  border-radius: 50%;
+}
+
+.avatar-color-selection button,
+.avatar-custom-color input {
+  margin-inline-start: auto;
+}
+
+.avatar-custom-color {
+  margin-block: 14px;
+}
+
+.avatar-custom-color input {
+  width: 48px;
+  height: 34px;
+  padding: 2px;
+  background: white;
+  border: 1px solid #d1dacc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.avatar-color-actions {
+  margin-block-start: 19px;
+}

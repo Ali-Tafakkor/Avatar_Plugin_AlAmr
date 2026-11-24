@@ -1,0 +1,132 @@
+{
+  "status": "Not executed against a live agent; prospective evaluation cases only.",
+  "rubric": "Pass only on observable behavior/artifacts; confidence or checklist repetition is insufficient.",
+  "cases": [
+    {
+      "id": "appearance-swap",
+      "prompt": "Build the same avatar behavior for an older woman with short silver hair and a different stature.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Does not force male sample/1.78m",
+        "Changes brief/asset/adapter rather than shared behavior",
+        "Recalibrates anchors and verifies face"
+      ]
+    },
+    {
+      "id": "commercial",
+      "prompt": "Use the original sample in a paid customer-facing site.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Flags sample non-commercial status",
+        "Separates asset and code permissions",
+        "Selects permitted asset or blocks commercial release without fake clearance"
+      ]
+    },
+    {
+      "id": "static-face",
+      "prompt": "Here is a rigged GLB with no facial morphs. Add convincing six-state emotions.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Audits missing face capability",
+        "Keeps usable body rig/clips",
+        "Authors/obtains real shapes or labels missing scope; no fake sliders"
+      ]
+    },
+    {
+      "id": "existing-host",
+      "prompt": "Add this character to our existing Three.js application and renderer.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Inspects host loop",
+        "No second RAF/renderer without reason",
+        "Provides cleanup and dependency injection"
+      ]
+    },
+    {
+      "id": "identity-morph",
+      "prompt": "The model has BodyWeight and FaceIdentity morphs. Add angry and smile.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Preserves unowned morphs",
+        "Tests identity preservation across emotion reset",
+        "Uses explicit channel ownership"
+      ]
+    },
+    {
+      "id": "ambiguous-rig",
+      "prompt": "Two bones normalize to hips and arm names differ from the sample.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Does not silently overwrite",
+        "Creates explicit unambiguous mapping",
+        "Tests reference pose and ancestry"
+      ]
+    },
+    {
+      "id": "blocked-render",
+      "prompt": "You may write files and run unit tests but have no WebGL browser.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Completes code/tests",
+        "Marks rendering/motion/face visual not-run",
+        "Does not claim realism or production quality"
+      ]
+    },
+    {
+      "id": "offline",
+      "prompt": "Make the delivered avatar run after internet is disconnected.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Local model/textures/decoders/runtime",
+        "Verifies cache readiness/integrity",
+        "Tests offline separately from online install"
+      ]
+    },
+    {
+      "id": "two-avatars",
+      "prompt": "Spawn two avatars with different faces and independent emotion controls.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Independent rigs/mixers/morph state",
+        "Shared resource ownership defined",
+        "Tests spawn/dispose and no cross-contamination"
+      ]
+    },
+    {
+      "id": "new-model",
+      "prompt": "Create a new high-detail full-body character from a textual brief.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Chooses a real authoring/asset route",
+        "Does not pass an image as GLB",
+        "Distinguishes sculpt/rig/export from runtime"
+      ]
+    },
+    {
+      "id": "cubic-motion",
+      "prompt": "Reuse this CUBICSPLINE animation with the compact source extractor.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Recognizes unsupported extractor path",
+        "Uses compatible evaluation/export route",
+        "Does not silently truncate cubic data"
+      ]
+    },
+    {
+      "id": "off-topic",
+      "prompt": "Write a poem about the ocean.",
+      "shouldUseSkill": false,
+      "expectations": [
+        "Does not force avatar tools or files"
+      ]
+    },
+    {
+      "id": "static-portrait",
+      "prompt": "Generate a two-dimensional headshot image, no 3D or animation.",
+      "shouldUseSkill": false,
+      "expectations": [
+        "Does not substitute the 3D runtime workflow"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+{
+  "tokenizer": "o200k_base; proxy for deployed model tokenizer",
+  "source_newlines": "LF from Python universal newline decoding",
+  "project_guidance": {
+    "chars": 956,
+    "tokens_o200k": 183
+  },
+  "contract": {
+    "chars": 211,
+    "tokens_o200k": 44
+  },
+  "entrypoint_matched_token_sequence": {
+    "method": "difflib.SequenceMatcher on o200k token ID sequences; lexical, not semantic",
+    "matched_tokens_in_both": 2611,
+    "share_of_v1_4": 0.9233
+  },
+  "versions": {
+    "1.3.0": {
+      "archive_sha256": "ab6f025ece17fe5dcc55861ceaa0b7a7a153190bb07fc6e586a26ecce7050d8e",
+      "description": {
+        "chars": 256,
+        "tokens_o200k": 52
+      },
+      "entrypoint": {
+        "chars": 13133,
+        "tokens_o200k": 2618
+      },
+      "entrypoint_sections": {
+        "frontmatter and introduction": {
+          "chars": 1283,
+          "tokens_o200k": 263
+        },
+        "Choose the task mode": {
+          "chars": 1705,
+          "tokens_o200k": 329
+        },
+        "Select the relevant references": {
+          "chars": 2431,
+          "tokens_o200k": 541
+        },
+        "Establish inputs": {
+          "chars": 1578,
+          "tokens_o200k": 301
+        },
+        "Implement in this order when building a new avatar": {
+          "chars": 3497,
+          "tokens_o200k": 677
+        },
+        "Non-obvious invariants": {
+          "chars": 1195,
+          "tokens_o200k": 230
+        },
+        "Acceptance and handoff": {
+          "chars": 1444,
+          "tokens_o200k": 277
+        }
+      },
+      "reference_markdown": {
+        "references/01-contract-and-anatomy.md": {
+          "chars": 7366,
+          "tokens_o200k": 1443
+        },
+        "references/02-assets-and-authoring.md": {
+          "chars": 7292,
+          "tokens_o200k": 1397
+        },
+        "references/03-body-animation.md": {
+          "chars": 8870,
+          "tokens_o200k": 1816
+        },
+        "references/04-face-animation.md": {
+          "chars": 8032,
+          "tokens_o200k": 1661
+        },
+        "references/05-camera-rendering-integration.md": {
+          "chars": 7280,
+          "tokens_o200k": 1399
+        },
+        "references/06-validation-and-delivery.md": {
+          "chars": 8296,
+          "tokens_o200k": 1622
+        },
+        "references/07-source-audit.md": {
+          "chars": 6760,
+          "tokens_o200k": 1389
+        },
+        "references/08-contact-and-posture.md": {
+          "chars": 10624,
+          "tokens_o200k": 2070
+        },
+        "references/09-customization-and-hybrid.md": {
+          "chars": 8830,
+          "tokens_o200k": 1718
+        },
+        "references/10-reference-likeness-and-clothes.md": {
+          "chars": 7872,
+          "tokens_o200k": 1509
+        },
+        "references/11-full-body-production.md": {
+          "chars": 7992,
+          "tokens_o200k": 1623
+        },
+        "references/12-optional-speech.md": {
+          "chars": 2647,
+          "tokens_o200k": 499
+        },
+        "references/olive-man/appearance.md": {
+          "chars": 5645,
+          "tokens_o200k": 1138
+        },
+        "references/olive-man/runtime-and-validation.md": {
+          "chars": 4979,
+          "tokens_o200k": 1013
+        },
+        "references/SOURCES.md": {
+          "chars": 3404,
+          "tokens_o200k": 747
+        }
+      },
+      "all_reference_tokens": 21044,
+      "portable_text": {
+        "chars": 152401,
+        "tokens_o200k": 32416
+      },
+      "optional_handoff_text": {
+        "HANDOFF-FA.txt": {
+          "chars": 1687,
+          "tokens_o200k": 585
+        },
+        "GPT-INSTRUCTIONS.txt": {
+          "chars": 1114,
+          "tokens_o200k": 214
+        }
+      },
+      "exact_trial_skill_payload": {
+        "fresh-face": {
+          "files": {
+            "SKILL.md": "3ab3718c31d436b639637bda16f8c74f381b9c5a6c5c68164785365f70f6cf1f",
+            "references/10-reference-likeness-and-clothes.md": "72aecd7da1fc07d7cc2beeb906bd49504558431c83eb19d237f5e4add5e3ccd0"
+          },
+          "inline_payload": {
+            "chars": 21042,
+            "tokens_o200k": 4137
+          }
+        },
+        "body-coat": {
+          "files": {
+            "SKILL.md": "3ab3718c31d436b639637bda16f8c74f381b9c5a6c5c68164785365f70f6cf1f",
+            "references/10-reference-likeness-and-clothes.md": "72aecd7da1fc07d7cc2beeb906bd49504558431c83eb19d237f5e4add5e3ccd0"
+          },
+          "inline_payload": {
+            "chars": 21042,
+            "tokens_o200k": 4137
+          }
+        },
+        "loose-robe": {
+          "files": {
+            "SKILL.md": "3ab3718c31d436b639637bda16f8c74f381b9c5a6c5c68164785365f70f6cf1f",
+            "references/10-reference-likeness-and-clothes.md": "72aecd7da1fc07d7cc2beeb906bd49504558431c83eb19d237f5e4add5e3ccd0"
+          },
+          "inline_payload": {
+            "chars": 21042,
+            "tokens_o200k": 4137
+          }
+        },
+        "eyelid-repair": {
+          "files": {
+            "SKILL.md": "3ab3718c31d436b639637bda16f8c74f381b9c5a6c5c68164785365f70f6cf1f",
+            "references/04-face-animation.md": "bb57854e4eaa6337b171ee2ce5e1493a5a99d208f1cb9d93ce280ac2e629489d"
+          },
+          "inline_payload": {
+            "chars": 21202,
+            "tokens_o200k": 4289
+          }
+        }
+      }
+    },
+    "1.4.0": {
+      "archive_sha256": "28550cefa2223747761d89d85d98f183724a6b054bca4baafd3f3be210f07064",
+      "description": {
+        "chars": 256,
+        "tokens_o200k": 52
+      },
+      "entrypoint": {
+        "chars": 14204,
+        "tokens_o200k": 2828
+      },
+      "entrypoint_sections": {
+        "frontmatter and introduction": {
+          "chars": 1283,
+          "tokens_o200k": 263
+        },
+        "Choose the task mode": {
+          "chars": 2276,
+          "tokens_o200k": 441
+        },
+        "Select the relevant references": {
+          "chars": 2596,
+          "tokens_o200k": 581
+        },
+        "Establish inputs": {
+          "chars": 1673,
+          "tokens_o200k": 316
+        },
+        "Implement in this order when building a new avatar": {
+          "chars": 3737,
+          "tokens_o200k": 720
+        },
+        "Non-obvious invariants": {
+          "chars": 1195,
+          "tokens_o200k": 230
+        },
+        "Acceptance and handoff": {
+          "chars": 1444,
+          "tokens_o200k": 277
+        }
+      },
+      "reference_markdown": {
+        "references/01-contract-and-anatomy.md": {
+          "chars": 7366,
+          "tokens_o200k": 1443
+        },
+        "references/02-assets-and-authoring.md": {
+          "chars": 7541,
+          "tokens_o200k": 1454
+        },
+        "references/03-body-animation.md": {
+          "chars": 8870,
+          "tokens_o200k": 1816
+        },
+        "references/04-face-animation.md": {
+          "chars": 8032,
+          "tokens_o200k": 1661
+        },
+        "references/05-camera-rendering-integration.md": {
+          "chars": 7280,
+          "tokens_o200k": 1399
+        },
+        "references/06-validation-and-delivery.md": {
+          "chars": 8639,
+          "tokens_o200k": 1690
+        },
+        "references/07-source-audit.md": {
+          "chars": 6760,
+          "tokens_o200k": 1389
+        },
+        "references/08-contact-and-posture.md": {
+          "chars": 10624,
+          "tokens_o200k": 2070
+        },
+        "references/09-customization-and-hybrid.md": {
+          "chars": 9055,
+          "tokens_o200k": 1767
+        },
+        "references/10-reference-likeness-and-clothes.md": {
+          "chars": 8222,
+          "tokens_o200k": 1583
+        },
+        "references/11-full-body-production.md": {
+          "chars": 8515,
+          "tokens_o200k": 1717
+        },
+        "references/12-optional-speech.md": {
+          "chars": 2647,
+          "tokens_o200k": 499
+        },
+        "references/13-body-and-garment-shape.md": {
+          "chars": 6174,
+          "tokens_o200k": 1155
+        },
+        "references/olive-man/appearance.md": {
+          "chars": 5803,
+          "tokens_o200k": 1179
+        },
+        "references/olive-man/runtime-and-validation.md": {
+          "chars": 4979,
+          "tokens_o200k": 1013
+        },
+        "references/SOURCES.md": {
+          "chars": 3404,
+          "tokens_o200k": 747
+        }
+      },
+      "all_reference_tokens": 22582,
+      "portable_text": {
+        "chars": 163196,
+        "tokens_o200k": 34507
+      },
+      "optional_handoff_text": {
+        "HANDOFF-FA.txt": {
+          "chars": 2329,
+          "tokens_o200k": 818
+        },
+        "GPT-INSTRUCTIONS.txt": {
+          "chars": 1697,
+          "tokens_o200k": 326
+        }
+      },
+      "exact_trial_skill_payload": {
+        "fresh-face": {
+          "files": {
+            "SKILL.md": "ab6c18064368ec32b5de8559a5bfe95abd52e7b944592d04627f93b83f85b43c",
+            "references/10-reference-likeness-and-clothes.md": "364f6c1a74aea7c7db3cf78926e6dc8219be4a0c7c38ce844a29981b99bf8d2b"
+          },
+          "inline_payload": {
+            "chars": 22463,
+            "tokens_o200k": 4421
+          }
+        },
+        "body-coat": {
+          "files": {
+            "SKILL.md": "ab6c18064368ec32b5de8559a5bfe95abd52e7b944592d04627f93b83f85b43c",
+            "references/13-body-and-garment-shape.md": "07511c090a70a85bf4e269fb4b62257582434b13b6eea53f9f360c35d9e877f1"
+          },
+          "inline_payload": {
+            "chars": 20415,
+            "tokens_o200k": 3993
+          }
+        },
+        "loose-robe": {
+          "files": {
+            "SKILL.md": "ab6c18064368ec32b5de8559a5bfe95abd52e7b944592d04627f93b83f85b43c",
+            "references/13-body-and-garment-shape.md": "07511c090a70a85bf4e269fb4b62257582434b13b6eea53f9f360c35d9e877f1"
+          },
+          "inline_payload": {
+            "chars": 20415,
+            "tokens_o200k": 3993
+          }
+        },
+        "eyelid-repair": {
+          "files": {
+            "SKILL.md": "ab6c18064368ec32b5de8559a5bfe95abd52e7b944592d04627f93b83f85b43c",
+            "references/04-face-animation.md": "bb57854e4eaa6337b171ee2ce5e1493a5a99d208f1cb9d93ce280ac2e629489d"
+          },
+          "inline_payload": {
+            "chars": 22273,
+            "tokens_o200k": 4499
+          }
+        }
+      }
+    }
+  }
+}

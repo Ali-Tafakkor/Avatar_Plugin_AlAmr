@@ -1,0 +1,106 @@
+TAP version 13
+# Subtest: static heel and forefoot both meet the plane after a bounded rigid fit
+ok 1 - static heel and forefoot both meet the plane after a bounded rigid fit
+  ---
+  duration_ms: 2.8269
+  type: 'test'
+  ...
+# Subtest: the same method scales to different bodies/shoes and translated ground
+ok 2 - the same method scales to different bodies/shoes and translated ground
+  ---
+  duration_ms: 0.3339
+  type: 'test'
+  ...
+# Subtest: author-defined high-heel contact patches are not flattened to an ankle identity
+ok 3 - author-defined high-heel contact patches are not flattened to an ankle identity
+  ---
+  duration_ms: 0.0874
+  type: 'test'
+  ...
+# Subtest: local planar incline supports two different patch heights
+ok 4 - local planar incline supports two different patch heights
+  ---
+  duration_ms: 0.1006
+  type: 'test'
+  ...
+# Subtest: swing, air, gesture override and zero weight release instead of pinning feet
+ok 5 - swing, air, gesture override and zero weight release instead of pinning feet
+  ---
+  duration_ms: 0.1495
+  type: 'test'
+  ...
+# Subtest: small correction limits report residuals and never conceal penetration
+ok 6 - small correction limits report residuals and never conceal penetration
+  ---
+  duration_ms: 0.1066
+  type: 'test'
+  ...
+# Subtest: partial contact weight leaves a partial correction and immutable inputs
+ok 7 - partial contact weight leaves a partial correction and immutable inputs
+  ---
+  duration_ms: 0.6404
+  type: 'test'
+  ...
+# Subtest: missing an intended clearance is not falsely called physical ground penetration
+ok 8 - missing an intended clearance is not falsely called physical ground penetration
+  ---
+  duration_ms: 0.1092
+  type: 'test'
+  ...
+# Subtest: invalid or degenerate calibration fails rather than emitting NaNs
+ok 9 - invalid or degenerate calibration fails rather than emitting NaNs
+  ---
+  duration_ms: 0.2919
+  type: 'test'
+  ...
+# Subtest: unreachable support-height difference remains finite and explicitly limited
+ok 10 - unreachable support-height difference remains finite and explicitly limited
+  ---
+  duration_ms: 0.1467
+  type: 'test'
+  ...
+# Subtest: two-leg reach clamps at scale-dependent limits without stretching
+ok 11 - two-leg reach clamps at scale-dependent limits without stretching
+  ---
+  duration_ms: 0.1928
+  type: 'test'
+  ...
+# Subtest: rest offsets are applied from fresh base without long-run accumulated drift
+ok 12 - rest offsets are applied from fresh base without long-run accumulated drift
+  ---
+  duration_ms: 13.2121
+  type: 'test'
+  ...
+# Subtest: independently calibrated mirrored finger axes bend in opposite local directions
+ok 13 - independently calibrated mirrored finger axes bend in opposite local directions
+  ---
+  duration_ms: 0.1986
+  type: 'test'
+  ...
+# Subtest: q and -q represent the same offset and caller arrays stay unchanged
+ok 14 - q and -q represent the same offset and caller arrays stay unchanged
+  ---
+  duration_ms: 0.125
+  type: 'test'
+  ...
+# Subtest: nonlinear identity sculpt preserves every transformed expression endpoint
+ok 15 - nonlinear identity sculpt preserves every transformed expression endpoint
+  ---
+  duration_ms: 0.3587
+  type: 'test'
+  ...
+# Subtest: invalid morph shapes or nonfinite warp results fail explicitly
+ok 16 - invalid morph shapes or nonfinite warp results fail explicitly
+  ---
+  duration_ms: 0.1537
+  type: 'test'
+  ...
+1..16
+# tests 16
+# suites 0
+# pass 16
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 100.8637

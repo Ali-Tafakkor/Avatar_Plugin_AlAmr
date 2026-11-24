@@ -1,0 +1,66 @@
+{
+  "r01": {
+    "checks": [1, 1, 0, 0, 0],
+    "note": "Separately constructs the neutral head and names landmarks and side uncertainty. Says to apply the 66 morph changes to new geometry; gives only a front clay view and no subsequent deformation acceptance."
+  },
+  "r02": {
+    "checks": [1, 0, 0, 0, 0],
+    "note": "Plans an ankle-length modelled robe, but treats the wide image as evidence for a fuller body, misstates that the owner requested it, and delays independent build until confirming that interpretation. No paint-only or gait/seated geometry check."
+  },
+  "r03": {
+    "checks": [1, 0, 0, 0, 0],
+    "note": "Rejects global scaling and names region-specific volumes. Defers geometry delivery and visual/mechanical acceptance to a generic input/status review, with no clothing ease or texture-only rule."
+  },
+  "r04": {
+    "checks": [1, 1, 0, 1, 0],
+    "note": "Chooses independent geometry, documents uncertain skull depth and requests front/profile clay milestones. Does not specify new matched facial controls or real deformation acceptance."
+  },
+  "r05": {
+    "checks": [1, 1, 0, 1, 0],
+    "note": "Chooses independent landmarks and front/profile matte checkpoints before facial work and acknowledges unseen geometry. Redesigns morphs for the new topology but retains a 66-count and gives no explicit semantic-only reuse or actual deformation tests."
+  },
+  "r06": {
+    "checks": [1, 0, 0, 0, 1],
+    "note": "Limits repair to the left eyelid and acknowledges the missing GLB. No actionable inspection or unchanged neutral view; keeps expressions and speech in scope but does not test them in combination with blink."
+  },
+  "r07": {
+    "checks": [1, 0, 0, 0, 1],
+    "note": "Rejects scaling and asks for the main garment cuts and front/side/three-quarter untextured views. Does not distinguish ease from body volume or say texture-only, and calls for generic body/foot and seated contact checks without refit or hand/hem checks."
+  },
+  "r08": {
+    "checks": [1, 1, 0, 0, 1],
+    "note": "Limits correction to left-blink topology/gain, asks for GLB and proposes closure and return to neutral. Does not prescribe relevant comparison views or test blink while emotion and speech are active."
+  },
+  "r09": {
+    "checks": [0, 0, 0, 0, 0],
+    "note": "Adopts the donor's face, UVs and morph route. Describes requested landmarks but ignores the unknown profile and does not separate face identity and deformation evidence."
+  },
+  "r10": {
+    "checks": [1, 0, 0, 0, 0],
+    "note": "Commits to the main loose ankle-length robe shape for authoring, but assumes a fat body from the wide image, reopens the clear outfit choice, and gives no paint-only or movement/fit gate."
+  },
+  "r11": {
+    "checks": [1, 0, 0, 0, 0],
+    "note": "Rejects widening uniformly and names the three regions. Lists the cut, yet does not separate ease from body, constrain the collar/buttons to texture, specify actual contact checks, or require plain view comparisons."
+  },
+  "r12": {
+    "checks": [0, 0, 0, 0, 0],
+    "note": "Accepts a texture-based path for both form changes and the outfit; generic renders do not check fit or specific geometry."
+  },
+  "r13": {
+    "checks": [1, 1, 0, 0, 1],
+    "note": "Proposes checking blink binding and weight and a correction confined to the left blink. Calls for closure in front/side and reopening but not comparing the accepted neutral pose; other expressions and speech are tested separately, not combined with blink."
+  },
+  "r14": {
+    "checks": [1, 0, 0, 0, 0],
+    "note": "Preserves the physical ankle-length robe shape/volume and provides generic garment interaction review. Infers body fullness from loose fabric and omits texture-only implementation and explicit gait/hem or seated drape checks."
+  },
+  "r15": {
+    "checks": [1, 0, 1, 0, 0],
+    "note": "Separates fresh head and facial controls from reusable behavior; mentions landmarks without diagnosing the unknown side profile. Does not ask for undecorated multi-view geometry or separate deformation acceptance."
+  },
+  "r16": {
+    "checks": [0, 0, 0, 0, 0],
+    "note": "Rejects the scale-and-atlas shortcut but only asks to inspect the three references and decide whether the old outfit is compatible. Does not commit to independent regional geometry, the garment deliverables, or actual fit checks."
+  }
+}

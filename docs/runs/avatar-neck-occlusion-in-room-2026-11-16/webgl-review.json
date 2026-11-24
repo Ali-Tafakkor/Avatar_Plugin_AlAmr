@@ -1,0 +1,669 @@
+{
+  "base": {
+    "enabled": false,
+    "faces": 0,
+    "worldWidth": 1200,
+    "worldHeight": 750,
+    "presentationWidth": 2400,
+    "presentationHeight": 1500,
+    "extraFacePixels": 0,
+    "regions": [],
+    "maxTileSize": 256,
+    "maxFaces": 5,
+    "distance": 6.977746192530681,
+    "avatar": {
+      "avatarVersion": "0.1.3",
+      "appearance": "accepted-face-2026-11-03",
+      "detailedHands": {
+        "enabled": true,
+        "source": "existing AvatarBody authored topology and five-finger skeleton",
+        "removedLegacySkinTriangles": 3377,
+        "hands": {
+          "left": {
+            "vertices": 3751,
+            "triangles": 6828,
+            "joints": 21,
+            "articulatedJoints": 15,
+            "scale": 1.115986307769336,
+            "referenceReachMeters": 0.19345058347325453,
+            "legacyReachBySide": {
+              "left": 0.19345058347325453,
+              "right": 0.1205179477659574
+            },
+            "sizeCalibration": "symmetric size from the original open hand surface",
+            "pose": "auto",
+            "overrides": {},
+            "curl": {
+              "thumb": 0.2199999999949626,
+              "index": 0.15999999999633643,
+              "middle": 0.17999999999587846,
+              "ring": 0.20999999999519156,
+              "pinky": 0.23999999999450464
+            }
+          },
+          "right": {
+            "vertices": 3751,
+            "triangles": 6828,
+            "joints": 21,
+            "articulatedJoints": 15,
+            "scale": 1.1159912801592726,
+            "referenceReachMeters": 0.19345058347325453,
+            "legacyReachBySide": {
+              "left": 0.19345058347325453,
+              "right": 0.1205179477659574
+            },
+            "sizeCalibration": "symmetric size from the original open hand surface",
+            "pose": "auto",
+            "overrides": {},
+            "curl": {
+              "thumb": 0.2199999999949626,
+              "index": 0.15999999999633643,
+              "middle": 0.17999999999587846,
+              "ring": 0.20999999999519156,
+              "pinky": 0.23999999999450464
+            }
+          }
+        }
+      },
+      "handContact": {
+        "regions": 14,
+        "hands": {
+          "left": {
+            "before": 0,
+            "after": 0,
+            "region": null,
+            "angle": 0.000010394005889805302,
+            "samples": 513
+          },
+          "right": {
+            "before": 0,
+            "after": 0,
+            "region": null,
+            "angle": 0.0000015146500777689655,
+            "samples": 503
+          }
+        }
+      },
+      "contactOwner": "native-guard-then-measured-seat-surfaces",
+      "phase": "seated",
+      "progress": 1,
+      "renderedPhase": "seated",
+      "renderedProgress": 1,
+      "inspection": null,
+      "clip": "Sitting",
+      "eye": [
+        -2.526949810805669,
+        1.313386664786964,
+        -2.939876680986838
+      ],
+      "headYaw": -0.46596539018929045,
+      "headPitch": 0,
+      "torsoForwardDegrees": -7.884691117242375,
+      "neckForwardDegrees": 4.951134111772369,
+      "handRest": "lap",
+      "resolvedHandRest": "lap",
+      "tableRelease": 1,
+      "seatTurn": -0.7853981633974481,
+      "handTargets": [
+        [
+          -2.2890924903172856,
+          0.6322627094787698,
+          -2.953614154010812
+        ],
+        [
+          -2.511245378821789,
+          0.6354264112161682,
+          -2.7672057472017157
+        ]
+      ],
+      "handResiduals": [
+        0,
+        0
+      ],
+      "handSkinMinimums": [
+        0.5566478239256076,
+        0.5561061871273884
+      ],
+      "handSurfaceClearances": [
+        0.0010699536818394861,
+        0.001028665079752411
+      ],
+      "lapClothContact": [
+        {
+          "surface": "actual-skinned-thigh-triangles",
+          "minimum": 0.0010699536818394861,
+          "palm": 0.00338456534274989,
+          "fingers": 0.0033845655896268534,
+          "fingertips": 0.0033845655896268534,
+          "thumb": 0.0010699536818394861,
+          "samples": 3751,
+          "triangles": 2174,
+          "skinMinimumY": 0.5566478239256076
+        },
+        {
+          "surface": "actual-skinned-thigh-triangles",
+          "minimum": 0.001028665079752411,
+          "palm": 0.0029882361352577824,
+          "fingers": 0.002988243246415334,
+          "fingertips": 0.002988243246415334,
+          "thumb": 0.001028665079752411,
+          "samples": 3751,
+          "triangles": 2174,
+          "skinMinimumY": 0.5561061871273884
+        }
+      ],
+      "seatContact": {
+        "cushionTop": 0.45,
+        "rearClothMinimum": 0.45094165086578414,
+        "samples": 52,
+        "fullClothCollisionSolved": false
+      },
+      "verticalSpeed": 0,
+      "gaitDirection": 1,
+      "seatHipHeight": 0.6231390865811697,
+      "firstPerson": false,
+      "faceMeshes": 6,
+      "bodyJoints": 41,
+      "morphCount": 66
+    },
+    "camera": {
+      "eye": [
+        -0.850398656556048,
+        1.333,
+        3.765158977377671
+      ],
+      "fov": 64
+    },
+    "calls": 52,
+    "triangles": 260238
+  },
+  "detailed": {
+    "enabled": true,
+    "faces": 1,
+    "worldWidth": 1200,
+    "worldHeight": 750,
+    "presentationWidth": 2400,
+    "presentationHeight": 1500,
+    "extraFacePixels": 43264,
+    "regions": [
+      {
+        "id": "opposite-participant",
+        "x": 1148,
+        "y": 698,
+        "width": 104,
+        "height": 104,
+        "textureWidth": 208,
+        "textureHeight": 208
+      }
+    ],
+    "maxTileSize": 256,
+    "maxFaces": 5,
+    "distance": 6.977746192530681,
+    "avatar": {
+      "avatarVersion": "0.1.3",
+      "appearance": "accepted-face-2026-11-03",
+      "detailedHands": {
+        "enabled": true,
+        "source": "existing AvatarBody authored topology and five-finger skeleton",
+        "removedLegacySkinTriangles": 3377,
+        "hands": {
+          "left": {
+            "vertices": 3751,
+            "triangles": 6828,
+            "joints": 21,
+            "articulatedJoints": 15,
+            "scale": 1.115986307769336,
+            "referenceReachMeters": 0.19345058347325453,
+            "legacyReachBySide": {
+              "left": 0.19345058347325453,
+              "right": 0.1205179477659574
+            },
+            "sizeCalibration": "symmetric size from the original open hand surface",
+            "pose": "auto",
+            "overrides": {},
+            "curl": {
+              "thumb": 0.2199999999949626,
+              "index": 0.15999999999633643,
+              "middle": 0.17999999999587846,
+              "ring": 0.20999999999519156,
+              "pinky": 0.23999999999450464
+            }
+          },
+          "right": {
+            "vertices": 3751,
+            "triangles": 6828,
+            "joints": 21,
+            "articulatedJoints": 15,
+            "scale": 1.1159912801592726,
+            "referenceReachMeters": 0.19345058347325453,
+            "legacyReachBySide": {
+              "left": 0.19345058347325453,
+              "right": 0.1205179477659574
+            },
+            "sizeCalibration": "symmetric size from the original open hand surface",
+            "pose": "auto",
+            "overrides": {},
+            "curl": {
+              "thumb": 0.2199999999949626,
+              "index": 0.15999999999633643,
+              "middle": 0.17999999999587846,
+              "ring": 0.20999999999519156,
+              "pinky": 0.23999999999450464
+            }
+          }
+        }
+      },
+      "handContact": {
+        "regions": 14,
+        "hands": {
+          "left": {
+            "before": 0,
+            "after": 0,
+            "region": null,
+            "angle": 0.000010394005889805302,
+            "samples": 513
+          },
+          "right": {
+            "before": 0,
+            "after": 0,
+            "region": null,
+            "angle": 0.0000015146500777689655,
+            "samples": 503
+          }
+        }
+      },
+      "contactOwner": "native-guard-then-measured-seat-surfaces",
+      "phase": "seated",
+      "progress": 1,
+      "renderedPhase": "seated",
+      "renderedProgress": 1,
+      "inspection": null,
+      "clip": "Sitting",
+      "eye": [
+        -2.526949810805669,
+        1.313386664786964,
+        -2.939876680986838
+      ],
+      "headYaw": -0.46596539018929045,
+      "headPitch": 0,
+      "torsoForwardDegrees": -7.884691117242375,
+      "neckForwardDegrees": 4.951134111772369,
+      "handRest": "lap",
+      "resolvedHandRest": "lap",
+      "tableRelease": 1,
+      "seatTurn": -0.7853981633974481,
+      "handTargets": [
+        [
+          -2.2890924903172856,
+          0.6322627094787698,
+          -2.953614154010812
+        ],
+        [
+          -2.511245378821789,
+          0.6354264112161682,
+          -2.7672057472017157
+        ]
+      ],
+      "handResiduals": [
+        0,
+        0
+      ],
+      "handSkinMinimums": [
+        0.5566478239256076,
+        0.5561061871273884
+      ],
+      "handSurfaceClearances": [
+        0.0010699536818394861,
+        0.001028665079752411
+      ],
+      "lapClothContact": [
+        {
+          "surface": "actual-skinned-thigh-triangles",
+          "minimum": 0.0010699536818394861,
+          "palm": 0.00338456534274989,
+          "fingers": 0.0033845655896268534,
+          "fingertips": 0.0033845655896268534,
+          "thumb": 0.0010699536818394861,
+          "samples": 3751,
+          "triangles": 2174,
+          "skinMinimumY": 0.5566478239256076
+        },
+        {
+          "surface": "actual-skinned-thigh-triangles",
+          "minimum": 0.001028665079752411,
+          "palm": 0.0029882361352577824,
+          "fingers": 0.002988243246415334,
+          "fingertips": 0.002988243246415334,
+          "thumb": 0.001028665079752411,
+          "samples": 3751,
+          "triangles": 2174,
+          "skinMinimumY": 0.5561061871273884
+        }
+      ],
+      "seatContact": {
+        "cushionTop": 0.45,
+        "rearClothMinimum": 0.45094165086578414,
+        "samples": 52,
+        "fullClothCollisionSolved": false
+      },
+      "verticalSpeed": 0,
+      "gaitDirection": 1,
+      "seatHipHeight": 0.6231390865811697,
+      "firstPerson": false,
+      "faceMeshes": 6,
+      "bodyJoints": 41,
+      "morphCount": 66
+    },
+    "camera": {
+      "eye": [
+        -0.850398656556048,
+        1.333,
+        3.765158977377671
+      ],
+      "fov": 64
+    },
+    "calls": 59,
+    "triangles": 310980
+  },
+  "localDifference": {
+    "changedPixels": 1298,
+    "changedOutsideFaceRegions": 0,
+    "meanChannelError": 0.003829722222222222,
+    "maximumChannelError": 87
+  },
+  "occluded": {
+    "enabled": true,
+    "faces": 1,
+    "worldWidth": 1200,
+    "worldHeight": 750,
+    "presentationWidth": 2400,
+    "presentationHeight": 1500,
+    "extraFacePixels": 43264,
+    "regions": [
+      {
+        "id": "opposite-participant",
+        "x": 1148,
+        "y": 698,
+        "width": 104,
+        "height": 104,
+        "textureWidth": 208,
+        "textureHeight": 208
+      }
+    ],
+    "maxTileSize": 256,
+    "maxFaces": 5,
+    "distance": 6.977746192530681,
+    "avatar": {
+      "avatarVersion": "0.1.3",
+      "appearance": "accepted-face-2026-11-03",
+      "detailedHands": {
+        "enabled": true,
+        "source": "existing AvatarBody authored topology and five-finger skeleton",
+        "removedLegacySkinTriangles": 3377,
+        "hands": {
+          "left": {
+            "vertices": 3751,
+            "triangles": 6828,
+            "joints": 21,
+            "articulatedJoints": 15,
+            "scale": 1.115986307769336,
+            "referenceReachMeters": 0.19345058347325453,
+            "legacyReachBySide": {
+              "left": 0.19345058347325453,
+              "right": 0.1205179477659574
+            },
+            "sizeCalibration": "symmetric size from the original open hand surface",
+            "pose": "auto",
+            "overrides": {},
+            "curl": {
+              "thumb": 0.2199999999949626,
+              "index": 0.15999999999633643,
+              "middle": 0.17999999999587846,
+              "ring": 0.20999999999519156,
+              "pinky": 0.23999999999450464
+            }
+          },
+          "right": {
+            "vertices": 3751,
+            "triangles": 6828,
+            "joints": 21,
+            "articulatedJoints": 15,
+            "scale": 1.1159912801592726,
+            "referenceReachMeters": 0.19345058347325453,
+            "legacyReachBySide": {
+              "left": 0.19345058347325453,
+              "right": 0.1205179477659574
+            },
+            "sizeCalibration": "symmetric size from the original open hand surface",
+            "pose": "auto",
+            "overrides": {},
+            "curl": {
+              "thumb": 0.2199999999949626,
+              "index": 0.15999999999633643,
+              "middle": 0.17999999999587846,
+              "ring": 0.20999999999519156,
+              "pinky": 0.23999999999450464
+            }
+          }
+        }
+      },
+      "handContact": {
+        "regions": 14,
+        "hands": {
+          "left": {
+            "before": 0,
+            "after": 0,
+            "region": null,
+            "angle": 0.000010394005889805302,
+            "samples": 513
+          },
+          "right": {
+            "before": 0,
+            "after": 0,
+            "region": null,
+            "angle": 0.0000015146500777689655,
+            "samples": 503
+          }
+        }
+      },
+      "contactOwner": "native-guard-then-measured-seat-surfaces",
+      "phase": "seated",
+      "progress": 1,
+      "renderedPhase": "seated",
+      "renderedProgress": 1,
+      "inspection": null,
+      "clip": "Sitting",
+      "eye": [
+        -2.526949810805669,
+        1.313386664786964,
+        -2.939876680986838
+      ],
+      "headYaw": -0.46596539018929045,
+      "headPitch": 0,
+      "torsoForwardDegrees": -7.884691117242375,
+      "neckForwardDegrees": 4.951134111772369,
+      "handRest": "lap",
+      "resolvedHandRest": "lap",
+      "tableRelease": 1,
+      "seatTurn": -0.7853981633974481,
+      "handTargets": [
+        [
+          -2.2890924903172856,
+          0.6322627094787698,
+          -2.953614154010812
+        ],
+        [
+          -2.511245378821789,
+          0.6354264112161682,
+          -2.7672057472017157
+        ]
+      ],
+      "handResiduals": [
+        0,
+        0
+      ],
+      "handSkinMinimums": [
+        0.5566478239256076,
+        0.5561061871273884
+      ],
+      "handSurfaceClearances": [
+        0.0010699536818394861,
+        0.001028665079752411
+      ],
+      "lapClothContact": [
+        {
+          "surface": "actual-skinned-thigh-triangles",
+          "minimum": 0.0010699536818394861,
+          "palm": 0.00338456534274989,
+          "fingers": 0.0033845655896268534,
+          "fingertips": 0.0033845655896268534,
+          "thumb": 0.0010699536818394861,
+          "samples": 3751,
+          "triangles": 2174,
+          "skinMinimumY": 0.5566478239256076
+        },
+        {
+          "surface": "actual-skinned-thigh-triangles",
+          "minimum": 0.001028665079752411,
+          "palm": 0.0029882361352577824,
+          "fingers": 0.002988243246415334,
+          "fingertips": 0.002988243246415334,
+          "thumb": 0.001028665079752411,
+          "samples": 3751,
+          "triangles": 2174,
+          "skinMinimumY": 0.5561061871273884
+        }
+      ],
+      "seatContact": {
+        "cushionTop": 0.45,
+        "rearClothMinimum": 0.45094165086578414,
+        "samples": 52,
+        "fullClothCollisionSolved": false
+      },
+      "verticalSpeed": 0,
+      "gaitDirection": 1,
+      "seatHipHeight": 0.6231390865811697,
+      "firstPerson": false,
+      "faceMeshes": 6,
+      "bodyJoints": 41,
+      "morphCount": 66
+    },
+    "camera": {
+      "eye": [
+        -0.850398656556048,
+        1.333,
+        3.765158977377671
+      ],
+      "fov": 64
+    },
+    "calls": 60,
+    "triangles": 310992
+  },
+  "occlusionDifference": {
+    "changedPixels": 0,
+    "changedOutsideFaceRegions": 0,
+    "meanChannelError": 0,
+    "maximumChannelError": 0
+  },
+  "colorParity": {
+    "changedPixels": 1047894,
+    "changedOutsideFaceRegions": 1047894,
+    "meanChannelError": 0.7157855555555556,
+    "maximumChannelError": 65
+  },
+  "errors": [],
+  "scope": "Actual GLTF avatar and room, controlled world pixel ratio .75 and presentation 1.5, frozen camera/pose; no live-account or headset claim.",
+  "neck": [
+    {
+      "name": "up-front",
+      "pitch": 55,
+      "yaw": 0,
+      "view": 0,
+      "neckPitch": -0.9599310885968813,
+      "neckYaw": 0,
+      "withoutGarmentDepth": {
+        "fabricPixels": 211634,
+        "skinOverCloth": 13278
+      },
+      "current": {
+        "fabricPixels": 211634,
+        "skinOverCloth": 0
+      },
+      "drawCalls": 17,
+      "faces": 1
+    },
+    {
+      "name": "down-back",
+      "pitch": -60,
+      "yaw": 0,
+      "view": 180,
+      "neckPitch": 1.0471975511965976,
+      "neckYaw": 0,
+      "withoutGarmentDepth": {
+        "fabricPixels": 248673,
+        "skinOverCloth": 8798
+      },
+      "current": {
+        "fabricPixels": 248673,
+        "skinOverCloth": 0
+      },
+      "drawCalls": 17,
+      "faces": 1
+    },
+    {
+      "name": "up-side",
+      "pitch": 55,
+      "yaw": 0,
+      "view": 90,
+      "neckPitch": -0.9599310885968813,
+      "neckYaw": 0,
+      "withoutGarmentDepth": {
+        "fabricPixels": 105341,
+        "skinOverCloth": 3504
+      },
+      "current": {
+        "fabricPixels": 105341,
+        "skinOverCloth": 0
+      },
+      "drawCalls": 17,
+      "faces": 1
+    },
+    {
+      "name": "turn-front",
+      "pitch": 0,
+      "yaw": 75,
+      "view": 0,
+      "neckPitch": 0,
+      "neckYaw": 1.3089969389957472,
+      "withoutGarmentDepth": {
+        "fabricPixels": 207498,
+        "skinOverCloth": 10167
+      },
+      "current": {
+        "fabricPixels": 207498,
+        "skinOverCloth": 0
+      },
+      "drawCalls": 17,
+      "faces": 1
+    },
+    {
+      "name": "seated-down",
+      "pitch": -60,
+      "yaw": 35,
+      "view": 180,
+      "seated": true,
+      "neckPitch": 1.0471975511965976,
+      "neckYaw": 0.6108652381980154,
+      "withoutGarmentDepth": {
+        "fabricPixels": 255357,
+        "skinOverCloth": 18858
+      },
+      "current": {
+        "fabricPixels": 255357,
+        "skinOverCloth": 0
+      },
+      "drawCalls": 17,
+      "faces": 1
+    }
+  ]
+}

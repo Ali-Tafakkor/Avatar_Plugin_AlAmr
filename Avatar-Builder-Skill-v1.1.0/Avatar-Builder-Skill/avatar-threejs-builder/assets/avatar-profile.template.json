@@ -1,0 +1,275 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "replace-with-project-avatar-id",
+  "appearance": {
+    "description": "Describe the requested character without changing the common runtime contract.",
+    "ageAppearance": null,
+    "presentation": null,
+    "bodyProportions": null,
+    "skin": null,
+    "face": null,
+    "eyes": null,
+    "hair": null,
+    "facialHair": null,
+    "clothing": null,
+    "style": null
+  },
+  "assets": {
+    "model": null,
+    "motionSources": [],
+    "provenanceManifest": "asset-manifest.json"
+  },
+  "normalization": {
+    "units": "meters",
+    "upAxis": "+Y",
+    "canonicalForward": "+Z",
+    "sourceForward": null,
+    "targetHeightMeters": null,
+    "sourceUnitsToMeters": null
+  },
+  "rig": {
+    "adapter": "humanoid-v1",
+    "requiredRoles": [
+      "hips",
+      "spine",
+      "head",
+      "leftUpperArm",
+      "leftLowerArm",
+      "leftHand",
+      "rightUpperArm",
+      "rightLowerArm",
+      "rightHand",
+      "leftUpperLeg",
+      "leftLowerLeg",
+      "leftFoot",
+      "rightUpperLeg",
+      "rightLowerLeg",
+      "rightFoot"
+    ],
+    "bones": {},
+    "referencePose": "inspect-asset",
+    "preserveTargetBoneLengths": true
+  },
+  "face": {
+    "driver": "morph",
+    "defaultEmotion": "neutral",
+    "intensity": 0.88,
+    "response": 7.5,
+    "presets": "facial-presets.json",
+    "requiredChannels": [
+      "jawOpen",
+      "mouthSmileLeft",
+      "mouthSmileRight",
+      "mouthFrownLeft",
+      "mouthFrownRight",
+      "browInnerUp",
+      "browDownLeft",
+      "browDownRight",
+      "browOuterUpLeft",
+      "browOuterUpRight",
+      "eyeBlinkLeft",
+      "eyeBlinkRight",
+      "eyeWideLeft",
+      "eyeWideRight"
+    ],
+    "bindings": {},
+    "ownership": "mapped-expression-channels-only",
+    "preserveUnownedMorphs": true,
+    "blink": {
+      "enabled": true,
+      "closeSeconds": 0.07,
+      "holdSeconds": 0.033,
+      "openSeconds": 0.137,
+      "waitMinSeconds": 2.4,
+      "waitMaxSeconds": 5.5
+    },
+    "gaze": {
+      "enabled": true,
+      "driver": "inspect-asset",
+      "maxYawRadians": 0.45,
+      "maxPitchRadians": 0.35
+    },
+    "microMotion": {
+      "enabled": true,
+      "seed": 1952
+    }
+  },
+  "movement": {
+    "rootMotion": "in-place",
+    "fixedStepSeconds": 0.008333333333333333,
+    "maxSubsteps": 12,
+    "walkSpeedMps": 1.52,
+    "runSpeedMps": 4.25,
+    "accelerationMps2": 8.5,
+    "brakingMps2": 12.5,
+    "gravityMps2": 18.8,
+    "jumpSpeedMps": 5.6,
+    "coyoteSeconds": 0.1,
+    "jumpBufferSeconds": 0.18,
+    "anticipationSeconds": 0.095,
+    "landingSeconds": 0.25,
+    "colliderRadiusMeters": null,
+    "colliderHeightMeters": null,
+    "stepHeightMeters": null,
+    "footIK": true
+  },
+  "camera": {
+    "enabled": true,
+    "initialMode": "orbit",
+    "movementExitsPortrait": true,
+    "deriveAnchorsFromRig": true,
+    "manualInputPriority": true,
+    "collisionMode": "near-plane-aware",
+    "portraitFovDegrees": 31,
+    "orbitFovDegrees": 43,
+    "followFovDegrees": 47,
+    "runFovAdditionDegrees": 7,
+    "recenterDelaySeconds": 1.7
+  },
+  "quality": {
+    "priority": "face-deformation-and-readability",
+    "targetDevice": null,
+    "targetFps": null,
+    "maxDownloadBytes": null,
+    "pixelRatioCap": 1.4,
+    "reducedMotion": false
+  },
+  "deployment": {
+    "commercialUse": null,
+    "offlineAfterSetup": true,
+    "allowExternalPersonalDataUpload": false,
+    "hostOwnsRenderLoop": true,
+    "threeVersion": null
+  },
+  "notes": [
+    "Draft template, not a resolved asset profile.",
+    "The original application does not consume this profile until an adapter is implemented.",
+    "Appearance fields are an art brief, not automatic mesh-generation parameters.",
+    "Motion numbers reproduce prototype tuning; recalibrate for the actual rig.",
+    "Contact/hand values are unresolved calibration, not a universal stance or finger pose.",
+    "Map motion roles to actual native/retargeted/procedural sources; no donor is mandatory.",
+    "Historical movement tuning is provisional and must be calibrated to actual clips and proportions."
+  ],
+  "contact": {
+    "enabled": true,
+    "supportProvider": null,
+    "airbornePolicy": "release",
+    "gapToleranceMeters": null,
+    "penetrationToleranceMeters": null,
+    "feet": {
+      "left": {
+        "samplingMode": "vertices",
+        "mesh": null,
+        "primitive": 0,
+        "heelVertices": [],
+        "forefootVertices": [],
+        "heelMarker": null,
+        "forefootMarker": null,
+        "clearanceMeters": null,
+        "maxPitchRadians": null,
+        "maxVerticalCorrectionMeters": null
+      },
+      "right": {
+        "samplingMode": "vertices",
+        "mesh": null,
+        "primitive": 0,
+        "heelVertices": [],
+        "forefootVertices": [],
+        "heelMarker": null,
+        "forefootMarker": null,
+        "clearanceMeters": null,
+        "maxPitchRadians": null,
+        "maxVerticalCorrectionMeters": null
+      }
+    }
+  },
+  "posture": {
+    "enabled": true,
+    "referencePose": null,
+    "bodyOffsets": [],
+    "relaxStates": [
+      "idle",
+      "walk",
+      "run"
+    ],
+    "preserveGestureAndTracking": true,
+    "releaseRelaxationDuringAirborne": true,
+    "requireFiveFingers": false,
+    "hands": {
+      "left": {
+        "enabled": true,
+        "palmFrame": null,
+        "fingers": {},
+        "jointOffsets": []
+      },
+      "right": {
+        "enabled": true,
+        "palmFrame": null,
+        "fingers": {},
+        "jointOffsets": []
+      }
+    }
+  },
+  "requiredMotionRoles": [
+    "idle",
+    "walk",
+    "run",
+    "jump"
+  ],
+  "motionRoles": {
+    "idle": {
+      "kind": "unresolved",
+      "source": null,
+      "clip": null,
+      "loop": true
+    },
+    "walk": {
+      "kind": "unresolved",
+      "source": null,
+      "clip": null,
+      "loop": true
+    },
+    "run": {
+      "kind": "unresolved",
+      "source": null,
+      "clip": null,
+      "loop": true
+    },
+    "jump": {
+      "kind": "unresolved",
+      "source": null,
+      "clip": null,
+      "loop": false
+    },
+    "gesture": {
+      "kind": "unsupported",
+      "source": null,
+      "clip": null,
+      "loop": false
+    },
+    "sitDown": {
+      "kind": "unsupported",
+      "source": null,
+      "clip": null,
+      "loop": false
+    },
+    "seated": {
+      "kind": "unsupported",
+      "source": null,
+      "clip": null,
+      "loop": true
+    },
+    "standUp": {
+      "kind": "unsupported",
+      "source": null,
+      "clip": null,
+      "loop": false
+    },
+    "flight": {
+      "kind": "unsupported",
+      "source": null,
+      "clip": null,
+      "loop": true
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-15",
+  "build": {
+    "entrySha256": "e4f3d3e23eeea1c9bca66c1059b8a2dc8d7a0d4679f23a42a97e455894a188be",
+    "script": "avatar-lab/dist/assets/index-B0zFrGkS.js",
+    "scriptSha256": "7ec7f8219b89030925471cdf98a897c5c0962003a7bd052715e0efb0903ece34",
+    "variantTextureBytes": 1609860
+  },
+  "checks": {
+    "avatarLabNode": 13,
+    "avatarHybridNode": 75,
+    "avatarBuilderPython": 56,
+    "avatarBuilderNode": 22,
+    "windowsPowerShellLauncher": "pass",
+    "alamrValidate": "ALAMR_OK",
+    "alamrDoctor": "ALAMR_DOCTOR_READY",
+    "chromeWebGpu": "browser-results.json"
+  },
+  "desktop": {
+    "previewId": "pv_ade66aa6b06745348c0d186cdc6f9719",
+    "buildDigest": "sha256:5160faf1e784a005f4016c7f38af10e33eb597922f8f3fbe1cf6dee91eb77b98",
+    "state": "ready",
+    "verify": "ALAMR_PREVIEW_OBSERVED",
+    "retry": "Desktop activation recovered an initial ALAMR_PREVIEW_READY_TIMEOUT",
+    "selectionAndMotionEvidence": "Chrome HTTP preview. Desktop window automation approval timed out."
+  },
+  "ownerVisualReview": "pending",
+  "delivery": "local test environment"
+}

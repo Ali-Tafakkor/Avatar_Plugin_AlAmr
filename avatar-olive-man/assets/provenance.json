@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "reference": {
+    "file": "Mature Man in Olive Shirt A-Pose.png",
+    "bytes": 1679410,
+    "sha256": "42838c530c533bc9955ecd7ac3a98fffcf72e5d25ab163459370ae31b8693279"
+  },
+  "donors": [
+    {
+      "file": "avatar03.glb",
+      "bytes": 8657480,
+      "sha256": "bf16883394c2f968faa294e8debe02dc38ff8ba4aaf98d32319e025d8185540d"
+    },
+    {
+      "file": "avatar03-texture.png",
+      "bytes": 6287128,
+      "sha256": "5344ec24daf8cbc7a9ef08eb2549f2b0084f96283c83dfa1daa9e0e8f7acc822"
+    },
+    {
+      "file": "avatar.gltf",
+      "bytes": 114117,
+      "sha256": "2ff6bd948331eb2952fbbd172c067685fa3f1f0525917223f8f1b68a5fa5206c"
+    },
+    {
+      "file": "avatar.bin",
+      "bytes": 10149258,
+      "sha256": "1a9c31cc0ceb5dc26b77b20aa154c9e5a63ac3148f31b7d038e37a40fe928a90"
+    },
+    {
+      "file": "image-03.jpg",
+      "bytes": 144828,
+      "sha256": "501a685f004838d3df0f4552d16847e57dfc82e891d90ba677756737ef1bfcea"
+    }
+  ],
+  "generated": [
+    {
+      "file": "olive-face-albedo.jpg",
+      "bytes": 456611,
+      "sha256": "880e66df7a568fee6ae66a2681da52a55561b93c369500277c00c8d6e2a90907"
+    },
+    {
+      "file": "olive-clothing-albedo.jpg",
+      "bytes": 1091597,
+      "sha256": "99526c2716326884403cb1cfdef188287dbc614a2e8ebf3b91798608be97d4a0"
+    }
+  ]
+}

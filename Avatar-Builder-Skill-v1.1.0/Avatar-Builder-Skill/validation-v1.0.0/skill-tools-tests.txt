@@ -1,0 +1,44 @@
+test_bad_magic_rejected (test_tools.GLBTests.test_bad_magic_rejected) ... ok
+test_bone_only_face_not_falsely_validated (test_tools.GLBTests.test_bone_only_face_not_falsely_validated) ... ok
+test_chunk_alignment_rejected (test_tools.GLBTests.test_chunk_alignment_rejected) ... ok
+test_cli_strict_missing_capability_exit (test_tools.GLBTests.test_cli_strict_missing_capability_exit) ... ok
+test_cli_success_and_safe_output (test_tools.GLBTests.test_cli_success_and_safe_output) ... ok
+test_cycle_does_not_hang (test_tools.GLBTests.test_cycle_does_not_hang) ... ok
+test_decoder_hints (test_tools.GLBTests.test_decoder_hints) ... ok
+test_duplicate_bone_is_not_overwritten (test_tools.GLBTests.test_duplicate_bone_is_not_overwritten) ... ok
+test_duplicate_json_rejected (test_tools.GLBTests.test_duplicate_json_rejected) ... ok
+test_explicit_bone_index_resolves_ambiguity (test_tools.GLBTests.test_explicit_bone_index_resolves_ambiguity) ... ok
+test_explicit_index_binding (test_tools.GLBTests.test_explicit_index_binding) ... ok
+test_external_files_reported_not_fetched (test_tools.GLBTests.test_external_files_reported_not_fetched) ... ok
+test_json_must_be_first (test_tools.GLBTests.test_json_must_be_first) ... ok
+test_metadata_full_coverage (test_tools.GLBTests.test_metadata_full_coverage) ... ok
+test_missing_bilateral_channel_reported (test_tools.GLBTests.test_missing_bilateral_channel_reported) ... ok
+test_morph_count_is_not_face_capability (test_tools.GLBTests.test_morph_count_is_not_face_capability) ... ok
+test_names_normalize (test_tools.GLBTests.test_names_normalize) ... ok
+test_optional_binary_chunk (test_tools.GLBTests.test_optional_binary_chunk) ... ok
+test_report_does_not_change_input (test_tools.GLBTests.test_report_does_not_change_input) ... ok
+test_skin_attributes_required (test_tools.GLBTests.test_skin_attributes_required) ... ok
+test_source_snapshot_integrity (test_tools.GLBTests.test_source_snapshot_integrity) ... ok
+test_target_name_count_mismatch (test_tools.GLBTests.test_target_name_count_mismatch) ... ok
+test_triangle_metadata_counts (test_tools.GLBTests.test_triangle_metadata_counts) ... ok
+test_truncation_rejected (test_tools.GLBTests.test_truncation_rejected) ... ok
+test_valid_json_only_container (test_tools.GLBTests.test_valid_json_only_container) ... ok
+test_version_rejected (test_tools.GLBTests.test_version_rejected) ... ok
+test_blink_interval_checked (test_tools.ProfileTests.test_blink_interval_checked) ... ok
+test_boolean_not_number (test_tools.ProfileTests.test_boolean_not_number) ... ok
+test_draft_is_valid_but_unresolved (test_tools.ProfileTests.test_draft_is_valid_but_unresolved) ... ok
+test_expression_range (test_tools.ProfileTests.test_expression_range) ... ok
+test_identity_is_not_hardcoded (test_tools.ProfileTests.test_identity_is_not_hardcoded) ... ok
+test_mapping_ranges_checked (test_tools.ProfileTests.test_mapping_ranges_checked) ... ok
+test_nonfinite_rejected (test_tools.ProfileTests.test_nonfinite_rejected) ... ok
+test_preserve_identity_required (test_tools.ProfileTests.test_preserve_identity_required) ... ok
+test_preset_channels_are_finite_and_bounded (test_tools.ProfileTests.test_preset_channels_are_finite_and_bounded) ... ok
+test_run_must_be_faster (test_tools.ProfileTests.test_run_must_be_faster) ... ok
+test_template_not_release_ready (test_tools.ProfileTests.test_template_not_release_ready) ... ok
+test_unknown_property_rejected (test_tools.ProfileTests.test_unknown_property_rejected) ... ok
+test_wrong_numeric_type_rejected (test_tools.ProfileTests.test_wrong_numeric_type_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 39 tests in 2.363s
+
+OK

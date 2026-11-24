@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "measuredAt": "2026-11-05T09:31:41.792Z",
+  "measuredAt": "2026-11-18T04:32:50.550Z",
   "units": "bytes",
   "model": {
-    "bytes": 30457820,
-    "files": 26,
+    "bytes": 37385765,
+    "files": 32,
     "resources": [
       {
         "file": "appearance/face-albedo.png",
@@ -13,6 +13,30 @@
       {
         "file": "appearance/face-provenance.json",
         "bytes": 2427
+      },
+      {
+        "file": "assets/blue-clothing-albedo-BwNcQiMk.jpg",
+        "bytes": 1179206
+      },
+      {
+        "file": "assets/blue-face-albedo-DOfd8Wfn.jpg",
+        "bytes": 434700
+      },
+      {
+        "file": "assets/elder-clothing-albedo-_4Wi6LSh.jpg",
+        "bytes": 1043571
+      },
+      {
+        "file": "assets/elder-face-albedo-B_5R7hSw.png",
+        "bytes": 2722260
+      },
+      {
+        "file": "assets/olive-clothing-albedo-n4AO6R_l.jpg",
+        "bytes": 1091597
+      },
+      {
+        "file": "assets/olive-face-albedo-Dwrsrotk.jpg",
+        "bytes": 456611
       },
       {
         "file": "avatar-hybrid/asset-manifest.json",
@@ -191,8 +215,8 @@
     ]
   },
   "bundle": {
-    "bytes": 228091286,
-    "files": 57
+    "bytes": 235051662,
+    "files": 63
   },
-  "note": "Disk bytes. Model includes geometry, images and motion. Speech assets are optional runtime loads. GPU allocations and JS heap are measured separately in the live panel."
+  "note": "Disk bytes. Model includes geometry, images and motion for all four avatars. Speech assets are optional runtime loads. GPU allocations and JS heap are measured separately in the live panel."
 }

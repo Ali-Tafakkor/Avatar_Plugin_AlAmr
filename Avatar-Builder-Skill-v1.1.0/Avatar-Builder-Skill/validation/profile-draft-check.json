@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "scope": "draft-configuration",
+  "errors": [],
+  "warnings": [
+    "posture.hands.left: finger chains unresolved/unsupported: thumb, index, middle, ring, little",
+    "posture.hands.right: finger chains unresolved/unsupported: thumb, index, middle, ring, little",
+    "Draft contains unresolved fields; this is expected for the template: assets.model, normalization.sourceForward, normalization.sourceUnitsToMeters, movement.colliderRadiusMeters, movement.colliderHeightMeters, movement.stepHeightMeters, deployment.commercialUse, deployment.threeVersion, quality.targetDevice, quality.targetFps, id, motionRoles.idle, motionRoles.walk, motionRoles.run, motionRoles.jump, contact.supportProvider, contact.gapToleranceMeters, contact.penetrationToleranceMeters, contact.feet.left.mesh, contact.feet.left.heelVertices, contact.feet.left.forefootVertices, contact.feet.left.clearanceMeters, contact.feet.left.maxPitchRadians, contact.feet.left.maxVerticalCorrectionMeters, contact.feet.right.mesh, contact.feet.right.heelVertices, contact.feet.right.forefootVertices, contact.feet.right.clearanceMeters, contact.feet.right.maxPitchRadians, contact.feet.right.maxVerticalCorrectionMeters, posture.referencePose, posture.hands.left.palmFrame, posture.hands.right.palmFrame, rig.bones.hips, rig.bones.spine, rig.bones.head, rig.bones.leftUpperArm, rig.bones.leftLowerArm, rig.bones.leftHand, rig.bones.rightUpperArm, rig.bones.rightLowerArm, rig.bones.rightHand, rig.bones.leftUpperLeg, rig.bones.leftLowerLeg, rig.bones.leftFoot, rig.bones.rightUpperLeg, rig.bones.rightLowerLeg, rig.bones.rightFoot, face.gaze.driver",
+    "This check does not verify files, facial geometry, implementation, permissions or performance."
+  ]
+}

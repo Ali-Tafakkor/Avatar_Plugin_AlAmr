@@ -1,0 +1,23 @@
+{
+  "name": "Customizable Web Avatar Builder Skill",
+  "version": "1.1.0",
+  "skillId": "avatar-threejs-builder",
+  "entrypoint": "avatar-threejs-builder/SKILL.md",
+  "portable": "AVATAR-SKILL-PORTABLE.md",
+  "guide": "README-FA.md",
+  "handoff": "HANDOFF-FA.txt",
+  "sourceSnapshotIncluded": true,
+  "sourceSnapshotUnchanged": true,
+  "binaryAvatarIncluded": false,
+  "nativeInstallationPerformed": false,
+  "utilityTestCount": 56,
+  "calibrationMathTestCount": 16,
+  "originalSourceTestCount": 36,
+  "originalSourceTestsRerun": false,
+  "agentEvalCases": 21,
+  "agentEvalCasesExecuted": 0,
+  "kernelIncluded": true,
+  "completeAvatarFactoryImplemented": false,
+  "newCharacterRendered": false,
+  "validation": "validation/summary.json"
+}

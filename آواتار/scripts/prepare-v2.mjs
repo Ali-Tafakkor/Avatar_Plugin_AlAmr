@@ -1,7 +1,8 @@
-import { readFile, writeFile, mkdir, copyFile, rm } from 'node:fs/promises';
+import { readFile, mkdir, rm } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { parseGLB } from './glb.mjs';
 import { externalizeGltf } from './externalize-gltf.mjs';
+import { copyBuildAsset, writeBuildAsset } from './write-build-asset.mjs';
 
 const from = path => new URL('../assets-source/web-v2/' + path, import.meta.url);
 const into = path => new URL('../dist/assets/avatar-v2/' + path, import.meta.url);
@@ -27,8 +28,9 @@ await mkdir(into('images/'),{recursive:true});
 // The source GLB remains in assets-source. The runtime loads the equivalent
 // glTF/bin/images; shipping a second complete GLB wastes the 25 MiB budget.
 await rm(into('avatar.glb'),{force:true});
-for (const [path,bytes] of outputs) await writeFile(into(path),bytes);
+let written = 0;
+for (const [path,bytes] of outputs) if (await writeBuildAsset(into(path),bytes)) written++;
 await mkdir(new URL('../dist/web-v2/',import.meta.url),{recursive:true});
 for(const name of ['actor.mjs','animation.mjs','expressions.mjs','math.mjs','physics.mjs','runtime.mjs','runtime.d.mts'])
-  await copyFile(new URL('../src/web-v2/'+name,import.meta.url),new URL('../dist/web-v2/'+name,import.meta.url));
-console.log(JSON.stringify({code:'AVATAR_V2_PLUGIN_ASSETS_READY',joints:manifest.jointCount,morphs:manifest.morphNames.length,images:document.images.length,files:outputs.size}));
+  await copyBuildAsset(new URL('../src/web-v2/'+name,import.meta.url),new URL('../dist/web-v2/'+name,import.meta.url));
+console.log(JSON.stringify({code:'AVATAR_V2_PLUGIN_ASSETS_READY',joints:manifest.jointCount,morphs:manifest.morphNames.length,images:document.images.length,files:outputs.size,written,reused:outputs.size-written}));

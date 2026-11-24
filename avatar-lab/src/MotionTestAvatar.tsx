@@ -2,7 +2,7 @@ import { forwardRef, useEffect, useImperativeHandle, useRef, useState } from 're
 import { useFrame, useLoader } from '@react-three/fiber';
 import { FileLoader } from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import type { AvatarWebV2Props, AvatarV2Locomotion, Avatar03Clip } from '@al-amr-community/usr-20dfea67-47be-4f4a-b48c-02c5f210a079--avatar03';
+import type { AvatarWebV2Props, AvatarV2Locomotion, Avatar03Clip } from '../../آواتار/dist/index.js';
 import { createMotionTestRuntime } from '../experiments/v1-motion/runtime.mjs';
 
 export interface MotionTestAvatarHandle {

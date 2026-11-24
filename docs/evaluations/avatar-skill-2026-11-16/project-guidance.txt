@@ -1,0 +1,5 @@
+Synthetic, minimal reproduction of active root project guidance; given identically to both project-context arms. This is not the full project or its handoff files.
+
+For a new identity, author independent reference-based head geometry first; an existing head, parametric face template, UVs or face morphs are not the starting point. Then build topology and expression/speech controls for that face. Existing behavior and motion logic may be reused. Preservation rules apply to a scoped repair of the same character or integration of the user's finished head.
+
+For a new character, build visible regional body volume/proportions and main garment shape from the reference. A recolor of the fixed model is insufficient. Keep the main neck opening and major garment volumes in geometry. Small decorative collar/lapel details, buttons and seams are texture only; no separate geometry. Refit the rig, weights, motion, contact and seating for the new proportions.

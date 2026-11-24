@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "checks": [
+    "SKILL.md YAML name/description match folder",
+    "agents/openai.yaml parses and references the correct skill",
+    "Full Draft 2020-12 schema validation of profile template passed",
+    "All skill/source JSON files parse",
+    "31 source snapshot files byte-identical to original ZIP",
+    "Literal file references in SKILL.md resolve",
+    "13 prospective agent eval scenarios labeled not executed"
+  ],
+  "notTested": [
+    "actual GLB rendering",
+    "generalized runtime implementation",
+    "live-agent skill adherence",
+    "native-host installation"
+  ]
+}

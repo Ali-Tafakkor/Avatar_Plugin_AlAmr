@@ -1,0 +1,371 @@
+{
+  "status": "Not executed against a live agent; prospective evaluation cases only.",
+  "rubric": "Pass only on observable behavior/artifacts; confidence or checklist repetition is insufficient.",
+  "cases": [
+    {
+      "id": "photo-likeness-missing-outfit",
+      "prompt": "Build a 3D character with this person's likeness from two facial photos. Keep the Young Purple Avatar's animation and hands.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Asks which garments, colors and footwear to use or whether the user delegates them",
+        "Records visible likeness and unseen details without inventing a full-body reference",
+        "Constructs fresh neutral facial anatomy from the references, then authors its topology and rig; reuses compatible body behavior only",
+        "Verifies head and neck motion, expressions, hands and hand–body contact on the requested build"
+      ]
+    },
+    {
+      "id": "explicit-outfit-reference",
+      "prompt": "Use these three photos. The full-body reference is the outfit, but change the coat to green.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Uses the designated outfit photo and explicit color change",
+        "Asks only about material ambiguities",
+        "Verifies coat fit during arm and neck motion and checks hands against the new coat"
+      ]
+    },
+    {
+      "id": "photo-only-authoring-unavailable",
+      "prompt": "Build the same avatar but from my face photograph, with a long coat and boots. No 3D asset is attached.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Checks actual from-scratch facial authoring access and never falls back to the old head without the user changing scope",
+        "With unavailable authoring, records the exact missing mesh or rig and completes independent work",
+        "Requires on-model likeness and deformation checks before claiming delivery"
+      ]
+    },
+    {
+      "id": "standing-quiet-and-fingers",
+      "prompt": "Build the purple avatar's behaviors on my rig, where the head shifts with chest scale and one hand has three articulated fingers.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Compensates the live neck anchor on the quiet stand loop",
+        "Adds or repairs actual missing finger chains and skin influence",
+        "Verifies every digit and checks clearance on a fresh pose without offset accumulation"
+      ]
+    },
+    {
+      "id": "appearance-swap",
+      "prompt": "Build the same avatar behavior for an older woman with short silver hair and a different stature.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Does not force male sample/1.78m",
+        "Changes brief/asset/adapter rather than shared behavior",
+        "Recalibrates anchors and verifies face"
+      ]
+    },
+    {
+      "id": "commercial",
+      "prompt": "Use the original sample in a paid customer-facing site.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Flags sample non-commercial status",
+        "Separates asset and code permissions",
+        "Selects permitted asset or blocks commercial release without fake clearance"
+      ]
+    },
+    {
+      "id": "static-face",
+      "prompt": "Here is a rigged GLB with no facial morphs. Add convincing six-state emotions.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Audits missing face capability",
+        "Keeps usable body rig/clips",
+        "Authors/obtains real shapes or labels missing scope; no fake sliders"
+      ]
+    },
+    {
+      "id": "existing-host",
+      "prompt": "Add this character to our existing Three.js application and renderer.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Inspects host loop",
+        "No second RAF/renderer without reason",
+        "Provides cleanup and dependency injection"
+      ]
+    },
+    {
+      "id": "identity-morph",
+      "prompt": "The model has BodyWeight and FaceIdentity morphs. Add angry and smile.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Preserves unowned morphs",
+        "Tests identity preservation across emotion reset",
+        "Uses explicit channel ownership"
+      ]
+    },
+    {
+      "id": "ambiguous-rig",
+      "prompt": "Two bones normalize to hips and arm names differ from the sample.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Does not silently overwrite",
+        "Creates explicit unambiguous mapping",
+        "Tests reference pose and ancestry"
+      ]
+    },
+    {
+      "id": "blocked-render",
+      "prompt": "You may write files and run unit tests but have no WebGL browser.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Completes code/tests",
+        "Marks rendering/motion/face visual not-run",
+        "Does not claim realism or production quality"
+      ]
+    },
+    {
+      "id": "offline",
+      "prompt": "Make the delivered avatar run after internet is disconnected.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Local model/textures/decoders/runtime",
+        "Verifies cache readiness/integrity",
+        "Tests offline separately from online install"
+      ]
+    },
+    {
+      "id": "two-avatars",
+      "prompt": "Spawn two avatars with different faces and independent emotion controls.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Independent rigs/mixers/morph state",
+        "Shared resource ownership defined",
+        "Tests spawn/dispose and no cross-contamination"
+      ]
+    },
+    {
+      "id": "new-model",
+      "prompt": "Create a new high-detail full-body character from a textual brief.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Chooses a real authoring/asset route",
+        "Does not pass an image as GLB",
+        "Distinguishes sculpt/rig/export from runtime"
+      ]
+    },
+    {
+      "id": "cubic-motion",
+      "prompt": "Reuse this CUBICSPLINE animation with the compact source extractor.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Recognizes unsupported extractor path",
+        "Uses compatible evaluation/export route",
+        "Does not silently truncate cubic data"
+      ]
+    },
+    {
+      "id": "off-topic",
+      "prompt": "Write a poem about the ocean.",
+      "shouldUseSkill": false,
+      "expectations": [
+        "Does not force avatar tools or files"
+      ]
+    },
+    {
+      "id": "static-portrait",
+      "prompt": "Generate a two-dimensional headshot image, no 3D or animation.",
+      "shouldUseSkill": false,
+      "expectations": [
+        "Does not substitute the 3D runtime workflow"
+      ]
+    },
+    {
+      "id": "floating-heel",
+      "prompt": "My shoes touch at the toe but the heels float. Fix the web avatar.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Measures deformed heel and forefoot separately",
+        "Checks pitch/toe/normalization before root offset",
+        "Releases static correction during jump",
+        "Records residuals and actual views"
+      ]
+    },
+    {
+      "id": "mirrored-hands",
+      "prompt": "Both hands look splayed and the wrists sit behind the body.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Calibrates each palm/flexion frame separately",
+        "Checks shoulder/upperarm mapping in side view",
+        "Uses fresh base pose and state ownership",
+        "Preserves gesture and tracking channels"
+      ]
+    },
+    {
+      "id": "high-heels",
+      "prompt": "Build a short stylized character wearing high heels.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Does not force flat ankle identity or sample height/style",
+        "Uses heel-tip and forefoot contact patches",
+        "Recalibrates anatomy and gait",
+        "Renders actual footwear if tools/assets available"
+      ]
+    },
+    {
+      "id": "partial-hand-rig",
+      "prompt": "This body has only thumb and index chains. Add five-finger grabbing.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Reports missing actual digit chains",
+        "Does not count face-donor bones as body fingers",
+        "Authors/replaces the rig if possible",
+        "Does not claim grasp/Quest implemented from types"
+      ]
+    },
+    {
+      "id": "new-face",
+      "prompt": "Change the face identity while retaining expressive eyelids and mouth.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Constructs the new neutral face independently from the requested references rather than warping a donor",
+        "Authors new eyelid/lip topology, eyes, teeth and facial deformers, then binds semantic controls",
+        "Compares neutral clay likeness before texture/hair polish",
+        "Tests actual six expressions and blink on the new geometry"
+      ]
+    },
+    {
+      "id": "seated-neck",
+      "prompt": "A separately mounted expressive head looks fine standing but exposes the neck while seated.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Uses current torso/neck anchors parent-first",
+        "Checks model scaling and bind transforms",
+        "Fits private seam/mask without destroying collar",
+        "Verifies seated/run plus face states"
+      ]
+    },
+    {
+      "id": "external-host",
+      "prompt": "Use my existing React Three Fiber controller and renderer, outside Al-Amr.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Uses host pose/motion and one frame loop",
+        "No Al-Amr dependency or fake API",
+        "Declares material/renderer compatibility",
+        "Tests independent avatars and cancellation/disposal"
+      ]
+    },
+    {
+      "id": "preview-jump",
+      "prompt": "After selecting Sitting, pressing jump raises a seated avatar.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Clears preview ownership before jump",
+        "Restores intended playback",
+        "Tests button and actual movement bindings",
+        "Preserves original jump source"
+      ]
+    },
+    {
+      "id": "same-head-new-decoration",
+      "prompt": "These four avatars have different clothes, hair and ages but the same underlying face. Build the next one from these new face references, with speech and emotion.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Rejects inherited neutral anatomy even if textures and file hashes differ",
+        "Shows reference-derived neutral geometry without identity decoration",
+        "Authors facial deformation on the new geometry and checks combined speech/emotion"
+      ]
+    },
+    {
+      "id": "donor-uv-conflict",
+      "prompt": "Make a new reference-based person. Our old pipeline preserves the Purple head UV islands and all 66 morph targets.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Treats old vertex counts, UV islands and deltas as implementation details, not new-head constraints",
+        "Constructs new anatomy and UVs; adapts the runtime semantic mapping",
+        "Does not use old preservation rules or the Olive case study to justify a donor face"
+      ]
+    },
+    {
+      "id": "unknown-profile",
+      "prompt": "Only this front portrait is available. Build a new identity with the same speech controls; I cannot provide a profile.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Records uncertainty in nose projection, skull depth and unseen features",
+        "Constructs reference-supported anatomy and exposes uncertain profile for review",
+        "Does not claim exact hidden geometry or copy the old head profile"
+      ]
+    },
+    {
+      "id": "accepted-identity-repair",
+      "prompt": "The current face is approved. Fix only its left eyelid gap during blink; keep my face unchanged.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Uses existing-character repair mode",
+        "Keeps accepted identity and unrelated behavior",
+        "Uses a bounded correction and verifies closure/neutral without rebuilding the whole face"
+      ]
+    },
+    {
+      "id": "retopology-neutral-drift",
+      "prompt": "The new sculpt resembles my reference, but after retopology and rigging it looks like the default sample again.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Compares retopologized neutral against the saved original sculpt in matched views",
+        "Restores target anatomy and recalibrates/rebuilds affected deformers",
+        "Does not accept expressions passing as evidence of identity passing"
+      ]
+    },
+    {
+      "id": "opaque-face-generator",
+      "prompt": "A service can return a rigged head but does not disclose whether it starts from a stock face. Use it for my from-scratch identity.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Checks whether construction provenance can satisfy the requirement",
+        "Does not claim from-scratch geometry from an opaque result",
+        "Reports the missing authoring route and completes authorized independent work"
+      ]
+    },
+    {
+      "id": "regional-body-fullness",
+      "prompt": "Use this full-body and side reference: fuller abdomen and thighs, narrow shoulders. Keep the Purple avatar movement.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Models regional body widths/depths and proportions rather than a global scale or unchanged slim donor",
+        "Refits joints/weights and updates belly/thigh contact and seated clearance",
+        "Compares plain-material front/profile/three-quarter body geometry to reference"
+      ]
+    },
+    {
+      "id": "reference-coat-not-recolor",
+      "prompt": "Build this character in the long loose coat and wide trousers shown in the reference.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Models coat length/bulk, sleeves and trouser silhouette rather than recoloring a short shirt",
+        "Separates cloth ease from underlying body volume and records unseen details",
+        "Verifies hem/leg interference and clothing fit during movement"
+      ]
+    },
+    {
+      "id": "texture-only-garment-details",
+      "prompt": "Follow this shirt reference with visible collar and buttons, but show these details only in texture.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Uses a simple fitted neck opening without modeled collar bands/flaps",
+        "Paints collar/lapel/button appearance in garment UVs, no tiny meshes or displacement geometry",
+        "Checks mesh inventory and texture stability during neck/shoulder movement"
+      ]
+    },
+    {
+      "id": "missing-body-build",
+      "prompt": "Only a headshot is attached. Build a full-body avatar with a plain outfit.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Asks for a body reference or preferred/delegated build rather than defaulting silently to the sample",
+        "Records uncertainties and continues independent head/runtime work",
+        "Does not infer exact weight or hidden proportions from a facial photograph"
+      ]
+    },
+    {
+      "id": "loose-cloth-is-not-body",
+      "prompt": "This person wears a very loose robe in the only available image. Match it.",
+      "shouldUseSkill": true,
+      "expectations": [
+        "Models the visible robe silhouette",
+        "Distinguishes garment volume from unknown body fullness",
+        "Does not claim exact hidden waist or mass; records interpretation and checks fit/motion"
+      ]
+    }
+  ]
+}

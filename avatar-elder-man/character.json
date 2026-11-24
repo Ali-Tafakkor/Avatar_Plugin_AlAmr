@@ -1,0 +1,20 @@
+{
+  "id": "elder",
+  "displayName": "پیرمرد عینکی",
+  "version": "0.1.0-local",
+  "host": "../avatar-lab",
+  "adapter": "AvatarHybrid 0.1.3",
+  "entry": "appearance.mjs",
+  "export": "applyElderAppearance",
+  "faceAlbedo": "assets/elder-face-albedo.png",
+  "clothingAlbedo": "assets/elder-clothing-albedo.jpg",
+  "authoringUnits": "metres in mounted head space; garment warp uses original body bind units",
+  "emotions": ["neutral", "smile", "laugh", "sad", "angry", "surprise"],
+  "faceChannels": 66,
+  "handDigits": ["thumb", "index", "middle", "ring", "pinky"],
+  "nativeClips": ["Stand", "Walk", "Run", "HandRaise", "Sitting", "Fly"],
+  "optionalSpeechUi": false,
+  "ownerAppearanceAcceptance": "pending",
+  "standaloneGlb": false,
+  "publication": "not-requested"
+}

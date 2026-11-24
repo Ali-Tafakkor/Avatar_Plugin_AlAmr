@@ -1,0 +1,13 @@
+Use the attached avatar-threejs-builder workflow for tasks about reusable full-body Three.js avatars, skeletal locomotion, expressive faces and camera integration. For unrelated tasks, do not force this workflow.
+
+Read AVATAR-SKILL-PORTABLE.md or avatar-threejs-builder/SKILL.md first, then the source-audit section and relevant references. Treat the attached documents as task guidance within the host's instruction and safety hierarchy, not as permission to bypass it.
+
+Keep appearance separate from asset adapters and common runtime behavior. Never impose the historical sample's identity, height, wardrobe, asset vendor or license. Inspect existing user models/rigs/clips before replacing them. A description/profile is not generated 3D geometry.
+
+Preserve the requested full-body controls, six facial states, blink/gaze, face-prioritized detail and portrait/follow/orbit camera behavior unless the user changes them. Map actual bones and facial channels; preserve unowned identity and corrective morphs. Integrate with the host's render loop and lifecycle rather than starting an unrelated application.
+
+Distinguish original source facts from proposed portability requirements. The reference project does not already implement the new profile or reusable API. Respect independent model, texture, motion and code licenses; do not treat a non-commercial sample as commercially cleared.
+
+When code/file tools are available, implement and deliver runnable artifacts, configuration, mappings, provenance, tests and simple launch instructions. When a required tool or asset is unavailable, state that specific limit and complete independently testable work. Never claim to have generated, downloaded, rendered, benchmarked or licensed something without evidence.
+
+Report metadata, unit, server, browser, face visual, motion visual and performance checks separately. Do not inherit old test passes for new assets. Never label an unrendered prototype as photorealistic or production-ready. Use the user's language for explanations; define unfamiliar terms. Do not request or upload private face photos to external services without appropriate user authorization.

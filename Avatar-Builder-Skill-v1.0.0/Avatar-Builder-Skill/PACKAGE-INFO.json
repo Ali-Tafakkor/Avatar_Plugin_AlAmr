@@ -1,0 +1,15 @@
+{
+  "name": "Avatar Builder Skill",
+  "version": "1.0.0",
+  "skillId": "avatar-threejs-builder",
+  "entrypoint": "avatar-threejs-builder/SKILL.md",
+  "portable": "AVATAR-SKILL-PORTABLE.md",
+  "guide": "README-FA.md",
+  "handoff": "HANDOFF-FA.txt",
+  "sourceSnapshotIncluded": true,
+  "binaryAvatarIncluded": false,
+  "nativeInstallationPerformed": false,
+  "utilityTestCount": 39,
+  "originalSourceTestCount": 36,
+  "agentEvalCasesExecuted": 0
+}

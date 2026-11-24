@@ -1,0 +1,133 @@
+{
+  "report_kind": "external_custom_metrics",
+  "schema_version": "1",
+  "observation_source": "external",
+  "executed_by_skillevaluator": false,
+  "imported_at": "2026-11-16T18:41:29.136608+00:00",
+  "source_sha256": "213120446db414682a8ffbaa854b25b7cf66cee8f2869a37459dc3fc52fc6d65",
+  "evaluation": {
+    "dataset_id": "avatar-builder-preflight-project",
+    "dataset_version": "1",
+    "skill_id": "avatar-threejs-builder",
+    "skill_version": "1.4.0 vs baseline",
+    "agent": "offline chat response, no tools",
+    "agent_version": "version: 0.9.0-dev (build 1, commit 6c01da6)",
+    "model": "gemma-4-E4B-it-Q4_K_M.gguf",
+    "environment": "llama.cpp Windows offline IPv4 loopback, reasoning off, greedy"
+  },
+  "provenance": {
+    "producer": "avatar-builder offline pilot v1; single reviewer",
+    "run_id": "local-run-project-1.4.0-vs-baseline",
+    "created_at": "2026-11-16T18:41:27+00:00"
+  },
+  "metric_definitions": {
+    "decision_criteria_met": {
+      "version": "1",
+      "unit": "fraction",
+      "direction": "higher_is_better",
+      "aggregation": "mean"
+    },
+    "all_decision_criteria_met": {
+      "version": "1",
+      "unit": "fraction",
+      "direction": "higher_is_better",
+      "aggregation": "mean"
+    },
+    "input_context_fraction_8192": {
+      "version": "1",
+      "unit": "fraction_of_8192",
+      "direction": "lower_is_better",
+      "aggregation": "mean"
+    }
+  },
+  "observations": [
+    {
+      "case_id": "body-coat",
+      "attempt": 1,
+      "arm": "without_skill",
+      "custom_metrics": {
+        "decision_criteria_met": 0.2,
+        "all_decision_criteria_met": 0.0,
+        "input_context_fraction_8192": 0.0538330078125
+      }
+    },
+    {
+      "case_id": "fresh-face",
+      "attempt": 1,
+      "arm": "without_skill",
+      "custom_metrics": {
+        "decision_criteria_met": 0.4,
+        "all_decision_criteria_met": 0.0,
+        "input_context_fraction_8192": 0.0501708984375
+      }
+    },
+    {
+      "case_id": "fresh-face",
+      "attempt": 1,
+      "arm": "with_skill",
+      "custom_metrics": {
+        "decision_criteria_met": 0.6,
+        "all_decision_criteria_met": 0.0,
+        "input_context_fraction_8192": 0.62158203125
+      }
+    },
+    {
+      "case_id": "body-coat",
+      "attempt": 1,
+      "arm": "with_skill",
+      "custom_metrics": {
+        "decision_criteria_met": 0.4,
+        "all_decision_criteria_met": 0.0,
+        "input_context_fraction_8192": 0.57421875
+      }
+    }
+  ],
+  "arms": {
+    "with_skill": {
+      "observations": 2,
+      "custom_metrics": {
+        "all_decision_criteria_met": 0.0,
+        "decision_criteria_met": 0.5,
+        "input_context_fraction_8192": 0.5979
+      },
+      "counts": {
+        "decision_criteria_met": 2,
+        "all_decision_criteria_met": 2,
+        "input_context_fraction_8192": 2
+      }
+    },
+    "without_skill": {
+      "observations": 2,
+      "custom_metrics": {
+        "all_decision_criteria_met": 0.0,
+        "decision_criteria_met": 0.3,
+        "input_context_fraction_8192": 0.052
+      },
+      "counts": {
+        "decision_criteria_met": 2,
+        "all_decision_criteria_met": 2,
+        "input_context_fraction_8192": 2
+      }
+    }
+  },
+  "custom_lift": {
+    "all_decision_criteria_met": {
+      "delta": 0.0,
+      "improvement": 0.0,
+      "paired_cases": 2,
+      "paired_attempts": 2
+    },
+    "decision_criteria_met": {
+      "delta": 0.2,
+      "improvement": 0.2,
+      "paired_cases": 2,
+      "paired_attempts": 2
+    },
+    "input_context_fraction_8192": {
+      "delta": 0.5459,
+      "improvement": -0.5459,
+      "paired_cases": 2,
+      "paired_attempts": 2
+    }
+  }
+}

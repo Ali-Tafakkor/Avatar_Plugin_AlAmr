@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectRoot": null,
+  "requestSummary": null,
+  "resolvedProfile": null,
+  "assetHashes": {},
+  "completedGates": [],
+  "pendingGates": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H"
+  ],
+  "decisions": [],
+  "actualTestEvidence": [],
+  "licenseBlockers": [],
+  "toolLimitations": [],
+  "nextVerifiableAction": null,
+  "warnings": [
+    "A previous agent summary is not execution evidence. Inspect the files."
+  ]
+}

@@ -8,7 +8,7 @@
   },
   "slug": "avatar03",
   "name": "آواتار ۳",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "shortDescription": "آواتار با چهره و دست‌های ارتقایافته، احساسات، حرکت طبیعی و کنترل اختیاری صورت از میکروفن",
   "category": "utility",
   "localizations": {},
@@ -31,20 +31,12 @@
         "environment"
       ],
       "exports": [
-        "Avatar03",
         "AVATAR03_CLIPS",
-        "AVATAR03_MODEL_URL",
-        "AVATAR03_HEIGHT",
         "MOTION_CLIPS",
         "Avatar03Animator",
-        "AvatarWebV2",
-        "AVATAR_V2_MODEL_URL",
-        "AVATAR_V2_MOTIONS_URL",
-        "AVATAR_V2_HEIGHT",
         "EMOTIONS",
         "FACE_GROUPS",
         "LOCOMOTION_PROFILE",
-        "createWebAvatarRuntime",
         "AvatarHybrid",
         "AVATAR_HYBRID_LEGACY_MODEL_URL",
         "AVATAR_HYBRID_MODEL_URL",
@@ -56,7 +48,10 @@
         "SPEECH_WORKER_URL",
         "SPEECH_CAPTURE_WORKLET_URL",
         "DEFAULT_LAUGHTER_WORKER_URL",
-        "AVATAR_HYBRID_TEXTURE_URL"
+        "AVATAR_HYBRID_TEXTURE_URL",
+        "AVATAR_HYBRID_FACE_ALBEDO_URL",
+        "getHybridFaceDetailMeshes",
+        "renderHybridFaceTile"
       ],
       "capabilities": [
         "render:3d",
@@ -68,17 +63,7 @@
           {
             "exportName": "AvatarHybrid",
             "surface": "avatar.character",
-            "description": "Current accepted AvatarHybrid: enhanced expressive face, fully rigged hands, relaxed idle, hand contact guard and fitted original garment. Mount in the host-owned scene."
-          },
-          {
-            "exportName": "AvatarWebV2",
-            "description": "Complete web avatar with corrected athletic locomotion, anatomical knees/soles and facial morphs, mounted in the host-owned PlayerRig avatar prop.",
-            "surface": "avatar.character"
-          },
-          {
-            "exportName": "Avatar03",
-            "surface": "avatar.character",
-            "description": "Animated Avatar 03 character supplied to the host-owned PlayerRig avatar prop."
+            "description": "Young Purple Avatar with the accepted expressive face, articulated hands, quiet idle, contact guard and fitted original garment. Mount in the host-owned scene."
           }
         ]
       },

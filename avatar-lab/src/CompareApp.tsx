@@ -7,7 +7,7 @@ import { PlayerRig, createFlatNavigationSurface, computeCameraTransform,
   type AvatarLocomotion } from '@al-amr-community/usr-1328ef22-14d5-4f87-992f-10c9540c9a86--player-rig';
 import { AvatarWebV2, AVATAR03_CLIPS, EMOTIONS,
   type Avatar03Handle, type Avatar03Clip, type Avatar03Lighting, type AvatarWebV2Handle,
-  type Avatar03Ready, type AvatarV2Status, type EmotionName } from '@al-amr-community/usr-20dfea67-47be-4f4a-b48c-02c5f210a079--avatar03';
+  type Avatar03Ready, type AvatarV2Status, type EmotionName } from '../../آواتار/dist/index.js';
 import legacyModelUrl from '@al-amr-community/usr-20dfea67-47be-4f4a-b48c-02c5f210a079--avatar03/model?url';
 import { createComparisonSession, MOVEMENT_PROFILES, type AvatarId, type ComparisonSession } from './comparison.mjs';
 import { LabStage } from './LabStage';

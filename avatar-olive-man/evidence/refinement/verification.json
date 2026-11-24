@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-15",
+  "build": {
+    "entrySha256": "398d9bb2e9891bd30389951b07ec63d153ed3cf4bc921d4cdf46002b6a4ffaa0",
+    "script": "avatar-lab/dist/assets/index-0JIwIVD8.js",
+    "scriptSha256": "3adeccdb3bae42a5ae72a2c14d7034ab16b34df985d5faa026e59b335ed85380"
+  },
+  "checks": {
+    "avatarLabNode": 13,
+    "alamrValidate": "ALAMR_OK",
+    "alamrDoctor": "ALAMR_DOCTOR_READY",
+    "chromeWebGpu": "browser-results.json"
+  },
+  "geometry": {
+    "previousTriangles": 101262,
+    "currentTriangles": 80438,
+    "hairTextureMapsAdded": 0,
+    "shirtButtonGeometry": 0
+  },
+  "desktop": {
+    "previewId": "pv_aad5f43426ad4a3b93074c1f782da147",
+    "buildDigest": "sha256:f4c21529fc1cfedefe741055879d2a0284911635c533b93be7cb6ea531c6e229",
+    "state": "ready",
+    "verify": "ALAMR_PREVIEW_OBSERVED",
+    "selectedAvatarEvidence": "Chrome HTTP preview"
+  },
+  "ownerVisualReview": "pending",
+  "delivery": "local test environment"
+}

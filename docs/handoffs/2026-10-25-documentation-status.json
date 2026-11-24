@@ -1,0 +1,284 @@
+{
+  "dateTehran": "2026-10-25",
+  "scope": "Project documentation refresh; no new avatar build/render/test execution",
+  "branch": "avatar-v2",
+  "head": "221d477f8574f0ab204342848b99470deff52d09",
+  "skillVersion": "1.1.0",
+  "pluginVersion": "0.1.2",
+  "skillIntegrity": {
+    "status": "pass",
+    "checksumEntries": 80,
+    "zipEntries": 81,
+    "archiveSha256": "554162efad5cb0772321e360419c925c61c06a8b0d45c358319d517a5942f718",
+    "originalFilesMatched": 67,
+    "validatedSkillInputHashes": "pass"
+  },
+  "priorTests": {
+    "testedAtUtc": "2026-10-22T06:15:33.740161+00:00",
+    "pythonCount": 56,
+    "javascriptCount": 16,
+    "rerunThisDocumentationStage": false,
+    "liveAgentCasesExecuted": 0,
+    "newCharacterRendered": false
+  },
+  "launcherPathsPresent": true,
+  "gitStateBeforeDocumentationRefresh": [
+    {
+      "status": " M",
+      "path": "AGENTS.md"
+    },
+    {
+      "status": " M",
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/SKILL.md"
+    },
+    {
+      "status": " M",
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-backend.md"
+    },
+    {
+      "status": " M",
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-bundles.md"
+    },
+    {
+      "status": " M",
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-companions.md"
+    },
+    {
+      "status": " M",
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-development.md"
+    },
+    {
+      "status": " M",
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-hampa.md"
+    },
+    {
+      "status": " M",
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-notifications.md"
+    },
+    {
+      "status": " M",
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-plugins.md"
+    },
+    {
+      "status": " M",
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-publishing.md"
+    },
+    {
+      "status": " M",
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-runtime.md"
+    },
+    {
+      "status": " M",
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/alamr.d.ts"
+    },
+    {
+      "status": " M",
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/SKILL.md"
+    },
+    {
+      "status": " M",
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-backend.md"
+    },
+    {
+      "status": " M",
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-bundles.md"
+    },
+    {
+      "status": " M",
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-companions.md"
+    },
+    {
+      "status": " M",
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-development.md"
+    },
+    {
+      "status": " M",
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-hampa.md"
+    },
+    {
+      "status": " M",
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-notifications.md"
+    },
+    {
+      "status": " M",
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-plugins.md"
+    },
+    {
+      "status": " M",
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-publishing.md"
+    },
+    {
+      "status": " M",
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-runtime.md"
+    },
+    {
+      "status": " M",
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/alamr.d.ts"
+    },
+    {
+      "status": " M",
+      "path": "DOCUMENTATION_INDEX_FA.md"
+    },
+    {
+      "status": " M",
+      "path": "NEXT_AGENT_START_HERE.md"
+    },
+    {
+      "status": " M",
+      "path": "PROJECT_HANDOFF.md"
+    },
+    {
+      "status": " M",
+      "path": "PROJECT_HISTORY_FA.md"
+    },
+    {
+      "status": " M",
+      "path": "آواتار/.agents/skills/al-amr/SKILL.md"
+    },
+    {
+      "status": " M",
+      "path": "آواتار/.agents/skills/al-amr/agent-backend.md"
+    },
+    {
+      "status": " M",
+      "path": "آواتار/.agents/skills/al-amr/agent-bundles.md"
+    },
+    {
+      "status": " M",
+      "path": "آواتار/.agents/skills/al-amr/agent-companions.md"
+    },
+    {
+      "status": " M",
+      "path": "آواتار/.agents/skills/al-amr/agent-development.md"
+    },
+    {
+      "status": " M",
+      "path": "آواتار/.agents/skills/al-amr/agent-hampa.md"
+    },
+    {
+      "status": " M",
+      "path": "آواتار/.agents/skills/al-amr/agent-notifications.md"
+    },
+    {
+      "status": " M",
+      "path": "آواتار/.agents/skills/al-amr/agent-plugins.md"
+    },
+    {
+      "status": " M",
+      "path": "آواتار/.agents/skills/al-amr/agent-publishing.md"
+    },
+    {
+      "status": " M",
+      "path": "آواتار/.agents/skills/al-amr/agent-runtime.md"
+    },
+    {
+      "status": " M",
+      "path": "آواتار/alamr.d.ts"
+    },
+    {
+      "status": "??",
+      "path": "AVATAR_BUILDER_SKILL_HANDOFF_FA.md"
+    },
+    {
+      "status": "??",
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-changes.md"
+    },
+    {
+      "status": "??",
+      "path": "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-subject-families.md"
+    },
+    {
+      "status": "??",
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-changes.md"
+    },
+    {
+      "status": "??",
+      "path": "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-subject-families.md"
+    },
+    {
+      "status": "??",
+      "path": "Avatar-Builder-Skill-v1.0.0/"
+    },
+    {
+      "status": "??",
+      "path": "Avatar-Builder-Skill-v1.1.0/"
+    },
+    {
+      "status": "??",
+      "path": "آواتار/.agents/skills/al-amr/agent-changes.md"
+    },
+    {
+      "status": "??",
+      "path": "آواتار/.agents/skills/al-amr/agent-subject-families.md"
+    }
+  ],
+  "preexistingChangedFileHashes": {
+    "AGENTS.md": "a5b895f0f08f61af49d3f5218f43bb159346f104202e6c6bb1f166555ccc7db2",
+    "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/SKILL.md": "b658c83ff6c0c9f573de74cf1b30e3abf1875c7a523b0c4f0c1e21dedc40d057",
+    "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-backend.md": "d015d0138f9dbbf8af3884bb9939878cf0886b7c86cd688c8015b4772bf387c8",
+    "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-bundles.md": "5f5fdac3450f7536ac7f08fb9a0bc9faa5cc46a56059a2e7802c8f63607b9035",
+    "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-companions.md": "e714defa94ed9bf29f1a7e5d9bc0f7dbbcc8bc7eb9af79ffe2ea35005bd52641",
+    "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-development.md": "04bef10c5baef54262da89c683ccb1d04beaa673d77d3124518771a7826f4312",
+    "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-hampa.md": "5b6c90f042dd7e8d7e8a6ae4204e4f150250c6ae51d5b26dcc7e941fa9ffa5c1",
+    "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-notifications.md": "bab0407b512a55f299c50634128dfe97a1c86714e086788eaef9ec8d14ea8e70",
+    "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-plugins.md": "185e973e7be5a2c7bbd8779b3c93a145a7da09704c2454d7632ed81591e72a6f",
+    "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-publishing.md": "23703a69c9fb25fa270bfe4afed15abdc5aec0d9e8d86e33b7a9f1f6dae159bb",
+    "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-runtime.md": "b395806939a9d9c00d3db1678d89943785562e5cecbc46ea1dddd766ecb94de1",
+    "AlAmr-Avatar03-Environment/محیط تست آواتار/alamr.d.ts": "74d2c5c8cdc841a1a910d86bdbaf5eae59e6a3eba87cdc1bfb5740955087421c",
+    "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/SKILL.md": "b658c83ff6c0c9f573de74cf1b30e3abf1875c7a523b0c4f0c1e21dedc40d057",
+    "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-backend.md": "d015d0138f9dbbf8af3884bb9939878cf0886b7c86cd688c8015b4772bf387c8",
+    "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-bundles.md": "5f5fdac3450f7536ac7f08fb9a0bc9faa5cc46a56059a2e7802c8f63607b9035",
+    "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-companions.md": "e714defa94ed9bf29f1a7e5d9bc0f7dbbcc8bc7eb9af79ffe2ea35005bd52641",
+    "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-development.md": "04bef10c5baef54262da89c683ccb1d04beaa673d77d3124518771a7826f4312",
+    "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-hampa.md": "5b6c90f042dd7e8d7e8a6ae4204e4f150250c6ae51d5b26dcc7e941fa9ffa5c1",
+    "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-notifications.md": "bab0407b512a55f299c50634128dfe97a1c86714e086788eaef9ec8d14ea8e70",
+    "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-plugins.md": "185e973e7be5a2c7bbd8779b3c93a145a7da09704c2454d7632ed81591e72a6f",
+    "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-publishing.md": "23703a69c9fb25fa270bfe4afed15abdc5aec0d9e8d86e33b7a9f1f6dae159bb",
+    "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-runtime.md": "b395806939a9d9c00d3db1678d89943785562e5cecbc46ea1dddd766ecb94de1",
+    "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/alamr.d.ts": "74d2c5c8cdc841a1a910d86bdbaf5eae59e6a3eba87cdc1bfb5740955087421c",
+    "DOCUMENTATION_INDEX_FA.md": "2bd29d6758a474f2675e17c7522cc0e5ea9babc48576387a983a2eab203da21b",
+    "NEXT_AGENT_START_HERE.md": "d8645dffff7b760e8bab7af9e71f1e50edda2350d70b5e3bdbbf7ef109f3281e",
+    "PROJECT_HANDOFF.md": "a1c9a9911b06a78f1c24a0ec9740e717597dc1e4900a9e3a38a41bb584475392",
+    "PROJECT_HISTORY_FA.md": "c3852477c96c2fe7f0f96ed906da009b01abb606c5b06d46e864060fb9d1e2d7",
+    "آواتار/.agents/skills/al-amr/SKILL.md": "b658c83ff6c0c9f573de74cf1b30e3abf1875c7a523b0c4f0c1e21dedc40d057",
+    "آواتار/.agents/skills/al-amr/agent-backend.md": "d015d0138f9dbbf8af3884bb9939878cf0886b7c86cd688c8015b4772bf387c8",
+    "آواتار/.agents/skills/al-amr/agent-bundles.md": "5f5fdac3450f7536ac7f08fb9a0bc9faa5cc46a56059a2e7802c8f63607b9035",
+    "آواتار/.agents/skills/al-amr/agent-companions.md": "e714defa94ed9bf29f1a7e5d9bc0f7dbbcc8bc7eb9af79ffe2ea35005bd52641",
+    "آواتار/.agents/skills/al-amr/agent-development.md": "04bef10c5baef54262da89c683ccb1d04beaa673d77d3124518771a7826f4312",
+    "آواتار/.agents/skills/al-amr/agent-hampa.md": "5b6c90f042dd7e8d7e8a6ae4204e4f150250c6ae51d5b26dcc7e941fa9ffa5c1",
+    "آواتار/.agents/skills/al-amr/agent-notifications.md": "bab0407b512a55f299c50634128dfe97a1c86714e086788eaef9ec8d14ea8e70",
+    "آواتار/.agents/skills/al-amr/agent-plugins.md": "185e973e7be5a2c7bbd8779b3c93a145a7da09704c2454d7632ed81591e72a6f",
+    "آواتار/.agents/skills/al-amr/agent-publishing.md": "23703a69c9fb25fa270bfe4afed15abdc5aec0d9e8d86e33b7a9f1f6dae159bb",
+    "آواتار/.agents/skills/al-amr/agent-runtime.md": "b395806939a9d9c00d3db1678d89943785562e5cecbc46ea1dddd766ecb94de1",
+    "آواتار/alamr.d.ts": "f04e85562d64a02d31896191c53e4ad584341ea93ca85d92a395db624dd4215a",
+    "AVATAR_BUILDER_SKILL_HANDOFF_FA.md": "9073435d6a28dd45ffef80267f7e009f4a2ae58b2975f35d7c4ee7185e71af48",
+    "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-changes.md": "86e336a10c1254d66f10b9abdbdf32a7fba02d265a3340f2b522ac22fcf9fe1a",
+    "AlAmr-Avatar03-Environment/محیط تست آواتار/.agents/skills/al-amr/agent-subject-families.md": "17c67a52869a2c0b5900a6677ed9a86287c3bc3a4810bd92244b09b68012024b",
+    "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-changes.md": "86e336a10c1254d66f10b9abdbdf32a7fba02d265a3340f2b522ac22fcf9fe1a",
+    "AlAmr-Avatar03-Environment_2/محیط تست آواتار 2/.agents/skills/al-amr/agent-subject-families.md": "17c67a52869a2c0b5900a6677ed9a86287c3bc3a4810bd92244b09b68012024b",
+    "آواتار/.agents/skills/al-amr/agent-changes.md": "86e336a10c1254d66f10b9abdbdf32a7fba02d265a3340f2b522ac22fcf9fe1a",
+    "آواتار/.agents/skills/al-amr/agent-subject-families.md": "17c67a52869a2c0b5900a6677ed9a86287c3bc3a4810bd92244b09b68012024b"
+  },
+  "remoteStatusChecked": false,
+  "registryStatusChecked": false,
+  "commitPerformed": false,
+  "pushPerformed": false,
+  "publicationPerformed": false,
+  "documentationFiles": [
+    "AGENTS.md",
+    "README.md",
+    "NEXT_AGENT_START_HERE.md",
+    "PROJECT_HANDOFF.md",
+    "PROJECT_HISTORY_FA.md",
+    "DOCUMENTATION_INDEX_FA.md",
+    "AVATAR_BUILDER_SKILL_HANDOFF_FA.md"
+  ],
+  "documentationValidation": {
+    "localLinksInUpdatedSections": "pass",
+    "checkedLinkOccurrences": 71,
+    "preexistingNonDocumentationFilesUnchanged": 39,
+    "skillPackageUnchanged": "pass",
+    "sourceCodeChangedByThisStage": false,
+    "runtimeTestsExecuted": false
+  }
+}

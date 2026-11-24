@@ -44,8 +44,17 @@ Assert-Launcher ($parsed.code -eq 'ALAMR_PREVIEW_READY') 'CLI JSON could not be 
 
 $temporary = Join-Path ([IO.Path]::GetTempPath()) ('avatar-launcher-test-' + [Guid]::NewGuid().ToString('N'))
 $plugin = Join-Path $temporary 'plugin'; $hostDirectory = Join-Path $temporary 'host'
-$inputDirectories = @((Join-Path $plugin 'src'), (Join-Path $hostDirectory 'src'), (Join-Path $plugin 'assets-source'), (Join-Path $hostDirectory 'assets-source'), (Join-Path $hostDirectory 'public'), (Join-Path $hostDirectory 'dist'))
+$olive = Join-Path $temporary 'avatar-olive-man'
+$oliveSource = Join-Path $olive 'appearance.mjs'
+$oliveAlbedo = Join-Path $olive 'assets/olive-face-albedo.jpg'
+$blue = Join-Path $temporary 'avatar-blue-man'
+$blueSource = Join-Path $blue 'tailoring.mjs'
+$blueAlbedo = Join-Path $blue 'assets/blue-clothing-albedo.jpg'
+$elder = Join-Path $temporary 'avatar-elder-man'
+$elderAlbedo = Join-Path $elder 'assets/elder-face-albedo.png'
+$inputDirectories = @((Join-Path $plugin 'src'), (Join-Path $hostDirectory 'src'), (Join-Path $plugin 'assets-source'), (Join-Path $hostDirectory 'assets-source'), (Join-Path $hostDirectory 'public'), (Join-Path $hostDirectory 'dist'), (Join-Path $olive 'assets'), (Join-Path $blue 'assets'))
 New-Item -ItemType Directory -Force -Path $inputDirectories | Out-Null
+New-Item -ItemType Directory -Force -Path (Join-Path $elder 'assets') | Out-Null
 try {
     [IO.File]::WriteAllText((Join-Path $plugin 'al-amr.plugin.json'), '{"name":"fixture","version":"0.1.3","range":">=1 <2 & safe"}')
     [IO.File]::WriteAllText((Join-Path $plugin 'package-lock.json'), '{"lockfileVersion":3,"packages":{"":{"name":"fixture"}}}')
@@ -76,17 +85,35 @@ try {
     [IO.File]::WriteAllText((Join-Path $hostDirectory 'dist/generated.js'), 'generated build content')
     $generatedChanged = Get-AvatarSourceFingerprint $temporary $plugin $hostDirectory
     Assert-Launcher ($hostAssetChanged.sha256 -eq $generatedChanged.sha256) 'Generated dist output was treated as a source edit.'
+    [IO.File]::WriteAllText($oliveSource, 'export const profile = 1;')
+    $oliveSourceChanged = Get-AvatarSourceFingerprint $temporary $plugin $hostDirectory
+    Assert-Launcher ($generatedChanged.sha256 -ne $oliveSourceChanged.sha256) 'The independent olive avatar source was not fingerprinted.'
+    [IO.File]::WriteAllText($oliveAlbedo, 'olive-avatar-atlas')
+    $oliveAssetChanged = Get-AvatarSourceFingerprint $temporary $plugin $hostDirectory
+    Assert-Launcher ($oliveSourceChanged.sha256 -ne $oliveAssetChanged.sha256) 'The independent olive avatar texture was not fingerprinted.'
+    [IO.File]::WriteAllText($blueSource, 'export const profile = 2;')
+    $blueSourceChanged = Get-AvatarSourceFingerprint $temporary $plugin $hostDirectory
+    Assert-Launcher ($oliveAssetChanged.sha256 -ne $blueSourceChanged.sha256) 'The blue avatar source was not fingerprinted.'
+    [IO.File]::WriteAllText($blueAlbedo, 'blue-avatar-atlas')
+    $blueAssetChanged = Get-AvatarSourceFingerprint $temporary $plugin $hostDirectory
+    Assert-Launcher ($blueSourceChanged.sha256 -ne $blueAssetChanged.sha256) 'The blue avatar texture was not fingerprinted.'
+    [IO.File]::WriteAllText($elderAlbedo, 'elder-avatar-png-atlas')
+    $elderAssetChanged = Get-AvatarSourceFingerprint $temporary $plugin $hostDirectory
+    Assert-Launcher ($blueAssetChanged.sha256 -ne $elderAssetChanged.sha256) 'The elder PNG texture was not fingerprinted.'
     $receipt = [ordered]@{ pluginVersion = '0.1.3'; sourceFingerprint = $changed.sha256; previewReady = $true; featureAcceptance = 'not_asserted' }
     $receiptPath = Join-Path $temporary 'last-success.json'
     Write-AvatarLaunchRecord $receiptPath $receipt
     $saved = Get-Content -LiteralPath $receiptPath -Raw -Encoding UTF8 | ConvertFrom-Json
     Assert-Launcher ($saved.previewReady -and $saved.featureAcceptance -eq 'not_asserted') 'Saved launch receipt overclaimed feature acceptance.'
 } finally {
+    if (Test-Path -LiteralPath $elderAlbedo) { Remove-Item -LiteralPath $elderAlbedo }
+    Remove-Item -LiteralPath (Join-Path $elder 'assets')
+    Remove-Item -LiteralPath $elder
     # Every created file is known and removed individually; no recursive delete.
-    foreach ($file in @((Join-Path $plugin 'al-amr.plugin.json'), (Join-Path $plugin 'package-lock.json'), (Join-Path $plugin 'src/index.mjs'), (Join-Path $hostDirectory 'src/main.ts'), (Join-Path $hostDirectory 'public/al-amr.product.json'), (Join-Path $plugin 'assets-source/model.glb'), (Join-Path $hostDirectory 'assets-source/model.onnx'), (Join-Path $hostDirectory 'dist/generated.js'), (Join-Path $temporary 'last-success.json'))) {
+    foreach ($file in @((Join-Path $plugin 'al-amr.plugin.json'), (Join-Path $plugin 'package-lock.json'), (Join-Path $plugin 'src/index.mjs'), (Join-Path $hostDirectory 'src/main.ts'), (Join-Path $hostDirectory 'public/al-amr.product.json'), (Join-Path $plugin 'assets-source/model.glb'), (Join-Path $hostDirectory 'assets-source/model.onnx'), (Join-Path $hostDirectory 'dist/generated.js'), (Join-Path $temporary 'last-success.json'), $oliveSource, $oliveAlbedo, $blueSource, $blueAlbedo)) {
         if (Test-Path -LiteralPath $file) { Remove-Item -LiteralPath $file }
     }
-    foreach ($directory in @($inputDirectories + @($plugin, $hostDirectory, $temporary))) {
+    foreach ($directory in @($inputDirectories + @($plugin, $hostDirectory, $olive, $blue, $temporary))) {
         if (Test-Path -LiteralPath $directory) { Remove-Item -LiteralPath $directory }
     }
 }

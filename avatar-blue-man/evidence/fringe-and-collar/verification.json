@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "scope": "local Blue Man fringe and added collar tabs",
+  "build": {
+    "entry": "index-BgSXIP_E.js",
+    "entrySha256": "7f9fa8c68d0dda1f14532a97665075ab61096674267ba0c9004c15e91fb257ac",
+    "validate": "ALAMR_OK",
+    "doctor": "ALAMR_DOCTOR_READY"
+  },
+  "geometry": {
+    "trianglesBefore": 79158,
+    "trianglesAfter": 78518,
+    "removedCollarTabsTriangles": 640
+  },
+  "atlasHashesMatchOriginalProvenance": true,
+  "tests": {
+    "labPassed": 14,
+    "launcherPassed": true,
+    "browser": "browser-results.json"
+  },
+  "nativePreview": {
+    "dev": "ALAMR_PREVIEW_READY",
+    "verify": "ALAMR_PREVIEW_OBSERVED",
+    "id": "pv_0aae04ba6dce4f11ab0ae97108d4229d",
+    "buildDigest": "sha256:35335fa163af9d875300df0543279fb8b3a9a0dbf008376d90d1c3590792a2f3",
+    "state": "ready",
+    "bluePortraitObserved": true
+  },
+  "ownerVisualReview": "pending"
+}

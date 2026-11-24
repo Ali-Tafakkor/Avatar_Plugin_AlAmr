@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-15",
+  "scope": "New elder reference avatar, local lab integration",
+  "build": {
+    "entry": "index-B6LB0OR5.js",
+    "sha256": "8c540aa52dd076280ab4f1cd263dd9a170a14629850fa857d67ffee2b4d0eec1",
+    "validate": "ALAMR_OK",
+    "doctor": "ALAMR_DOCTOR_READY"
+  },
+  "tests": {
+    "labPassed": 15,
+    "launcherPassed": true,
+    "browser": "browser-results.json",
+    "browserFinalPassed": true,
+    "remount": "stable neutral-base scalp subdivision",
+    "earlierRemountFailure": "Fixed: live blink affected scalp refinement eligibility"
+  },
+  "renderer": "WebGPU",
+  "inventory": {
+    "meshes": 16,
+    "triangles": 123214,
+    "vertices": 108618,
+    "geometryBytes": 40894088,
+    "textures": 7,
+    "skinnedJoints": 156,
+    "skinPaletteJoints": 521
+  },
+  "nativePreview": {
+    "dev": "ALAMR_PREVIEW_READY",
+    "verify": "ALAMR_PREVIEW_OBSERVED",
+    "id": "pv_2fba1ca551ab4e2d81f3593547d1a1f5",
+    "buildDigest": "sha256:212173cd97ae927b69769c3a5faa42962bd48e98e3477581ac3965aca36418ba",
+    "state": "ready",
+    "elderPortraitObserved": true,
+    "capture": "native-portrait.jpg",
+    "earlierAttempt": "ALAMR_PREVIEW_READY_TIMEOUT"
+  },
+  "ownerAppearanceReview": "pending",
+  "gitCommit": false,
+  "gitPush": false,
+  "registrySubmission": false
+}

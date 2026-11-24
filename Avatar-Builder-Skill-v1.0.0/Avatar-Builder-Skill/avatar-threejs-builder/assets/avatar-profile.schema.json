@@ -1,0 +1,772 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:avatar-threejs-builder:profile:1.0.0",
+  "title": "Avatar Three.js Builder draft/resolved profile",
+  "description": "Valid structure is not proof of asset existence, permissions or implementation.",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "appearance": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ageAppearance": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "presentation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "bodyProportions": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "skin": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "face": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "eyes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "hair": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "facialHair": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "clothing": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "style": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "description",
+        "ageAppearance",
+        "presentation",
+        "bodyProportions",
+        "skin",
+        "face",
+        "eyes",
+        "hair",
+        "facialHair",
+        "clothing",
+        "style"
+      ],
+      "additionalProperties": false
+    },
+    "assets": {
+      "type": "object",
+      "properties": {
+        "model": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "motionSources": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "provenanceManifest": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "model",
+        "motionSources",
+        "provenanceManifest"
+      ],
+      "additionalProperties": false
+    },
+    "normalization": {
+      "type": "object",
+      "properties": {
+        "units": {
+          "const": "meters"
+        },
+        "upAxis": {
+          "const": "+Y"
+        },
+        "canonicalForward": {
+          "const": "+Z"
+        },
+        "sourceForward": {
+          "enum": [
+            "+Z",
+            "-Z",
+            "+X",
+            "-X",
+            null
+          ]
+        },
+        "targetHeightMeters": {
+          "anyOf": [
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sourceUnitsToMeters": {
+          "anyOf": [
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "units",
+        "upAxis",
+        "canonicalForward",
+        "sourceForward",
+        "targetHeightMeters",
+        "sourceUnitsToMeters"
+      ],
+      "additionalProperties": false
+    },
+    "rig": {
+      "type": "object",
+      "properties": {
+        "adapter": {
+          "const": "humanoid-v1"
+        },
+        "requiredRoles": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "hips",
+              "spine",
+              "head",
+              "leftUpperArm",
+              "leftLowerArm",
+              "leftHand",
+              "rightUpperArm",
+              "rightLowerArm",
+              "rightHand",
+              "leftUpperLeg",
+              "leftLowerLeg",
+              "leftFoot",
+              "rightUpperLeg",
+              "rightLowerLeg",
+              "rightFoot",
+              "chest",
+              "neck",
+              "leftShoulder",
+              "rightShoulder",
+              "leftToes",
+              "rightToes",
+              "leftEye",
+              "rightEye",
+              "jaw"
+            ]
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "bones": {
+          "type": "object",
+          "propertyNames": {
+            "enum": [
+              "hips",
+              "spine",
+              "head",
+              "leftUpperArm",
+              "leftLowerArm",
+              "leftHand",
+              "rightUpperArm",
+              "rightLowerArm",
+              "rightHand",
+              "leftUpperLeg",
+              "leftLowerLeg",
+              "leftFoot",
+              "rightUpperLeg",
+              "rightLowerLeg",
+              "rightFoot",
+              "chest",
+              "neck",
+              "leftShoulder",
+              "rightShoulder",
+              "leftToes",
+              "rightToes",
+              "leftEye",
+              "rightEye",
+              "jaw"
+            ]
+          },
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "integer",
+                "minimum": 0
+              }
+            ]
+          }
+        },
+        "referencePose": {
+          "type": "string"
+        },
+        "preserveTargetBoneLengths": {
+          "const": true
+        }
+      },
+      "required": [
+        "adapter",
+        "requiredRoles",
+        "bones",
+        "referencePose",
+        "preserveTargetBoneLengths"
+      ],
+      "additionalProperties": false
+    },
+    "face": {
+      "type": "object",
+      "properties": {
+        "driver": {
+          "enum": [
+            "morph",
+            "bones",
+            "hybrid"
+          ]
+        },
+        "defaultEmotion": {
+          "enum": [
+            "neutral",
+            "smile",
+            "laugh",
+            "sad",
+            "angry",
+            "surprise"
+          ]
+        },
+        "intensity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "response": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "presets": {
+          "type": "string"
+        },
+        "requiredChannels": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "bindings": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "properties": {
+                "mesh": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "integer",
+                      "minimum": 0
+                    }
+                  ]
+                },
+                "target": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "integer",
+                      "minimum": 0
+                    }
+                  ]
+                },
+                "gain": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "offset": {
+                  "type": "number"
+                },
+                "min": {
+                  "type": "number"
+                },
+                "max": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "mesh",
+                "target",
+                "gain",
+                "offset",
+                "min",
+                "max"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "ownership": {
+          "const": "mapped-expression-channels-only"
+        },
+        "preserveUnownedMorphs": {
+          "const": true
+        },
+        "blink": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "closeSeconds": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "holdSeconds": {
+              "type": "number",
+              "minimum": 0
+            },
+            "openSeconds": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "waitMinSeconds": {
+              "type": "number",
+              "minimum": 0
+            },
+            "waitMaxSeconds": {
+              "type": "number",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "enabled",
+            "closeSeconds",
+            "holdSeconds",
+            "openSeconds",
+            "waitMinSeconds",
+            "waitMaxSeconds"
+          ],
+          "additionalProperties": false
+        },
+        "gaze": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "driver": {
+              "enum": [
+                "inspect-asset",
+                "bones",
+                "morph",
+                "none"
+              ]
+            },
+            "maxYawRadians": {
+              "type": "number",
+              "minimum": 0
+            },
+            "maxPitchRadians": {
+              "type": "number",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "enabled",
+            "driver",
+            "maxYawRadians",
+            "maxPitchRadians"
+          ],
+          "additionalProperties": false
+        },
+        "microMotion": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "seed": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "enabled",
+            "seed"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "driver",
+        "defaultEmotion",
+        "intensity",
+        "response",
+        "presets",
+        "requiredChannels",
+        "bindings",
+        "ownership",
+        "preserveUnownedMorphs",
+        "blink",
+        "gaze",
+        "microMotion"
+      ],
+      "additionalProperties": false
+    },
+    "movement": {
+      "type": "object",
+      "properties": {
+        "fixedStepSeconds": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "walkSpeedMps": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "runSpeedMps": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "accelerationMps2": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "brakingMps2": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "gravityMps2": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "jumpSpeedMps": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "coyoteSeconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "jumpBufferSeconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "anticipationSeconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "landingSeconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "colliderRadiusMeters": {
+          "anyOf": [
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "colliderHeightMeters": {
+          "anyOf": [
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "stepHeightMeters": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "rootMotion": {
+          "enum": [
+            "in-place",
+            "extracted"
+          ]
+        },
+        "maxSubsteps": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "footIK": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "fixedStepSeconds",
+        "walkSpeedMps",
+        "runSpeedMps",
+        "accelerationMps2",
+        "brakingMps2",
+        "gravityMps2",
+        "jumpSpeedMps",
+        "coyoteSeconds",
+        "jumpBufferSeconds",
+        "anticipationSeconds",
+        "landingSeconds",
+        "colliderRadiusMeters",
+        "colliderHeightMeters",
+        "stepHeightMeters",
+        "rootMotion",
+        "maxSubsteps",
+        "footIK"
+      ],
+      "additionalProperties": false
+    },
+    "camera": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "movementExitsPortrait": {
+          "type": "boolean"
+        },
+        "deriveAnchorsFromRig": {
+          "type": "boolean"
+        },
+        "manualInputPriority": {
+          "type": "boolean"
+        },
+        "initialMode": {
+          "enum": [
+            "portrait",
+            "follow",
+            "orbit"
+          ]
+        },
+        "collisionMode": {
+          "enum": [
+            "near-plane-aware",
+            "center-ray-prototype",
+            "host-provided"
+          ]
+        },
+        "portraitFovDegrees": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "exclusiveMaximum": 180
+        },
+        "orbitFovDegrees": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "exclusiveMaximum": 180
+        },
+        "followFovDegrees": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "exclusiveMaximum": 180
+        },
+        "runFovAdditionDegrees": {
+          "type": "number",
+          "minimum": 0
+        },
+        "recenterDelaySeconds": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "enabled",
+        "movementExitsPortrait",
+        "deriveAnchorsFromRig",
+        "manualInputPriority",
+        "initialMode",
+        "collisionMode",
+        "portraitFovDegrees",
+        "orbitFovDegrees",
+        "followFovDegrees",
+        "runFovAdditionDegrees",
+        "recenterDelaySeconds"
+      ],
+      "additionalProperties": false
+    },
+    "quality": {
+      "type": "object",
+      "properties": {
+        "priority": {
+          "type": "string"
+        },
+        "targetDevice": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "targetFps": {
+          "anyOf": [
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "maxDownloadBytes": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "pixelRatioCap": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "reducedMotion": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "priority",
+        "targetDevice",
+        "targetFps",
+        "maxDownloadBytes",
+        "pixelRatioCap",
+        "reducedMotion"
+      ],
+      "additionalProperties": false
+    },
+    "deployment": {
+      "type": "object",
+      "properties": {
+        "commercialUse": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "offlineAfterSetup": {
+          "type": "boolean"
+        },
+        "allowExternalPersonalDataUpload": {
+          "const": false
+        },
+        "hostOwnsRenderLoop": {
+          "const": true
+        },
+        "threeVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "commercialUse",
+        "offlineAfterSetup",
+        "allowExternalPersonalDataUpload",
+        "hostOwnsRenderLoop",
+        "threeVersion"
+      ],
+      "additionalProperties": false
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "id",
+    "appearance",
+    "assets",
+    "normalization",
+    "rig",
+    "face",
+    "movement",
+    "camera",
+    "quality",
+    "deployment",
+    "notes"
+  ],
+  "additionalProperties": false
+}

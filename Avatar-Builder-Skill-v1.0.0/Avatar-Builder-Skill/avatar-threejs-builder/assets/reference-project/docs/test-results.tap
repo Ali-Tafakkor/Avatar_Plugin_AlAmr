@@ -1,0 +1,226 @@
+TAP version 13
+# Subtest: Camera-relative forward points away from the camera
+ok 1 - Camera-relative forward points away from the camera
+  ---
+  duration_ms: 1.311531
+  type: 'test'
+  ...
+# Subtest: Diagonal input never exceeds straight movement speed
+ok 2 - Diagonal input never exceeds straight movement speed
+  ---
+  duration_ms: 0.158031
+  type: 'test'
+  ...
+# Subtest: Angle interpolation takes the shortest direction across ±π
+ok 3 - Angle interpolation takes the shortest direction across ±π
+  ---
+  duration_ms: 0.205264
+  type: 'test'
+  ...
+# Subtest: Exponential damping is independent of the number of time steps
+ok 4 - Exponential damping is independent of the number of time steps
+  ---
+  duration_ms: 0.204769
+  type: 'test'
+  ...
+# Subtest: Character settles at the defined walking speed
+ok 5 - Character settles at the defined walking speed
+  ---
+  duration_ms: 2.84478
+  type: 'test'
+  ...
+# Subtest: Shift increases speed without changing direction
+ok 6 - Shift increases speed without changing direction
+  ---
+  duration_ms: 1.953054
+  type: 'test'
+  ...
+# Subtest: Releasing movement brakes to a full stop
+ok 7 - Releasing movement brakes to a full stop
+  ---
+  duration_ms: 1.081352
+  type: 'test'
+  ...
+# Subtest: One Space press produces anticipation, flight and one grounded landing
+ok 8 - One Space press produces anticipation, flight and one grounded landing
+  ---
+  duration_ms: 1.399226
+  type: 'test'
+  ...
+# Subtest: An airborne second press does not create a double-jump
+ok 9 - An airborne second press does not create a double-jump
+  ---
+  duration_ms: 4.328967
+  type: 'test'
+  ...
+# Subtest: Jump buffering works shortly before landing
+ok 10 - Jump buffering works shortly before landing
+  ---
+  duration_ms: 0.522482
+  type: 'test'
+  ...
+# Subtest: A wall stops actual motion and animation speed
+ok 11 - A wall stops actual motion and animation speed
+  ---
+  duration_ms: 1.812623
+  type: 'test'
+  ...
+# Subtest: The controller can slide along a wall instead of sticking
+ok 12 - The controller can slide along a wall instead of sticking
+  ---
+  duration_ms: 4.153607
+  type: 'test'
+  ...
+# Subtest: A low step is walkable; a tall obstacle is not auto-climbed
+ok 13 - A low step is walkable; a tall obstacle is not auto-climbed
+  ---
+  duration_ms: 1.358474
+  type: 'test'
+  ...
+# Subtest: A moving jump lands on the top of a platform
+ok 14 - A moving jump lands on the top of a platform
+  ---
+  duration_ms: 1.119099
+  type: 'test'
+  ...
+# Subtest: World boundary constrains an arbitrarily long run
+ok 15 - World boundary constrains an arbitrarily long run
+  ---
+  duration_ms: 12.863995
+  type: 'test'
+  ...
+# Subtest: Reset clears velocity, jump and position state
+ok 16 - Reset clears velocity, jump and position state
+  ---
+  duration_ms: 3.063461
+  type: 'test'
+  ...
+# Subtest: The six facial presets are distinct and weights remain finite in [0,1]
+ok 17 - The six facial presets are distinct and weights remain finite in [0,1]
+  ---
+  duration_ms: 21.150219
+  type: 'test'
+  ...
+# Subtest: Changing expression eases into the new state instead of snapping
+ok 18 - Changing expression eases into the new state instead of snapping
+  ---
+  duration_ms: 0.169301
+  type: 'test'
+  ...
+# Subtest: Neutral returns jaw and mouth to zero without stale morphs
+ok 19 - Neutral returns jaw and mouth to zero without stale morphs
+  ---
+  duration_ms: 3.124552
+  type: 'test'
+  ...
+# Subtest: A blink opens back up and suppresses eye-wide during closure
+ok 20 - A blink opens back up and suppresses eye-wide during closure
+  ---
+  duration_ms: 2.480107
+  type: 'test'
+  ...
+# Subtest: Manual face controls are cleared by the next preset selection
+ok 21 - Manual face controls are cleared by the next preset selection
+  ---
+  duration_ms: 0.457719
+  type: 'test'
+  ...
+# Subtest: Shape mapping drives multiple meshes with the same morph and clears unrelated morphs
+ok 22 - Shape mapping drives multiple meshes with the same morph and clears unrelated morphs
+  ---
+  duration_ms: 1.252567
+  type: 'test'
+  ...
+# Subtest: Micro-motion random sequence is reproducible for QA
+ok 23 - Micro-motion random sequence is reproducible for QA
+  ---
+  duration_ms: 0.271429
+  type: 'test'
+  ...
+# Subtest: GLB parser reads valid version-2 JSON and binary chunks
+ok 24 - GLB parser reads valid version-2 JSON and binary chunks
+  ---
+  duration_ms: 1.943833
+  type: 'test'
+  ...
+# Subtest: GLB parser rejects truncation instead of accepting corrupt downloads
+ok 25 - GLB parser rejects truncation instead of accepting corrupt downloads
+  ---
+  duration_ms: 1.573469
+  type: 'test'
+  ...
+# Subtest: GLB parser rejects non-GLB and incorrect versions
+ok 26 - GLB parser rejects non-GLB and incorrect versions
+  ---
+  duration_ms: 0.550977
+  type: 'test'
+  ...
+# Subtest: Accessor extraction preserves rotation and time data
+ok 27 - Accessor extraction preserves rotation and time data
+  ---
+  duration_ms: 1.791495
+  type: 'test'
+  ...
+# Subtest: Motion pack retains the skeleton and three clips but no textures or mesh
+ok 28 - Motion pack retains the skeleton and three clips but no textures or mesh
+  ---
+  duration_ms: 1.311649
+  type: 'test'
+  ...
+# Subtest: local server: index and module MIME types are correct
+ok 29 - local server: index and module MIME types are correct
+  ---
+  duration_ms: 127.029772
+  type: 'test'
+  ...
+# Subtest: local server: status explicitly distinguishes missing assets from readiness
+ok 30 - local server: status explicitly distinguishes missing assets from readiness
+  ---
+  duration_ms: 5.910425
+  type: 'test'
+  ...
+# Subtest: local server: HEAD does not send a file body
+ok 31 - local server: HEAD does not send a file body
+  ---
+  duration_ms: 25.801761
+  type: 'test'
+  ...
+# Subtest: local server: server scripts and package metadata are not public
+ok 32 - local server: server scripts and package metadata are not public
+  ---
+  duration_ms: 14.085998
+  type: 'test'
+  ...
+# Subtest: local server: traversal and backslash paths are rejected
+ok 33 - local server: traversal and backslash paths are rejected
+  ---
+  duration_ms: 13.843442
+  type: 'test'
+  ...
+# Subtest: local server: mutation methods are rejected
+ok 34 - local server: mutation methods are rejected
+  ---
+  duration_ms: 10.944165
+  type: 'test'
+  ...
+# Subtest: local server: missing resource has a clear 404 response
+ok 35 - local server: missing resource has a clear 404 response
+  ---
+  duration_ms: 4.669252
+  type: 'test'
+  ...
+# Subtest: local server: client assets include the no-sniff security header
+ok 36 - local server: client assets include the no-sniff security header
+  ---
+  duration_ms: 15.164704
+  type: 'test'
+  ...
+1..36
+# tests 36
+# suites 0
+# pass 36
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 388.483191

@@ -7,18 +7,22 @@ import { parseGLB } from '../scripts/glb.mjs';
 const json=async path=>JSON.parse(await readFile(new URL(path,import.meta.url),'utf8'));
 const manifest=await json('../al-amr.plugin.json'),pkg=await json('../package.json');
 test('release has one matching version and every declared frontend export exists in the built entry',async()=>{
-  assert.equal(pkg.version,'0.1.3');assert.equal(manifest.version,pkg.version);
+  assert.equal(pkg.version,'0.1.4');assert.equal(manifest.version,pkg.version);
   const lock=await json('../package-lock.json');assert.equal(lock.version,pkg.version);
   assert.equal(lock.packages[''].name,pkg.name);assert.equal(lock.packages[''].version,pkg.version);
-  const exports=await import('../dist/index.js');
+  const exports=await import(new URL('../'+pkg.exports['.'].import,import.meta.url).href);
   for(const adapter of manifest.frontendAdapters)for(const name of adapter.exports)assert.ok(name in exports,name);
   for(const value of Object.values(pkg.exports)){
     if(typeof value==='string'){if(!value.includes('*'))await access(new URL('../'+value,import.meta.url));}
     else for(const file of Object.values(value))await access(new URL('../'+file,import.meta.url));
   }
-  assert.equal(typeof exports.AvatarWebV2,'object');assert.equal(typeof exports.Avatar03,'object');
-  assert.equal(exports.AVATAR03_CLIPS.length,9);assert.equal(exports.AVATAR_V2_HEIGHT,1.78);
-  await access(new URL(exports.AVATAR_V2_MODEL_URL));await access(new URL(exports.AVATAR_V2_MOTIONS_URL));
+  assert.equal(typeof exports.AvatarHybrid,'object');
+  assert.equal(exports.Avatar03,undefined);assert.equal(exports.AvatarWebV2,undefined);
+  assert.equal(exports.createWebAvatarRuntime,undefined);
+  assert.deepEqual(manifest.frontendAdapters.flatMap(a=>a.composition.provides)
+    .filter(p=>p.surface==='avatar.character').map(p=>p.exportName),['AvatarHybrid']);
+  assert.equal(exports.AVATAR03_CLIPS.length,9);assert.equal(exports.AVATAR_HYBRID_HEIGHT,1.78);
+  await access(new URL(exports.AVATAR_HYBRID_MODEL_URL));await access(new URL(exports.AVATAR_HYBRID_MOTIONS_URL));
 });
 test('packaged web model keeps all data bytes and JSON semantics while removing duplicate embedded images',async()=>{
   const original=parseGLB(await readFile(new URL('../assets-source/web-v2/avatar.glb',import.meta.url)));

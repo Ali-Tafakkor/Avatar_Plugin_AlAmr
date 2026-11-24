@@ -1,0 +1,142 @@
+TAP version 13
+# Subtest: static heel and forefoot both meet the plane after a bounded rigid fit
+ok 1 - static heel and forefoot both meet the plane after a bounded rigid fit
+  ---
+  duration_ms: 1.6232
+  type: 'test'
+  ...
+# Subtest: the same method scales to different bodies/shoes and translated ground
+ok 2 - the same method scales to different bodies/shoes and translated ground
+  ---
+  duration_ms: 0.3143
+  type: 'test'
+  ...
+# Subtest: author-defined high-heel contact patches are not flattened to an ankle identity
+ok 3 - author-defined high-heel contact patches are not flattened to an ankle identity
+  ---
+  duration_ms: 0.0915
+  type: 'test'
+  ...
+# Subtest: local planar incline supports two different patch heights
+ok 4 - local planar incline supports two different patch heights
+  ---
+  duration_ms: 0.096
+  type: 'test'
+  ...
+# Subtest: swing, air, gesture override and zero weight release instead of pinning feet
+ok 5 - swing, air, gesture override and zero weight release instead of pinning feet
+  ---
+  duration_ms: 0.1304
+  type: 'test'
+  ...
+# Subtest: small correction limits report residuals and never conceal penetration
+ok 6 - small correction limits report residuals and never conceal penetration
+  ---
+  duration_ms: 0.148
+  type: 'test'
+  ...
+# Subtest: partial contact weight leaves a partial correction and immutable inputs
+ok 7 - partial contact weight leaves a partial correction and immutable inputs
+  ---
+  duration_ms: 1.5728
+  type: 'test'
+  ...
+# Subtest: missing an intended clearance is not falsely called physical ground penetration
+ok 8 - missing an intended clearance is not falsely called physical ground penetration
+  ---
+  duration_ms: 0.1618
+  type: 'test'
+  ...
+# Subtest: invalid or degenerate calibration fails rather than emitting NaNs
+ok 9 - invalid or degenerate calibration fails rather than emitting NaNs
+  ---
+  duration_ms: 0.4176
+  type: 'test'
+  ...
+# Subtest: unreachable support-height difference remains finite and explicitly limited
+ok 10 - unreachable support-height difference remains finite and explicitly limited
+  ---
+  duration_ms: 0.2072
+  type: 'test'
+  ...
+# Subtest: two-leg reach clamps at scale-dependent limits without stretching
+ok 11 - two-leg reach clamps at scale-dependent limits without stretching
+  ---
+  duration_ms: 0.2388
+  type: 'test'
+  ...
+# Subtest: rest offsets are applied from fresh base without long-run accumulated drift
+ok 12 - rest offsets are applied from fresh base without long-run accumulated drift
+  ---
+  duration_ms: 11.8306
+  type: 'test'
+  ...
+# Subtest: independently calibrated mirrored finger axes bend in opposite local directions
+ok 13 - independently calibrated mirrored finger axes bend in opposite local directions
+  ---
+  duration_ms: 0.1623
+  type: 'test'
+  ...
+# Subtest: q and -q represent the same offset and caller arrays stay unchanged
+ok 14 - q and -q represent the same offset and caller arrays stay unchanged
+  ---
+  duration_ms: 0.119
+  type: 'test'
+  ...
+# Subtest: nonlinear identity sculpt preserves every transformed expression endpoint
+ok 15 - nonlinear identity sculpt preserves every transformed expression endpoint
+  ---
+  duration_ms: 0.3266
+  type: 'test'
+  ...
+# Subtest: invalid morph shapes or nonfinite warp results fail explicitly
+ok 16 - invalid morph shapes or nonfinite warp results fail explicitly
+  ---
+  duration_ms: 0.1284
+  type: 'test'
+  ...
+# Subtest: fits an anisotropic region with normalised planes and optional padding
+ok 17 - fits an anisotropic region with normalised planes and optional padding
+  ---
+  duration_ms: 1.9093
+  type: 'test'
+  ...
+# Subtest: reports the deepest interior hand sample and nearest exit direction
+ok 18 - reports the deepest interior hand sample and nearest exit direction
+  ---
+  duration_ms: 0.2821
+  type: 'test'
+  ...
+# Subtest: releases when no sample penetrates, including exact boundary contact
+ok 19 - releases when no sample penetrates, including exact boundary contact
+  ---
+  duration_ms: 0.1226
+  type: 'test'
+  ...
+# Subtest: scales depth with a second fit and discards the declared extreme sample
+ok 20 - scales depth with a second fit and discards the declared extreme sample
+  ---
+  duration_ms: 0.1314
+  type: 'test'
+  ...
+# Subtest: turns toward the exit normal within the explicit angular budget
+ok 21 - turns toward the exit normal within the explicit angular budget
+  ---
+  duration_ms: 0.3311
+  type: 'test'
+  ...
+# Subtest: skips degenerate lever and rejects invalid calibration
+ok 22 - skips degenerate lever and rejects invalid calibration
+  ---
+  duration_ms: 0.3635
+  type: 'test'
+  ...
+1..22
+# tests 22
+# suites 0
+# pass 22
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 91.78

@@ -1,0 +1,14 @@
+{
+  "scope": "Static HTML/CSS shell and mocked setup-error UI only; no WebGL/model execution.",
+  "checks": [
+    "loading shell visible",
+    "setup errors expose an actionable retry/status control",
+    "error instructions name the Windows launcher",
+    "technical error details retained",
+    "layout fits 1440x960 without horizontal page overflow",
+    "layout fits 1280x720 without horizontal page overflow",
+    "layout fits 1024x768 without horizontal page overflow",
+    "layout fits 390x844 without horizontal page overflow"
+  ],
+  "passed": 8
+}

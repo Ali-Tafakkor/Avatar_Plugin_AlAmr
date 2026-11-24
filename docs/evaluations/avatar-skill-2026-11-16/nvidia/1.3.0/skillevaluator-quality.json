@@ -1,0 +1,983 @@
+{
+  "version": "0.9.0",
+  "target_path": null,
+  "overall_passed": true,
+  "overall_status": "passed",
+  "incomplete_scans": [],
+  "total_validators": 1,
+  "total_skipped": 0,
+  "total_advisory_skipped": 0,
+  "total_errors": 0,
+  "total_warnings": 11,
+  "severity_counts": {
+    "critical": 0,
+    "high": 0,
+    "medium": 5,
+    "low": 6
+  },
+  "finding_counts": {
+    "raw_occurrences": 11,
+    "distinct_occurrences": 11,
+    "unique_findings": 11,
+    "duplicates_removed": 0,
+    "occurrences_grouped": 0,
+    "raw_by_severity": {
+      "critical": 0,
+      "high": 0,
+      "medium": 5,
+      "low": 6,
+      "info": 0
+    },
+    "unique_by_severity": {
+      "critical": 0,
+      "high": 0,
+      "medium": 5,
+      "low": 6,
+      "info": 0
+    }
+  },
+  "finding_groups": [
+    {
+      "finding_id": "SEF-10eee8ad2a8c297d0051",
+      "category": "QUALITY",
+      "severity": "low",
+      "check_name": "quality_efficiency",
+      "message": "Non-doc file in references/: source-snapshot-manifest.json",
+      "suggestion": "Code belongs in scripts/, data in assets/. references/ is for .md docs.",
+      "metadata": {
+        "dimension": "efficiency",
+        "deduction": 5
+      },
+      "validators": [
+        "QUALITY"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-ddf367101d4aaff41cef",
+          "validator": "QUALITY",
+          "file_path": "C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "line_number": null
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "finding_id": "SEF-14965ed4bd51afdddcef",
+      "category": "QUALITY",
+      "severity": "low",
+      "check_name": "quality_discoverability",
+      "message": "Description very long (256 chars, recommend 50-150)",
+      "suggestion": "Keep descriptions concise for progressive disclosure",
+      "metadata": {
+        "dimension": "discoverability",
+        "deduction": 5
+      },
+      "validators": [
+        "QUALITY"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-e0b7aed5ff4a2f405a3e",
+          "validator": "QUALITY",
+          "file_path": "C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "line_number": null
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "finding_id": "SEF-378f24adfec67572e606",
+      "category": "QUALITY",
+      "severity": "low",
+      "check_name": "quality_reliability",
+      "message": "No troubleshooting section documented",
+      "suggestion": "Add '## Troubleshooting' with Error/Cause/Solution patterns",
+      "metadata": {
+        "dimension": "reliability",
+        "deduction": 5
+      },
+      "validators": [
+        "QUALITY"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-996fa8d1e76012b687cc",
+          "validator": "QUALITY",
+          "file_path": "C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "line_number": null
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "finding_id": "SEF-4a6560f4aec006f302f9",
+      "category": "QUALITY",
+      "severity": "low",
+      "check_name": "quality_reliability",
+      "message": "No prerequisites/requirements documented",
+      "suggestion": "Document dependencies, API keys, or setup needed",
+      "metadata": {
+        "dimension": "reliability",
+        "deduction": 5
+      },
+      "validators": [
+        "QUALITY"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-2f87a5117201bb115c42",
+          "validator": "QUALITY",
+          "file_path": "C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "line_number": null
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "finding_id": "SEF-6d68dab37ccc357a6814",
+      "category": "QUALITY",
+      "severity": "medium",
+      "check_name": "quality_correctness",
+      "message": "Instructions don't mention 'run_script'",
+      "suggestion": "Add explicit run_script() call examples",
+      "metadata": {
+        "dimension": "correctness",
+        "deduction": 10
+      },
+      "validators": [
+        "QUALITY"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-cd543aaa1a8c999ef22a",
+          "validator": "QUALITY",
+          "file_path": "C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "line_number": null
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "finding_id": "SEF-740453e5661b3b5b6f1e",
+      "category": "QUALITY",
+      "severity": "medium",
+      "check_name": "quality_correctness",
+      "message": "No documented scripts in table format",
+      "suggestion": "Add '## Available Scripts' with table: | Script | Purpose | Arguments |",
+      "metadata": {
+        "dimension": "correctness",
+        "deduction": 10
+      },
+      "validators": [
+        "QUALITY"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-e0a08430b2b87aa8a212",
+          "validator": "QUALITY",
+          "file_path": "C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "line_number": null
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "finding_id": "SEF-b4cb537a773139d0c2ff",
+      "category": "QUALITY",
+      "severity": "medium",
+      "check_name": "quality_efficiency",
+      "message": "Deeply nested references in 02-assets-and-authoring.md",
+      "suggestion": "Keep references one level deep from SKILL.md",
+      "metadata": {
+        "dimension": "efficiency",
+        "deduction": 10
+      },
+      "validators": [
+        "QUALITY"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-38203ad9d9eb500c54d0",
+          "validator": "QUALITY",
+          "file_path": "C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "line_number": null
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "finding_id": "SEF-b6533ad44b39dbc6d0d2",
+      "category": "QUALITY",
+      "severity": "low",
+      "check_name": "quality_discoverability",
+      "message": "No '## Purpose' section",
+      "suggestion": "Add purpose section to clarify use cases",
+      "metadata": {
+        "dimension": "discoverability",
+        "deduction": 5
+      },
+      "validators": [
+        "QUALITY"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-89e4e99ef3af7e91a690",
+          "validator": "QUALITY",
+          "file_path": "C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "line_number": null
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "finding_id": "SEF-bf2d85d8c9d7a282e7ad",
+      "category": "QUALITY",
+      "severity": "medium",
+      "check_name": "quality_correctness",
+      "message": "SKILL_SPEC recommended field missing: 'metadata.author'",
+      "suggestion": "Add 'author' under metadata: \u2014 Author name or team (under metadata:)",
+      "metadata": {
+        "dimension": "correctness",
+        "deduction": 5
+      },
+      "validators": [
+        "QUALITY"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-57b79d5b5da31403a07b",
+          "validator": "QUALITY",
+          "file_path": "C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "line_number": null
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "finding_id": "SEF-dd828fd8f6476dc5f3c7",
+      "category": "QUALITY",
+      "severity": "medium",
+      "check_name": "quality_correctness",
+      "message": "SKILL_SPEC recommended field missing: 'metadata.tags'",
+      "suggestion": "Add 'tags' under metadata: \u2014 Categorization tags (under metadata:, list of 1-5 items)",
+      "metadata": {
+        "dimension": "correctness",
+        "deduction": 5
+      },
+      "validators": [
+        "QUALITY"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-a16dfca78b6bb9b33166",
+          "validator": "QUALITY",
+          "file_path": "C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "line_number": null
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "finding_id": "SEF-fc6fe3747c071963a76e",
+      "category": "QUALITY",
+      "severity": "low",
+      "check_name": "quality_reliability",
+      "message": "No limitations documented",
+      "suggestion": "Add '## Limitations' section with known issues/constraints",
+      "metadata": {
+        "dimension": "reliability",
+        "deduction": 5
+      },
+      "validators": [
+        "QUALITY"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-edcd1ecff97f55127b99",
+          "validator": "QUALITY",
+          "file_path": "C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "line_number": null
+        }
+      ],
+      "occurrence_count": 1
+    }
+  ],
+  "message_counts": {
+    "informational": 0,
+    "independent_errors": 0,
+    "independent_warnings": 0
+  },
+  "skills": [
+    {
+      "name": "avatar-threejs-builder",
+      "passed": true,
+      "issue_count": 11
+    }
+  ],
+  "contributors": [
+    {
+      "author": "Unknown",
+      "items": [
+        {
+          "name": "avatar-threejs-builder",
+          "passed": true,
+          "issue_count": 11
+        }
+      ],
+      "total_items": 1,
+      "passed_count": 1,
+      "failed_count": 0,
+      "total_issues": 11
+    }
+  ],
+  "top_issues": [
+    {
+      "message": "No documented scripts in table format",
+      "severity": "medium",
+      "total_count": 1,
+      "skills_affected": [
+        "avatar-threejs-builder"
+      ],
+      "category": "QUALITY",
+      "suggestion": "Add '## Available Scripts' with table: | Script | Purpose | Arguments |"
+    },
+    {
+      "message": "Instructions don't mention 'run_script'",
+      "severity": "medium",
+      "total_count": 1,
+      "skills_affected": [
+        "avatar-threejs-builder"
+      ],
+      "category": "QUALITY",
+      "suggestion": "Add explicit run_script() call examples"
+    },
+    {
+      "message": "SKILL_SPEC recommended field missing: 'metadata.author'",
+      "severity": "medium",
+      "total_count": 1,
+      "skills_affected": [
+        "avatar-threejs-builder"
+      ],
+      "category": "QUALITY",
+      "suggestion": "Add 'author' under metadata: \u2014 Author name or team (under metadata:)"
+    },
+    {
+      "message": "SKILL_SPEC recommended field missing: 'metadata.tags'",
+      "severity": "medium",
+      "total_count": 1,
+      "skills_affected": [
+        "avatar-threejs-builder"
+      ],
+      "category": "QUALITY",
+      "suggestion": "Add 'tags' under metadata: \u2014 Categorization tags (under metadata:, list of 1-5 items)"
+    },
+    {
+      "message": "Deeply nested references in 02-assets-and-authoring.md",
+      "severity": "medium",
+      "total_count": 1,
+      "skills_affected": [
+        "avatar-threejs-builder"
+      ],
+      "category": "QUALITY",
+      "suggestion": "Keep references one level deep from SKILL.md"
+    },
+    {
+      "message": "Description very long (256 chars, recommend 50-150)",
+      "severity": "low",
+      "total_count": 1,
+      "skills_affected": [
+        "avatar-threejs-builder"
+      ],
+      "category": "QUALITY",
+      "suggestion": "Keep descriptions concise for progressive disclosure"
+    },
+    {
+      "message": "No '## Purpose' section",
+      "severity": "low",
+      "total_count": 1,
+      "skills_affected": [
+        "avatar-threejs-builder"
+      ],
+      "category": "QUALITY",
+      "suggestion": "Add purpose section to clarify use cases"
+    },
+    {
+      "message": "No prerequisites/requirements documented",
+      "severity": "low",
+      "total_count": 1,
+      "skills_affected": [
+        "avatar-threejs-builder"
+      ],
+      "category": "QUALITY",
+      "suggestion": "Document dependencies, API keys, or setup needed"
+    },
+    {
+      "message": "No limitations documented",
+      "severity": "low",
+      "total_count": 1,
+      "skills_affected": [
+        "avatar-threejs-builder"
+      ],
+      "category": "QUALITY",
+      "suggestion": "Add '## Limitations' section with known issues/constraints"
+    },
+    {
+      "message": "No troubleshooting section documented",
+      "severity": "low",
+      "total_count": 1,
+      "skills_affected": [
+        "avatar-threejs-builder"
+      ],
+      "category": "QUALITY",
+      "suggestion": "Add '## Troubleshooting' with Error/Cause/Solution patterns"
+    },
+    {
+      "message": "Non-doc file in references/: source-snapshot-manifest.json",
+      "severity": "low",
+      "total_count": 1,
+      "skills_affected": [
+        "avatar-threejs-builder"
+      ],
+      "category": "QUALITY",
+      "suggestion": "Code belongs in scripts/, data in assets/. references/ is for .md docs."
+    }
+  ],
+  "results": [
+    {
+      "validator": "QUALITY",
+      "description": "Skill quality scoring across Correctness (35%), Discoverability (25%), Reliability (25%), and Efficiency (15%)",
+      "passed": true,
+      "status": "passed",
+      "skipped": false,
+      "skip_reason": null,
+      "incomplete_scans": [],
+      "summary": {
+        "files_scanned": 0,
+        "checks_performed": 1,
+        "errors": 0,
+        "warnings": 11,
+        "critical_count": 0,
+        "high_count": 0,
+        "medium_count": 5,
+        "low_count": 6
+      },
+      "finding_counts": {
+        "raw_occurrences": 11,
+        "distinct_occurrences": 11,
+        "unique_findings": 11,
+        "duplicates_removed": 0,
+        "occurrences_grouped": 0,
+        "raw_by_severity": {
+          "critical": 0,
+          "high": 0,
+          "medium": 5,
+          "low": 6,
+          "info": 0
+        },
+        "unique_by_severity": {
+          "critical": 0,
+          "high": 0,
+          "medium": 5,
+          "low": 6,
+          "info": 0
+        }
+      },
+      "findings": [
+        {
+          "finding_id": "SEF-740453e5661b3b5b6f1e",
+          "occurrence_id": "SEO-e0a08430b2b87aa8a212",
+          "category": "QUALITY",
+          "severity": "medium",
+          "check_name": "quality_correctness",
+          "message": "No documented scripts in table format",
+          "file_path": "C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "line_number": null,
+          "line_content": null,
+          "suggestion": "Add '## Available Scripts' with table: | Script | Purpose | Arguments |",
+          "metadata": {
+            "dimension": "correctness",
+            "deduction": 10
+          }
+        },
+        {
+          "finding_id": "SEF-6d68dab37ccc357a6814",
+          "occurrence_id": "SEO-cd543aaa1a8c999ef22a",
+          "category": "QUALITY",
+          "severity": "medium",
+          "check_name": "quality_correctness",
+          "message": "Instructions don't mention 'run_script'",
+          "file_path": "C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "line_number": null,
+          "line_content": null,
+          "suggestion": "Add explicit run_script() call examples",
+          "metadata": {
+            "dimension": "correctness",
+            "deduction": 10
+          }
+        },
+        {
+          "finding_id": "SEF-bf2d85d8c9d7a282e7ad",
+          "occurrence_id": "SEO-57b79d5b5da31403a07b",
+          "category": "QUALITY",
+          "severity": "medium",
+          "check_name": "quality_correctness",
+          "message": "SKILL_SPEC recommended field missing: 'metadata.author'",
+          "file_path": "C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "line_number": null,
+          "line_content": null,
+          "suggestion": "Add 'author' under metadata: \u2014 Author name or team (under metadata:)",
+          "metadata": {
+            "dimension": "correctness",
+            "deduction": 5
+          }
+        },
+        {
+          "finding_id": "SEF-dd828fd8f6476dc5f3c7",
+          "occurrence_id": "SEO-a16dfca78b6bb9b33166",
+          "category": "QUALITY",
+          "severity": "medium",
+          "check_name": "quality_correctness",
+          "message": "SKILL_SPEC recommended field missing: 'metadata.tags'",
+          "file_path": "C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "line_number": null,
+          "line_content": null,
+          "suggestion": "Add 'tags' under metadata: \u2014 Categorization tags (under metadata:, list of 1-5 items)",
+          "metadata": {
+            "dimension": "correctness",
+            "deduction": 5
+          }
+        },
+        {
+          "finding_id": "SEF-14965ed4bd51afdddcef",
+          "occurrence_id": "SEO-e0b7aed5ff4a2f405a3e",
+          "category": "QUALITY",
+          "severity": "low",
+          "check_name": "quality_discoverability",
+          "message": "Description very long (256 chars, recommend 50-150)",
+          "file_path": "C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "line_number": null,
+          "line_content": null,
+          "suggestion": "Keep descriptions concise for progressive disclosure",
+          "metadata": {
+            "dimension": "discoverability",
+            "deduction": 5
+          }
+        },
+        {
+          "finding_id": "SEF-b6533ad44b39dbc6d0d2",
+          "occurrence_id": "SEO-89e4e99ef3af7e91a690",
+          "category": "QUALITY",
+          "severity": "low",
+          "check_name": "quality_discoverability",
+          "message": "No '## Purpose' section",
+          "file_path": "C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "line_number": null,
+          "line_content": null,
+          "suggestion": "Add purpose section to clarify use cases",
+          "metadata": {
+            "dimension": "discoverability",
+            "deduction": 5
+          }
+        },
+        {
+          "finding_id": "SEF-4a6560f4aec006f302f9",
+          "occurrence_id": "SEO-2f87a5117201bb115c42",
+          "category": "QUALITY",
+          "severity": "low",
+          "check_name": "quality_reliability",
+          "message": "No prerequisites/requirements documented",
+          "file_path": "C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "line_number": null,
+          "line_content": null,
+          "suggestion": "Document dependencies, API keys, or setup needed",
+          "metadata": {
+            "dimension": "reliability",
+            "deduction": 5
+          }
+        },
+        {
+          "finding_id": "SEF-fc6fe3747c071963a76e",
+          "occurrence_id": "SEO-edcd1ecff97f55127b99",
+          "category": "QUALITY",
+          "severity": "low",
+          "check_name": "quality_reliability",
+          "message": "No limitations documented",
+          "file_path": "C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "line_number": null,
+          "line_content": null,
+          "suggestion": "Add '## Limitations' section with known issues/constraints",
+          "metadata": {
+            "dimension": "reliability",
+            "deduction": 5
+          }
+        },
+        {
+          "finding_id": "SEF-378f24adfec67572e606",
+          "occurrence_id": "SEO-996fa8d1e76012b687cc",
+          "category": "QUALITY",
+          "severity": "low",
+          "check_name": "quality_reliability",
+          "message": "No troubleshooting section documented",
+          "file_path": "C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "line_number": null,
+          "line_content": null,
+          "suggestion": "Add '## Troubleshooting' with Error/Cause/Solution patterns",
+          "metadata": {
+            "dimension": "reliability",
+            "deduction": 5
+          }
+        },
+        {
+          "finding_id": "SEF-b4cb537a773139d0c2ff",
+          "occurrence_id": "SEO-38203ad9d9eb500c54d0",
+          "category": "QUALITY",
+          "severity": "medium",
+          "check_name": "quality_efficiency",
+          "message": "Deeply nested references in 02-assets-and-authoring.md",
+          "file_path": "C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "line_number": null,
+          "line_content": null,
+          "suggestion": "Keep references one level deep from SKILL.md",
+          "metadata": {
+            "dimension": "efficiency",
+            "deduction": 10
+          }
+        },
+        {
+          "finding_id": "SEF-10eee8ad2a8c297d0051",
+          "occurrence_id": "SEO-ddf367101d4aaff41cef",
+          "category": "QUALITY",
+          "severity": "low",
+          "check_name": "quality_efficiency",
+          "message": "Non-doc file in references/: source-snapshot-manifest.json",
+          "file_path": "C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "line_number": null,
+          "line_content": null,
+          "suggestion": "Code belongs in scripts/, data in assets/. references/ is for .md docs.",
+          "metadata": {
+            "dimension": "efficiency",
+            "deduction": 5
+          }
+        }
+      ],
+      "success_details": [
+        {
+          "check": "quality_score",
+          "message": "Score: 81.0/100 (Grade: B)",
+          "metadata": {
+            "overall_score": 81.0,
+            "grade": "B",
+            "skill_type": "hybrid"
+          }
+        }
+      ],
+      "legacy": {
+        "errors": [],
+        "warnings": [
+          "[QUALITY-MEDIUM] No documented scripts in table format in C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "[QUALITY-MEDIUM] Instructions don't mention 'run_script' in C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "[QUALITY-MEDIUM] SKILL_SPEC recommended field missing: 'metadata.author' in C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "[QUALITY-MEDIUM] SKILL_SPEC recommended field missing: 'metadata.tags' in C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "[QUALITY-LOW] Description very long (256 chars, recommend 50-150) in C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "[QUALITY-LOW] No '## Purpose' section in C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "[QUALITY-LOW] No prerequisites/requirements documented in C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "[QUALITY-LOW] No limitations documented in C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "[QUALITY-LOW] No troubleshooting section documented in C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "[QUALITY-MEDIUM] Deeply nested references in 02-assets-and-authoring.md in C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md",
+          "[QUALITY-LOW] Non-doc file in references/: source-snapshot-manifest.json in C:\\Files\\Programming\\Avatar_Al_Amr\\Avatar-Builder-Skill-v1.3.0\\Avatar-Builder-Skill\\avatar-threejs-builder\\SKILL.md"
+        ],
+        "messages": [
+          "[OK] quality_score: Score: 81.0/100 (Grade: B)"
+        ]
+      },
+      "tier1_required_checks": [
+        "code-integrity",
+        "license",
+        "lint",
+        "pii",
+        "quality",
+        "schema",
+        "security",
+        "unicode",
+        "version"
+      ],
+      "tier1_unscanned_paths": [],
+      "quality": {
+        "overall_score": 81.0,
+        "grade": "B",
+        "skill_type": "hybrid",
+        "skill_name": "avatar-threejs-builder",
+        "dimensions": {
+          "correctness": {
+            "score": 70.0,
+            "weight": 0.35,
+            "issues_count": 4,
+            "issues": [
+              {
+                "severity": "warning",
+                "message": "No documented scripts in table format",
+                "suggestion": "Add '## Available Scripts' with table: | Script | Purpose | Arguments |",
+                "deduction": 10
+              },
+              {
+                "severity": "warning",
+                "message": "Instructions don't mention 'run_script'",
+                "suggestion": "Add explicit run_script() call examples",
+                "deduction": 10
+              },
+              {
+                "severity": "warning",
+                "message": "SKILL_SPEC recommended field missing: 'metadata.author'",
+                "suggestion": "Add 'author' under metadata: \u2014 Author name or team (under metadata:)",
+                "deduction": 5
+              },
+              {
+                "severity": "warning",
+                "message": "SKILL_SPEC recommended field missing: 'metadata.tags'",
+                "suggestion": "Add 'tags' under metadata: \u2014 Categorization tags (under metadata:, list of 1-5 items)",
+                "deduction": 5
+              }
+            ]
+          },
+          "discoverability": {
+            "score": 90.0,
+            "weight": 0.25,
+            "issues_count": 2,
+            "issues": [
+              {
+                "severity": "info",
+                "message": "Description very long (256 chars, recommend 50-150)",
+                "suggestion": "Keep descriptions concise for progressive disclosure",
+                "deduction": 5
+              },
+              {
+                "severity": "info",
+                "message": "No '## Purpose' section",
+                "suggestion": "Add purpose section to clarify use cases",
+                "deduction": 5
+              }
+            ]
+          },
+          "reliability": {
+            "score": 85.0,
+            "weight": 0.25,
+            "issues_count": 3,
+            "issues": [
+              {
+                "severity": "info",
+                "message": "No prerequisites/requirements documented",
+                "suggestion": "Document dependencies, API keys, or setup needed",
+                "deduction": 5
+              },
+              {
+                "severity": "info",
+                "message": "No limitations documented",
+                "suggestion": "Add '## Limitations' section with known issues/constraints",
+                "deduction": 5
+              },
+              {
+                "severity": "info",
+                "message": "No troubleshooting section documented",
+                "suggestion": "Add '## Troubleshooting' with Error/Cause/Solution patterns",
+                "deduction": 5
+              }
+            ]
+          },
+          "efficiency": {
+            "score": 85.0,
+            "weight": 0.15,
+            "issues_count": 2,
+            "issues": [
+              {
+                "severity": "warning",
+                "message": "Deeply nested references in 02-assets-and-authoring.md",
+                "suggestion": "Keep references one level deep from SKILL.md",
+                "deduction": 10
+              },
+              {
+                "severity": "info",
+                "message": "Non-doc file in references/: source-snapshot-manifest.json",
+                "suggestion": "Code belongs in scripts/, data in assets/. references/ is for .md docs.",
+                "deduction": 5
+              }
+            ]
+          }
+        },
+        "metrics": {
+          "total_tokens": 3283,
+          "estimated_tokens": 3283,
+          "estimate_method": "characters/4",
+          "recommended_max_tokens": 5000,
+          "frontmatter_tokens": 116,
+          "instructions_tokens": 3164,
+          "script_count": 2,
+          "has_examples": true,
+          "has_error_handling": true,
+          "has_frontmatter": true,
+          "has_instructions": false,
+          "has_scripts": true,
+          "has_lib_module": false
+        }
+      },
+      "publication_target": {
+        "skill_name": "avatar-threejs-builder",
+        "skill_digest": "sha256:8fea99b86e4eee9da5944e312b6da2e6c426fd9d903c6763a61afaf0809e4b8d",
+        "skill_digest_algorithm": "skill-evaluator-source-tree/2"
+      },
+      "publication_evidence": {
+        "schema_version": 1,
+        "producer": "skillevaluator.tier1",
+        "tier": 1,
+        "check_id": "quality"
+      }
+    }
+  ],
+  "benchmark_policy": {
+    "tier2_required": true,
+    "tier3_required": true
+  },
+  "publication_status": "incomplete",
+  "publication": {
+    "status": "incomplete",
+    "eligible": false,
+    "reasons": [
+      "Tier 1 did not run every required check: code-integrity, license, lint, pii, schema, security, unicode, version.",
+      "Required recognized built-in Tier 2 evidence is missing.",
+      "Tier 3 lacks publication-complete execution evidence."
+    ],
+    "tier3": {
+      "status": "not_run",
+      "evidence_complete": false,
+      "execution_status": "not_run",
+      "verdict": "not_run",
+      "reason": "Tier 3 lacks publication-complete execution evidence."
+    }
+  },
+  "quality_config": {
+    "source": "packaged",
+    "file": null,
+    "digest": "sha256:298ff2bf62132c8154217b7aa59fc1fd04f28cf75372f55620a2cbcd951d6549",
+    "min_score": 70
+  },
+  "evaluated_source": null,
+  "quality_summary": [
+    {
+      "overall_score": 81.0,
+      "grade": "B",
+      "skill_type": "hybrid",
+      "skill_name": "avatar-threejs-builder",
+      "dimensions": {
+        "correctness": {
+          "score": 70.0,
+          "weight": 0.35,
+          "issues_count": 4,
+          "issues": [
+            {
+              "severity": "warning",
+              "message": "No documented scripts in table format",
+              "suggestion": "Add '## Available Scripts' with table: | Script | Purpose | Arguments |",
+              "deduction": 10
+            },
+            {
+              "severity": "warning",
+              "message": "Instructions don't mention 'run_script'",
+              "suggestion": "Add explicit run_script() call examples",
+              "deduction": 10
+            },
+            {
+              "severity": "warning",
+              "message": "SKILL_SPEC recommended field missing: 'metadata.author'",
+              "suggestion": "Add 'author' under metadata: \u2014 Author name or team (under metadata:)",
+              "deduction": 5
+            },
+            {
+              "severity": "warning",
+              "message": "SKILL_SPEC recommended field missing: 'metadata.tags'",
+              "suggestion": "Add 'tags' under metadata: \u2014 Categorization tags (under metadata:, list of 1-5 items)",
+              "deduction": 5
+            }
+          ]
+        },
+        "discoverability": {
+          "score": 90.0,
+          "weight": 0.25,
+          "issues_count": 2,
+          "issues": [
+            {
+              "severity": "info",
+              "message": "Description very long (256 chars, recommend 50-150)",
+              "suggestion": "Keep descriptions concise for progressive disclosure",
+              "deduction": 5
+            },
+            {
+              "severity": "info",
+              "message": "No '## Purpose' section",
+              "suggestion": "Add purpose section to clarify use cases",
+              "deduction": 5
+            }
+          ]
+        },
+        "reliability": {
+          "score": 85.0,
+          "weight": 0.25,
+          "issues_count": 3,
+          "issues": [
+            {
+              "severity": "info",
+              "message": "No prerequisites/requirements documented",
+              "suggestion": "Document dependencies, API keys, or setup needed",
+              "deduction": 5
+            },
+            {
+              "severity": "info",
+              "message": "No limitations documented",
+              "suggestion": "Add '## Limitations' section with known issues/constraints",
+              "deduction": 5
+            },
+            {
+              "severity": "info",
+              "message": "No troubleshooting section documented",
+              "suggestion": "Add '## Troubleshooting' with Error/Cause/Solution patterns",
+              "deduction": 5
+            }
+          ]
+        },
+        "efficiency": {
+          "score": 85.0,
+          "weight": 0.15,
+          "issues_count": 2,
+          "issues": [
+            {
+              "severity": "warning",
+              "message": "Deeply nested references in 02-assets-and-authoring.md",
+              "suggestion": "Keep references one level deep from SKILL.md",
+              "deduction": 10
+            },
+            {
+              "severity": "info",
+              "message": "Non-doc file in references/: source-snapshot-manifest.json",
+              "suggestion": "Code belongs in scripts/, data in assets/. references/ is for .md docs.",
+              "deduction": 5
+            }
+          ]
+        }
+      },
+      "metrics": {
+        "total_tokens": 3283,
+        "estimated_tokens": 3283,
+        "estimate_method": "characters/4",
+        "recommended_max_tokens": 5000,
+        "frontmatter_tokens": 116,
+        "instructions_tokens": 3164,
+        "script_count": 2,
+        "has_examples": true,
+        "has_error_handling": true,
+        "has_frontmatter": true,
+        "has_instructions": false,
+        "has_scripts": true,
+        "has_lib_module": false
+      }
+    }
+  ],
+  "generated_at": "2026-11-16T18:15:42.191421+00:00"
+}

@@ -1,5 +1,11 @@
 # Changes
 
+## 0.1.4 — Young Purple Avatar only, 2026-11-16
+
+- Publish AvatarHybrid as the sole character, using the accepted face, hands, animation, speech controls and fitted garment.
+- Export the tested selective WebGL face-tile depth pass so a host can keep buried neck skin behind the real shirt.
+- Keep the earlier visual comparison components available to local development and their historical releases.
+
 ## 0.1.3 — Accepted appearance and release preparation, 2026-11-05
 
 - Include the accepted enhanced face/albedo, rigged detailed hands, hand contact guard, friendly expression presets, lightweight cloth, quiet idle, smooth shortened neck and fitted original garment neckline.

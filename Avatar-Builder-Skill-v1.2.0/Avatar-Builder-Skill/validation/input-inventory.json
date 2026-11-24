@@ -1,0 +1,342 @@
+{
+  "format": 1,
+  "sourceVersion": "1.0.0",
+  "sourceUnchanged": true,
+  "files": [
+    {
+      "path": "AVATAR-SKILL-PORTABLE.md",
+      "bytes": 82258,
+      "sha256": "f53532e2b2dc8ff7f1a39ace8d1687182718a80526c17580febc1c63aa62aca3"
+    },
+    {
+      "path": "avatar-threejs-builder/agents/openai.yaml",
+      "bytes": 349,
+      "sha256": "d4112fa5be4b727d0bad4c073cfb23a651fecf0ab5f4e58c84328e96de1746f6"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/AGENTS.example.md",
+      "bytes": 825,
+      "sha256": "499fc8ce6b828ad54066777098ab5a576d1a739ac366e6882aa18202e5f4b687"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/asset-manifest.template.json",
+      "bytes": 596,
+      "sha256": "b6a5e1840d4c2d65f9b9a05533f18e1c4ab5017b45d639f8cf557cf3e43cfe9d"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/avatar-profile.schema.json",
+      "bytes": 17186,
+      "sha256": "72a4da9986b4d65144d3c8359bdae04a831721d529aaa9391b58cc44c20fb681"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/avatar-profile.template.json",
+      "bytes": 3785,
+      "sha256": "d8bccd056871de6e70d6d0772704cbf4fd249d05e87014884aab48aab0ca4c37"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/facial-presets.json",
+      "bytes": 2487,
+      "sha256": "b00934d65fc33805b471beb7086c5f1eb054bab8c1ef008ec1ea3d13a7aaf334"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/handoff-state.template.json",
+      "bytes": 475,
+      "sha256": "4526e48ad9415b53edbd38e03eaccc86e0cb50a0e65adc0e26c9e9cbf4f5160c"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/.gitignore",
+      "bytes": 102,
+      "sha256": "b66673c59e64520fb44bc39e3cdd3e99676fc5e51afd1cb5b60a011e1723de57"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/assets/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/boot.js",
+      "bytes": 2784,
+      "sha256": "6689313af972a51e9da0b0dff8876357a618f6d16d1532551e667b3693d7df2f"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/docs/test-results.tap",
+      "bytes": 6763,
+      "sha256": "41ba92affc86a7ec8a9731f8ba6d5bd7142aa2ed39cf2797e76adc9fac18c5c3"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/docs/TEST_REPORT.md",
+      "bytes": 7824,
+      "sha256": "43f353641b2cb982022f3380f1092d6c046148311556d01482d6a6f7381b35f9"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/docs/ui-shell-results.json",
+      "bytes": 555,
+      "sha256": "cb7e676b00cd0f148a2a1ffe184242580487d0b1638bdc8284266903c98b8018"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/favicon.svg",
+      "bytes": 309,
+      "sha256": "311d70994432730c05c63e590349be9ec0129f31ea14c46097b6737fa8ff0fac"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/index.html",
+      "bytes": 7541,
+      "sha256": "791041b4eee0c1c477009217cb4cef997b2b7c8ab2f4f56a2456d202a630ad2f"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/LICENSE",
+      "bytes": 1418,
+      "sha256": "4b8bdab9c47e4cc19309e3d1a4cf96b3cfd6a97e3e6fe017e3555137102dd3e2"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/package.json",
+      "bytes": 378,
+      "sha256": "18c7d3c4d769cf61652b675d83a610ba19c456af66d308fd609f96650a5cd570"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/README-FA.md",
+      "bytes": 15711,
+      "sha256": "a97252f846c37e764187e4e14e8ec5a4dd3c24807e55f67d50c7c7474c321acf"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/README.md",
+      "bytes": 2574,
+      "sha256": "9d8a919c2a230159adfa32585ef57b73c0559cb437de9e354db915cb59d487dc"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/src/actor.mjs",
+      "bytes": 4878,
+      "sha256": "6167e75c6c331ef9312530e7f6f5c9e8b571e4dc3455b1bed80eee9c41dd1113"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/src/animation.mjs",
+      "bytes": 15478,
+      "sha256": "e7c00ab7d0a8287ce11ebf805425ffaaa9444cd341c8dc2ee8631978b94889db"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/src/camera.mjs",
+      "bytes": 3580,
+      "sha256": "1ae60e4e7c0d17480f518b5c5cc55455975bd314c2a29aa5b27343b3c62f2fff"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/src/expressions.mjs",
+      "bytes": 6029,
+      "sha256": "a242921cbbf2e1eb0d7c759b934fab6d4b2f0a922e245d40826c22434ebecddb"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/src/input.mjs",
+      "bytes": 2364,
+      "sha256": "0746c9fe492898b1dc6ef6cbc16173ecbeedc1d89f82fb24bd56bd9f4a8fafca"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/src/main.mjs",
+      "bytes": 14281,
+      "sha256": "7c4aec27894084de7bc51cf3cecd84694a89242d7299ca57bda44ede71e6dd7e"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/src/math.mjs",
+      "bytes": 1365,
+      "sha256": "9f575ae2aa57d2bb7bddd4566ab8f6eebad8278c194824ae8fa30413a48f9162"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/src/physics.mjs",
+      "bytes": 4840,
+      "sha256": "8ab5fdc6f7a3f157b2cb7a59624af62e790dc7d5eec305f8c1f857657873903c"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/src/world.mjs",
+      "bytes": 8167,
+      "sha256": "9b071ac0473eb0d7aafd0d4b21606b35c71ad238f65fde0fd1ab005b34fc6d08"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/START-WINDOWS.cmd",
+      "bytes": 264,
+      "sha256": "8417238db75d07c1d8b1c1058ccf62bfad397b43e88b6221eec600e331bd8ec8"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/start.mjs",
+      "bytes": 4715,
+      "sha256": "65bb095f0a672cd3937a50d2471dfb6af1009c9fdd9e501cb6afb4f168fb30b0"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/style.css",
+      "bytes": 12420,
+      "sha256": "8b94415674868bfed0c8b177c57cf42a4f5ad672a5fcb19ac38be184a9c2b5d9"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/tests/core.test.mjs",
+      "bytes": 7576,
+      "sha256": "c0f7447fe9849784561ace162aced7289f8e6b22d97f268e90b9a630f3d1a416"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/tests/glb.test.mjs",
+      "bytes": 2742,
+      "sha256": "6bf63050df259988770ac884a2dc358946992cc696abb18e1e66744954cfa085"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/tests/server.test.mjs",
+      "bytes": 3328,
+      "sha256": "b659f1c6a3d3799846ff42639057eaa3e8894a3979e24f026fef5eda6b4fdf54"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/THIRD_PARTY_NOTICES.md",
+      "bytes": 4796,
+      "sha256": "c40b9a526ce9640e00e16aedfdb38ecf11ba4fde2557814f4cdccc6f1ecd5073"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/tools/glb.mjs",
+      "bytes": 4570,
+      "sha256": "2498f8fdc099064d724c60cdb79a4bfb4c01c0f83b766cdb8705a864e4b765da"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/tools/setup.mjs",
+      "bytes": 7876,
+      "sha256": "b4dc3e27addf51398d485385cc4d12d729fb1a7e01f941bfa1a0c7210668d5a0"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/reference-project/vendor/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/runtime-contract.d.ts",
+      "bytes": 3225,
+      "sha256": "481c911d85e213c1459af8d73ea986b1534860c3a8e34e0d99e3c5642198fdee"
+    },
+    {
+      "path": "avatar-threejs-builder/assets/TEST-REPORT.template.md",
+      "bytes": 1539,
+      "sha256": "649b10f253aa6d4df6f7f89d7ccca9b983aded91137d25e7160363febd0f0bbf"
+    },
+    {
+      "path": "avatar-threejs-builder/evals/scenarios.json",
+      "bytes": 4403,
+      "sha256": "29461199951c2d3f205d73e795cf296f210c1735978c08c21e2efb3c2564de07"
+    },
+    {
+      "path": "avatar-threejs-builder/LICENSE",
+      "bytes": 1375,
+      "sha256": "c769ed973a3f2652ae026bbeebbc698c8e88134931c7f4f8c9c93c4f42b59993"
+    },
+    {
+      "path": "avatar-threejs-builder/references/01-contract-and-anatomy.md",
+      "bytes": 7378,
+      "sha256": "277ec9ec5bd15a77fd6f634174cba3aafaa2e17c4ee1de556c944d0123a34d06"
+    },
+    {
+      "path": "avatar-threejs-builder/references/02-assets-and-authoring.md",
+      "bytes": 6749,
+      "sha256": "e2c86ab5dfa4fb4d68c3abc5a3973e04f1866e58d36604882d896e4b724fece9"
+    },
+    {
+      "path": "avatar-threejs-builder/references/03-body-animation.md",
+      "bytes": 8096,
+      "sha256": "cb8448c04b3fea3c810240555b7d2bac98cf23f668f78060341c43835944f44d"
+    },
+    {
+      "path": "avatar-threejs-builder/references/04-face-animation.md",
+      "bytes": 7209,
+      "sha256": "215d9a7ca04f022f00ddcd009fcfa93c54fd6a176b4ea75b3a8a965ab62f983c"
+    },
+    {
+      "path": "avatar-threejs-builder/references/05-camera-rendering-integration.md",
+      "bytes": 6831,
+      "sha256": "ffb3c57a6260d57889937d07eebd473d1c19a1f5cc2796ba7d201a321b3c0baa"
+    },
+    {
+      "path": "avatar-threejs-builder/references/06-validation-and-delivery.md",
+      "bytes": 7066,
+      "sha256": "23c7d3a965e845f837a25193cbd9c366b1a7011951c57396b36da151f69737b3"
+    },
+    {
+      "path": "avatar-threejs-builder/references/07-source-audit.md",
+      "bytes": 5963,
+      "sha256": "7dabdbd10f347a71360b6bfc8d2fdb89fd3fc24fff0d3fe8ab3f23f3a757e6bc"
+    },
+    {
+      "path": "avatar-threejs-builder/references/source-snapshot-manifest.json",
+      "bytes": 4874,
+      "sha256": "2e503909e76197dfdd7f57891b0c5051641d4f9407f73f05386af9df55f65e42"
+    },
+    {
+      "path": "avatar-threejs-builder/references/SOURCES.md",
+      "bytes": 3729,
+      "sha256": "ef9257b3b71bcf6406a2d293b514773bf11b6eef02c5767008b68907d27c46c4"
+    },
+    {
+      "path": "avatar-threejs-builder/scripts/inspect_glb.py",
+      "bytes": 16107,
+      "sha256": "5de3bb440296eee62fde7f57d59708eb4d612bbff99bee227242e784390fe93c"
+    },
+    {
+      "path": "avatar-threejs-builder/scripts/README.md",
+      "bytes": 1731,
+      "sha256": "7aef8494dda4ebb0d00caf45c3667136ddcd6cdefe5d80c9476f424475e74fbf"
+    },
+    {
+      "path": "avatar-threejs-builder/scripts/validate_profile.py",
+      "bytes": 7738,
+      "sha256": "a1a28b1bc9af39ad26ce3196fee465292b9ab6afb6e8409b38cd24e1b8cc499b"
+    },
+    {
+      "path": "avatar-threejs-builder/SKILL.md",
+      "bytes": 13800,
+      "sha256": "788174784036f0c4455c33fe519589b36708d227afac82be38731dc821f485d2"
+    },
+    {
+      "path": "avatar-threejs-builder/tests/test_tools.py",
+      "bytes": 10079,
+      "sha256": "885b02559feae690361a372feb1b50bf86636a4b8b2c796a96a4908bf5f59c18"
+    },
+    {
+      "path": "CHECKSUMS.sha256",
+      "bytes": 7865,
+      "sha256": "e216c38f54601adb92fe62e537d263bee2b576e5de3abadc3b1b6bc49c8f2d3c"
+    },
+    {
+      "path": "GPT-INSTRUCTIONS.txt",
+      "bytes": 2160,
+      "sha256": "3aad2c70293822dd7bd2ce356956d91dbe9fe9fbddba7b4717f4f9ad34db5890"
+    },
+    {
+      "path": "HANDOFF-FA.txt",
+      "bytes": 3438,
+      "sha256": "aad421439c6662ad7fd379ce0102464fc1e5dc013a126d9daf0d092a30a686b2"
+    },
+    {
+      "path": "PACKAGE-INFO.json",
+      "bytes": 446,
+      "sha256": "040c27c6bf2e553a683805a3304ccf6109ac2582b6ce9403f04cefcdc86bd099"
+    },
+    {
+      "path": "README-FA.md",
+      "bytes": 14773,
+      "sha256": "1c6df10312e40eaf4c2b95d1361b3c99c671f0eb25b8122d78e1ea3b6a76ad8c"
+    },
+    {
+      "path": "validation/package-checks.json",
+      "bytes": 605,
+      "sha256": "7724a6f57b163eb702b2c8991aa447f5171b416742a085f7d46a1e043d2e6d46"
+    },
+    {
+      "path": "validation/profile-draft-check.json",
+      "bytes": 878,
+      "sha256": "5b8ed64603b08069fdb0c52a108778544a781082f468af302f12318c53296c24"
+    },
+    {
+      "path": "validation/reference-source-tests.tap",
+      "bytes": 6755,
+      "sha256": "101e3fcfc416d7b6b4b2716852184d2c490bc541ddcdf82b7b9a8c93156d53dc"
+    },
+    {
+      "path": "validation/REPORT.md",
+      "bytes": 3148,
+      "sha256": "2c773059aceb60fbb1d15c6b50b4a9d0e6d45485529fc522002e06795ae6f5d8"
+    },
+    {
+      "path": "validation/skill-tools-tests.txt",
+      "bytes": 3676,
+      "sha256": "0053d91522768785176706fd9fb9fe4d3a000649347c289f5caabf892aee59b9"
+    }
+  ]
+}

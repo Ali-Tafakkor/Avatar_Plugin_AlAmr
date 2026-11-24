@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "Initial artistic calibration copied from source; visual validation required per asset.",
+  "defaultEmotion": "smile",
+  "defaultIntensity": 0.88,
+  "ownership": "mapped-expression-channels-only",
+  "emotions": {
+    "neutral": {
+      "label": "خنثی",
+      "key": "0",
+      "icon": "neutral",
+      "values": {}
+    },
+    "smile": {
+      "label": "لبخند آرام",
+      "key": "1",
+      "icon": "smile",
+      "values": {
+        "mouthSmileLeft": 0.24,
+        "mouthSmileRight": 0.24,
+        "cheekSquintLeft": 0.1,
+        "cheekSquintRight": 0.1,
+        "eyeSquintLeft": 0.05,
+        "eyeSquintRight": 0.05
+      }
+    },
+    "laugh": {
+      "label": "خنده",
+      "key": "2",
+      "icon": "laugh",
+      "values": {
+        "mouthSmileLeft": 0.82,
+        "mouthSmileRight": 0.82,
+        "cheekSquintLeft": 0.4,
+        "cheekSquintRight": 0.4,
+        "eyeSquintLeft": 0.33,
+        "eyeSquintRight": 0.33,
+        "mouthUpperUpLeft": 0.15,
+        "mouthUpperUpRight": 0.15,
+        "mouthLowerDownLeft": 0.12,
+        "mouthLowerDownRight": 0.12,
+        "jawOpen": 0.3
+      }
+    },
+    "sad": {
+      "label": "ناراحتی",
+      "key": "3",
+      "icon": "sad",
+      "values": {
+        "browInnerUp": 0.7,
+        "browDownLeft": 0.18,
+        "browDownRight": 0.18,
+        "mouthFrownLeft": 0.72,
+        "mouthFrownRight": 0.72,
+        "mouthShrugLower": 0.1,
+        "eyeSquintLeft": 0.11,
+        "eyeSquintRight": 0.11,
+        "mouthPressLeft": 0.12,
+        "mouthPressRight": 0.15
+      }
+    },
+    "angry": {
+      "label": "عصبانیت",
+      "key": "4",
+      "icon": "angry",
+      "values": {
+        "browDownLeft": 0.84,
+        "browDownRight": 0.84,
+        "eyeSquintLeft": 0.28,
+        "eyeSquintRight": 0.28,
+        "noseSneerLeft": 0.28,
+        "noseSneerRight": 0.28,
+        "mouthPressLeft": 0.36,
+        "mouthPressRight": 0.36,
+        "jawForward": 0.1,
+        "jawOpen": 0.035,
+        "mouthFrownLeft": 0.12,
+        "mouthFrownRight": 0.12
+      }
+    },
+    "surprise": {
+      "label": "تعجب",
+      "key": "5",
+      "icon": "surprise",
+      "values": {
+        "browInnerUp": 0.78,
+        "browOuterUpLeft": 0.83,
+        "browOuterUpRight": 0.83,
+        "eyeWideLeft": 0.8,
+        "eyeWideRight": 0.8,
+        "jawOpen": 0.52,
+        "mouthFunnel": 0.17,
+        "mouthLowerDownLeft": 0.1,
+        "mouthLowerDownRight": 0.1
+      }
+    }
+  }
+}

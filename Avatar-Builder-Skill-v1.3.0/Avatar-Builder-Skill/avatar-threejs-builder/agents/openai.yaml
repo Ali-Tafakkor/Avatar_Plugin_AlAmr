@@ -1,0 +1,6 @@
+interface:
+  display_name: "Customizable Web Avatar Builder"
+  short_description: "Build expressive 3D avatars from reference photos"
+  default_prompt: "Use $avatar-threejs-builder to build fresh facial geometry from my references and a full-body 3D avatar, ask about any missing outfit choices, and verify the rig, expressions, head motion and articulated hands."
+policy:
+  allow_implicit_invocation: true

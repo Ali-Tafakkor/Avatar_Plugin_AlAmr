@@ -1,0 +1,6 @@
+interface:
+  display_name: "Three.js Avatar Builder"
+  short_description: "Reusable rigged avatars, facial emotions, and motion QA"
+  default_prompt: "Use $avatar-threejs-builder to build or adapt an expressive full-body Three.js avatar, keeping appearance configurable and reporting actual test evidence."
+policy:
+  allow_implicit_invocation: true

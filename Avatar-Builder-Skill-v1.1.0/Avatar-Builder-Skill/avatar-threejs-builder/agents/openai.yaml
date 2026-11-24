@@ -1,0 +1,6 @@
+interface:
+  display_name: "Customizable Web Avatar Builder"
+  short_description: "Expressive avatars with calibrated hands and shoe contact"
+  default_prompt: "Use $avatar-threejs-builder to build my chosen web avatar with a reusable facial rig, natural hands, calibrated shoe-ground contact and verified motion, independent of a particular host."
+policy:
+  allow_implicit_invocation: true
